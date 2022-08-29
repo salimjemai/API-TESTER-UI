@@ -2,7 +2,16 @@
 using System;
 using System.Net.Http;
 using System.Net.Http.Formatting;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows;
+using API_TESTER_UI.Database;
+
+// Sql 
+using System.Data;
+using System.Linq;
+using System.Windows;
+using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 
 namespace API_TESTER_UI
 {
@@ -18,10 +27,13 @@ namespace API_TESTER_UI
         public string _SessionToken { get; set; }
 
         public object NavigationService { get; private set; }
+        
+        
 
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void CancelButton_OnClick(object sender, RoutedEventArgs e)
@@ -45,7 +57,15 @@ namespace API_TESTER_UI
         private async void LoginButton_OnClick(object sender, RoutedEventArgs e)
         {
             LoginToSession login = new LoginToSession();
+
+            SqlServerConnection _Connection = new SqlServerConnection();
+
+            string connectionString = _Connection.GetConnectionString();
+            SqlConnection connection = new SqlConnection(connectionString);
+
+
             var sessionToken = string.Empty;
+            var dateNow = DateTime.Now;
             try
             {
                 _SchemaAliasNameText = schemaAliasNameText.Text;
@@ -60,7 +80,13 @@ namespace API_TESTER_UI
 
                     if (sessionToken != null)
                     {
-                        _SessionToken = sessionToken;   
+                        _SessionToken = sessionToken;
+                        int IsTokenValid = 1;
+
+                        // Insert the session record into the DB
+                        _Connection.WriteDataIntoSession(_SessionToken, dateNow,IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
+                        
+                        // Open the API Choice interface
                         _ApiChoiceFrame.Navigate(new ApiChoice());
                     }
                     else

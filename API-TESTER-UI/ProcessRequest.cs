@@ -94,12 +94,12 @@ namespace API_TESTER_UI
                                 MessageBox.Show(elemList[i].InnerText);
                             }
                             MessageBox.Show(formattedXml);
-                            var endIt = Console.ReadLine();
-                            if (endIt.Length > 0)
-                            {
-                                // exit application
-                                Environment.Exit(0);
-                            }
+                            //var endIt = Console.ReadLine();
+                            //if (endIt.Length > 0)
+                            //{
+                            //    // exit application
+                            //    Environment.Exit(0);
+                            //}
                         }
                         else
                         {
