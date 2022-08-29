@@ -35,5 +35,10 @@ namespace API_TESTER_UI.Views
         {
             _GetUserInfoFrame.Content = new GetUser();
         }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

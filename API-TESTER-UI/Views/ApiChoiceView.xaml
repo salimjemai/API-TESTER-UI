@@ -33,7 +33,13 @@
       <RowDefinition />
     </Grid.RowDefinitions>
     <StackPanel Grid.Column="10" Grid.Row="0" >
-      <Button Content="Logout" Padding="2" Margin="4 2 6 15"  Background="Cyan" FontWeight="Bold" FontSize="13"/>
+      <Button Content="Logout" 
+              Padding="2" 
+              Margin="4 2 6 15"  
+              Background="Cyan" 
+              FontWeight="Bold" 
+              FontSize="13"
+              Click="LogoutButton_Click"/>
     </StackPanel>
       
     <TabControl Margin="0 15 0 0" Grid.Column="0" Grid.ColumnSpan="10" Grid.RowSpan="10">
