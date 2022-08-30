@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using API_TESTER_UI.Pages.UserManagement;
+using API_TESTER_UI.Pages.CompanyDatabase;
 
 namespace API_TESTER_UI.Views
 {
@@ -39,6 +40,11 @@ namespace API_TESTER_UI.Views
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void GetAirportsButton_Click(object sender, RoutedEventArgs e)
+        {
+            _GetAircraftsFrame.Content = new GetAircrafts();
         }
     }
 }

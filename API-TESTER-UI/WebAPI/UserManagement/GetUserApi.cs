@@ -15,12 +15,12 @@ namespace API_TESTER_UI.WebAPI
     {
         //public string UserName { get; set; }    
 
-        public void GetUserInfo(string usernmae, string token, string CWSURL)
+        public XmlDocument GetUserInfo(string usernmae, string token, string CWSURL)
         {
-            InvokeServiceGetUser(usernmae, token, CWSURL);
+            return InvokeServiceGetUser(usernmae, token, CWSURL);
         }
 
-        public void InvokeServiceGetUser(string userName, string token, string WsdlUrl)
+        public XmlDocument InvokeServiceGetUser(string userName, string token, string WsdlUrl)
         {
             var requestType = "usermanagement";
             var apiFunction = "GetUser";
@@ -53,7 +53,7 @@ namespace API_TESTER_UI.WebAPI
             }
 
 
-            processRequest.processApiRequest(SOAPReqBody, request);
+            return processRequest.processApiRequest(SOAPReqBody, request);
         }
     }
 }

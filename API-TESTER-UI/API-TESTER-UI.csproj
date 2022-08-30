@@ -163,6 +163,9 @@
     </ApplicationDefinition>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Database\SqlServerConnection.cs" />
+    <Compile Include="Pages\CompanyDatabase\GetAirports.xaml.cs">
+      <DependentUpon>GetAirports.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\UserManagement\AddUser.xaml.cs">
       <DependentUpon>AddUser.xaml</DependentUpon>
     </Compile>
@@ -188,6 +191,7 @@
     <Compile Include="Views\UserManagementView.xaml.cs">
       <DependentUpon>UserManagementView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WebAPI\CompanyDababase\GetAirports.cs" />
     <Compile Include="WebAPI\Session\LogoutFromSession.cs" />
     <Compile Include="WebAPI\UserManagement\UpdateUserInfoApi.cs" />
     <Page Include="MainWindow.xaml">
@@ -207,6 +211,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\CompanyDatabase\GetAirports.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\UserManagement\AddUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -266,6 +274,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Pages\Accounting\" />
+    <Folder Include="Pages\AircraftOwnership\" />
+    <Folder Include="WebAPI\Accounting\" />
+    <Folder Include="WebAPI\AircraftOwnership\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Sources\mesh.jpg" />

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Windows;
+using System.Windows.Documents;
 using System.Xml;
 
 namespace API_TESTER_UI
@@ -43,8 +44,9 @@ namespace API_TESTER_UI
         }
 
         // This function will be used to process all other API calls if the Login succeeds
-        public void processApiRequest(XmlDocument SOAPReqBody, HttpWebRequest request)
+        public XmlDocument processApiRequest(XmlDocument SOAPReqBody, HttpWebRequest request)
         {
+            XmlDocument xmlData = new XmlDocument();
             // Save the response in a stream
             using (Stream stream = request.GetRequestStream())
             {
@@ -73,6 +75,7 @@ namespace API_TESTER_UI
 
                         // Write the XML into a formatting XML writer
                         document.WriteContentTo(writer);
+                        xmlData = document;
                         writer.Flush();
                         mStream.Flush();
 
@@ -93,7 +96,7 @@ namespace API_TESTER_UI
                             {
                                 MessageBox.Show(elemList[i].InnerText);
                             }
-                            MessageBox.Show(formattedXml);
+                            //MessageBox.Show(formattedXml);
                             //var endIt = Console.ReadLine();
                             //if (endIt.Length > 0)
                             //{
@@ -104,7 +107,8 @@ namespace API_TESTER_UI
                         else
                         {
                             //writting stream result on console    
-                            MessageBox.Show(formattedXml);
+                            //MessageBox.Show(formattedXml);
+                            xmlData = document;
                             //Console.ReadLine();
                         }
 
@@ -118,6 +122,7 @@ namespace API_TESTER_UI
                     writer.Close();
                 }
             }
+            return xmlData;
         }
 
         public string LoginResponse(XmlDocument SOAPReqBody, HttpWebRequest request)
@@ -199,5 +204,7 @@ namespace API_TESTER_UI
 
             return convertedBool;
         }
+
+        
     }
 }

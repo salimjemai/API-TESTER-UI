@@ -1,7 +1,9 @@
-﻿using System;
+﻿using API_TESTER_UI.Database;
+using API_TESTER_UI.WebAPI;
+using API_TESTER_UI.WebAPI.CompanyDababase;
+using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.Linq;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
@@ -17,33 +19,29 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml;
-using API_TESTER_UI;
-using API_TESTER_UI.Database;
-using API_TESTER_UI.WebAPI;
-using Ubiety.Dns.Core;
 
-namespace API_TESTER_UI.Pages.UserManagement
+namespace API_TESTER_UI.Pages.CompanyDatabase
 {
     /// <summary>
-    /// Interaction logic for GetUser.xaml
+    /// Interaction logic for GetAircrafts.xaml
     /// </summary>
-    public partial class GetUser : Page
+    public partial class GetAircrafts : Page
     {
-        public GetUser()
+        public string _Airport { get; set; }
+        public List<string> AirportsList { get; set; }
+
+        public GetAircrafts()
         {
             InitializeComponent();
-        }
-
-        private void SubmitGetUser_Click(object sender, RoutedEventArgs e)
-        {
+            
 
             var token = string.Empty;
             var cwsUrl = string.Empty;
-            var userCalledApi = string.Empty;
+
             try
             {
-               XmlDocument response;
-               GetUserApi getUserApi = new GetUserApi();
+                XmlDocument airports;
+                GetAirports getAirports = new GetAirports();
 
                 // Open a connection to get the token info from the DB
                 SqlServerConnection _Connection = new SqlServerConnection();
@@ -57,9 +55,13 @@ namespace API_TESTER_UI.Pages.UserManagement
                         cwsUrl = selectSession["CwsUrl"].ToString();
                     }
 
-                    if (token != null && userName.Text != null && cwsUrl != null)
+                    if (token != null && cwsUrl != null)
                     {
-                        response = getUserApi.GetUserInfo(userName.Text, token, cwsUrl);
+                        DataSet data = new DataSet();
+                        airports = getAirports.GetAirport(token, cwsUrl);
+                        AirportsList = getAirports.GetListOfAirports(airports);
+
+                        this.AirportsGrid.ItemsSource = AirportsList;
                     }
 
                     else
@@ -70,9 +72,8 @@ namespace API_TESTER_UI.Pages.UserManagement
             }
             catch (Exception exc)
             {
-                MessageBox.Show($"An error occurred while getting the user Data ...");
+                MessageBox.Show($"An error occurred while getting the user Data ... {exc.Message}");
             }
         }
     }
-
 }
