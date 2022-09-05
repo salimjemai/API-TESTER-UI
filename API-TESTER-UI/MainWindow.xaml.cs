@@ -125,5 +125,9 @@ namespace API_TESTER_UI
 
         }
 
+        public void CommandBinding_Executed()
+        {
+            Close();
+        }
     }
 }

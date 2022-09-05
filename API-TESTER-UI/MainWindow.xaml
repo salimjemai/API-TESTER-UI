@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:API_TESTER_UI"
         mc:Ignorable="d"
+        Name="window"
         Title="API Tester"
         Height="400"
         Width="600"
@@ -362,12 +363,15 @@
         </Setter.Value>
       </Setter>
     </Style>
-    <SolidColorBrush x:Key="TextBox.Static.Border1" Color="#FFABAdB3"/>
-    <SolidColorBrush x:Key="TextBox.MouseOver.Border1" Color="#FF7EB4EA"/>
-    <SolidColorBrush x:Key="TextBox.Focus.Border1" Color="#FF569DE5"/>
-    
+    <SolidColorBrush x:Key="TextBox.Static.Border1"
+                     Color="#FFABAdB3" />
+    <SolidColorBrush x:Key="TextBox.MouseOver.Border1"
+                     Color="#FF7EB4EA" />
+    <SolidColorBrush x:Key="TextBox.Focus.Border1"
+                     Color="#FF569DE5" />
     <!--These are the Password text box style-->
-    <Style x:Key="PasswordTextBoxStyle" TargetType="{x:Type TextBox}">
+    <Style x:Key="PasswordTextBoxStyle"
+           TargetType="{x:Type TextBox}">
       <Setter Property="Background"
               Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
       <Setter Property="BorderBrush"
@@ -453,21 +457,35 @@
         </MultiTrigger>
       </Style.Triggers>
     </Style>
-    <SolidColorBrush x:Key="TextBox.Static.Border2" Color="#FFABAdB3"/>
-    <SolidColorBrush x:Key="TextBox.MouseOver.Border2" Color="#FF7EB4EA"/>
-    <SolidColorBrush x:Key="TextBox.Focus.Border2" Color="#FF569DE5"/>
+    <SolidColorBrush x:Key="TextBox.Static.Border2"
+                     Color="#FFABAdB3" />
+    <SolidColorBrush x:Key="TextBox.MouseOver.Border2"
+                     Color="#FF7EB4EA" />
+    <SolidColorBrush x:Key="TextBox.Focus.Border2"
+                     Color="#FF569DE5" />
     <!--User Name Text Box Style-->
-    <Style x:Key="UserNameTextBoxStyle" TargetType="{x:Type TextBox}">
-      <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
-      <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}" />
-      <Setter Property="Foreground"  Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
-      <Setter Property="BorderThickness" Value="1" />
-      <Setter Property="KeyboardNavigation.TabNavigation" Value="None" />
-      <Setter Property="HorizontalContentAlignment" Value="Left" />
-      <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-      <Setter Property="AllowDrop" Value="true" />
-      <Setter Property="ScrollViewer.PanningMode"  Value="VerticalFirst" />
-      <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
+    <Style x:Key="UserNameTextBoxStyle"
+           TargetType="{x:Type TextBox}">
+      <Setter Property="Background"
+              Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
+      <Setter Property="BorderBrush"
+              Value="{StaticResource TextBox.Static.Border}" />
+      <Setter Property="Foreground"
+              Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+      <Setter Property="BorderThickness"
+              Value="1" />
+      <Setter Property="KeyboardNavigation.TabNavigation"
+              Value="None" />
+      <Setter Property="HorizontalContentAlignment"
+              Value="Left" />
+      <Setter Property="FocusVisualStyle"
+              Value="{x:Null}" />
+      <Setter Property="AllowDrop"
+              Value="true" />
+      <Setter Property="ScrollViewer.PanningMode"
+              Value="VerticalFirst" />
+      <Setter Property="Stylus.IsFlicksEnabled"
+              Value="False" />
       <Setter Property="Template">
         <Setter.Value>
           <ControlTemplate TargetType="{x:Type TextBox}">
@@ -533,12 +551,15 @@
         </MultiTrigger>
       </Style.Triggers>
     </Style>
-    <SolidColorBrush x:Key="TextBox.Static.Border3" Color="#FFABAdB3"/>
-    <SolidColorBrush x:Key="TextBox.MouseOver.Border3" Color="#FF7EB4EA"/>
-    <SolidColorBrush x:Key="TextBox.Focus.Border3" Color="#FF569DE5"/>
-    
+    <SolidColorBrush x:Key="TextBox.Static.Border3"
+                     Color="#FFABAdB3" />
+    <SolidColorBrush x:Key="TextBox.MouseOver.Border3"
+                     Color="#FF7EB4EA" />
+    <SolidColorBrush x:Key="TextBox.Focus.Border3"
+                     Color="#FF569DE5" />
     <!--Schema Alias Name Text Box style-->
-    <Style x:Key="SchemaAliasTextBoxStyle" TargetType="{x:Type TextBox}">
+    <Style x:Key="SchemaAliasTextBoxStyle"
+           TargetType="{x:Type TextBox}">
       <Setter Property="Background"
               Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
       <Setter Property="BorderBrush"

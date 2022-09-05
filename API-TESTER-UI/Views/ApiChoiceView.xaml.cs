@@ -66,11 +66,16 @@ namespace API_TESTER_UI.Views
             _GetAircraftsFrame.Content = null;
         }
 
-    //<Frame x:Name="_UserManagementFrame" NavigationUIVisibility="Hidden" />
-    //<Frame x:Name="_GetUserInfoFrame" NavigationUIVisibility="Hidden" />
-    //<Frame x:Name="_AddUserFrame" NavigationUIVisibility="Hidden" />
-    //<Frame x:Name="_ChangeUserPasswordFrame" NavigationUIVisibility="Hidden" />
-    //<Frame x:Name="_UpdateUserInfoFrame" NavigationUIVisibility="Hidden" />
-    //<Frame x:Name="_ChangePermissionProfileFrame" NavigationUIVisibility="Hidden" />
+        private void MenuItemExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        //<Frame x:Name="_UserManagementFrame" NavigationUIVisibility="Hidden" />
+        //<Frame x:Name="_GetUserInfoFrame" NavigationUIVisibility="Hidden" />
+        //<Frame x:Name="_AddUserFrame" NavigationUIVisibility="Hidden" />
+        //<Frame x:Name="_ChangeUserPasswordFrame" NavigationUIVisibility="Hidden" />
+        //<Frame x:Name="_UpdateUserInfoFrame" NavigationUIVisibility="Hidden" />
+        //<Frame x:Name="_ChangePermissionProfileFrame" NavigationUIVisibility="Hidden" />
     }
 }
