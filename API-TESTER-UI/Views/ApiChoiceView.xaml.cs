@@ -46,5 +46,31 @@ namespace API_TESTER_UI.Views
         {
             _GetAircraftsFrame.Content = new GetAircrafts();
         }
+
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        {
+            // This clear button should clear any displayed data OR filled up fields to be updated
+            //this.Content = null;
+            //_GetAircraftsFrame.Content = null;
+            //_UserManagementFrame.Content = null;
+            //_GetUserInfoFrame.Content = null;
+            //_AddUserFrame.Content = null;
+            //_ChangeUserPasswordFrame.Content = null;
+            //_UpdateUserInfoFrame.Content= null;
+            //_ChangePermissionProfileFrame.Content = null;
+
+        }
+
+        public void CloseAirportsFrame()
+        {
+            _GetAircraftsFrame.Content = null;
+        }
+
+    //<Frame x:Name="_UserManagementFrame" NavigationUIVisibility="Hidden" />
+    //<Frame x:Name="_GetUserInfoFrame" NavigationUIVisibility="Hidden" />
+    //<Frame x:Name="_AddUserFrame" NavigationUIVisibility="Hidden" />
+    //<Frame x:Name="_ChangeUserPasswordFrame" NavigationUIVisibility="Hidden" />
+    //<Frame x:Name="_UpdateUserInfoFrame" NavigationUIVisibility="Hidden" />
+    //<Frame x:Name="_ChangePermissionProfileFrame" NavigationUIVisibility="Hidden" />
     }
 }

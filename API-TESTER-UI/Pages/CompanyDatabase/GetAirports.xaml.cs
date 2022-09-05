@@ -1,23 +1,12 @@
 ﻿using API_TESTER_UI.Database;
-using API_TESTER_UI.WebAPI;
 using API_TESTER_UI.WebAPI.CompanyDababase;
+using API_TESTER_UI.Models.CompanyDataBase;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Xml;
 
 namespace API_TESTER_UI.Pages.CompanyDatabase
@@ -27,17 +16,16 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
     /// </summary>
     public partial class GetAircrafts : Page
     {
-        public string _Airport { get; set; }
         public List<string> AirportsList { get; set; }
 
         public GetAircrafts()
         {
             InitializeComponent();
-            
 
             var token = string.Empty;
             var cwsUrl = string.Empty;
 
+            List<Airports> air = new List<Airports>();
             try
             {
                 XmlDocument airports;
@@ -61,9 +49,14 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
                         airports = getAirports.GetAirport(token, cwsUrl);
                         AirportsList = getAirports.GetListOfAirports(airports);
 
-                        this.AirportsGrid.ItemsSource = AirportsList;
-                    }
+                        foreach(var airport in AirportsList)
+                        {
+                            air.Add(new Airports { Airport = airport});
 
+                        }
+
+                        AirportsGrid.ItemsSource = air;
+                    }
                     else
                     {
                         MessageBox.Show("Error occurred while getting the user info ..");
@@ -75,5 +68,12 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
                 MessageBox.Show($"An error occurred while getting the user Data ... {exc.Message}");
             }
         }
+
+        private void ClosAirportsForm_Click(object sender, RoutedEventArgs e)
+        {
+            this.Content = null;
+            this.AirportsGrid.ItemsSource = null;
+        }
     }
+
 }

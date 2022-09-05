@@ -10,39 +10,79 @@
       Background="White"
       Title="ApiChoice">
   <Grid>
+    
     <Grid.ColumnDefinitions>
-      <ColumnDefinition />
-      <ColumnDefinition />
-      <ColumnDefinition />
-      <ColumnDefinition />
-      <ColumnDefinition />
-      <ColumnDefinition />
-      <ColumnDefinition />
-      <ColumnDefinition />
-      <ColumnDefinition />
-      <ColumnDefinition />
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
     <Grid.RowDefinitions>
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
-    <StackPanel Grid.Column="10"
-                Grid.Row="0">
+    
+    <DockPanel>
+      <Menu DockPanel.Dock="Top">
+        <MenuItem Header="_File">
+          <MenuItem Header="_New" />
+          <MenuItem Header="_Open" />
+          <MenuItem Header="_Save" />
+          <Separator />
+          <MenuItem Header="_Exit" />
+        </MenuItem>
+        <MenuItem Header="_Edit">
+          <MenuItem Command="Cut" />
+          <MenuItem Command="Copy" />
+          <MenuItem Command="Paste" />
+        </MenuItem>
+        <MenuItem Header="_Session">
+        </MenuItem>
+      </Menu>
+      <TextBox AcceptsReturn="True"
+               Name="txtEditor" />
+    </DockPanel>
+    <!--<Grid Grid.Row="0" Grid.Column="0">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+
       <Button Content="Logout"
-              Padding="2"
-              Margin="4 2 6 15"
+              Grid.Row="0"
+              Grid.Column="9"
+              Width="auto"
+              Height="Auto"
               Background="Cyan"
               FontWeight="Bold"
               FontSize="13"
               Click="LogoutButton_Click" />
-    </StackPanel>
-    <TabControl Margin="0 15 0 0"
+    </Grid>-->
+    
+    <TabControl Margin="0 25 0 0"
                 Grid.Column="0"
                 Grid.ColumnSpan="10"
                 Grid.RowSpan="10">
@@ -254,140 +294,144 @@
               <RowDefinition Height="Auto" />
               <RowDefinition Height="*" />
             </Grid.RowDefinitions>
+            
             <Grid Grid.Column="0"
-                  Grid.RowSpan="25"
+                  Grid.RowSpan="28"
                   Background="PaleGoldenrod"
-                  Width="auto"
+                  Width="Auto"
                   Margin="5,5,5,5" />
             <Grid Grid.Column="1"
-                  Grid.RowSpan="25"
+                  Grid.RowSpan="26"
                   Background="Gainsboro"
-                  Width="auto"
+                  Width="Auto"
                   Margin="5"
                   Grid.ColumnSpan="2">
-              <Frame x:Name="_GetAircraftsFrame" NavigationUIVisibility="Hidden" />
+              <Frame x:Name="_GetAircraftsFrame" NavigationUIVisibility="Hidden"/>
             </Grid>
-            <Button Grid.Column="0"
-                    Grid.Row="0"
-                    Content="Add Address"
-                    Padding="6"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="1"
-                    Content="Add Company Data"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="2"
-                    Content="Add Or Update Address"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="3"
-                    Content="Add Or Update Company Data"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="4"
-                    Content="Add Or Update Phone"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="5"
-                    Content="Add Phone"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="6"
-                    Content="Delete Address"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="7"
-                    Content="Delete Phone"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="8"
-                    Content="Get Address"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="9"
-                    Content="Get Airports"
-                    Padding="10"
-                    Margin="10,10,10,10" 
-                    Click="GetAirportsButton_Click"/>
-            <Button Grid.Column="0"
-                    Grid.Row="10"
-                    Content="Get Company Data"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="11"
-                    Content="Get Countries"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="12"
-                    Content="Get Credit Ratings"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="14"
-                    Content="Get Credit Restrictions"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="15"
-                    Content="Get Customer Classes"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="16"
-                    Content="Get Phone"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="17"
-                    Content="Get Regions"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="18"
-                    Content="Get States"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="19"
-                    Content="Get Time Zones"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="20"
-                    Content="Inactivate Company"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="21"
-                    Content="Reactivate Company"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="22"
-                    Content="Update Address"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="23"
-                    Content="Update Company Data"
-                    Padding="10"
-                    Margin="10,10,10,10" />
-            <Button Grid.Column="0"
-                    Grid.Row="24"
-                    Content="Update Phone"
-                    Padding="10"
-                    Margin="10,10,10,10" />
+            <StackPanel Orientation="Vertical">
+              <Button Grid.Column="0"
+                      Grid.Row="0"
+                      Content="Add Address"
+                      Padding="6"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="1"
+                      Content="Add Company Data"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="2"
+                      Content="Add Or Update Address"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="3"
+                      Content="Add Or Update Company Data"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="4"
+                      Content="Add Or Update Phone"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="5"
+                      Content="Add Phone"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="6"
+                      Content="Delete Address"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="7"
+                      Content="Delete Phone"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="8"
+                      Content="Get Address"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="9"
+                      Content="Get Airports"
+                      Padding="10"
+                      Margin="10,10,10,10"
+                      Click="GetAirportsButton_Click" />
+              <Button Grid.Column="0"
+                      Grid.Row="10"
+                      Content="Get Company Data"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="11"
+                      Content="Get Countries"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="12"
+                      Content="Get Credit Ratings"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="14"
+                      Content="Get Credit Restrictions"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="15"
+                      Content="Get Customer Classes"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="16"
+                      Content="Get Phone"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="17"
+                      Content="Get Regions"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="18"
+                      Content="Get States"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="19"
+                      Content="Get Time Zones"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="20"
+                      Content="Inactivate Company"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="21"
+                      Content="Reactivate Company"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="22"
+                      Content="Update Address"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="23"
+                      Content="Update Company Data"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+              <Button Grid.Column="0"
+                      Grid.Row="24"
+                      Content="Update Phone"
+                      Padding="10"
+                      Margin="10,10,10,10" />
+            </StackPanel>
+            
           </Grid>
         </ScrollViewer>
       </TabItem>
@@ -445,6 +489,7 @@
                     Content="Update User"
                     Padding="10"
                     Margin="10" />
+            
             <Grid Grid.Column="1"
                   Grid.RowSpan="6">
               <Frame x:Name="_UserManagementFrame"

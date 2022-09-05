@@ -45,7 +45,7 @@ namespace API_TESTER_UI
         private void ClearButton_OnClick(object sender, RoutedEventArgs e)
         {
             if (schemaAliasNameText.Text.Length > 0 || LoginID.Text.Length > 0 ||
-                LoginPasswordText.Password.Length > 0 || cwsUrlText.Text.Length > 0)
+                LoginPasswordText.Text.Length > 0 || cwsUrlText.Text.Length > 0)
             {
                 schemaAliasNameText.Clear();
                 LoginID.Clear();
@@ -70,12 +70,12 @@ namespace API_TESTER_UI
             {
                 _SchemaAliasNameText = schemaAliasNameText.Text;
                 _LoginID = LoginID.Text;
-                _Password = LoginPasswordText.Password;
+                _Password = LoginPasswordText.Text;
                 _CwsUrl = cwsUrlText.Text;  
 
                 if (schemaAliasNameText != null && LoginID != null && LoginPasswordText != null && cwsUrlText != null)
                 {
-                    sessionToken = login.Login(schemaAliasNameText.Text, LoginID.Text, LoginPasswordText.Password,
+                    sessionToken = login.Login(schemaAliasNameText.Text, LoginID.Text, LoginPasswordText.Text,
                         cwsUrlText.Text);
 
                     if (sessionToken != null)
@@ -125,9 +125,5 @@ namespace API_TESTER_UI
 
         }
 
-        private void _ApiChoiceFrame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
-        {
-
-        }
     }
 }
