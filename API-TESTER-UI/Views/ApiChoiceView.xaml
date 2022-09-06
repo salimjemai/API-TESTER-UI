@@ -50,38 +50,14 @@
           <MenuItem Command="Paste" />
         </MenuItem>
         <MenuItem Header="_Session">
+          <MenuItem Header="_Logout" Click="MenuItemLogout_Click"/>
+        </MenuItem>
+        <MenuItem Header="_About">
+          <MenuItem Header="_Help" Click="MenuItemLogout_Click" />
+          <MenuItem Header="_Version" Click="MenuItemLogout_Click" />
         </MenuItem>
       </Menu>
-      <TextBox AcceptsReturn="True"
-               Name="txtEditor" />
     </DockPanel>
-    <!--<Grid Grid.Row="0" Grid.Column="0">
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="*" />
-      </Grid.ColumnDefinitions>
-      <Grid.RowDefinitions>
-        <RowDefinition Height="Auto" />
-      </Grid.RowDefinitions>
-
-      <Button Content="Logout"
-              Grid.Row="0"
-              Grid.Column="9"
-              Width="auto"
-              Height="Auto"
-              Background="Cyan"
-              FontWeight="Bold"
-              FontSize="13"
-              Click="LogoutButton_Click" />
-    </Grid>-->
     
     <TabControl Margin="0 25 0 0"
                 Grid.Column="0"

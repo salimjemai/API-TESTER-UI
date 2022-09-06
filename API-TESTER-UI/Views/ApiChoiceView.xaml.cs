@@ -71,11 +71,12 @@ namespace API_TESTER_UI.Views
             Application.Current.Shutdown();
         }
 
-        //<Frame x:Name="_UserManagementFrame" NavigationUIVisibility="Hidden" />
-        //<Frame x:Name="_GetUserInfoFrame" NavigationUIVisibility="Hidden" />
-        //<Frame x:Name="_AddUserFrame" NavigationUIVisibility="Hidden" />
-        //<Frame x:Name="_ChangeUserPasswordFrame" NavigationUIVisibility="Hidden" />
-        //<Frame x:Name="_UpdateUserInfoFrame" NavigationUIVisibility="Hidden" />
-        //<Frame x:Name="_ChangePermissionProfileFrame" NavigationUIVisibility="Hidden" />
+        private void MenuItemLogout_Click(object sender, RoutedEventArgs e)
+        {
+            // Call the Logout session API
+
+            // Delete the session token record from the DB
+        }
+
     }
 }
