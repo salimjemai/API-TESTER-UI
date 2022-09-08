@@ -14,17 +14,27 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using API_TESTER_UI.Pages.UserManagement;
 using API_TESTER_UI.Pages.CompanyDatabase;
+using API_TESTER_UI.WebAPI.Session;
+using API_TESTER_UI.Database;
+using System.Data.SqlClient;
+using Newtonsoft.Json.Linq;
+using API_TESTER_UI.Views;
 
 namespace API_TESTER_UI.Views
 {
     /// <summary>
     /// Interaction logic for ApiChoice.xaml
     /// </summary>
-    public partial class ApiChoice : Page
+    public partial class ApiChoiceWindow : Window
     {
-        public ApiChoice()
+        public ApiChoiceWindow()
         {
             InitializeComponent();
+        }
+
+        public void closeMethod(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
 
         private void UserManagmentBtn_Click(object sender, RoutedEventArgs e)
@@ -34,13 +44,13 @@ namespace API_TESTER_UI.Views
 
         private void GetUserInfoPage_Click(object sender, RoutedEventArgs e)
         {
-            _GetUserInfoFrame.Content = new GetUser();
+            _GetUserInputFrame.Content = new GetUser();
         }
 
-        private void LogoutButton_Click(object sender, RoutedEventArgs e)
-        {
+        //private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        //{
 
-        }
+        //}
 
         private void GetAirportsButton_Click(object sender, RoutedEventArgs e)
         {
@@ -68,14 +78,50 @@ namespace API_TESTER_UI.Views
 
         private void MenuItemExit_Click(object sender, RoutedEventArgs e)
         {
+            // logout, delete token record then exit
             Application.Current.Shutdown();
+
         }
 
         private void MenuItemLogout_Click(object sender, RoutedEventArgs e)
         {
             // Call the Logout session API
+            LogoutFromSession logout = new LogoutFromSession();
+            var token = string.Empty;
+            var cwsUrl = string.Empty;
 
-            // Delete the session token record from the DB
+            try
+            {
+                // get the token and CWS URL from the DB
+                // Open a connection to get the token info from the DB
+                SqlServerConnection _Connection = new SqlServerConnection();
+                string sqlQuery = "select Top(1) SessionToken, CwsUrl from Sessions order by DateCreated desc";
+                using (SqlDataReader selectSession = _Connection.SelectRecords(sqlQuery))
+                {
+
+                    while (selectSession.Read())
+                    {
+                        token = selectSession["SessionToken"].ToString();
+                        cwsUrl = selectSession["CwsUrl"].ToString();
+                    }
+
+                    var logoutResponse = logout.Logout(token, cwsUrl);
+
+                    if (logoutResponse.Contains("Success"))
+                    {
+                        _Connection.DeleteSession(token);
+                    }
+
+                    selectSession.Close();
+                }
+                closeMethod(sender, e);
+
+                new MainWindow().Show();
+            }
+            catch(SystemException ex)
+            {
+                MessageBox.Show(string.Format("An error occurred while logging out: {0}", ex.Message));
+            }
         }
 
     }

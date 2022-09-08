@@ -72,7 +72,7 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
         private void ClosAirportsForm_Click(object sender, RoutedEventArgs e)
         {
             this.Content = null;
-            this.AirportsGrid.ItemsSource = null;
+            //this.AirportsGrid.ItemsSource = null;
         }
     }
 

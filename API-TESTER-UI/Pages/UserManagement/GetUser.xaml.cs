@@ -73,6 +73,12 @@ namespace API_TESTER_UI.Pages.UserManagement
                 MessageBox.Show($"An error occurred while getting the user Data ...");
             }
         }
+
+        private void ClearForm_Click(object sender, RoutedEventArgs e)
+        {
+            this.Content = null;
+            PageContent pageContent = new PageContent();
+        }
     }
 
 }

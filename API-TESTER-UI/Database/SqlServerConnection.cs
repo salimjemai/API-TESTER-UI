@@ -100,5 +100,34 @@ namespace API_TESTER_UI.Database
                 throw new Exception($"Error occurred while writing to the database, {e.Message}");
             }
         }
+
+        public void DeleteSession(string token)
+        {
+            try
+            {
+                SqlConnection conn = openConnection();
+                //string sqlQuery = "Delete from Sessions where SessionToken = @sessionToken";
+
+                using (SqlCommand command = new SqlCommand("DELETE FROM Sessions WHERE SessionToken = '" + token + "'", conn))
+                {
+                    command.ExecuteNonQuery();
+                }
+                //using (SqlCommand delete = new SqlCommand(sqlQuery, conn))
+                //{
+                //    delete.Parameters.Add("@sessionToken", SqlDbType.NVarChar);
+
+                //    delete.Parameters["@sessionToken"].Value = token;
+
+                //    delete.ExecuteNonQuery();
+                //    conn.Close();
+                //}
+                conn.Close();
+            }
+            catch (SystemException ex)
+            {
+                MessageBox.Show(string.Format("An error occurred: {0}", ex.Message));
+                //throw new Exception($"Error occurred while deleting the session token record from the database, {e.Message}");
+            }
+        }
     }
 }

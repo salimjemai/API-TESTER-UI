@@ -191,9 +191,60 @@ namespace API_TESTER_UI
             return response;
         }
 
-        public string LogoutFromSession()
+        public string LogoutResponse(XmlDocument SOAPReqBody, HttpWebRequest request)
         {
-            return null;
+            var formattedXml = "";
+            using (Stream stream = request.GetRequestStream())
+            {
+                SOAPReqBody.Save(stream);
+            }
+
+            //Geting response from request    
+            using (WebResponse ServicResponse = request.GetResponse())
+            {
+                using (StreamReader rd = new StreamReader(ServicResponse.GetResponseStream()))
+                {
+                    MemoryStream mStream = new MemoryStream();
+                    XmlTextWriter writer = new XmlTextWriter(mStream, Encoding.Unicode);
+                    XmlDocument document = new XmlDocument();
+
+                    try
+                    {
+                        //reading stream    
+                        string ServiceResult = rd.ReadToEnd();
+
+                        // load the response into the document
+                        document.LoadXml(ServiceResult);
+
+                        // Indent the content of the XML document
+                        writer.Formatting = Formatting.Indented;
+
+                        // Write the XML into a formatting XML writer
+                        document.WriteContentTo(writer);
+                        writer.Flush();
+                        mStream.Flush();
+
+                        // Have to rewind the MemoryStream in order to read
+                        // its contents.
+                        mStream.Position = 0;
+
+                        // Read MemoryStream contents into a StreamReader.
+                        StreamReader sReader = new StreamReader(mStream);
+
+                        // Extract the text from the StreamReader.
+                        formattedXml = sReader.ReadToEnd();
+
+                       
+                    }
+                    catch (XmlException t)
+                    {
+                        MessageBox.Show("An error occurred while logging in, please check your login or password and try again ..");
+                    }
+                    mStream.Close();
+                    writer.Close();
+                }
+            }
+            return formattedXml;
         }
 
         // Convert the bool  variable variables if true=1 else 0

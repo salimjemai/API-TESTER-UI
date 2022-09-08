@@ -36,7 +36,7 @@ namespace API_TESTER_UI.WebAPI.Session
                     </soap:Body>
                 </soap:Envelope> ");
 
-            return processRequest.LoginResponse(SOAPReqBody, request);
+            return processRequest.LogoutResponse(SOAPReqBody, request);
         }
     }
 }

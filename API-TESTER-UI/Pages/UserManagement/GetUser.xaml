@@ -51,6 +51,13 @@
               Padding="5"
               Margin="30 5 10 10"
               Click="SubmitGetUser_Click" />
+      <Button Content="Clear"
+              FontWeight="Bold"
+              Width="125"
+              Height="30"
+              Padding="5"
+              Margin="30 5 10 10" 
+              Click="ClearForm_Click"/>
     </StackPanel>
     
     

@@ -190,6 +190,7 @@
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Database\SqlServerConnection.cs" />
     <Compile Include="Models\CompanyDataBase\Airports.cs" />
+    <Compile Include="Models\CustomControl\PasswordControlStyle.cs" />
     <Compile Include="Pages\CompanyDatabase\GetAirports.xaml.cs">
       <DependentUpon>GetAirports.xaml</DependentUpon>
     </Compile>
