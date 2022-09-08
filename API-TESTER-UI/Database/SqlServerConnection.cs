@@ -58,7 +58,6 @@ namespace API_TESTER_UI.Database
             {
                 SqlCommand sqlCommand = new SqlCommand(sqlQuery, conn);
                 sqlData =  sqlCommand.ExecuteReader();
-                //conn.Close();
             }
             catch (Exception e)
             {
@@ -106,7 +105,6 @@ namespace API_TESTER_UI.Database
             try
             {
                 SqlConnection conn = openConnection();
-                //string sqlQuery = "Delete from Sessions where SessionToken = @sessionToken";
 
                 using (SqlCommand command = new SqlCommand("DELETE FROM Sessions WHERE SessionToken = '" + token + "'", conn))
                 {

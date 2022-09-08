@@ -43,7 +43,8 @@
                  Foreground="Black" />
       <TextBox x:Name="userName"
                Width="150"
-               Margin="10,8,0,15" />
+               Margin="10,8,0,15"
+               HorizontalAlignment="Left"/>
       <Button Content="Submit"
               FontWeight="Bold"
               Width="125"

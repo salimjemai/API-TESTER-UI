@@ -36,7 +36,7 @@ namespace API_TESTER_UI.Pages.UserManagement
 
         private void SubmitGetUser_Click(object sender, RoutedEventArgs e)
         {
-
+            bool isUserNameEmpty = false;
             var token = string.Empty;
             var cwsUrl = string.Empty;
             var userCalledApi = string.Empty;
@@ -57,9 +57,21 @@ namespace API_TESTER_UI.Pages.UserManagement
                         cwsUrl = selectSession["CwsUrl"].ToString();
                     }
 
-                    if (token != null && userName.Text != null && cwsUrl != null)
+                    isUserNameEmpty = userName.Text.Length > 0 ? false:true;
+
+                    if (token != null  && cwsUrl != null)
                     {
-                        response = getUserApi.GetUserInfo(userName.Text, token, cwsUrl);
+                        switch(isUserNameEmpty)
+                        {
+                            case true:
+                                MessageBox.Show("User name cannot be empty", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
+                                break;
+
+                            case false:
+                                response = getUserApi.GetUserInfo(userName.Text, token, cwsUrl);
+                                break;
+
+                        }
                     }
 
                     else
@@ -68,6 +80,8 @@ namespace API_TESTER_UI.Pages.UserManagement
 
                     }
                 }
+                // need to close the connection here
+                //_Connection.closeConnection();
             }
             catch (Exception exc)
             {
