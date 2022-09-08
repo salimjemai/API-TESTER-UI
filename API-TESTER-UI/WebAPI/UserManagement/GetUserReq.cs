@@ -11,7 +11,7 @@ using Caliburn.Micro;
 
 namespace API_TESTER_UI.WebAPI
 {
-    public class GetUserApi
+    public class GetUserReq
     {
         //public string UserName { get; set; }    
 
@@ -49,7 +49,8 @@ namespace API_TESTER_UI.WebAPI
             }
             catch (XmlException e)
             {
-                MessageBox.Show($" An error occurred while reading the XML request body, see exception details {e}");
+                MessageBox.Show($" An error occurred while reading the XML request body, see exception details {e}", 
+                    "Getting User info", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
 

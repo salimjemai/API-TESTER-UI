@@ -15,7 +15,7 @@ using Caliburn.Micro;
 
 namespace API_TESTER_UI.WebAPI.CompanyDababase
 {
-    public class GetAirports
+    public class GetAirportsReq
     {
 
         public XmlDocument GetAirport(string token, string CWSURL)

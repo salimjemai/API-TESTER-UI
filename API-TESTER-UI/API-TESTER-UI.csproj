@@ -216,29 +216,67 @@
     <Compile Include="Views\ApiChoiceView.xaml.cs">
       <DependentUpon>ApiChoiceView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserManagementView.xaml.cs">
       <DependentUpon>UserManagementView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WebAPI\CompanyDababase\GetAirports.cs" />
+    <Compile Include="WebAPI\Accounting\ClearWipReq.cs" />
+    <Compile Include="WebAPI\Accounting\DisableAllAutoPostFacilitiesReq.cs" />
+    <Compile Include="WebAPI\Accounting\DisableAutopostFacilityReq.cs" />
+    <Compile Include="WebAPI\Accounting\EnableAllAutopostFacilitiesReq.cs" />
+    <Compile Include="WebAPI\Accounting\EnableAutopostFacilityReq.cs" />
+    <Compile Include="WebAPI\Accounting\ProcessAutopostFacilityReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\AddOrUpdateAircraftDiscrepancyReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\AddOrUpdateAircraftReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\AddTransactionReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\ChangeHourMeterReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\CreateAircraftDiscrepancyReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\CreateAircraftReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\DeleteTransactionReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\FlightOpsUpdateReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\GetAircraftDataReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\SelectHourMeterReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\SelectTransactionReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\UpdateAircraftDiscrepancyReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\UpdateAircraftReq.cs" />
+    <Compile Include="WebAPI\AircraftOwnership\UpdateTransactionReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\AddAddressReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\AddCompanyDataReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\AddOrUpdateAddressReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\AddOrUpdateCompanyDataReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\AddOrUpdatePhoneReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\AddPhoneReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\DeleteAddressReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\DeletePhoneReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetAddressReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetAirportsReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetCompanyDataReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetCountriesReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetCreditRatingsReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetCreditRestrictionsReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetCustomerClassesReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetPhoneReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetRegionsReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetStatesReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\GetTimeZonesReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\InactivateCompanyReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\ReactivateCompanyReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\UpdateAddressReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\UpdateCompanyDataReq.cs" />
+    <Compile Include="WebAPI\CompanyDababase\UpdatePhoneReq.cs" />
     <Compile Include="WebAPI\Session\LogoutFromSession.cs" />
-    <Compile Include="WebAPI\UserManagement\UpdateUserInfoApi.cs" />
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
+    <Compile Include="WebAPI\UserManagement\CreatePermissionsProfileReq.cs" />
+    <Compile Include="WebAPI\UserManagement\UpdateUserInfoReq.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WebAPI\UserManagement\AddUserApi.cs" />
-    <Compile Include="WebAPI\UserManagement\ChangeUserPasswordApi.cs" />
-    <Compile Include="WebAPI\Credentials.cs" />
-    <Compile Include="WebAPI\UserManagement\GetUserApi.cs" />
+    <Compile Include="WebAPI\UserManagement\AddUserReq.cs" />
+    <Compile Include="WebAPI\UserManagement\ChangeUserPasswordReq.cs" />
+    <Compile Include="WebAPI\UserManagement\GetUserReq.cs" />
     <Compile Include="WebAPI\Session\LoginToSession.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Page Include="Pages\CompanyDatabase\GetAirports.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -267,13 +305,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UserManagementView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProcessRequest.cs" />
+    <Compile Include="WebAPI\ProcessRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -303,8 +345,6 @@
   <ItemGroup>
     <Folder Include="Pages\Accounting\" />
     <Folder Include="Pages\AircraftOwnership\" />
-    <Folder Include="WebAPI\Accounting\" />
-    <Folder Include="WebAPI\AircraftOwnership\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Sources\mesh.jpg" />

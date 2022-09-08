@@ -29,7 +29,7 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
             try
             {
                 XmlDocument airports;
-                GetAirports getAirports = new GetAirports();
+                GetAirportsReq getAirports = new GetAirportsReq();
 
                 // Open a connection to get the token info from the DB
                 SqlServerConnection _Connection = new SqlServerConnection();
@@ -59,13 +59,13 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
                     }
                     else
                     {
-                        MessageBox.Show("Error occurred while getting the user info ..");
+                        MessageBox.Show("Error occurred while retrieving the session token info.", "Retrieving session info", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
             }
             catch (Exception exc)
             {
-                MessageBox.Show($"An error occurred while getting the user Data ... {exc.Message}");
+                MessageBox.Show($"Error occurred while getting the airports info. exception detail: {exc}", "Airports details", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

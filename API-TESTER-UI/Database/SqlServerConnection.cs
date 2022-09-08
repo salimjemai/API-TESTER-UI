@@ -39,7 +39,7 @@ namespace API_TESTER_UI.Database
             }
             catch(Exception e)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("Failure to open a sql connection, try again.","Open Connection", MessageBoxButton.OK ,MessageBoxImage.Error);
             }
             return conn;
         }
@@ -112,21 +112,11 @@ namespace API_TESTER_UI.Database
                 {
                     command.ExecuteNonQuery();
                 }
-                //using (SqlCommand delete = new SqlCommand(sqlQuery, conn))
-                //{
-                //    delete.Parameters.Add("@sessionToken", SqlDbType.NVarChar);
-
-                //    delete.Parameters["@sessionToken"].Value = token;
-
-                //    delete.ExecuteNonQuery();
-                //    conn.Close();
-                //}
                 conn.Close();
             }
             catch (SystemException ex)
             {
-                MessageBox.Show(string.Format("An error occurred: {0}", ex.Message));
-                //throw new Exception($"Error occurred while deleting the session token record from the database, {e.Message}");
+                MessageBox.Show($"Failure to delete the session records see exception details here: {ex}.", "Delete session", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

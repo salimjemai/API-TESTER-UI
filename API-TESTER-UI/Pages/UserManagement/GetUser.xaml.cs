@@ -43,7 +43,7 @@ namespace API_TESTER_UI.Pages.UserManagement
             try
             {
                XmlDocument response;
-               GetUserApi getUserApi = new GetUserApi();
+               GetUserReq getUserApi = new GetUserReq();
 
                 // Open a connection to get the token info from the DB
                 SqlServerConnection _Connection = new SqlServerConnection();
@@ -64,13 +64,14 @@ namespace API_TESTER_UI.Pages.UserManagement
 
                     else
                     {
-                        MessageBox.Show("Error occurred while getting the user info ..");
+                        MessageBox.Show("Error occurred while getting the session token info.", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
+
                     }
                 }
             }
             catch (Exception exc)
             {
-                MessageBox.Show($"An error occurred while getting the user Data ...");
+                MessageBox.Show("Error occurred while getting the user Data.", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

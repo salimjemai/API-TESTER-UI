@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace API_TESTER_UI.WebAPI
+namespace API_TESTER_UI.WebAPI.Accounting
 {
-    public class AddUserApi
+    public class EnableAllAutopostFacilitiesReq
     {
     }
 }

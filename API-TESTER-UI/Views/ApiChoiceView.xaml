@@ -97,7 +97,8 @@
                     Grid.Row="0"
                     Content="Clear WIP Request"
                     Padding="10"
-                    Margin="10" />
+                    Margin="10"
+                    Click="ClearWIPButton_Click"/>
             <Button Grid.Column="0"
                     Grid.Row="1"
                     Content="Disable All AutoPost Facilities Request"

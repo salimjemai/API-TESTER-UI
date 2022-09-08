@@ -1,46 +1,47 @@
-﻿using API_TESTER_UI.Views;
+﻿using API_TESTER_UI.Database;
 using System;
-using System.Net.Http;
-using System.Net.Http.Formatting;
-using System.Security.Cryptography.X509Certificates;
-using System.Windows;
-using API_TESTER_UI.Database;
-
-// Sql 
-using System.Data;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
-using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
-namespace API_TESTER_UI
+namespace API_TESTER_UI.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for HomeView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class HomeView : Window
     {
         public string PlaceholderText { get; set; }
         public string _SchemaAliasNameText { get; set; }
         public string _LoginID { get; set; }
         public string _Password { get; set; }
-        public string _CwsUrl { get; set; } 
+        public string _CwsUrl { get; set; }
         public string _SessionToken { get; set; }
 
         public object NavigationService { get; private set; }
-        
-        
 
-        public MainWindow()
+
+        public HomeView()
         {
             InitializeComponent();
-
         }
-
         private void CancelButton_OnClick(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            // Confirm the user decision
+            if (MessageBox.Show(this, "Do you wish to close this application?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question)
+                == MessageBoxResult.Yes)
+            {
+                Application.Current.Shutdown();
+            }
         }
 
         private void ClearButton_OnClick(object sender, RoutedEventArgs e)
@@ -85,7 +86,7 @@ namespace API_TESTER_UI
                         int IsTokenValid = 1;
 
                         // Insert the session record into the DB
-                        _Connection.WriteDataIntoSession(_SessionToken, dateNow,IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
+                        _Connection.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
 
                         // hide main login window
                         this.Hide();
@@ -96,32 +97,16 @@ namespace API_TESTER_UI
                     }
                     else
                     {
-                        MessageBox.Show($"{MessageBoxImage.Error} Something wrong happened, try again another time!!!");
+                        MessageBox.Show($"Something wrong happened, try again another time!!!", 
+                            "Login warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                     }
                 }
 
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"{MessageBoxImage.Error} Error occurred while trying to login: {exception.Message}");
-            }
-        }
-
-        private void LogoutButton_OnClick(object sender, RoutedEventArgs e)
-        {
-            LoginToSession logout = new LoginToSession();
-            var response = "";
-            try
-            {
-                if (response.Contains("Success"))
-                {
-                    MessageBox.Show($"{MessageBoxImage.Information} You are logged out of the API.");
-                }
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show($"{MessageBoxImage.Stop} An error occurred while logging out ... {exception.Message}");
-                throw;
+                MessageBox.Show($"Error occurred while trying to login: {exception.Message}", 
+                    "Login Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -159,7 +144,7 @@ namespace API_TESTER_UI
 
                         // Insert the session record into the DB
                         _Connection.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
-                        
+
                         // hide main login window
                         this.Hide();
 
@@ -168,7 +153,7 @@ namespace API_TESTER_UI
                     }
                     else
                     {
-                        MessageBox.Show($"{MessageBoxImage.Error} Something wrong happened, try again another time!!!");
+                        MessageBox.Show($"Something wrong happened, try again another time!!!");
                     }
                 }
 

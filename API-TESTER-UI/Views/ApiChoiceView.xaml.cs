@@ -19,6 +19,7 @@ using API_TESTER_UI.Database;
 using System.Data.SqlClient;
 using Newtonsoft.Json.Linq;
 using API_TESTER_UI.Views;
+using API_TESTER_UI;
 
 namespace API_TESTER_UI.Views
 {
@@ -79,50 +80,38 @@ namespace API_TESTER_UI.Views
         private void MenuItemExit_Click(object sender, RoutedEventArgs e)
         {
             // logout, delete token record then exit
-            Application.Current.Shutdown();
-
-        }
-
-        private void MenuItemLogout_Click(object sender, RoutedEventArgs e)
-        {
             // Call the Logout session API
             LogoutFromSession logout = new LogoutFromSession();
-            var token = string.Empty;
-            var cwsUrl = string.Empty;
 
-            try
+            if (MessageBox.Show(this, "Do you wish to close this application?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question)
+                 == MessageBoxResult.Yes)
             {
-                // get the token and CWS URL from the DB
-                // Open a connection to get the token info from the DB
-                SqlServerConnection _Connection = new SqlServerConnection();
-                string sqlQuery = "select Top(1) SessionToken, CwsUrl from Sessions order by DateCreated desc";
-                using (SqlDataReader selectSession = _Connection.SelectRecords(sqlQuery))
-                {
-
-                    while (selectSession.Read())
-                    {
-                        token = selectSession["SessionToken"].ToString();
-                        cwsUrl = selectSession["CwsUrl"].ToString();
-                    }
-
-                    var logoutResponse = logout.Logout(token, cwsUrl);
-
-                    if (logoutResponse.Contains("Success"))
-                    {
-                        _Connection.DeleteSession(token);
-                    }
-
-                    selectSession.Close();
-                }
-                closeMethod(sender, e);
-
-                new MainWindow().Show();
+                logout.LogOutFromSessionNoNotification();
+                Application.Current.Shutdown();
             }
-            catch(SystemException ex)
-            {
-                MessageBox.Show(string.Format("An error occurred while logging out: {0}", ex.Message));
-            }
+            
+
         }
 
+       
+        private void MenuItemLogout_Click(object sender, RoutedEventArgs e)
+        {
+
+            // call the logout function
+            LogoutFromSession logout = new LogoutFromSession();
+            logout.LogOutFromSession();
+
+            // close the current window
+            this.Close();
+
+            // bring the user back to the main window
+            new HomeView().Show();
+            
+        }
+
+        private void ClearWIPButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
