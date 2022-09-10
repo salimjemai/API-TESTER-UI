@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="API_TESTER_UI.Pages.CompanyDatabase.GetCompanyData"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:API_TESTER_UI.Pages.CompanyDatabase"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             FontSize="14">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <StackPanel Margin="10"
+                Grid.RowSpan="1"
+                Grid.ColumnSpan="2"
+                Orientation="Horizontal">
+      <TextBlock Text="Company Code"
+                 Margin="10 0 0 0"
+                 FontWeight="Bold" />
+      <TextBox x:Name="CompanyCode"
+               Margin="2 0 6 0"
+               Width="150"/>
+      <Button x:Name="Submit"
+              Content="Submit"
+              Width="Auto"
+              Margin="10 2 0 0"
+              Click="Submit_Click" />
+      <Button x:Name="Clear"
+              Content="Clear"
+              Width="Auto"
+              Margin="10 2 0 0"
+              Click="Clear_Click" />
+    </StackPanel>
+    <ListView Grid.Row="3"
+              Background="LightGray"
+              x:Name="CompanyDataGrid"
+              Panel.ZIndex="1">
+      <ListView.View>
+        <GridView>
+          <GridViewColumn Header="Company Name"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding CompanyName}" />
+          <GridViewColumn Header="Company Code"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding CompanyCode}" />
+          <GridViewColumn Header="IsCustomer"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsCustomer}" />
+          <GridViewColumn Header="IsVendor"
+                          Width="300"
+                          DisplayMemberBinding="{Binding IsVendor}" />
+          <GridViewColumn Header="DefaultCurrency"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding DefaultCurrency}" />
+          <GridViewColumn Header="IsShippingHold"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsShippingHold}" />
+          <GridViewColumn Header="IsTaxExempt"
+                          Width="150"
+                          DisplayMemberBinding="{Binding IsTaxExempt}" />
+          <GridViewColumn Header="Repair Station Number"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding RepairStationNumber}" />
+          <GridViewColumn Header="FAA Number"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding FAANumber}" />
+          <GridViewColumn Header="Default Billing Address Title"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding DefaultBillingAddressTitle}" />
+          <GridViewColumn Header="Default Shipping Address Title"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding DefaultShippingAddressTitle}" />
+          <GridViewColumn Header="Default Address Title"
+                          Width="300"
+                          DisplayMemberBinding="{Binding DefaultAddressTitle}" />
+          <GridViewColumn Header="Default Phone Title"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding DefaultPhoneTitle}" />
+          <GridViewColumn Header="Default Fax Title"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding DefaultFaxTitle}" />
+          <GridViewColumn Header="IsRepairStation"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsRepairStation}" />
+          <GridViewColumn Header="IsCreditCardCompany"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsCreditCardCompany}" />
+          <GridViewColumn Header="IsAircraftManufacturer"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsAircraftManufacturer}" />
+          <GridViewColumn Header="IsEngineManufacturer"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsEngineManufacturer}" />
+          <GridViewColumn Header="IsAPUManufacturer"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsAPUManufacturer}" />
+          <GridViewColumn Header="IsOtherManufacturer"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsOtherManufacturer}" />
+          <GridViewColumn Header="IsManufacturer"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsManufacturer}" />
+          <GridViewColumn Header="IsIndividual"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsIndividual}" />
+          <GridViewColumn Header="IsSoleProprietorship"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsSoleProprietorship}" />
+          <GridViewColumn Header="IsPartnership"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsPartnership}" />
+          <GridViewColumn Header="IsCorporation"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsCorporation}" />
+          <GridViewColumn Header="IsCreditCheckPerformed"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsCreditCheckPerformed}" />
+          <GridViewColumn Header="IsCustomerExemptFromFuelTaxes"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsCustomerExemptFromFuelTaxes}" />
+          <GridViewColumn Header="IsInactive"
+                          Width="Auto"
+                          DisplayMemberBinding="{Binding IsInactive}" />
+        </GridView>
+      </ListView.View>
+    </ListView>
+    <Frame x:Name="_GetAircraftsFrame"
+           NavigationUIVisibility="Hidden" />
+    <Frame x:Name="_GetAaddressesFrame"
+           NavigationUIVisibility="Hidden" />
+    <Frame x:Name="_GetCompanyDataFrame"
+           NavigationUIVisibility="Hidden" />
+    <Frame x:Name="_GetUserInfoFrame"
+           NavigationUIVisibility="Hidden" />
+  </Grid>
+</UserControl>

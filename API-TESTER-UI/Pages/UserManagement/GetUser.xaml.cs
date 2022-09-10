@@ -32,6 +32,10 @@ namespace API_TESTER_UI.Pages.UserManagement
         public GetUser()
         {
             InitializeComponent();
+            _GetAaddressesFrame.Content = null;
+            _GetAircraftsFrame.Content = null;
+            _GetCompanyDataFrame.Content = null;
+
         }
 
         private void SubmitGetUser_Click(object sender, RoutedEventArgs e)
@@ -89,7 +93,12 @@ namespace API_TESTER_UI.Pages.UserManagement
             }
         }
 
-        private void ClearForm_Click(object sender, RoutedEventArgs e)
+        public void ClearForm_Click()
+        {
+            this.Content = null;
+        }
+
+        public void ClearForm_Click(object sender, RoutedEventArgs e)
         {
             this.Content = null;
             PageContent pageContent = new PageContent();

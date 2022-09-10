@@ -8,6 +8,8 @@ using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml;
+using API_TESTER_UI.WebAPI.CompanyDababaseAPI;
+using API_TESTER_UI.Pages.UserManagement;
 
 namespace API_TESTER_UI.Pages.CompanyDatabase
 {
@@ -21,6 +23,10 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
         public GetAircrafts()
         {
             InitializeComponent();
+
+            _GetAaddressesFrame.Content = null;
+            _GetUserInfoFrame.Content = null;
+            _GetCompanyDataFrame.Content = null;
 
             var token = string.Empty;
             var cwsUrl = string.Empty;
@@ -36,14 +42,12 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
                 string sqlQuery = "select Top(1) SessionToken, CwsUrl from Sessions order by DateCreated desc";
                 using (SqlDataReader selectSession = _Connection.SelectRecords(sqlQuery))
                 {
-
                     while (selectSession.Read())
                     {
                         token = selectSession["SessionToken"].ToString();
                         cwsUrl = selectSession["CwsUrl"].ToString();
                     }
 
-                    if (token != null && cwsUrl != null)
                     {
                         DataSet data = new DataSet();
                         airports = getAirports.GetAirport(token, cwsUrl);
@@ -56,10 +60,6 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
                         }
 
                         AirportsGrid.ItemsSource = air;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error occurred while retrieving the session token info.", "Retrieving session info", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
             }

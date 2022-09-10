@@ -60,7 +60,11 @@
               Margin="30 5 10 10" 
               Click="ClearForm_Click"/>
     </StackPanel>
-    
-    
+    <Frame x:Name="_GetAircraftsFrame"
+           NavigationUIVisibility="Hidden" />
+    <Frame x:Name="_GetAaddressesFrame"
+           NavigationUIVisibility="Hidden" />
+    <Frame x:Name="_GetCompanyDataFrame"
+           NavigationUIVisibility="Hidden" />
   </Grid>
 </Page>

@@ -159,6 +159,7 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.RegularExpressions" />
     <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -189,10 +190,19 @@
     </ApplicationDefinition>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Database\SqlServerConnection.cs" />
+    <Compile Include="Models\CompanyDataBase\Address.cs" />
     <Compile Include="Models\CompanyDataBase\Airports.cs" />
+    <Compile Include="Models\CompanyDataBase\CompanyData.cs" />
+    <Compile Include="Models\CompanyDataBase\UserDefinedFields.cs" />
     <Compile Include="Models\CustomControl\PasswordControlStyle.cs" />
+    <Compile Include="Pages\CompanyDatabase\GetAddress.xaml.cs">
+      <DependentUpon>GetAddress.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CompanyDatabase\GetAirports.xaml.cs">
       <DependentUpon>GetAirports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CompanyDatabase\GetCompanyData.xaml.cs">
+      <DependentUpon>GetCompanyData.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\UserManagement\AddUser.xaml.cs">
       <DependentUpon>AddUser.xaml</DependentUpon>
@@ -242,30 +252,30 @@
     <Compile Include="WebAPI\AircraftOwnership\UpdateAircraftDiscrepancyReq.cs" />
     <Compile Include="WebAPI\AircraftOwnership\UpdateAircraftReq.cs" />
     <Compile Include="WebAPI\AircraftOwnership\UpdateTransactionReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\AddAddressReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\AddCompanyDataReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\AddOrUpdateAddressReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\AddOrUpdateCompanyDataReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\AddOrUpdatePhoneReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\AddPhoneReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\DeleteAddressReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\DeletePhoneReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetAddressReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetAirportsReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetCompanyDataReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetCountriesReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetCreditRatingsReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetCreditRestrictionsReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetCustomerClassesReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetPhoneReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetRegionsReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetStatesReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\GetTimeZonesReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\InactivateCompanyReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\ReactivateCompanyReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\UpdateAddressReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\UpdateCompanyDataReq.cs" />
-    <Compile Include="WebAPI\CompanyDababase\UpdatePhoneReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\AddAddressReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\AddCompanyDataReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\AddOrUpdateAddressReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\AddOrUpdateCompanyDataReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\AddOrUpdatePhoneReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\AddPhoneReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\DeleteAddressReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\DeletePhoneReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetAddressReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetAirportsReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetCompanyDataReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetCountriesReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetCreditRatingsReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetCreditRestrictionsReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetCustomerClassesReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetPhoneReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetRegionsReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetStatesReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\GetTimeZonesReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\InactivateCompanyReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\ReactivateCompanyReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\UpdateAddressReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\UpdateCompanyDataReq.cs" />
+    <Compile Include="WebAPI\CompanyDababaseAPI\UpdatePhoneReq.cs" />
     <Compile Include="WebAPI\Session\LogoutFromSession.cs" />
     <Compile Include="WebAPI\UserManagement\CreatePermissionsProfileReq.cs" />
     <Compile Include="WebAPI\UserManagement\UpdateUserInfoReq.cs" />
@@ -277,7 +287,18 @@
     <Compile Include="WebAPI\UserManagement\ChangeUserPasswordReq.cs" />
     <Compile Include="WebAPI\UserManagement\GetUserReq.cs" />
     <Compile Include="WebAPI\Session\LoginToSession.cs" />
+    <Compile Include="XMLViewer\Viewer.xaml.cs">
+      <DependentUpon>Viewer.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Pages\CompanyDatabase\GetAddress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\CompanyDatabase\GetAirports.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\CompanyDatabase\GetCompanyData.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -310,6 +331,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserManagementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XMLViewer\Viewer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -348,6 +373,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Sources\mesh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

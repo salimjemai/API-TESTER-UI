@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -88,28 +89,50 @@ namespace API_TESTER_UI
 
                         // Extract the text from the StreamReader.
                         string formattedXml = sReader.ReadToEnd();
-                        if (formattedXml.Contains("ErrorMessage"))
+
+                        var errorText = string.Empty;
+                        var errorCode = string.Empty;
+                        Dictionary<string, string> noDictionary = new Dictionary<string, string>();
+                        bool isResponseSuccessfulMessage = formattedXml.Contains("Success")? true:false;
+
+
+                        if (isResponseSuccessfulMessage == false)
                         {
                             //Display all the book titles.
-                            XmlNodeList elemList = document.GetElementsByTagName("ErrorMessage");
-                            for (int i = 0; i < elemList.Count; i++)
+                            XmlNodeList ParentNode = document.GetElementsByTagName("ErrorMessage");
+
+                            foreach (XmlNode AllNodes in ParentNode)
                             {
-                                MessageBox.Show(elemList[i].InnerText);
+                                if (AllNodes.HasChildNodes)
+                                {
+                                    var allChildNodes = AllNodes.ChildNodes;
+                                    if (allChildNodes.Count == 2)
+                                    {
+                                        errorText = allChildNodes[0].FirstChild.InnerText;
+                                        errorCode = allChildNodes[1].LastChild.InnerText;
+                                        noDictionary.Add(errorCode, errorText);
+                                    }
+                                    
+                                }
                             }
-                            //MessageBox.Show(formattedXml);
-                            //var endIt = Console.ReadLine();
-                            //if (endIt.Length > 0)
-                            //{
-                            //    // exit application
-                            //    Environment.Exit(0);
-                            //}
+
+                            var responseAll = string.Empty;
+
+                            foreach (KeyValuePair<string, string> kvp in noDictionary)
+                            {
+                                string formattedResponse = string.Format("Error Code = {0}, Error Message = {1}",
+                                                    kvp.Key, kvp.Value);
+                                responseAll += formattedResponse+"\n";
+                                
+                            }
+
+                            MessageBox.Show(responseAll, "Process API request"
+                                , MessageBoxButton.OK, MessageBoxImage.Error);
+
                         }
                         else
                         {
-                            //writting stream result on console    
-                            //MessageBox.Show(formattedXml);
                             xmlData = document;
-                            //Console.ReadLine();
                         }
 
                     }

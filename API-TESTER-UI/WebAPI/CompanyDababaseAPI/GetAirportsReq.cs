@@ -13,7 +13,7 @@ using System.Xml.Serialization;
 using API_TESTER_UI.Pages.UserManagement;
 using Caliburn.Micro;
 
-namespace API_TESTER_UI.WebAPI.CompanyDababase
+namespace API_TESTER_UI.WebAPI.CompanyDababaseAPI
 {
     public class GetAirportsReq
     {
@@ -39,19 +39,19 @@ namespace API_TESTER_UI.WebAPI.CompanyDababase
             {
                 //SOAP Body Request    
                 SOAPReqBody.LoadXml(
-                    @"<?xml version=""1.0"" encoding=""utf-8""?><soap:Envelope xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:soap=""http://schemas.xmlsoap.org/soap/envelope/"" >
-                    <soap:Body>
+                    @"<?xml version=""1.0"" encoding=""utf-8""?><soap12:Envelope xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:soap12=""http://schemas.xmlsoap.org/soap/envelope/"" >
+                    <soap12:Body>
                       <GetAirports xmlns=""http://corridor.aero/cws/"">
                             <airportsReference >
                                 <SessionToken>" + token + @"</SessionToken>
                             </airportsReference >
                       </GetAirports>
-                    </soap:Body>
-                </soap:Envelope>");
+                    </soap12:Body>
+                </soap12:Envelope>");
             }
             catch (XmlException e)
             {
-                MessageBox.Show($" An error occurred while reading the XML request body, see exception details {e}");
+                MessageBox.Show($" An error occurred while reading the XML request body, see exception details {e}", "API Request", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
 

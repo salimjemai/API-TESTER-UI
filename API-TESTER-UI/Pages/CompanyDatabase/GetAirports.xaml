@@ -11,23 +11,53 @@
       Title="GetAircrafts">
 
   <Grid>
-    <ListView Grid.Row="1"
-              Grid.ColumnSpan="5"
-              x:Name="AirportsGrid"
-              Panel.ZIndex="1">
-      <ListView.View>
-        <GridView>
-          <GridViewColumn Header="Airport" Width="300" DisplayMemberBinding="{Binding Airport}" />
-        </GridView>
-      </ListView.View>
-    </ListView>
-    <Button Content="Clear"
-            FontWeight="Bold"
-            Foreground="DarkBlue"
-            Height="20"
-            Width="59"
-            Panel.ZIndex="2"
-            Margin="0 0 1800 8500"
-            Click="ClosAirportsForm_Click" />
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    
+    <StackPanel HorizontalAlignment="Right"
+                Orientation="Horizontal"
+                Margin="10"
+                Grid.Row="1" Grid.ColumnSpan="5">
+      <Button x:Name="Clear"
+              Content="Clear"
+              Width="150"
+              Margin="10 5 0 0"
+              Click="ClosAirportsForm_Click"/>
+    </StackPanel>
+    
+    <Grid Grid.Row="2" Grid.ColumnSpan="5">
+      <ListView x:Name="AirportsGrid"
+                >
+        <ListView.View>
+          <GridView>
+            <GridViewColumn Header="Airport"
+                            Width="300"
+                            DisplayMemberBinding="{Binding Airport}" />
+          </GridView>
+        </ListView.View>
+      </ListView>
+      
+      <Frame x:Name="_GetAircraftsFrame"
+             NavigationUIVisibility="Hidden" />
+      <Frame x:Name="_GetAaddressesFrame"
+             NavigationUIVisibility="Hidden" />
+      <Frame x:Name="_GetCompanyDataFrame"
+             NavigationUIVisibility="Hidden" />
+      <Frame x:Name="_GetUserInfoFrame"
+             NavigationUIVisibility="Hidden" />
+    </Grid>
+
   </Grid>
 </Page>

@@ -113,5 +113,15 @@ namespace API_TESTER_UI.Views
         {
 
         }
+
+        private void GetAddressButton_Click(object sender, RoutedEventArgs e)
+        {
+            _GetAaddressesFrame.Content = new GetAddress();
+        }
+
+        private void GetCompanyData_Click(object sender, RoutedEventArgs e)
+        {
+            _GetCompanyDataFrame.Content = new GetCompanyData();
+        }
     }
 }
