@@ -11,10 +11,8 @@
   <Grid>
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
     <Grid.RowDefinitions>
-      <RowDefinition Height="Auto" />
       <RowDefinition Height="Auto" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
@@ -30,17 +28,16 @@
                Width="150"/>
       <Button x:Name="Submit"
               Content="Submit"
-              Width="Auto"
+              Width="85"
               Margin="10 2 0 0"
               Click="Submit_Click" />
       <Button x:Name="Clear"
               Content="Clear"
-              Width="Auto"
+              Width="85"
               Margin="10 2 0 0"
               Click="Clear_Click" />
     </StackPanel>
-    <ListView Grid.Row="3"
-              Background="LightGray"
+    <ListView Grid.Row="2"
               x:Name="CompanyDataGrid"
               Panel.ZIndex="1">
       <ListView.View>
