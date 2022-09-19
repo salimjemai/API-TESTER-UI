@@ -59,5 +59,16 @@
         </Setter.Value>
       </Setter>
     </Style>
+    <Style x:Key="WindowStyle1" TargetType="{x:Type Window}">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type Window}">
+            <Border x:Name="border" CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" SnapsToDevicePixels="true">
+              <ContentPresenter x:Name="contentPresenter" Focusable="False"/>
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
   </Application.Resources>
 </Application>

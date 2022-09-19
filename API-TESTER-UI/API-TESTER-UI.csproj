@@ -377,5 +377,14 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sources\aircraft.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sources\wp6903522.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sources\wp6903612.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

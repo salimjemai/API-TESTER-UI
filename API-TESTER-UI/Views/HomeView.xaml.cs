@@ -34,6 +34,13 @@ namespace API_TESTER_UI.Views
         {
             InitializeComponent();
         }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
+        }
+
         private void CancelButton_OnClick(object sender, RoutedEventArgs e)
         {
             // Confirm the user decision
