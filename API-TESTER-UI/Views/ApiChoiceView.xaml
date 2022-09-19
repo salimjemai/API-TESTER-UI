@@ -53,10 +53,9 @@
                     Click="MenuItemLogout_Click" />
         </MenuItem>
         <MenuItem Header="_About">
-          <MenuItem Header="_Help"
-                    Click="MenuItemLogout_Click" />
-          <MenuItem Header="_Version"
-                    Click="MenuItemLogout_Click" />
+          <MenuItem Header="_Documentation"
+                    Click="MenuItemDocumentation_Click"/>
+          <MenuItem Header="_Version"/>
         </MenuItem>
       </Menu>
     </DockPanel>

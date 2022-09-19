@@ -123,5 +123,11 @@ namespace API_TESTER_UI.Views
         {
             _GetCompanyDataFrame.Content = new GetCompanyData();
         }
+
+        private void MenuItemDocumentation_Click(object sender, RoutedEventArgs e)
+        {
+            //System.Windows.Forms.Help.ShowHelp(null, @"\Sources\CorridorAPI.chm");
+            System.Diagnostics.Process.Start(@"C:\Users\sjemai\Desktop\WPF\GitApps\API-TESTER-UI\API-TESTER-UI\Sources\CorridorAPI.chm");
+        }
     }
 }
