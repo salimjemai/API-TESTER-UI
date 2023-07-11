@@ -16,7 +16,7 @@
         WindowStyle="None"
         ResizeMode="NoResize" ShowInTaskbar="False" AllowsTransparency="True"
         Background="Transparent"
-        Opacity="1">
+        Opacity="5">
     
   <Window.Resources>
     <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3" />
@@ -475,7 +475,7 @@
                        Value="false">
                 <Setter Property="Opacity"
                         TargetName="border"
-                        Value="0.56" />
+                        Value="0.5" />
               </Trigger>
               <Trigger Property="IsMouseOver"
                        Value="true">
@@ -758,7 +758,7 @@
       <GradientStop Color="#CFD7EB" Offset="0.5"/>
       <GradientStop Color="#E9ECFA" Offset="1.0"/>
     </LinearGradientBrush>
-    <SolidColorBrush x:Key="CurrentEntryBackground" Color="{StaticResource {x:Static SystemColors.HighlightColorKey}}" Opacity="0.25"/>
+    <SolidColorBrush x:Key="CurrentEntryBackground" Color="{StaticResource {x:Static SystemColors.HighlightColorKey}}" Opacity="0.1"/>
     <Style x:Key="NavigationWindowNavigationButtonJournalEntryStyle" TargetType="{x:Type MenuItem}">
       <Setter Property="OverridesDefaultStyle" Value="true"/>
       <Setter Property="Header" Value="{Binding (JournalEntry.Name)}"/>
@@ -1039,10 +1039,7 @@
     <Style TargetType="Image">
       <Style.Triggers>
         <Trigger Property="IsEnabled" Value="False">
-          <Setter Property="Opacity" Value="0.5"/>
-        </Trigger>
-        <Trigger Property="IsEnabled" Value="True">
-          <Setter Property="Opacity" Value="55"/>
+          <Setter Property="Opacity" Value="5"/>
         </Trigger>
       </Style.Triggers>
     </Style>
@@ -1051,7 +1048,7 @@
   <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
     <Border CornerRadius="30" Mouse.MouseDown="Window_MouseDown" >
       <Border.Background>
-        <ImageBrush Stretch="Fill" ImageSource="/Sources/wp6903612.png" />
+        <ImageBrush Stretch="Fill" ImageSource="/Sources/mesh.jpg" />
       </Border.Background>
     </Border>
     
@@ -1087,7 +1084,7 @@
                    Text="CORRIDOR API Login"
                    TextAlignment="Center"
                    Margin="0,0,0,30"
-                   Foreground="#404040" FontWeight="Bold" />
+                   Foreground="White" FontWeight="Bold" />
         <!--Schema alias name box-->
         <TextBox Style="{DynamicResource SchemaAliasTextBoxStyle}"
                  x:Name="schemaAliasNameText"
