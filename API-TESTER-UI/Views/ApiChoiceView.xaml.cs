@@ -20,6 +20,8 @@ using System.Data.SqlClient;
 using Newtonsoft.Json.Linq;
 using API_TESTER_UI.Views;
 using API_TESTER_UI;
+using Google.Protobuf.WellKnownTypes;
+using System.IO;
 
 namespace API_TESTER_UI.Views
 {
@@ -126,8 +128,9 @@ namespace API_TESTER_UI.Views
 
         private void MenuItemDocumentation_Click(object sender, RoutedEventArgs e)
         {
-            //System.Windows.Forms.Help.ShowHelp(null, @"\Sources\CorridorAPI.chm");
+            //System.Diagnostics.Process.Start(@HelpFullPath()) ;
             System.Diagnostics.Process.Start(@"C:\Users\sjemai\Desktop\WPF\GitApps\API-TESTER-UI\API-TESTER-UI\Sources\CorridorAPI.chm");
         }
+
     }
 }
