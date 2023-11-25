@@ -349,5 +349,10 @@
   <ItemGroup>
     <Resource Include="Sources\mesh.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sources\aircraft.jpg" />
+    <Resource Include="Sources\wp6903522.jpg" />
+    <Resource Include="Sources\wp6903612.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

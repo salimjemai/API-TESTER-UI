@@ -604,7 +604,7 @@
       <ColumnDefinition Width="171*" />
     </Grid.ColumnDefinitions>
     <Grid.Background>
-      <ImageBrush ImageSource="C:\Users\sjemai\Desktop\WPF\GitApps\API-TESTER-UI\API-TESTER-UI\Sources\aircraft.jpg"
+      <ImageBrush ImageSource="..\Sources\aircraft.jpg"
                   Stretch="UniformToFill" />
     </Grid.Background>
     <Grid Grid.ColumnSpan="2">
