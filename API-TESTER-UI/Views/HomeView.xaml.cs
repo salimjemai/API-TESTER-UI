@@ -59,10 +59,6 @@ namespace API_TESTER_UI.Views
         private async void LoginButton_OnClick(object sender, RoutedEventArgs e)
         {
             LoginToSession login = new LoginToSession();
-
-            SqlServerConnection _Connection = new SqlServerConnection();
-
-            string connectionString = _Connection.GetConnectionString();
             //SqlConnection connection = new SqlConnection(connectionString);
 
 
@@ -86,7 +82,7 @@ namespace API_TESTER_UI.Views
                         int IsTokenValid = 1;
 
                         // Insert the session record into the DB
-                        _Connection.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
+                        DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
 
                         // hide main login window
                         this.Hide();
@@ -113,10 +109,6 @@ namespace API_TESTER_UI.Views
         private void loginButton2_Click(object sender, RoutedEventArgs e)
         {
             LoginToSession login = new LoginToSession();
-
-            SqlServerConnection _Connection = new SqlServerConnection();
-
-            string connectionString = _Connection.GetConnectionString();
             //SqlConnection connection = new SqlConnection(connectionString);
 
 
@@ -128,10 +120,10 @@ namespace API_TESTER_UI.Views
                 //_LoginID = LoginID.Text;
                 //_Password = LoginPasswordText.Password;
                 //_CwsUrl = cwsUrlText.Text;  
-                _SchemaAliasNameText = "QA12c_V11_UC_1";
+                _SchemaAliasNameText = "QA_MAINLINE_ENT1_19c";
                 _LoginID = "cati";
                 _Password = "PgacdE";
-                _CwsUrl = "http://192.168.201.121/CWS/";
+                _CwsUrl = "http://10.72.5.50/Mainline/CWS/";
 
                 if (schemaAliasNameText != null && LoginID != null && _Password != null && cwsUrlText != null)
                 {
@@ -143,7 +135,7 @@ namespace API_TESTER_UI.Views
                         int IsTokenValid = 1;
 
                         // Insert the session record into the DB
-                        _Connection.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
+                        DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
 
                         // hide main login window
                         this.Hide();

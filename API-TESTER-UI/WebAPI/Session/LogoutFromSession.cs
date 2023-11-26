@@ -52,25 +52,24 @@ namespace API_TESTER_UI.WebAPI.Session
             {
                 // get the token and CWS URL from the DB
                 // Open a connection to get the token info from the DB
-                SqlServerConnection _Connection = new SqlServerConnection();
-                string sqlQuery = "select Top(1) SessionToken, CwsUrl from Sessions order by DateCreated desc";
-                using (SqlDataReader selectSession = _Connection.SelectRecords(sqlQuery))
+                string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
+                using (var selectSession = DatabaseHelper.SelectRecords(sqlQuery))
                 {
 
                     while (selectSession.Read())
                     {
-                        token = selectSession["SessionToken"].ToString();
-                        cwsUrl = selectSession["CwsUrl"].ToString();
+                        token = selectSession.GetString(0);
+                        cwsUrl = selectSession.GetString(1);
                     }
 
                     var logoutResponse = Logout(token, cwsUrl);
 
                     if (logoutResponse.Contains("Success"))
                     {
-                        _Connection.DeleteSession(token);
+                        DatabaseHelper.DeleteSession(token);
                     }
 
-                    _Connection.closeConnection();
+                    DatabaseHelper.CloseConnection();
                     selectSession.Close();
                 }
                 MessageBox.Show("Successfully logged out!", "Logout", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -91,25 +90,24 @@ namespace API_TESTER_UI.WebAPI.Session
             {
                 // get the token and CWS URL from the DB
                 // Open a connection to get the token info from the DB
-                SqlServerConnection _Connection = new SqlServerConnection();
-                string sqlQuery = "select Top(1) SessionToken, CwsUrl from Sessions order by DateCreated desc";
-                using (SqlDataReader selectSession = _Connection.SelectRecords(sqlQuery))
+                string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
+                using (var selectSession = DatabaseHelper.SelectRecords(sqlQuery))
                 {
 
                     while (selectSession.Read())
                     {
-                        token = selectSession["SessionToken"].ToString();
-                        cwsUrl = selectSession["CwsUrl"].ToString();
+                        token = selectSession.GetString(0);
+                        cwsUrl = selectSession.GetString(1);
                     }
 
                     var logoutResponse = Logout(token, cwsUrl);
 
                     if (logoutResponse.Contains("Success"))
                     {
-                        _Connection.DeleteSession(token);
+                        DatabaseHelper.DeleteSession(token);
                     }
 
-                    _Connection.closeConnection();
+                    DatabaseHelper.CloseConnection();
                     selectSession.Close();
                 }
             }

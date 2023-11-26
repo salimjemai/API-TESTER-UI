@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CorridorNet.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="WorkOrderPath">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WorkOrderItemNumber" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="WorkOrderNumber" type="xs:long" />
+      <xs:element minOccurs="0" name="WorkOrderSquawkNumber" nillable="true" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="WorkOrderSteps" nillable="true" type="q1:ArrayOflong" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WorkOrderPath" nillable="true" type="tns:WorkOrderPath" />
+  <xs:complexType name="WorkOrderQuotePath">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WOQItemNumber" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="WOQNumber" type="xs:long" />
+      <xs:element minOccurs="0" name="WOQSquawkNumber" nillable="true" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="WOQSteps" nillable="true" type="q2:ArrayOflong" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WorkOrderQuotePath" nillable="true" type="tns:WorkOrderQuotePath" />
+  <xs:complexType name="ArrayOfWorkOrderPath">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WorkOrderPath" nillable="true" type="tns:WorkOrderPath" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWorkOrderPath" nillable="true" type="tns:ArrayOfWorkOrderPath" />
+</xs:schema>

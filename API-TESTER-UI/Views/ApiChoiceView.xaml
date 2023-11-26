@@ -9,490 +9,491 @@
       d:DesignWidth="800"
       Background="White"
       Title="Api Choice">
-  <Grid>
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>
-    <Grid.RowDefinitions>
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="*" />
-    </Grid.RowDefinitions>
-    <!--Toolbar Menu-->
-    <DockPanel>
-      <Menu DockPanel.Dock="Top">
-        <MenuItem Header="_File">
-          <MenuItem Header="_New" />
-          <MenuItem Header="_Open" />
-          <MenuItem Header="_Save" />
-          <Separator />
-          <MenuItem Header="_Exit"
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!--Toolbar Menu-->
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_New" />
+                    <MenuItem Header="_Open" />
+                    <MenuItem Header="_Save" />
+                    <Separator />
+                    <MenuItem Header="_Exit"
                     Click="MenuItemExit_Click" />
-        </MenuItem>
-        <MenuItem Header="_Edit">
-          <MenuItem Command="Cut" />
-          <MenuItem Command="Copy" />
-          <MenuItem Command="Paste" />
-        </MenuItem>
-        <MenuItem Header="_Session">
-          <MenuItem Header="_Logout"
+                </MenuItem>
+                <MenuItem Header="_Edit">
+                    <MenuItem Command="Cut" />
+                    <MenuItem Command="Copy" />
+                    <MenuItem Command="Paste" />
+                </MenuItem>
+                <MenuItem Header="_Session">
+                    <MenuItem Header="_Logout"
                     Click="MenuItemLogout_Click" />
-        </MenuItem>
-        <MenuItem Header="_About">
-          <MenuItem Header="_Help"
+                </MenuItem>
+                <MenuItem Header="_About">
+                    <MenuItem Header="_Help"
                     Click="MenuItemLogout_Click" />
-          <MenuItem Header="_Version"
+                    <MenuItem Header="_Version"
                     Click="MenuItemLogout_Click" />
-        </MenuItem>
-      </Menu>
-    </DockPanel>
-    <TabControl Margin="0 25 0 0"
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <TabControl Margin="0 25 0 0"
                 Grid.Column="0"
                 Grid.ColumnSpan="10"
                 Grid.RowSpan="10">
-      <!--Accounting Tab-->
-      <TabItem Header="Accounting">
-        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+            <!--Accounting Tab-->
+            <TabItem Header="Accounting">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto"
                       VerticalScrollBarVisibility="Auto">
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid Grid.Column="0"
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Column="0"
                   Grid.RowSpan="10"
                   Background="PaleGoldenrod"
                   Width="auto"
                   Margin="5" />
-            <Grid Grid.Column="1"
+                        <Grid Grid.Column="1"
                   Grid.RowSpan="10"
                   Background="Gainsboro"
                   Width="auto"
                   Margin="5" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="0"
                     Content="Clear WIP Request"
                     Padding="10"
                     Margin="10"
                     Click="ClearWIPButton_Click"/>
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="1"
                     Content="Disable All AutoPost Facilities Request"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="2"
                     Content="Disable AutoPost Facility Request"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="3"
                     Content="Enable All AutoPost Facilities Request"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="4"
                     Content="Enable AutoPost Facility Request"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="5"
                     Content="Process AutoPost Facility Request"
                     Padding="10"
                     Margin="10" />
-          </Grid>
-        </ScrollViewer>
-      </TabItem>
-      <!--Aircraft Ownership-->
-      <TabItem Header="Aircraft Ownership">
-        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <!--Aircraft Ownership-->
+            <TabItem Header="Aircraft Ownership">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto"
                       VerticalScrollBarVisibility="Auto">
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid Grid.Column="0"
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Column="0"
                   Grid.RowSpan="18"
                   Background="PaleGoldenrod"
                   Width="auto"
                   Margin="5" />
-            <Grid Grid.Column="1"
+                        <Grid Grid.Column="1"
                   Grid.RowSpan="18"
                   Background="Gainsboro"
                   Width="auto"
                   Margin="5" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="0"
                     Content="Add Or Update Aircraft"
                     Padding="6"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="1"
                     Content="Add Transaction"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="2"
                     Content="Change Hour Meter"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="3"
                     Content="Create Aircraft"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="4"
                     Content="Delete Transation"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="5"
                     Content="Flight Ops Update"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="6"
                     Content="Get Aircraft Data"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="7"
                     Content="Select Hour Meter"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="8"
                     Content="Select Transaction"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="9"
                     Content="Update Aircraft"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="10"
                     Content="Update Transaction"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="11"
                     Content="Add Or Update Aircraft Discrepancy"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="12"
                     Content="Create Aircraft Discrepancy"
                     Padding="10"
                     Margin="10" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="13"
                     Content="Update Aircraft Discrepancy"
                     Padding="10"
                     Margin="10" />
-          </Grid>
-        </ScrollViewer>
-      </TabItem>
-      <!--Company Database-->
-      <TabItem Header="Company Database">
-        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <!--Company Database-->
+            <TabItem Header="Company Database">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto"
                       VerticalScrollBarVisibility="Auto">
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid Grid.Column="0"
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Column="0"
                   Grid.RowSpan="28"
                   Background="PaleGoldenrod"
                   Width="Auto"
                   Margin="5,5,5,5" />
-            <Grid Grid.Column="1"
+                        <Grid Grid.Column="1"
                   Grid.RowSpan="26"
                   Background="Gainsboro"
                   Width="Auto"
                   Margin="5"
                   Grid.ColumnSpan="2">
-              <Frame x:Name="_GetAircraftsFrame"
+                            <Frame x:Name="_GetAircraftsFrame"
                      NavigationUIVisibility="Hidden" />
-            </Grid>
-            <StackPanel Orientation="Vertical">
-              <Button Grid.Column="0"
+                        </Grid>
+                        <StackPanel Orientation="Vertical">
+                            <Button Grid.Column="0"
                       Grid.Row="0"
                       Content="Add Address"
                       Padding="6"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="1"
                       Content="Add Company Data"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="2"
                       Content="Add Or Update Address"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="3"
                       Content="Add Or Update Company Data"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="4"
                       Content="Add Or Update Phone"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="5"
                       Content="Add Phone"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="6"
                       Content="Delete Address"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="7"
                       Content="Delete Phone"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="8"
                       Content="Get Address"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="9"
                       Content="Get Airports"
                       Padding="10"
                       Margin="10,10,10,10"
                       Click="GetAirportsButton_Click" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="10"
                       Content="Get Company Data"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="11"
                       Content="Get Countries"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="12"
                       Content="Get Credit Ratings"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="14"
                       Content="Get Credit Restrictions"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="15"
                       Content="Get Customer Classes"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="16"
                       Content="Get Phone"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="17"
                       Content="Get Regions"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="18"
                       Content="Get States"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="19"
                       Content="Get Time Zones"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="20"
                       Content="Inactivate Company"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="21"
                       Content="Reactivate Company"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="22"
                       Content="Update Address"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="23"
                       Content="Update Company Data"
                       Padding="10"
                       Margin="10,10,10,10" />
-              <Button Grid.Column="0"
+                            <Button Grid.Column="0"
                       Grid.Row="24"
                       Content="Update Phone"
                       Padding="10"
                       Margin="10,10,10,10" />
-            </StackPanel>
-          </Grid>
-        </ScrollViewer>
-      </TabItem>
-      <!--User Management Tab-->
-      <TabItem Header="User Management">
-        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <!--User Management Tab-->
+            <TabItem Header="User Management">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto"
                       VerticalScrollBarVisibility="Auto">
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid Grid.Column="0"
-                  Grid.RowSpan="14"
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="189*" />
+                            <ColumnDefinition Width="431*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Column="0"
+                  Grid.RowSpan="6"
                   Background="PaleGoldenrod"
                   Width="auto"
-                  Margin="5" />
-            <Grid Grid.Column="1"
-                  Grid.RowSpan="26"
+                  Margin="5,5,5,5" />
+                        <Grid Grid.Column="1"
+                  Grid.RowSpan="6"
                   Background="Gainsboro"
                   Width="Auto"
                   Margin="5"
                   Grid.ColumnSpan="2">
-              <Frame x:Name="_GetUserInputFrame"
-                     NavigationUIVisibility="Hidden" />
-              <Frame x:Name="_GetUserInfoFrame"
-                     NavigationUIVisibility="Hidden" />
-              <Frame x:Name="_UserManagementFrame"
-                     NavigationUIVisibility="Hidden" />
-              <Frame x:Name="_AddUserFrame"
-                     NavigationUIVisibility="Hidden" />
-              <Frame x:Name="_ChangeUserPasswordFrame"
-                     NavigationUIVisibility="Hidden" />
-              <Frame x:Name="_UpdateUserInfoFrame"
-                     NavigationUIVisibility="Hidden" />
-              <Frame x:Name="_ChangePermissionProfileFrame"
-                     NavigationUIVisibility="Hidden" />
-            </Grid>
-            <Button Grid.Column="0"
+                            <Frame x:Name="_GetUserInputFrame"
+                                    NavigationUIVisibility="Hidden" />
+                            <Frame x:Name="_GetUserInfoFrame"
+                                    NavigationUIVisibility="Hidden" />
+                            <Frame x:Name="_UserManagementFrame"
+                                    NavigationUIVisibility="Hidden" />
+                            <Frame x:Name="_AddUserFrame"
+                                    NavigationUIVisibility="Hidden" />
+                            <Frame x:Name="_ChangeUserPasswordFrame"
+                                    NavigationUIVisibility="Hidden" />
+                            <Frame x:Name="_UpdateUserInfoFrame"
+                                    NavigationUIVisibility="Hidden" />
+                            <Frame x:Name="_ChangePermissionProfileFrame"
+                                    NavigationUIVisibility="Hidden" />
+                        </Grid>
+                        <Button Grid.Column="0"
                     Grid.Row="0"
                     Content="Add User"
                     Padding="6"
-                    Margin="10" />
-            <Button Grid.Column="0"
+                    Margin="10,10,10,10" />
+                        <Button Grid.Column="0"
                     Grid.Row="1"
                     Content="Change User Passowrd"
                     Padding="10"
-                    Margin="10" />
-            <Button Grid.Column="0"
+                    Margin="10,10,10,10" />
+                        <Button Grid.Column="0"
                     Grid.Row="2"
                     Content="Create Permission Profile"
                     Padding="10"
-                    Margin="10" />
-            <Button Grid.Column="0"
+                    Margin="10,10,10,10" />
+                        <Button Grid.Column="0"
                     Grid.Row="3"
                     Content="Display User Info"
                     Padding="10"
-                    Margin="10"
+                    Margin="10,10,10,10"
                     x:Name="GetUserInfoPage"
                     Click="GetUserInfoPage_Click" />
-            <Button Grid.Column="0"
+                        <Button Grid.Column="0"
                     Grid.Row="4"
                     Content="Update User"
                     Padding="10"
-                    Margin="10" />
-            <Grid Grid.Column="1"
-                  Grid.RowSpan="6"></Grid>
-          </Grid>
-        </ScrollViewer>
-      </TabItem>
-    </TabControl>
-    <!--<Frame x:Name="_UserManagementFrame" NavigationUIVisibility="Hidden" />
+                    Margin="10,10,10,10" Click="UpdateUserInfoPage_Click" />
+                        <Grid Grid.Column="1"
+                  Grid.RowSpan="6" Grid.ColumnSpan="2"></Grid>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+        <!--<Frame x:Name="_UserManagementFrame" NavigationUIVisibility="Hidden" />
     <Frame x:Name="_GetUserInfoFrame" NavigationUIVisibility="Hidden" />
     <Frame x:Name="_AddUserFrame" NavigationUIVisibility="Hidden" />
     <Frame x:Name="_ChangeUserPasswordFrame" NavigationUIVisibility="Hidden" />
     <Frame x:Name="_UpdateUserInfoFrame" NavigationUIVisibility="Hidden" />
     <Frame x:Name="_ChangePermissionProfileFrame" NavigationUIVisibility="Hidden" />-->
-  </Grid>
+    </Grid>
 </Window>

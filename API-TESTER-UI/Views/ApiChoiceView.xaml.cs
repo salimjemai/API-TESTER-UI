@@ -46,7 +46,15 @@ namespace API_TESTER_UI.Views
         private void GetUserInfoPage_Click(object sender, RoutedEventArgs e)
         {
             _GetUserInputFrame.Content = new GetUser();
+            _UpdateUserInfoFrame.Content = null;
         }
+
+        private void UpdateUserInfoPage_Click(object sender, RoutedEventArgs e)
+        {
+            _UpdateUserInfoFrame.Content = new UpdateUser();
+            _GetUserInputFrame.Content = null;
+        }
+        
 
         //private void LogoutButton_Click(object sender, RoutedEventArgs e)
         //{
@@ -110,6 +118,11 @@ namespace API_TESTER_UI.Views
         }
 
         private void ClearWIPButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }

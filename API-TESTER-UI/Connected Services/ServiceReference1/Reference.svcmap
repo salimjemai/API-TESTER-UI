@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="c1bf5fc5-a296-4946-92f7-2e535b7c7e4a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IRitaWcf.xsd" MetadataType="Schema" ID="e678b2ab-5d58-46f5-af60-660e6650d904" SourceId="1" SourceUrl="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd4" />
+    <MetadataFile FileName="IRitaWcf1.xsd" MetadataType="Schema" ID="26a4258d-fa57-4e9d-8472-d7709a49df7c" SourceId="1" SourceUrl="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd2" />
+    <MetadataFile FileName="RitaWcf.wsdl" MetadataType="Wsdl" ID="60f7442c-971d-41a0-b379-4cc1225276ca" SourceId="1" SourceUrl="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?wsdl" />
+    <MetadataFile FileName="IRitaWcf2.xsd" MetadataType="Schema" ID="8a178ca9-d8ef-4621-a8dd-fc4d57d5e473" SourceId="1" SourceUrl="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd1" />
+    <MetadataFile FileName="IRitaWcf3.xsd" MetadataType="Schema" ID="d6401415-e2fe-4336-9508-aecb167a996b" SourceId="1" SourceUrl="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd0" />
+    <MetadataFile FileName="IRitaWcf4.xsd" MetadataType="Schema" ID="b71cb0f9-9687-4761-b215-903ac18776d5" SourceId="1" SourceUrl="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml;
+using System.Data.SQLite;
 
 namespace API_TESTER_UI.Pages.CompanyDatabase
 {
@@ -32,15 +33,14 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
                 GetAirportsReq getAirports = new GetAirportsReq();
 
                 // Open a connection to get the token info from the DB
-                SqlServerConnection _Connection = new SqlServerConnection();
-                string sqlQuery = "select Top(1) SessionToken, CwsUrl from Sessions order by DateCreated desc";
-                using (SqlDataReader selectSession = _Connection.SelectRecords(sqlQuery))
+                string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
+                using (var selectSession = DatabaseHelper.SelectRecords(sqlQuery))
                 {
 
                     while (selectSession.Read())
                     {
-                        token = selectSession["SessionToken"].ToString();
-                        cwsUrl = selectSession["CwsUrl"].ToString();
+                        token = selectSession.GetString(0);
+                        cwsUrl = selectSession.GetString(1);
                     }
 
                     if (token != null && cwsUrl != null)
@@ -52,7 +52,6 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
                         foreach(var airport in AirportsList)
                         {
                             air.Add(new Airports { Airport = airport});
-
                         }
 
                         AirportsGrid.ItemsSource = air;

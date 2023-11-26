@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://corridor.aero/cws/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://corridor.aero/cws/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://corridor.aero/cws/">
+      <s:element name="AddUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userData" type="tns:UserManagementData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserManagementData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Fullname" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserBadgeID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CorridorIDEmail" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AccessCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ActiveDirectoryName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserPermissionsProfile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserDefinedFields" type="tns:ArrayOfUserDefinedField" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultScreen" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="PurchaseLimit" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="LaborCost" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="RegularCost" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="OvertimeCost" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="DoubleTimeCost" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="RegularBurdenCost" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="OvertimeBurdenCost" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="DoubleTimeBurdenCost" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" name="RegularLaborAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OvertimeLaborAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DoubleTimeLaborAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LaborBurdenAccountNumber" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="CorridorIDRequired" nillable="true" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="MustChangePassword" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="MustChangeAccessCode" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="CannotChangePassword" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="AccountDisabled" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="Locator" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="SuspendLocator" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="CanSelectLocator" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="CanSelectToVendorLot" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="ReceivingInspector" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="TipOfDay" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="LargeButtons" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="DisablePersistence" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="DefaultIncludeFuelActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="OnlyIncludeFuelActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="DefaultIncludeServiceActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="OnlyIncludeServiceActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="DefaultIncludePartSaleActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="OnlyIncludePartSaleActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="DefaultIncludeCateringActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="OnlyIncludeCateringActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="DefaultIncludeHotelActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="OnlyIncludeHotelActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="DefaultIncludeTransportationActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="OnlyIncludeTransportationActivity" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="LaunchLogbookResearch" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="CanEnterCompliance" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IncludeAllDefaultLogbookSearchCriteria" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="OnlyDisplayAssignedInWOQMgmt" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CorridorLoginData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AliasName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SessionToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Auth0Token" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUserDefinedField">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UserDefinedField" nillable="true" type="tns:UserDefinedField" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UserDefinedField">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Label" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddUserResult" type="tns:UserManagementReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserManagementReferenceOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CorridorStatusData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessages" type="tns:ArrayOfErrorMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfErrorMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ErrorMessage" nillable="true" type="tns:ErrorMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ErrorMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userData" type="tns:UserManagementUpdateData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserManagementUpdateData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:UserManagementData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="NewUsername" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="UpdateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateUserResult" type="tns:UserManagementReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrEditUserRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userData" type="tns:UserManagemenAddOrUpdateData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserManagemenAddOrUpdateData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:UserManagementData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="NewUsername" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="AddOrEditUserRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOrEditUserRequestResult" type="tns:UserManagementReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userReference" type="tns:UserManagementReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserManagementReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserResult" type="tns:UserManagementDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserManagementDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="UserKey" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="PurchaseLimit" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RegularCost" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OvertimeCost" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DoubleTimeCost" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RegularBurdenCost" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OvertimeBurdenCost" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DoubleTimeBurdenCost" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Fullname" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserBadgeID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CorridorIDEmail" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="CorridorIDRequired" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="ActiveDirectoryName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserPermissionsProfile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserDefinedFields" type="tns:ArrayOfUserDefinedField" />
+              <s:element minOccurs="0" maxOccurs="1" name="RegularLaborAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OvertimeLaborAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DoubleTimeLaborAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LaborBurdenAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultScreen" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="MustChangePassword" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="CannotChangePassword" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="AccountDisabled" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Locator" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="SuspendLocator" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="CanSelectLocator" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="CanSelectToVendorLot" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="ReceivingInspector" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="TipOfDay" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="LargeButtons" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="DisablePersistence" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="DefaultIncludeFuelActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="OnlyIncludeFuelActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="DefaultIncludeServiceActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="OnlyIncludeServiceActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="DefaultIncludePartSaleActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="OnlyIncludePartSaleActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="DefaultIncludeCateringActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="OnlyIncludeCateringActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="DefaultIncludeHotelActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="OnlyIncludeHotelActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="DefaultIncludeTransportationActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="OnlyIncludeTransportationActivity" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="LaunchLogbookResearch" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="CanEnterCompliance" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IncludeAllDefaultLogbookSearchCriteria" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ChangeUserPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userPasswdData" type="tns:UserManagementChangePasswordInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserManagementChangePasswordInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NewPassword" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ChangeUserPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangeUserPasswordResult" type="tns:UserManagementReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreatePermissionsProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userCreateProfileData" type="tns:UserManagementCreatePermissionsProfileInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserManagementCreatePermissionsProfileInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:UserManagementReferenceInput">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CreatePermissionsProfileName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="SetUserPermissionsProfileToNew" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="CreatePermissionsProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreatePermissionsProfileResult" type="tns:UserManagementReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddUserSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUser" />
+  </wsdl:message>
+  <wsdl:message name="AddUserSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrEditUserRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrEditUserRequest" />
+  </wsdl:message>
+  <wsdl:message name="AddOrEditUserRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrEditUserRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUser" />
+  </wsdl:message>
+  <wsdl:message name="GetUserSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeUserPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeUserPassword" />
+  </wsdl:message>
+  <wsdl:message name="ChangeUserPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeUserPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreatePermissionsProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:CreatePermissionsProfile" />
+  </wsdl:message>
+  <wsdl:message name="CreatePermissionsProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:CreatePermissionsProfileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UserManagementSoap">
+    <wsdl:operation name="AddUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add user</wsdl:documentation>
+      <wsdl:input message="tns:AddUserSoapIn" />
+      <wsdl:output message="tns:AddUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to update user</wsdl:documentation>
+      <wsdl:input message="tns:UpdateUserSoapIn" />
+      <wsdl:output message="tns:UpdateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrEditUserRequest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add or update user</wsdl:documentation>
+      <wsdl:input message="tns:AddOrEditUserRequestSoapIn" />
+      <wsdl:output message="tns:AddOrEditUserRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to get a user</wsdl:documentation>
+      <wsdl:input message="tns:GetUserSoapIn" />
+      <wsdl:output message="tns:GetUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeUserPassword">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to change a users password</wsdl:documentation>
+      <wsdl:input message="tns:ChangeUserPasswordSoapIn" />
+      <wsdl:output message="tns:ChangeUserPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePermissionsProfile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to change a users password</wsdl:documentation>
+      <wsdl:input message="tns:CreatePermissionsProfileSoapIn" />
+      <wsdl:output message="tns:CreatePermissionsProfileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserManagementSoap" type="tns:UserManagementSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddUser">
+      <soap:operation soapAction="http://corridor.aero/cws/AddUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://corridor.aero/cws/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrEditUserRequest">
+      <soap:operation soapAction="http://corridor.aero/cws/AddOrEditUserRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <soap:operation soapAction="http://corridor.aero/cws/GetUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeUserPassword">
+      <soap:operation soapAction="http://corridor.aero/cws/ChangeUserPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePermissionsProfile">
+      <soap:operation soapAction="http://corridor.aero/cws/CreatePermissionsProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UserManagementSoap12" type="tns:UserManagementSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddUser">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap12:operation soapAction="http://corridor.aero/cws/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrEditUserRequest">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddOrEditUserRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeUserPassword">
+      <soap12:operation soapAction="http://corridor.aero/cws/ChangeUserPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePermissionsProfile">
+      <soap12:operation soapAction="http://corridor.aero/cws/CreatePermissionsProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserManagement">
+    <wsdl:port name="UserManagementSoap" binding="tns:UserManagementSoap">
+      <soap:address location="http://10.72.5.50/Mainline/CWS/UserManagement.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UserManagementSoap12" binding="tns:UserManagementSoap12">
+      <soap12:address location="http://10.72.5.50/Mainline/CWS/UserManagement.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -9,30 +9,30 @@
       d:DesignWidth="800"
       Background="White"
       Title="GetUser">
-  <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>
-    <Grid.RowDefinitions>
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="*" />
-    </Grid.RowDefinitions>
-    
-    <StackPanel Grid.Row="0" Grid.ColumnSpan="10" Orientation="Horizontal">
-      <TextBlock Grid.Column="1"
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="10" Orientation="Horizontal">
+            <TextBlock Grid.Column="1"
                  Grid.Row="2"
                  Width="Auto"
                  Text="User Name"
@@ -41,26 +41,46 @@
                  FontWeight="Bold"
                  Margin="0,8,0,15"
                  Foreground="Black" />
-      <TextBox x:Name="userName"
+            <TextBox x:Name="userName"
                Width="150"
                Margin="10,8,0,15"
                HorizontalAlignment="Left"/>
-      <Button Content="Submit"
+            <Button Content="Submit"
               FontWeight="Bold"
               Width="125"
               Height="30"
               Padding="5"
-              Margin="30 5 10 10"
               Click="SubmitGetUser_Click" />
-      <Button Content="Clear"
+            <Button Content="Clear"
               FontWeight="Bold"
               Width="125"
               Height="30"
               Padding="5"
               Margin="30 5 10 10" 
               Click="ClearForm_Click"/>
-    </StackPanel>
-    
-    
-  </Grid>
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="8" Grid.Row="7" >
+            <ScrollViewer Grid.Column="7" Grid.Row="7">
+                <DataGrid x:Name="UserDataGridView" AutoGenerateColumns="True" Background="Beige" Height="380"/>
+            </ScrollViewer>
+        </StackPanel>
+
+
+        <!--<TreeView Grid.Column="7" 
+                  Grid.Row="7" 
+                  FontSize="21" 
+                  ItemsSource="{Binding Source={StaticResource XMLDP}, XPath=*/*}">
+            <TreeView.ItemTemplate>
+                <DataTemplate>
+                    <TreeViewItem Header="{Binding XPath=GetUserResult}">
+                        <StackPanel>
+                            <TextBlock Text="{Binding XPath=*/*}" />
+                        </StackPanel>
+                    </TreeViewItem>
+                </DataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>-->
+
+
+    </Grid>
 </Page>

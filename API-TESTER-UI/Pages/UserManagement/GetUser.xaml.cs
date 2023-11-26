@@ -1,26 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Linq;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Xml;
-using API_TESTER_UI;
+using System.Xml.Serialization;
 using API_TESTER_UI.Database;
+using API_TESTER_UI.Models.UserManagement;
+using API_TESTER_UI.SessionWebReference;
 using API_TESTER_UI.WebAPI;
-using Ubiety.Dns.Core;
+using DevExpress.Mvvm.Native;
 
 namespace API_TESTER_UI.Pages.UserManagement
 {
@@ -29,6 +17,8 @@ namespace API_TESTER_UI.Pages.UserManagement
     /// </summary>
     public partial class GetUser : Page
     {
+        private static XmlSerializer m_xmlSerializer = new XmlSerializer(typeof(UserDeatils));
+
         public GetUser()
         {
             InitializeComponent();
@@ -36,52 +26,51 @@ namespace API_TESTER_UI.Pages.UserManagement
 
         private void SubmitGetUser_Click(object sender, RoutedEventArgs e)
         {
-            bool isUserNameEmpty = false;
             var token = string.Empty;
             var cwsUrl = string.Empty;
-            var userCalledApi = string.Empty;
             try
             {
-               XmlDocument response;
+            
                GetUserReq getUserApi = new GetUserReq();
 
                 // Open a connection to get the token info from the DB
-                SqlServerConnection _Connection = new SqlServerConnection();
-                string sqlQuery = "select Top(1) SessionToken, CwsUrl from Sessions order by DateCreated desc";
-                using (SqlDataReader selectSession = _Connection.SelectRecords(sqlQuery))
+                string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
+                using (var selectSession = DatabaseHelper.SelectRecords(sqlQuery))
                 {
 
                     while (selectSession.Read())
                     {
-                        token = selectSession["SessionToken"].ToString();
-                        cwsUrl = selectSession["CwsUrl"].ToString();
+                        token = selectSession.GetString(0);
+                        cwsUrl = selectSession.GetString(1);
                     }
 
-                    isUserNameEmpty = userName.Text.Length > 0 ? false:true;
+                    var isUserNameEmpty = userName.Text.Length > 0 ? false:true;
 
                     if (token != null  && cwsUrl != null)
                     {
-                        switch(isUserNameEmpty)
+                        // call web service 
+                        SessionWebReference.UserManagement userManagement = new SessionWebReference.UserManagement();
+                        UserManagementReferenceInput userManagementReference = new UserManagementReferenceInput
                         {
-                            case true:
-                                MessageBox.Show("User name cannot be empty", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
-                                break;
-
-                            case false:
-                                response = getUserApi.GetUserInfo(userName.Text, token, cwsUrl);
-                                break;
-
+                            Username = userName.Text,
+                            SessionToken = token
+                        };
+                        var fak = userManagement.GetUser(userManagementReference);
+                        if (fak.StatusMessage.Equals("Failed"))
+                        {
+                            MessageBox.Show($"{fak.ErrorMessages.FirstOrDefault().ErrorText}", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
+                            return;
                         }
+                        IEnumerable<UserManagementDataOutput> userManagementDataOutputs = fak.YieldToArray();
+                        UserDataGridView.ItemsSource = userManagementDataOutputs;
                     }
 
                     else
                     {
                         MessageBox.Show("Error occurred while getting the session token info.", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
-
                     }
                 }
-                // need to close the connection here
-                //_Connection.closeConnection();
+                
             }
             catch (Exception exc)
             {
@@ -91,8 +80,12 @@ namespace API_TESTER_UI.Pages.UserManagement
 
         private void ClearForm_Click(object sender, RoutedEventArgs e)
         {
-            this.Content = null;
-            PageContent pageContent = new PageContent();
+            UserDataGridView.ItemsSource = null;
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 

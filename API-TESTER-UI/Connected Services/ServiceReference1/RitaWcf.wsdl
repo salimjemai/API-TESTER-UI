@@ -1,0 +1,2910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="RitaWcf" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api" />
+      <xsd:import schemaLocation="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common" />
+      <xsd:import schemaLocation="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRitaWcf_UpdateWoSquawkPartAssembly_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWoSquawkPartAssembly" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWoSquawkPartAssembly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWoSquawkPartAssemblyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWoPartAssembly_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWoPartAssembly" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWoPartAssembly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWoPartAssemblyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWoPartAssembly_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWoPartAssembly" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWoPartAssembly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWoPartAssemblyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAFunctionalTest_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAFunctionalTest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAFunctionalTest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAFunctionalTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandAFunctionalTest_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandAFunctionalTest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandAFunctionalTest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandAFunctionalTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAFunctionalTestInspect_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAFunctionalTestInspect" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAFunctionalTestInspect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAFunctionalTestInspectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandAFunctionalTestInspect_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandAFunctionalTestInspect" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandAFunctionalTestInspect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandAFunctionalTestInspectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandARemoval_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandARemoval" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandARemoval_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandARemovalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSqauwkPandARemoval_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSqauwkPandARemoval" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSqauwkPandARemoval_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSqauwkPandARemovalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAInstall_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAInstall" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAInstall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAInstallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandAInstall_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandAInstall" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandAInstall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandAInstallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAInstallInspected_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAInstallInspected" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAInstallInspected_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAInstallInspectedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandAInstallInspected_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandAInstallInspected" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandAInstallInspected_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandAInstallInspectedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandALeakCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandALeakCheck" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandALeakCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandALeakCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandALeakCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandALeakCheck" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandALeakCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandALeakCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandALeakCheckInspection_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandALeakCheckInspection" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandALeakCheckInspection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandALeakCheckInspectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandALeakCheckInspect_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandALeakCheckInspect" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandALeakCheckInspect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandALeakCheckInspectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAOpsCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAOpsCheck" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAOpsCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAOpsCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSqauwkPandAOpsCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSqauwkPandAOpsCheck" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSqauwkPandAOpsCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSqauwkPandAOpsCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAOpsCheckInspect_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAOpsCheckInspect" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoPandAOpsCheckInspect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoPandAOpsCheckInspectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandAOpsCheckInspect_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandAOpsCheckInspect" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetWoSquawkPandAOpsCheckInspect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetWoSquawkPandAOpsCheckInspectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ApproveWorkOrderQuote_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveWorkOrderQuote" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ApproveWorkOrderQuote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveWorkOrderQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RejectWorkOrderQuote_InputMessage">
+    <wsdl:part name="parameters" element="tns:RejectWorkOrderQuote" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RejectWorkOrderQuote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RejectWorkOrderQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnapproveWorkOrderQuote_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnapproveWorkOrderQuote" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnapproveWorkOrderQuote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnapproveWorkOrderQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnrejectWorkOrderQuote_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnrejectWorkOrderQuote" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnrejectWorkOrderQuote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnrejectWorkOrderQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAFunctionalTest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAFunctionalTest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAFunctionalTest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAFunctionalTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandAFunctionalTest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandAFunctionalTest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandAFunctionalTest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandAFunctionalTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAFunctionalTestInspect_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAFunctionalTestInspect" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAFunctionalTestInspect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAFunctionalTestInspectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandAFunctionalTestInspect_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandAFunctionalTestInspect" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandAFunctionalTestInspect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandAFunctionalTestInspectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandARemoval_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandARemoval" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandARemoval_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandARemovalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSqauwkPandARemoval_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSqauwkPandARemoval" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSqauwkPandARemoval_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSqauwkPandARemovalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAInstall_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAInstall" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAInstall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAInstallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandAInstall_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandAInstall" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandAInstall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandAInstallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAInstallInspected_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAInstallInspected" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAInstallInspected_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAInstallInspectedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandAInstallInspected_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandAInstallInspected" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandAInstallInspected_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandAInstallInspectedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandALeakCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandALeakCheck" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandALeakCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandALeakCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandALeakCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandALeakCheck" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandALeakCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandALeakCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandALeakCheckInspection_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandALeakCheckInspection" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandALeakCheckInspection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandALeakCheckInspectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandALeakCheckInspect_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandALeakCheckInspect" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandALeakCheckInspect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandALeakCheckInspectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAOpsCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAOpsCheck" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAOpsCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAOpsCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSqauwkPandAOpsCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSqauwkPandAOpsCheck" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSqauwkPandAOpsCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSqauwkPandAOpsCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAOpsCheckInspect_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAOpsCheckInspect" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoPandAOpsCheckInspect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoPandAOpsCheckInspectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandAOpsCheckInspect_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandAOpsCheckInspect" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnSetWoSquawkPandAOpsCheckInspect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnSetWoSquawkPandAOpsCheckInspectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DeleteWoPartsAssembly_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWoPartsAssembly" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DeleteWoPartsAssembly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWoPartsAssemblyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_LinkPartsAssembly_InputMessage">
+    <wsdl:part name="parameters" element="tns:LinkPartsAssembly" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_LinkPartsAssembly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LinkPartsAssemblyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnLinkPartsAssembly_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnLinkPartsAssembly" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UnLinkPartsAssembly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnLinkPartsAssemblyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AcceptInspectedPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:AcceptInspectedPart" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AcceptInspectedPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AcceptInspectedPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ReturnInspectedPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnInspectedPart" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ReturnInspectedPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnInspectedPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DisposeInspectedPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisposeInspectedPart" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DisposeInspectedPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisposeInspectedPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ReceiptHoldCodes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReceiptHoldCodes" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ReceiptHoldCodes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReceiptHoldCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetActiveCycleCounts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveCycleCounts" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetActiveCycleCounts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveCycleCountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetCycleCountParts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCountParts" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetCycleCountParts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCountPartsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_PrintPartLabels_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintPartLabels" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_PrintPartLabels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintPartLabelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddLot_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddLot" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddLot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddLotResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateLot_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLot" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateLot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLotResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddVendorQuote_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddVendorQuote" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddVendorQuote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddVendorQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateVendorQuote_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVendorQuote" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateVendorQuote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVendorQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWarehouseBin_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWarehouseBin" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWarehouseBin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWarehouseBinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateDeliveryPickTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDeliveryPickTicket" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateDeliveryPickTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDeliveryPickTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddOrUpdateCannedSquawkResolution_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateCannedSquawkResolution" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddOrUpdateCannedSquawkResolution_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateCannedSquawkResolutionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddOrUpdateCannedSquawkCompliance_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateCannedSquawkCompliance" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddOrUpdateCannedSquawkCompliance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateCannedSquawkComplianceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddOrUpdateCannedSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateCannedSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddOrUpdateCannedSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateCannedSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetContractPrice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractPrice" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetContractPrice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContractPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddOrUpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddOrUpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUser" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSOFromSOQRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSOFromSOQRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSOFromSOQRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSOFromSOQRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CheckPermissions_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPermissions" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CheckPermissions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPermissionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CheckVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckVersion" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CheckVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_EndSession_InputMessage">
+    <wsdl:part name="parameters" element="tns:EndSession" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_EndSession_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EndSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetDateFormat_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDateFormat" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetDateFormat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDateFormatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetDefaults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefaults" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetDefaults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefaultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetRitaPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRitaPassword" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetRitaPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRitaPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetRitaPasswordExt_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRitaPasswordExt" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetRitaPasswordExt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRitaPasswordExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetTimeFormat_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeFormat" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetTimeFormat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeFormatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_IsValid_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsValid" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_IsValid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsValidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ProcessRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ProcessRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_StartSessionA_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartSessionA" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_StartSessionA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartSessionAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_StartSessionB_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartSessionB" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_StartSessionB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartSessionBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_StartSessionAuth0B_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartSessionAuth0B" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_StartSessionAuth0B_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartSessionAuth0BResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CheckWarnings_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckWarnings" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CheckWarnings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckWarningsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddPurchaseOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPurchaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddPurchaseOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPurchaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSalesOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSalesOrder" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSalesOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSalesOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSalesOrderQuoteHeader_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSalesOrderQuoteHeader" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSalesOrderQuoteHeader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSalesOrderQuoteHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateSalesOrderQuoteHeader_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSalesOrderQuoteHeader" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateSalesOrderQuoteHeader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSalesOrderQuoteHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SelectSalesOrderQuoteHeaderRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSalesOrderQuoteHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SelectSalesOrderQuoteHeaderRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSalesOrderQuoteHeaderRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CancelSalesOrderQuoteHeaderRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelSalesOrderQuoteHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CancelSalesOrderQuoteHeaderRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelSalesOrderQuoteHeaderRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSOQPartDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSOQPartDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSOQPartDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSOQPartDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateSOQPartDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSOQPartDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateSOQPartDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSOQPartDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SelectSOQPartDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSOQPartDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SelectSOQPartDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSOQPartDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSOQRequestedPartDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSOQRequestedPartDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSOQRequestedPartDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSOQRequestedPartDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateSOQRequestedPartDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSOQRequestedPartDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateSOQRequestedPartDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSOQRequestedPartDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SelectSOQRequestedPartDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSOQRequestedPartDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SelectSOQRequestedPartDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSOQRequestedPartDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CancelSOQRequestedPartDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelSOQRequestedPartDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CancelSOQRequestedPartDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelSOQRequestedPartDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSOQPartQuotedDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSOQPartQuotedDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddSOQPartQuotedDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSOQPartQuotedDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateSOQPartQuotedDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSOQPartQuotedDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateSOQPartQuotedDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSOQPartQuotedDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SelectSOQPartQuotedDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSOQPartQuotedDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SelectSOQPartQuotedDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSOQPartQuotedDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CancelSOQPartQuotedDetailRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelSOQPartQuotedDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CancelSOQPartQuotedDetailRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelSOQPartQuotedDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrder" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderItem" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderQuoteItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderQuoteItem" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderQuoteItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderQuoteItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderQuoteSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderQuoteSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderQuoteSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderQuoteSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrderSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrderSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SignOffWorkOrderSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignOffWorkOrderSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SignOffWorkOrderSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignOffWorkOrderSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveSignOffSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveSignOffSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveSignOffSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveSignOffSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SignOffWorkOrderStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignOffWorkOrderStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SignOffWorkOrderStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignOffWorkOrderStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveSignOffStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveSignOffStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveSignOffStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveSignOffStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_InspectWorkOrderSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:InspectWorkOrderSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_InspectWorkOrderSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InspectWorkOrderSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_InspectWorkOrderStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:InspectWorkOrderStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_InspectWorkOrderStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InspectWorkOrderStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveInspectSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveInspectSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveInspectSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveInspectSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveInspectStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveInspectStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveInspectStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveInspectStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DoubleInspectWorkOrderSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoubleInspectWorkOrderSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DoubleInspectWorkOrderSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoubleInspectWorkOrderSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DoubleInspectWorkOrderStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoubleInspectWorkOrderStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DoubleInspectWorkOrderStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoubleInspectWorkOrderStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveDoubleInspectSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveDoubleInspectSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveDoubleInspectSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveDoubleInspectSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveDoubleInspectStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveDoubleInspectStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveDoubleInspectStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveDoubleInspectStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_FunctionalTestWorkOrderSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:FunctionalTestWorkOrderSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_FunctionalTestWorkOrderSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FunctionalTestWorkOrderSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_FunctionalTestWorkOrderStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:FunctionalTestWorkOrderStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_FunctionalTestWorkOrderStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FunctionalTestWorkOrderStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveFunctionalTestSquawk_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveFunctionalTestSquawk" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveFunctionalTestSquawk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveFunctionalTestSquawkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveFunctionalTestStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveFunctionalTestStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_RemoveFunctionalTestStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveFunctionalTestStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrderStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrderStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AbortWorkOrderStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:AbortWorkOrderStep" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AbortWorkOrderStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AbortWorkOrderStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ClockIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClockIn" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ClockIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClockInResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ClockOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClockOut" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ClockOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClockOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderLabor_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderLabor" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderLabor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderLaborResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrderLabor_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderLabor" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrderLabor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderLaborResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderPart" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrderPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderPart" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrderPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderService_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderService" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrderService_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderService" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrderService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderSquawkAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderSquawkAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderSquawkAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderSquawkAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DeleteWorkOrderSquawkAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkOrderSquawkAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DeleteWorkOrderSquawkAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkOrderSquawkAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderStepAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderStepAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWorkOrderStepAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWorkOrderStepAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DeleteWorkOrderStepAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkOrderStepAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DeleteWorkOrderStepAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkOrderStepAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_StartWorkOrderBulkLabor_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartWorkOrderBulkLabor" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_StartWorkOrderBulkLabor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartWorkOrderBulkLaborResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_EndWorkOrderBulkLabor_InputMessage">
+    <wsdl:part name="parameters" element="tns:EndWorkOrderBulkLabor" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_EndWorkOrderBulkLabor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EndWorkOrderBulkLaborResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_FillWorkOrderPartDemandFromInventory_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillWorkOrderPartDemandFromInventory" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_FillWorkOrderPartDemandFromInventory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillWorkOrderPartDemandFromInventoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CreatePartRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePartRequest" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_CreatePartRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePartRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_BatchDeliverPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:BatchDeliverPart" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_BatchDeliverPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BatchDeliverPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DeliverPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeliverPart" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DeliverPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeliverPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrder" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_UpdateWorkOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetPurchasedRequirements_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetPurchasedRequirements" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SetPurchasedRequirements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetPurchasedRequirementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCompany" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompany" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_GetCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SignoutTool_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignoutTool" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SignoutTool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignoutToolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SigninTool_InputMessage">
+    <wsdl:part name="parameters" element="tns:SigninTool" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_SigninTool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SigninToolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ReceivePart_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReceivePart" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ReceivePart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReceivePartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ReceiveUnexpected_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReceiveUnexpected" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_ReceiveUnexpected_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReceiveUnexpectedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_EnterCycleCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnterCycleCount" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_EnterCycleCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnterCycleCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DeletePartAssembly_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePartAssembly" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_DeletePartAssembly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePartAssemblyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWoSquawkPartAssembly_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWoSquawkPartAssembly" />
+  </wsdl:message>
+  <wsdl:message name="IRitaWcf_AddWoSquawkPartAssembly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWoSquawkPartAssemblyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRitaWcf">
+    <wsdl:operation name="UpdateWoSquawkPartAssembly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWoSquawkPartAssembly" message="tns:IRitaWcf_UpdateWoSquawkPartAssembly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWoSquawkPartAssemblyResponse" message="tns:IRitaWcf_UpdateWoSquawkPartAssembly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWoPartAssembly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWoPartAssembly" message="tns:IRitaWcf_AddWoPartAssembly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWoPartAssemblyResponse" message="tns:IRitaWcf_AddWoPartAssembly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWoPartAssembly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWoPartAssembly" message="tns:IRitaWcf_UpdateWoPartAssembly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWoPartAssemblyResponse" message="tns:IRitaWcf_UpdateWoPartAssembly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAFunctionalTest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTest" message="tns:IRitaWcf_SetWoPandAFunctionalTest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTestResponse" message="tns:IRitaWcf_SetWoPandAFunctionalTest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandAFunctionalTest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTest" message="tns:IRitaWcf_SetWoSquawkPandAFunctionalTest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTestResponse" message="tns:IRitaWcf_SetWoSquawkPandAFunctionalTest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAFunctionalTestInspect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTestInspect" message="tns:IRitaWcf_SetWoPandAFunctionalTestInspect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTestInspectResponse" message="tns:IRitaWcf_SetWoPandAFunctionalTestInspect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandAFunctionalTestInspect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTestInspect" message="tns:IRitaWcf_SetWoSquawkPandAFunctionalTestInspect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTestInspectResponse" message="tns:IRitaWcf_SetWoSquawkPandAFunctionalTestInspect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandARemoval">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandARemoval" message="tns:IRitaWcf_SetWoPandARemoval_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandARemovalResponse" message="tns:IRitaWcf_SetWoPandARemoval_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSqauwkPandARemoval">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSqauwkPandARemoval" message="tns:IRitaWcf_SetWoSqauwkPandARemoval_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSqauwkPandARemovalResponse" message="tns:IRitaWcf_SetWoSqauwkPandARemoval_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAInstall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAInstall" message="tns:IRitaWcf_SetWoPandAInstall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAInstallResponse" message="tns:IRitaWcf_SetWoPandAInstall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandAInstall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstall" message="tns:IRitaWcf_SetWoSquawkPandAInstall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstallResponse" message="tns:IRitaWcf_SetWoSquawkPandAInstall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAInstallInspected">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAInstallInspected" message="tns:IRitaWcf_SetWoPandAInstallInspected_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAInstallInspectedResponse" message="tns:IRitaWcf_SetWoPandAInstallInspected_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandAInstallInspected">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstallInspected" message="tns:IRitaWcf_SetWoSquawkPandAInstallInspected_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstallInspectedResponse" message="tns:IRitaWcf_SetWoSquawkPandAInstallInspected_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandALeakCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandALeakCheck" message="tns:IRitaWcf_SetWoPandALeakCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandALeakCheckResponse" message="tns:IRitaWcf_SetWoPandALeakCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandALeakCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheck" message="tns:IRitaWcf_SetWoSquawkPandALeakCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheckResponse" message="tns:IRitaWcf_SetWoSquawkPandALeakCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandALeakCheckInspection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandALeakCheckInspection" message="tns:IRitaWcf_SetWoPandALeakCheckInspection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandALeakCheckInspectionResponse" message="tns:IRitaWcf_SetWoPandALeakCheckInspection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandALeakCheckInspect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheckInspect" message="tns:IRitaWcf_SetWoSquawkPandALeakCheckInspect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheckInspectResponse" message="tns:IRitaWcf_SetWoSquawkPandALeakCheckInspect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAOpsCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheck" message="tns:IRitaWcf_SetWoPandAOpsCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheckResponse" message="tns:IRitaWcf_SetWoPandAOpsCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSqauwkPandAOpsCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSqauwkPandAOpsCheck" message="tns:IRitaWcf_SetWoSqauwkPandAOpsCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSqauwkPandAOpsCheckResponse" message="tns:IRitaWcf_SetWoSqauwkPandAOpsCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAOpsCheckInspect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheckInspect" message="tns:IRitaWcf_SetWoPandAOpsCheckInspect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheckInspectResponse" message="tns:IRitaWcf_SetWoPandAOpsCheckInspect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandAOpsCheckInspect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAOpsCheckInspect" message="tns:IRitaWcf_SetWoSquawkPandAOpsCheckInspect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAOpsCheckInspectResponse" message="tns:IRitaWcf_SetWoSquawkPandAOpsCheckInspect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveWorkOrderQuote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/ApproveWorkOrderQuote" message="tns:IRitaWcf_ApproveWorkOrderQuote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/ApproveWorkOrderQuoteResponse" message="tns:IRitaWcf_ApproveWorkOrderQuote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RejectWorkOrderQuote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/RejectWorkOrderQuote" message="tns:IRitaWcf_RejectWorkOrderQuote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/RejectWorkOrderQuoteResponse" message="tns:IRitaWcf_RejectWorkOrderQuote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnapproveWorkOrderQuote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnapproveWorkOrderQuote" message="tns:IRitaWcf_UnapproveWorkOrderQuote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnapproveWorkOrderQuoteResponse" message="tns:IRitaWcf_UnapproveWorkOrderQuote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnrejectWorkOrderQuote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnrejectWorkOrderQuote" message="tns:IRitaWcf_UnrejectWorkOrderQuote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnrejectWorkOrderQuoteResponse" message="tns:IRitaWcf_UnrejectWorkOrderQuote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAFunctionalTest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTest" message="tns:IRitaWcf_UnSetWoPandAFunctionalTest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTestResponse" message="tns:IRitaWcf_UnSetWoPandAFunctionalTest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandAFunctionalTest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTest" message="tns:IRitaWcf_UnSetWoSquawkPandAFunctionalTest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTestResponse" message="tns:IRitaWcf_UnSetWoSquawkPandAFunctionalTest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAFunctionalTestInspect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTestInspect" message="tns:IRitaWcf_UnSetWoPandAFunctionalTestInspect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTestInspectResponse" message="tns:IRitaWcf_UnSetWoPandAFunctionalTestInspect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandAFunctionalTestInspect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTestInspect" message="tns:IRitaWcf_UnSetWoSquawkPandAFunctionalTestInspect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTestInspectResponse" message="tns:IRitaWcf_UnSetWoSquawkPandAFunctionalTestInspect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandARemoval">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandARemoval" message="tns:IRitaWcf_UnSetWoPandARemoval_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandARemovalResponse" message="tns:IRitaWcf_UnSetWoPandARemoval_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSqauwkPandARemoval">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandARemoval" message="tns:IRitaWcf_UnSetWoSqauwkPandARemoval_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandARemovalResponse" message="tns:IRitaWcf_UnSetWoSqauwkPandARemoval_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAInstall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAInstall" message="tns:IRitaWcf_UnSetWoPandAInstall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAInstallResponse" message="tns:IRitaWcf_UnSetWoPandAInstall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandAInstall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstall" message="tns:IRitaWcf_UnSetWoSquawkPandAInstall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstallResponse" message="tns:IRitaWcf_UnSetWoSquawkPandAInstall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAInstallInspected">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAInstallInspected" message="tns:IRitaWcf_UnSetWoPandAInstallInspected_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAInstallInspectedResponse" message="tns:IRitaWcf_UnSetWoPandAInstallInspected_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandAInstallInspected">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstallInspected" message="tns:IRitaWcf_UnSetWoSquawkPandAInstallInspected_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstallInspectedResponse" message="tns:IRitaWcf_UnSetWoSquawkPandAInstallInspected_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandALeakCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheck" message="tns:IRitaWcf_UnSetWoPandALeakCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheckResponse" message="tns:IRitaWcf_UnSetWoPandALeakCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandALeakCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheck" message="tns:IRitaWcf_UnSetWoSquawkPandALeakCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheckResponse" message="tns:IRitaWcf_UnSetWoSquawkPandALeakCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandALeakCheckInspection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheckInspection" message="tns:IRitaWcf_UnSetWoPandALeakCheckInspection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheckInspectionResponse" message="tns:IRitaWcf_UnSetWoPandALeakCheckInspection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandALeakCheckInspect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheckInspect" message="tns:IRitaWcf_UnSetWoSquawkPandALeakCheckInspect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheckInspectResponse" message="tns:IRitaWcf_UnSetWoSquawkPandALeakCheckInspect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAOpsCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheck" message="tns:IRitaWcf_UnSetWoPandAOpsCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheckResponse" message="tns:IRitaWcf_UnSetWoPandAOpsCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSqauwkPandAOpsCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandAOpsCheck" message="tns:IRitaWcf_UnSetWoSqauwkPandAOpsCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandAOpsCheckResponse" message="tns:IRitaWcf_UnSetWoSqauwkPandAOpsCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAOpsCheckInspect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheckInspect" message="tns:IRitaWcf_UnSetWoPandAOpsCheckInspect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheckInspectResponse" message="tns:IRitaWcf_UnSetWoPandAOpsCheckInspect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandAOpsCheckInspect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAOpsCheckInspect" message="tns:IRitaWcf_UnSetWoSquawkPandAOpsCheckInspect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAOpsCheckInspectResponse" message="tns:IRitaWcf_UnSetWoSquawkPandAOpsCheckInspect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWoPartsAssembly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/DeleteWoPartsAssembly" message="tns:IRitaWcf_DeleteWoPartsAssembly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/DeleteWoPartsAssemblyResponse" message="tns:IRitaWcf_DeleteWoPartsAssembly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LinkPartsAssembly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/LinkPartsAssembly" message="tns:IRitaWcf_LinkPartsAssembly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/LinkPartsAssemblyResponse" message="tns:IRitaWcf_LinkPartsAssembly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnLinkPartsAssembly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UnLinkPartsAssembly" message="tns:IRitaWcf_UnLinkPartsAssembly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UnLinkPartsAssemblyResponse" message="tns:IRitaWcf_UnLinkPartsAssembly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AcceptInspectedPart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AcceptInspectedPart" message="tns:IRitaWcf_AcceptInspectedPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AcceptInspectedPartResponse" message="tns:IRitaWcf_AcceptInspectedPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnInspectedPart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/ReturnInspectedPart" message="tns:IRitaWcf_ReturnInspectedPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/ReturnInspectedPartResponse" message="tns:IRitaWcf_ReturnInspectedPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisposeInspectedPart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/DisposeInspectedPart" message="tns:IRitaWcf_DisposeInspectedPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/DisposeInspectedPartResponse" message="tns:IRitaWcf_DisposeInspectedPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiptHoldCodes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/ReceiptHoldCodes" message="tns:IRitaWcf_ReceiptHoldCodes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/ReceiptHoldCodesResponse" message="tns:IRitaWcf_ReceiptHoldCodes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveCycleCounts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/GetActiveCycleCounts" message="tns:IRitaWcf_GetActiveCycleCounts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/GetActiveCycleCountsResponse" message="tns:IRitaWcf_GetActiveCycleCounts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleCountParts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/GetCycleCountParts" message="tns:IRitaWcf_GetCycleCountParts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/GetCycleCountPartsResponse" message="tns:IRitaWcf_GetCycleCountParts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintPartLabels">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/PrintPartLabels" message="tns:IRitaWcf_PrintPartLabels_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/PrintPartLabelsResponse" message="tns:IRitaWcf_PrintPartLabels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddLot" message="tns:IRitaWcf_AddLot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddLotResponse" message="tns:IRitaWcf_AddLot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateLot" message="tns:IRitaWcf_UpdateLot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateLotResponse" message="tns:IRitaWcf_UpdateLot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddVendorQuote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddVendorQuote" message="tns:IRitaWcf_AddVendorQuote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddVendorQuoteResponse" message="tns:IRitaWcf_AddVendorQuote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVendorQuote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateVendorQuote" message="tns:IRitaWcf_UpdateVendorQuote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateVendorQuoteResponse" message="tns:IRitaWcf_UpdateVendorQuote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWarehouseBin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWarehouseBin" message="tns:IRitaWcf_AddWarehouseBin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWarehouseBinResponse" message="tns:IRitaWcf_AddWarehouseBin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDeliveryPickTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateDeliveryPickTicket" message="tns:IRitaWcf_UpdateDeliveryPickTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateDeliveryPickTicketResponse" message="tns:IRitaWcf_UpdateDeliveryPickTicket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateCannedSquawkResolution">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkResolution" message="tns:IRitaWcf_AddOrUpdateCannedSquawkResolution_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkResolutionResponse" message="tns:IRitaWcf_AddOrUpdateCannedSquawkResolution_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateCannedSquawkCompliance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkCompliance" message="tns:IRitaWcf_AddOrUpdateCannedSquawkCompliance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkComplianceResponse" message="tns:IRitaWcf_AddOrUpdateCannedSquawkCompliance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateCannedSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawk" message="tns:IRitaWcf_AddOrUpdateCannedSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkResponse" message="tns:IRitaWcf_AddOrUpdateCannedSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractPrice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/GetContractPrice" message="tns:IRitaWcf_GetContractPrice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/GetContractPriceResponse" message="tns:IRitaWcf_GetContractPrice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddOrUpdateUser" message="tns:IRitaWcf_AddOrUpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddOrUpdateUserResponse" message="tns:IRitaWcf_AddOrUpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateUser" message="tns:IRitaWcf_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateUserResponse" message="tns:IRitaWcf_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddUser" message="tns:IRitaWcf_AddUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddUserResponse" message="tns:IRitaWcf_AddUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSOFromSOQRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddSOFromSOQRequest" message="tns:IRitaWcf_AddSOFromSOQRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddSOFromSOQRequestResponse" message="tns:IRitaWcf_AddSOFromSOQRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPermissions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/CheckPermissions" message="tns:IRitaWcf_CheckPermissions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/CheckPermissionsResponse" message="tns:IRitaWcf_CheckPermissions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/CheckVersion" message="tns:IRitaWcf_CheckVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/CheckVersionResponse" message="tns:IRitaWcf_CheckVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EndSession">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/EndSession" message="tns:IRitaWcf_EndSession_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/EndSessionResponse" message="tns:IRitaWcf_EndSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDateFormat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/GetDateFormat" message="tns:IRitaWcf_GetDateFormat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/GetDateFormatResponse" message="tns:IRitaWcf_GetDateFormat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaults">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/GetDefaults" message="tns:IRitaWcf_GetDefaults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/GetDefaultsResponse" message="tns:IRitaWcf_GetDefaults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRitaPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/GetRitaPassword" message="tns:IRitaWcf_GetRitaPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/GetRitaPasswordResponse" message="tns:IRitaWcf_GetRitaPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRitaPasswordExt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/GetRitaPasswordExt" message="tns:IRitaWcf_GetRitaPasswordExt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/GetRitaPasswordExtResponse" message="tns:IRitaWcf_GetRitaPasswordExt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeFormat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/GetTimeFormat" message="tns:IRitaWcf_GetTimeFormat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/GetTimeFormatResponse" message="tns:IRitaWcf_GetTimeFormat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsValid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/IsValid" message="tns:IRitaWcf_IsValid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/IsValidResponse" message="tns:IRitaWcf_IsValid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/ProcessRequest" message="tns:IRitaWcf_ProcessRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/ProcessRequestResponse" message="tns:IRitaWcf_ProcessRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartSessionA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/StartSessionA" message="tns:IRitaWcf_StartSessionA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/StartSessionAResponse" message="tns:IRitaWcf_StartSessionA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartSessionB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/StartSessionB" message="tns:IRitaWcf_StartSessionB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/StartSessionBResponse" message="tns:IRitaWcf_StartSessionB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartSessionAuth0B">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/StartSessionAuth0B" message="tns:IRitaWcf_StartSessionAuth0B_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/StartSessionAuth0BResponse" message="tns:IRitaWcf_StartSessionAuth0B_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckWarnings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/CheckWarnings" message="tns:IRitaWcf_CheckWarnings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/CheckWarningsResponse" message="tns:IRitaWcf_CheckWarnings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPurchaseOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddPurchaseOrder" message="tns:IRitaWcf_AddPurchaseOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddPurchaseOrderResponse" message="tns:IRitaWcf_AddPurchaseOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddSalesOrder" message="tns:IRitaWcf_AddSalesOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddSalesOrderResponse" message="tns:IRitaWcf_AddSalesOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesOrderQuoteHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddSalesOrderQuoteHeader" message="tns:IRitaWcf_AddSalesOrderQuoteHeader_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddSalesOrderQuoteHeaderResponse" message="tns:IRitaWcf_AddSalesOrderQuoteHeader_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSalesOrderQuoteHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateSalesOrderQuoteHeader" message="tns:IRitaWcf_UpdateSalesOrderQuoteHeader_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateSalesOrderQuoteHeaderResponse" message="tns:IRitaWcf_UpdateSalesOrderQuoteHeader_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSalesOrderQuoteHeaderRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SelectSalesOrderQuoteHeaderRequest" message="tns:IRitaWcf_SelectSalesOrderQuoteHeaderRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SelectSalesOrderQuoteHeaderRequestResponse" message="tns:IRitaWcf_SelectSalesOrderQuoteHeaderRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelSalesOrderQuoteHeaderRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/CancelSalesOrderQuoteHeaderRequest" message="tns:IRitaWcf_CancelSalesOrderQuoteHeaderRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/CancelSalesOrderQuoteHeaderRequestResponse" message="tns:IRitaWcf_CancelSalesOrderQuoteHeaderRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSOQPartDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddSOQPartDetailRequest" message="tns:IRitaWcf_AddSOQPartDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddSOQPartDetailRequestResponse" message="tns:IRitaWcf_AddSOQPartDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSOQPartDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateSOQPartDetailRequest" message="tns:IRitaWcf_UpdateSOQPartDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateSOQPartDetailRequestResponse" message="tns:IRitaWcf_UpdateSOQPartDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSOQPartDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SelectSOQPartDetailRequest" message="tns:IRitaWcf_SelectSOQPartDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SelectSOQPartDetailRequestResponse" message="tns:IRitaWcf_SelectSOQPartDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSOQRequestedPartDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddSOQRequestedPartDetailRequest" message="tns:IRitaWcf_AddSOQRequestedPartDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddSOQRequestedPartDetailRequestResponse" message="tns:IRitaWcf_AddSOQRequestedPartDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSOQRequestedPartDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateSOQRequestedPartDetailRequest" message="tns:IRitaWcf_UpdateSOQRequestedPartDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateSOQRequestedPartDetailRequestResponse" message="tns:IRitaWcf_UpdateSOQRequestedPartDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSOQRequestedPartDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SelectSOQRequestedPartDetailRequest" message="tns:IRitaWcf_SelectSOQRequestedPartDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SelectSOQRequestedPartDetailRequestResponse" message="tns:IRitaWcf_SelectSOQRequestedPartDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelSOQRequestedPartDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/CancelSOQRequestedPartDetailRequest" message="tns:IRitaWcf_CancelSOQRequestedPartDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/CancelSOQRequestedPartDetailRequestResponse" message="tns:IRitaWcf_CancelSOQRequestedPartDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSOQPartQuotedDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddSOQPartQuotedDetailRequest" message="tns:IRitaWcf_AddSOQPartQuotedDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddSOQPartQuotedDetailRequestResponse" message="tns:IRitaWcf_AddSOQPartQuotedDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSOQPartQuotedDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateSOQPartQuotedDetailRequest" message="tns:IRitaWcf_UpdateSOQPartQuotedDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateSOQPartQuotedDetailRequestResponse" message="tns:IRitaWcf_UpdateSOQPartQuotedDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSOQPartQuotedDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SelectSOQPartQuotedDetailRequest" message="tns:IRitaWcf_SelectSOQPartQuotedDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SelectSOQPartQuotedDetailRequestResponse" message="tns:IRitaWcf_SelectSOQPartQuotedDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelSOQPartQuotedDetailRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/CancelSOQPartQuotedDetailRequest" message="tns:IRitaWcf_CancelSOQPartQuotedDetailRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/CancelSOQPartQuotedDetailRequestResponse" message="tns:IRitaWcf_CancelSOQPartQuotedDetailRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrder" message="tns:IRitaWcf_AddWorkOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderResponse" message="tns:IRitaWcf_AddWorkOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderItem" message="tns:IRitaWcf_AddWorkOrderItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderItemResponse" message="tns:IRitaWcf_AddWorkOrderItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderSquawk" message="tns:IRitaWcf_AddWorkOrderSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderSquawkResponse" message="tns:IRitaWcf_AddWorkOrderSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderQuoteItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteItem" message="tns:IRitaWcf_AddWorkOrderQuoteItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteItemResponse" message="tns:IRitaWcf_AddWorkOrderQuoteItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderQuoteSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteSquawk" message="tns:IRitaWcf_AddWorkOrderQuoteSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteSquawkResponse" message="tns:IRitaWcf_AddWorkOrderQuoteSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrderSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderSquawk" message="tns:IRitaWcf_UpdateWorkOrderSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderSquawkResponse" message="tns:IRitaWcf_UpdateWorkOrderSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SignOffWorkOrderSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SignOffWorkOrderSquawk" message="tns:IRitaWcf_SignOffWorkOrderSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SignOffWorkOrderSquawkResponse" message="tns:IRitaWcf_SignOffWorkOrderSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSignOffSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/RemoveSignOffSquawk" message="tns:IRitaWcf_RemoveSignOffSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/RemoveSignOffSquawkResponse" message="tns:IRitaWcf_RemoveSignOffSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SignOffWorkOrderStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SignOffWorkOrderStep" message="tns:IRitaWcf_SignOffWorkOrderStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SignOffWorkOrderStepResponse" message="tns:IRitaWcf_SignOffWorkOrderStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSignOffStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/RemoveSignOffStep" message="tns:IRitaWcf_RemoveSignOffStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/RemoveSignOffStepResponse" message="tns:IRitaWcf_RemoveSignOffStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InspectWorkOrderSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/InspectWorkOrderSquawk" message="tns:IRitaWcf_InspectWorkOrderSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/InspectWorkOrderSquawkResponse" message="tns:IRitaWcf_InspectWorkOrderSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InspectWorkOrderStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/InspectWorkOrderStep" message="tns:IRitaWcf_InspectWorkOrderStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/InspectWorkOrderStepResponse" message="tns:IRitaWcf_InspectWorkOrderStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveInspectSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/RemoveInspectSquawk" message="tns:IRitaWcf_RemoveInspectSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/RemoveInspectSquawkResponse" message="tns:IRitaWcf_RemoveInspectSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveInspectStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/RemoveInspectStep" message="tns:IRitaWcf_RemoveInspectStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/RemoveInspectStepResponse" message="tns:IRitaWcf_RemoveInspectStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoubleInspectWorkOrderSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderSquawk" message="tns:IRitaWcf_DoubleInspectWorkOrderSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderSquawkResponse" message="tns:IRitaWcf_DoubleInspectWorkOrderSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoubleInspectWorkOrderStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderStep" message="tns:IRitaWcf_DoubleInspectWorkOrderStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderStepResponse" message="tns:IRitaWcf_DoubleInspectWorkOrderStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveDoubleInspectSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/RemoveDoubleInspectSquawk" message="tns:IRitaWcf_RemoveDoubleInspectSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/RemoveDoubleInspectSquawkResponse" message="tns:IRitaWcf_RemoveDoubleInspectSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveDoubleInspectStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/RemoveDoubleInspectStep" message="tns:IRitaWcf_RemoveDoubleInspectStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/RemoveDoubleInspectStepResponse" message="tns:IRitaWcf_RemoveDoubleInspectStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FunctionalTestWorkOrderSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderSquawk" message="tns:IRitaWcf_FunctionalTestWorkOrderSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderSquawkResponse" message="tns:IRitaWcf_FunctionalTestWorkOrderSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FunctionalTestWorkOrderStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderStep" message="tns:IRitaWcf_FunctionalTestWorkOrderStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderStepResponse" message="tns:IRitaWcf_FunctionalTestWorkOrderStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFunctionalTestSquawk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/RemoveFunctionalTestSquawk" message="tns:IRitaWcf_RemoveFunctionalTestSquawk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/RemoveFunctionalTestSquawkResponse" message="tns:IRitaWcf_RemoveFunctionalTestSquawk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFunctionalTestStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/RemoveFunctionalTestStep" message="tns:IRitaWcf_RemoveFunctionalTestStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/RemoveFunctionalTestStepResponse" message="tns:IRitaWcf_RemoveFunctionalTestStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderStep" message="tns:IRitaWcf_AddWorkOrderStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderStepResponse" message="tns:IRitaWcf_AddWorkOrderStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrderStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderStep" message="tns:IRitaWcf_UpdateWorkOrderStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderStepResponse" message="tns:IRitaWcf_UpdateWorkOrderStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AbortWorkOrderStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AbortWorkOrderStep" message="tns:IRitaWcf_AbortWorkOrderStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AbortWorkOrderStepResponse" message="tns:IRitaWcf_AbortWorkOrderStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClockIn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/ClockIn" message="tns:IRitaWcf_ClockIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/ClockInResponse" message="tns:IRitaWcf_ClockIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClockOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/ClockOut" message="tns:IRitaWcf_ClockOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/ClockOutResponse" message="tns:IRitaWcf_ClockOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderLabor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderLabor" message="tns:IRitaWcf_AddWorkOrderLabor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderLaborResponse" message="tns:IRitaWcf_AddWorkOrderLabor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrderLabor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderLabor" message="tns:IRitaWcf_UpdateWorkOrderLabor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderLaborResponse" message="tns:IRitaWcf_UpdateWorkOrderLabor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderPart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderPart" message="tns:IRitaWcf_AddWorkOrderPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderPartResponse" message="tns:IRitaWcf_AddWorkOrderPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrderPart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderPart" message="tns:IRitaWcf_UpdateWorkOrderPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderPartResponse" message="tns:IRitaWcf_UpdateWorkOrderPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderService" message="tns:IRitaWcf_AddWorkOrderService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderServiceResponse" message="tns:IRitaWcf_AddWorkOrderService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrderService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderService" message="tns:IRitaWcf_UpdateWorkOrderService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderServiceResponse" message="tns:IRitaWcf_UpdateWorkOrderService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderSquawkAssignment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderSquawkAssignment" message="tns:IRitaWcf_AddWorkOrderSquawkAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderSquawkAssignmentResponse" message="tns:IRitaWcf_AddWorkOrderSquawkAssignment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWorkOrderSquawkAssignment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/DeleteWorkOrderSquawkAssignment" message="tns:IRitaWcf_DeleteWorkOrderSquawkAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/DeleteWorkOrderSquawkAssignmentResponse" message="tns:IRitaWcf_DeleteWorkOrderSquawkAssignment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderStepAssignment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderStepAssignment" message="tns:IRitaWcf_AddWorkOrderStepAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWorkOrderStepAssignmentResponse" message="tns:IRitaWcf_AddWorkOrderStepAssignment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWorkOrderStepAssignment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/DeleteWorkOrderStepAssignment" message="tns:IRitaWcf_DeleteWorkOrderStepAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/DeleteWorkOrderStepAssignmentResponse" message="tns:IRitaWcf_DeleteWorkOrderStepAssignment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartWorkOrderBulkLabor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/StartWorkOrderBulkLabor" message="tns:IRitaWcf_StartWorkOrderBulkLabor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/StartWorkOrderBulkLaborResponse" message="tns:IRitaWcf_StartWorkOrderBulkLabor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EndWorkOrderBulkLabor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/EndWorkOrderBulkLabor" message="tns:IRitaWcf_EndWorkOrderBulkLabor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/EndWorkOrderBulkLaborResponse" message="tns:IRitaWcf_EndWorkOrderBulkLabor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillWorkOrderPartDemandFromInventory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/FillWorkOrderPartDemandFromInventory" message="tns:IRitaWcf_FillWorkOrderPartDemandFromInventory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/FillWorkOrderPartDemandFromInventoryResponse" message="tns:IRitaWcf_FillWorkOrderPartDemandFromInventory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePartRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/CreatePartRequest" message="tns:IRitaWcf_CreatePartRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/CreatePartRequestResponse" message="tns:IRitaWcf_CreatePartRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BatchDeliverPart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/BatchDeliverPart" message="tns:IRitaWcf_BatchDeliverPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/BatchDeliverPartResponse" message="tns:IRitaWcf_BatchDeliverPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeliverPart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/DeliverPart" message="tns:IRitaWcf_DeliverPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/DeliverPartResponse" message="tns:IRitaWcf_DeliverPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrder" message="tns:IRitaWcf_UpdateWorkOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderResponse" message="tns:IRitaWcf_UpdateWorkOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPurchasedRequirements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SetPurchasedRequirements" message="tns:IRitaWcf_SetPurchasedRequirements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SetPurchasedRequirementsResponse" message="tns:IRitaWcf_SetPurchasedRequirements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddCompany" message="tns:IRitaWcf_AddCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddCompanyResponse" message="tns:IRitaWcf_AddCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/GetCompany" message="tns:IRitaWcf_GetCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/GetCompanyResponse" message="tns:IRitaWcf_GetCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SignoutTool">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SignoutTool" message="tns:IRitaWcf_SignoutTool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SignoutToolResponse" message="tns:IRitaWcf_SignoutTool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SigninTool">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/SigninTool" message="tns:IRitaWcf_SigninTool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/SigninToolResponse" message="tns:IRitaWcf_SigninTool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceivePart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/ReceivePart" message="tns:IRitaWcf_ReceivePart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/ReceivePartResponse" message="tns:IRitaWcf_ReceivePart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveUnexpected">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/ReceiveUnexpected" message="tns:IRitaWcf_ReceiveUnexpected_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/ReceiveUnexpectedResponse" message="tns:IRitaWcf_ReceiveUnexpected_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnterCycleCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/EnterCycleCount" message="tns:IRitaWcf_EnterCycleCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/EnterCycleCountResponse" message="tns:IRitaWcf_EnterCycleCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePartAssembly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/DeletePartAssembly" message="tns:IRitaWcf_DeletePartAssembly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/DeletePartAssemblyResponse" message="tns:IRitaWcf_DeletePartAssembly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWoSquawkPartAssembly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRitaWcf/AddWoSquawkPartAssembly" message="tns:IRitaWcf_AddWoSquawkPartAssembly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRitaWcf/AddWoSquawkPartAssemblyResponse" message="tns:IRitaWcf_AddWoSquawkPartAssembly_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IRitaWcf" type="tns:IRitaWcf">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateWoSquawkPartAssembly">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateWoSquawkPartAssembly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWoPartAssembly">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWoPartAssembly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWoPartAssembly">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateWoPartAssembly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAFunctionalTest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandAFunctionalTest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAFunctionalTestInspect">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTestInspect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandAFunctionalTestInspect">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTestInspect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandARemoval">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoPandARemoval" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSqauwkPandARemoval">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoSqauwkPandARemoval" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAInstall">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoPandAInstall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandAInstall">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAInstallInspected">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoPandAInstallInspected" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandAInstallInspected">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstallInspected" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandALeakCheck">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoPandALeakCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandALeakCheck">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandALeakCheckInspection">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoPandALeakCheckInspection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandALeakCheckInspect">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheckInspect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAOpsCheck">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSqauwkPandAOpsCheck">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoSqauwkPandAOpsCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoPandAOpsCheckInspect">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheckInspect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWoSquawkPandAOpsCheckInspect">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAOpsCheckInspect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveWorkOrderQuote">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/ApproveWorkOrderQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RejectWorkOrderQuote">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/RejectWorkOrderQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnapproveWorkOrderQuote">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnapproveWorkOrderQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnrejectWorkOrderQuote">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnrejectWorkOrderQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAFunctionalTest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandAFunctionalTest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAFunctionalTestInspect">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTestInspect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandAFunctionalTestInspect">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTestInspect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandARemoval">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoPandARemoval" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSqauwkPandARemoval">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandARemoval" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAInstall">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoPandAInstall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandAInstall">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAInstallInspected">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoPandAInstallInspected" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandAInstallInspected">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstallInspected" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandALeakCheck">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandALeakCheck">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandALeakCheckInspection">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheckInspection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandALeakCheckInspect">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheckInspect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAOpsCheck">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSqauwkPandAOpsCheck">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandAOpsCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoPandAOpsCheckInspect">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheckInspect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSetWoSquawkPandAOpsCheckInspect">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAOpsCheckInspect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWoPartsAssembly">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/DeleteWoPartsAssembly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LinkPartsAssembly">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/LinkPartsAssembly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnLinkPartsAssembly">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UnLinkPartsAssembly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AcceptInspectedPart">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AcceptInspectedPart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnInspectedPart">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/ReturnInspectedPart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisposeInspectedPart">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/DisposeInspectedPart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiptHoldCodes">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/ReceiptHoldCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveCycleCounts">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/GetActiveCycleCounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleCountParts">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/GetCycleCountParts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintPartLabels">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/PrintPartLabels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLot">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddLot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLot">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateLot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddVendorQuote">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddVendorQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVendorQuote">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateVendorQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWarehouseBin">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWarehouseBin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDeliveryPickTicket">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateDeliveryPickTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateCannedSquawkResolution">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkResolution" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateCannedSquawkCompliance">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkCompliance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateCannedSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractPrice">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/GetContractPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddOrUpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSOFromSOQRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddSOFromSOQRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPermissions">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/CheckPermissions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckVersion">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/CheckVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndSession">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/EndSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDateFormat">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/GetDateFormat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaults">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/GetDefaults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRitaPassword">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/GetRitaPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRitaPasswordExt">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/GetRitaPasswordExt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeFormat">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/GetTimeFormat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValid">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/IsValid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/ProcessRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartSessionA">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/StartSessionA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartSessionB">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/StartSessionB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartSessionAuth0B">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/StartSessionAuth0B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckWarnings">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/CheckWarnings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPurchaseOrder">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddPurchaseOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesOrder">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddSalesOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSalesOrderQuoteHeader">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddSalesOrderQuoteHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSalesOrderQuoteHeader">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateSalesOrderQuoteHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSalesOrderQuoteHeaderRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SelectSalesOrderQuoteHeaderRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelSalesOrderQuoteHeaderRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/CancelSalesOrderQuoteHeaderRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSOQPartDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddSOQPartDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSOQPartDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateSOQPartDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSOQPartDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SelectSOQPartDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSOQRequestedPartDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddSOQRequestedPartDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSOQRequestedPartDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateSOQRequestedPartDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSOQRequestedPartDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SelectSOQRequestedPartDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelSOQRequestedPartDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/CancelSOQRequestedPartDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSOQPartQuotedDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddSOQPartQuotedDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSOQPartQuotedDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateSOQPartQuotedDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSOQPartQuotedDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SelectSOQPartQuotedDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelSOQPartQuotedDetailRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/CancelSOQPartQuotedDetailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrder">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderItem">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrderItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrderSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderQuoteItem">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderQuoteSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrderSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignOffWorkOrderSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SignOffWorkOrderSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSignOffSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/RemoveSignOffSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignOffWorkOrderStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SignOffWorkOrderStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSignOffStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/RemoveSignOffStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InspectWorkOrderSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/InspectWorkOrderSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InspectWorkOrderStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/InspectWorkOrderStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveInspectSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/RemoveInspectSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveInspectStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/RemoveInspectStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoubleInspectWorkOrderSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoubleInspectWorkOrderStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveDoubleInspectSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/RemoveDoubleInspectSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveDoubleInspectStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/RemoveDoubleInspectStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FunctionalTestWorkOrderSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FunctionalTestWorkOrderStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFunctionalTestSquawk">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/RemoveFunctionalTestSquawk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFunctionalTestStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/RemoveFunctionalTestStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrderStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrderStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AbortWorkOrderStep">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AbortWorkOrderStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClockIn">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/ClockIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClockOut">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/ClockOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderLabor">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrderLabor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrderLabor">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderLabor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderPart">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrderPart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrderPart">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderPart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderService">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrderService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrderService">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderSquawkAssignment">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrderSquawkAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWorkOrderSquawkAssignment">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/DeleteWorkOrderSquawkAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWorkOrderStepAssignment">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWorkOrderStepAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWorkOrderStepAssignment">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/DeleteWorkOrderStepAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartWorkOrderBulkLabor">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/StartWorkOrderBulkLabor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndWorkOrderBulkLabor">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/EndWorkOrderBulkLabor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillWorkOrderPartDemandFromInventory">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/FillWorkOrderPartDemandFromInventory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePartRequest">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/CreatePartRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BatchDeliverPart">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/BatchDeliverPart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeliverPart">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/DeliverPart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkOrder">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/UpdateWorkOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPurchasedRequirements">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SetPurchasedRequirements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCompany">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompany">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/GetCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignoutTool">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SignoutTool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SigninTool">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/SigninTool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceivePart">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/ReceivePart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveUnexpected">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/ReceiveUnexpected" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnterCycleCount">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/EnterCycleCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePartAssembly">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/DeletePartAssembly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWoSquawkPartAssembly">
+      <soap:operation soapAction="http://tempuri.org/IRitaWcf/AddWoSquawkPartAssembly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RitaWcf">
+    <wsdl:port name="BasicHttpBinding_IRitaWcf" binding="tns:BasicHttpBinding_IRitaWcf">
+      <soap:address location="http://eis-qa-ml-01:8737/EISQA19C/QA_MAINLINE_ENT1/IRitaWcf" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
