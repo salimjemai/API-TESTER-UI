@@ -1,26 +1,47 @@
-﻿<Page x:Class="API_TESTER_UI.Pages.UserManagement.GetUser"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:local="clr-namespace:API_TESTER_UI.Pages.UserManagement"
-      mc:Ignorable="d"
-      d:DesignHeight="450"
-      d:DesignWidth="800"
-      Background="White"
-      Title="GetUser">
+﻿<Page
+    x:Class="API_TESTER_UI.Pages.UserManagement.GetUser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:API_TESTER_UI.Pages.UserManagement"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="GetUser"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Background="LightGray"
+    mc:Ignorable="d">
     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
+        <Grid.RowDefinitions x:Uid="MainData">
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -31,56 +52,1112 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.ColumnSpan="10" Orientation="Horizontal">
-            <TextBlock Grid.Column="1"
-                 Grid.Row="2"
-                 Width="Auto"
-                 Text="User Name"
-                 FontSize="20"
-                 FontFamily="Segoe UI"
-                 FontWeight="Bold"
-                 Margin="0,8,0,15"
-                 Foreground="Black" />
-            <TextBox x:Name="userName"
-               Width="150"
-               Margin="10,8,0,15"
-               HorizontalAlignment="Left"/>
-            <Button Content="Submit"
-              FontWeight="Bold"
-              Width="125"
-              Height="30"
-              Padding="5"
-              Click="SubmitGetUser_Click" />
-            <Button Content="Clear"
-              FontWeight="Bold"
-              Width="125"
-              Height="30"
-              Padding="5"
-              Margin="30 5 10 10" 
-              Click="ClearForm_Click"/>
+        <StackPanel
+            Grid.Row="0"
+            Grid.ColumnSpan="10"
+            Orientation="Horizontal">
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="1"
+                Width="Auto"
+                Margin="20,8,0,15"
+                FontFamily="Segoe UI"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="Black"
+                Text="Get User Information" />
+            <Button
+                Width="125"
+                Height="30"
+                Margin="1120,0,0,0"
+                Padding="5"
+                Click="SubmitGetUser_Click"
+                Content="Submit"
+                FontWeight="Bold" />
+            <Button
+                Width="125"
+                Height="30"
+                Margin="30,0,0,0"
+                Padding="5"
+                Click="ClearForm_Click"
+                Content="Clear"
+                FontWeight="Bold" />
         </StackPanel>
-        <StackPanel Grid.ColumnSpan="8" Grid.Row="7" >
-            <ScrollViewer Grid.Column="7" Grid.Row="7">
-                <DataGrid x:Name="UserDataGridView" AutoGenerateColumns="True" Background="Beige" Height="380"/>
+
+        <Label
+            Grid.Row="3"
+            Grid.Column="7"
+            Height="28"
+            Margin="30,32,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Username"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="userName"
+            Grid.Row="3"
+            Grid.Column="8"
+            Width="120"
+            Height="28"
+            Margin="250,32,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" />
+        <Rectangle
+            Grid.Row="4"
+            Grid.RowSpan="10"
+            Height="4"
+            HorizontalAlignment="Stretch"
+            Fill="Blue" />
+        <!--<StackPanel
+            Grid.Row="7"
+            Grid.ColumnSpan="8"
+            Margin="5,10,0,0">
+            <ScrollViewer Grid.Row="7" Grid.Column="7">
+                <DataGrid
+                    x:Name="UserDataGridView"
+                    Height="380"
+                    AutoGenerateColumns="True"
+                    Background="Beige" />
             </ScrollViewer>
-        </StackPanel>
+        </StackPanel>-->
+
+        <Label
+            Grid.Row="7"
+            Grid.Column="7"
+            Height="28"
+            Margin="30,32,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Username"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="userNameOut"
+            Grid.Row="7"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,32,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+
+        <Label
+            Grid.Row="8"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Full Name"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="fullName"
+            Grid.Row="8"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <Label
+            Grid.Row="9"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Description"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="description"
+            Grid.Row="9"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+
+        <!--  Department  -->
+        <Label
+            Grid.Row="10"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Department"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="department"
+            Grid.Row="10"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--  User Badge  -->
+        <Label
+            Grid.Row="11"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="User Badge"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="userBadge"
+            Grid.Row="11"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--  Email  -->
+        <Label
+            Grid.Row="12"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Email @"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="email"
+            Grid.Row="12"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--  Auth0Email  -->
+        <Label
+            Grid.Row="13"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Auth0Email@"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="auth0Email"
+            Grid.Row="13"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--  Password  -->
+        <Label
+            Grid.Row="14"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Password"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="password"
+            Grid.Row="14"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--  Access code  -->
+        <Label
+            Grid.Row="15"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Access Code"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="accessCode"
+            Grid.Row="15"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--  Active Directory Name  -->
+        <Label
+            Grid.Row="16"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Active Directory Name"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="activeDirectoryName"
+            Grid.Row="16"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--  User Permission Profile  -->
+        <Label
+            Grid.Row="17"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="User Permission Profile"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="userPermissionProfile"
+            Grid.Row="17"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
 
 
-        <!--<TreeView Grid.Column="7" 
-                  Grid.Row="7" 
-                  FontSize="21" 
-                  ItemsSource="{Binding Source={StaticResource XMLDP}, XPath=*/*}">
-            <TreeView.ItemTemplate>
-                <DataTemplate>
-                    <TreeViewItem Header="{Binding XPath=GetUserResult}">
-                        <StackPanel>
-                            <TextBlock Text="{Binding XPath=*/*}" />
-                        </StackPanel>
-                    </TreeViewItem>
-                </DataTemplate>
-            </TreeView.ItemTemplate>
-        </TreeView>-->
+        <!--  User Defined Fields    Can be added later  -->
+        <Label
+            Grid.Row="18"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="User Defined Fields"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="udf"
+            Grid.Row="18"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+
+        <!--  DefaultScreen  -->
+        <Label
+            Grid.Row="19"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DefaultScreen"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="defaultScreen"
+            Grid.Row="19"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
 
 
+        <!--  Long/Double variables  -->
+
+        <!--<cws:PurchaseLimit>-99999.99999</cws:PurchaseLimit>-->
+        <Label
+            Grid.Row="20"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="PurchaseLimit"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="PurchaseLimit"
+            Grid.Row="20"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+
+        <!--<cws:LaborCost>-99999.99999</cws:LaborCost>-->
+
+        <Label
+            Grid.Row="21"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="LaborCost"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="LaborCost"
+            Grid.Row="21"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--<cws:RegularCost>-99999.99999</cws:RegularCost>-->
+        <Label
+            Grid.Row="22"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="RegularCost"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="RegularCost"
+            Grid.Row="22"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--<cws:OvertimeCost>-99999.99999</cws:OvertimeCost>-->
+        <Label
+            Grid.Row="23"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="OvertimeCost"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="OvertimeCost"
+            Grid.Row="23"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--<cws:DoubleTimeCost>-99999.99999</cws:DoubleTimeCost>-->
+        <Label
+            Grid.Row="24"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DoubleTimeCost"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="DoubleTimeCost"
+            Grid.Row="24"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--<cws:RegularBurdenCost>-99999.99999</cws:RegularBurdenCost>-->
+        <Label
+            Grid.Row="25"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="RegularBurdenCost"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="RegularBurdenCost"
+            Grid.Row="25"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+
+        <!--<cws:OvertimeBurdenCost>-99999.99999</cws:OvertimeBurdenCost>-->
+        <Label
+            Grid.Row="26"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="OvertimeBurdenCost"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="OvertimeBurdenCost"
+            Grid.Row="26"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+
+        <!--<cws:DoubleTimeBurdenCost>-99999.99999</cws:DoubleTimeBurdenCost>-->
+        <Label
+            Grid.Row="27"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DoubleTimeBurdenCost"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="DoubleTimeBurdenCost"
+            Grid.Row="27"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+
+        <!--<cws:RegularLaborAccountNumber>?</cws:RegularLaborAccountNumber>-->
+        <Label
+            Grid.Row="28"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="RegularLaborAccountNumber"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="RegularLaborAccountNumber"
+            Grid.Row="28"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--<cws:OvertimeLaborAccountNumber>?</cws:OvertimeLaborAccountNumber>-->
+        <Label
+            Grid.Row="29"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="OvertimeLaborAccountNumber"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="OvertimeLaborAccountNumber"
+            Grid.Row="29"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--<cws:DoubleTimeLaborAccountNumber>?</cws:DoubleTimeLaborAccountNumber>-->
+        <Label
+            Grid.Row="30"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DoubleTimeLaborAccountNumber"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="DoubleTimeLaborAccountNumber"
+            Grid.Row="30"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+        <!--<cws:LaborBurdenAccountNumber>?</cws:LaborBurdenAccountNumber>-->
+        <Label
+            Grid.Row="31"
+            Grid.Column="7"
+            Margin="30,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="LaborBurdenAccountNumber"
+            FontWeight="Bold" />
+        <TextBox
+            x:Name="LaborBurdenAccountNumber"
+            Grid.Row="31"
+            Grid.Column="7"
+            Width="120"
+            Height="28"
+            Margin="250,13,0,10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="LightBlue"
+            IsReadOnly="True"
+            TextWrapping="Wrap" />
+
+        <!--  Boolean variables  -->
+
+        <!--<cws:Auth0Required>?</cws:Auth0Required>-->
+        <Label
+            Grid.Row="7"
+            Grid.Column="8"
+            Margin="450,28,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Auth0Required"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="Auth0Required"
+            Grid.Row="7"
+            Grid.Column="8"
+            Margin="730,33,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:MustChangePassword>false</cws:MustChangePassword>-->
+        <Label
+            Grid.Row="8"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="MustChangePassword"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="MustChangePassword"
+            Grid.Row="8"
+            Grid.Column="8"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:MustChangeAccessCode>false</cws:MustChangeAccessCode>-->
+        <Label
+            Grid.Row="9"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="MustChangeAccessCode"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="MustChangeAccessCode"
+            Grid.Row="9"
+            Grid.Column="8"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:CannotChangePassword>false</cws:CannotChangePassword>-->
+        <Label
+            Grid.Row="10"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="CannotChangePassword"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="CannotChangePassword"
+            Grid.Row="10"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:AccountDisabled>false</cws:AccountDisabled>-->
+        <Label
+            Grid.Row="11"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="AccountDisabled"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="AccountDisabled"
+            Grid.Row="11"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:Locator>false</cws:Locator>-->
+        <Label
+            Grid.Row="12"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Locator"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="Locator"
+            Grid.Row="12"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:SuspendLocator>false</cws:SuspendLocator>-->
+        <Label
+            Grid.Row="13"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="SuspendLocator"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="SuspendLocator"
+            Grid.Row="13"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:CanSelectLocator>false</cws:CanSelectLocator>-->
+        <Label
+            Grid.Row="14"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="CanSelectLocator"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="CanSelectLocator"
+            Grid.Row="14"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:CanSelectToVendorLot>false</cws:CanSelectToVendorLot>-->
+        <Label
+            Grid.Row="15"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="CanSelectToVendorLot"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="CanSelectToVendorLot"
+            Grid.Row="15"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:ReceivingInspector>false</cws:ReceivingInspector>-->
+        <Label
+            Grid.Row="16"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="ReceivingInspector"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="ReceivingInspector"
+            Grid.Row="16"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:TipOfDay>false</cws:TipOfDay>-->
+        <Label
+            Grid.Row="17"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="TipOfDay"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="TipOfDay"
+            Grid.Row="17"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:LargeButtons>false</cws:LargeButtons>-->
+        <Label
+            Grid.Row="18"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="LargeButtons"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="LargeButtons"
+            Grid.Row="18"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:DisablePersistence>false</cws:DisablePersistence>-->
+        <Label
+            Grid.Row="19"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DisablePersistence"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="DisablePersistence"
+            Grid.Row="19"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:DefaultIncludeFuelActivity>false</cws:DefaultIncludeFuelActivity>-->
+        <Label
+            Grid.Row="20"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DefaultIncludeFuelActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="DefaultIncludeFuelActivity"
+            Grid.Row="20"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:OnlyIncludeFuelActivity>false</cws:OnlyIncludeFuelActivity>-->
+        <Label
+            Grid.Row="21"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="OnlyIncludeFuelActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="OnlyIncludeFuelActivity"
+            Grid.Row="21"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:DefaultIncludeServiceActivity>false</cws:DefaultIncludeServiceActivity>-->
+        <Label
+            Grid.Row="22"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DefaultIncludeServiceActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="DefaultIncludeServiceActivity"
+            Grid.Row="22"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:OnlyIncludeServiceActivity>false</cws:OnlyIncludeServiceActivity>-->
+        <Label
+            Grid.Row="23"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="OnlyIncludeServiceActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="OnlyIncludeServiceActivity"
+            Grid.Row="23"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:DefaultIncludePartSaleActivity>false</cws:DefaultIncludePartSaleActivity>-->
+        <Label
+            Grid.Row="24"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DefaultIncludePartSaleActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="DefaultIncludePartSaleActivity"
+            Grid.Row="24"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:OnlyIncludePartSaleActivity>false</cws:OnlyIncludePartSaleActivity>-->
+        <Label
+            Grid.Row="25"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="OnlyIncludePartSaleActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="OnlyIncludePartSaleActivity"
+            Grid.Row="25"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:DefaultIncludeCateringActivity>false</cws:DefaultIncludeCateringActivity>-->
+        <Label
+            Grid.Row="26"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DefaultIncludeCateringActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="DefaultIncludeCateringActivity"
+            Grid.Row="26"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:OnlyIncludeCateringActivity>false</cws:OnlyIncludeCateringActivity>-->
+        <Label
+            Grid.Row="27"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="OnlyIncludeCateringActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="OnlyIncludeCateringActivity"
+            Grid.Row="27"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:DefaultIncludeHotelActivity>false</cws:DefaultIncludeHotelActivity>-->
+        <Label
+            Grid.Row="28"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DefaultIncludeHotelActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="DefaultIncludeHotelActivity"
+            Grid.Row="28"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:OnlyIncludeHotelActivity>false</cws:OnlyIncludeHotelActivity>-->
+        <Label
+            Grid.Row="29"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="OnlyIncludeHotelActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="OnlyIncludeHotelActivity"
+            Grid.Row="29"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:DefaultIncludeTransportationActivity>false</cws:DefaultIncludeTransportationActivity>-->
+        <Label
+            Grid.Row="30"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="DefaultIncludeTransportationActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="DefaultIncludeTransportationActivity"
+            Grid.Row="30"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:OnlyIncludeTransportationActivity>false</cws:OnlyIncludeTransportationActivity>-->
+        <Label
+            Grid.Row="31"
+            Grid.Column="8"
+            Margin="450,9,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="OnlyIncludeTransportationActivity"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="OnlyIncludeTransportationActivity"
+            Grid.Row="31"
+            Grid.Column="7"
+            Margin="730,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+
+        <!--  Third row  -->
+        <!--<cws:CanEnterCompliance>false</cws:CanEnterCompliance>-->
+        <Label
+            Grid.Row="7"
+            Grid.Column="9"
+            Margin="820,20,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="CanEnterCompliance"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="CanEnterCompliance"
+            Grid.Row="7"
+            Grid.Column="9"
+            Margin="1120,25,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+        <!--<cws:IncludeAllDefaultLogbookSearchCriteria>false</cws:IncludeAllDefaultLogbookSearchCriteria>-->
+        <Label
+            Grid.Row="8"
+            Grid.Column="9"
+            Margin="820,2,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="IncludeAllDefaultLogbookSearchCriteria"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="IncludeAllDefaultLogbookSearchCriteria"
+            Grid.Row="8"
+            Grid.Column="9"
+            Margin="1120,8,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+
+        <!--<cws:OnlyDisplayAssignedInWOQMgmt>false</cws:OnlyDisplayAssignedInWOQMgmt>-->
+        <Label
+            Grid.Row="9"
+            Grid.Column="9"
+            Margin="820,2,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="OnlyDisplayAssignedInWOQMgmt"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="OnlyDisplayAssignedInWOQMgmt"
+            Grid.Row="9"
+            Grid.Column="9"
+            Margin="1120,8,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
+
+        <!--<cws:LaunchLogbookResearch>false</cws:LaunchLogbookResearch>-->
+        <Label
+            Grid.Row="10"
+            Grid.Column="9"
+            Margin="820,2,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="LaunchLogbookResearch"
+            FontWeight="Bold" />
+        <CheckBox
+            x:Name="LaunchLogbookResearch"
+            Grid.Row="10"
+            Grid.Column="9"
+            Margin="1120,8,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False" />
     </Grid>
 </Page>

@@ -24,5 +24,15 @@ namespace API_TESTER_UI.Pages.UserManagement
         {
             InitializeComponent();
         }
+
+        private void SubmitAddUser_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ClearForm_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

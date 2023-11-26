@@ -9,6 +9,7 @@ using API_TESTER_UI.Models.UserManagement;
 using API_TESTER_UI.SessionWebReference;
 using API_TESTER_UI.WebAPI;
 using DevExpress.Mvvm.Native;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace API_TESTER_UI.Pages.UserManagement
 {
@@ -30,8 +31,8 @@ namespace API_TESTER_UI.Pages.UserManagement
             var cwsUrl = string.Empty;
             try
             {
-            
-               GetUserReq getUserApi = new GetUserReq();
+
+                GetUserReq getUserApi = new GetUserReq();
 
                 // Open a connection to get the token info from the DB
                 string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
@@ -44,9 +45,9 @@ namespace API_TESTER_UI.Pages.UserManagement
                         cwsUrl = selectSession.GetString(1);
                     }
 
-                    var isUserNameEmpty = userName.Text.Length > 0 ? false:true;
+                    var isUserNameEmpty = userName.Text.Length > 0 ? false : true;
 
-                    if (token != null  && cwsUrl != null)
+                    if (token != null && cwsUrl != null)
                     {
                         // call web service 
                         SessionWebReference.UserManagement userManagement = new SessionWebReference.UserManagement();
@@ -61,8 +62,9 @@ namespace API_TESTER_UI.Pages.UserManagement
                             MessageBox.Show($"{fak.ErrorMessages.FirstOrDefault().ErrorText}", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
                             return;
                         }
-                        IEnumerable<UserManagementDataOutput> userManagementDataOutputs = fak.YieldToArray();
-                        UserDataGridView.ItemsSource = userManagementDataOutputs;
+                        SetupUserOutPut(fak);
+
+                        //UserDataGridView.ItemsSource = userManagementDataOutputs;
                     }
 
                     else
@@ -70,7 +72,7 @@ namespace API_TESTER_UI.Pages.UserManagement
                         MessageBox.Show("Error occurred while getting the session token info.", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
-                
+
             }
             catch (Exception exc)
             {
@@ -80,12 +82,71 @@ namespace API_TESTER_UI.Pages.UserManagement
 
         private void ClearForm_Click(object sender, RoutedEventArgs e)
         {
-            UserDataGridView.ItemsSource = null;
+            //UserDataGridView.ItemsSource = null;
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void SetupUserOutPut(UserManagementDataOutput userManagementDataOutputs)
+        {
+            if (userManagementDataOutputs != null && userManagementDataOutputs.Username != null)
+            {
+                userNameOut.Text = userManagementDataOutputs.Username;
+                fullName.Text = userManagementDataOutputs.Fullname;
+                description.Text = userManagementDataOutputs.Description;
+                department.Text = userManagementDataOutputs.Department;
+                userBadge.Text = userManagementDataOutputs.UserBadgeID;
+                email.Text = userManagementDataOutputs.Email;
+                auth0Email.Text = userManagementDataOutputs.CorridorIDEmail;
+                activeDirectoryName.Text = userManagementDataOutputs.ActiveDirectoryName;
+                userPermissionProfile.Text = userManagementDataOutputs.UserPermissionsProfile;
+                defaultScreen.Text = userManagementDataOutputs.DefaultScreen;
+                RegularLaborAccountNumber.Text = userManagementDataOutputs.RegularLaborAccountNumber;
+                OvertimeLaborAccountNumber.Text = userManagementDataOutputs.OvertimeLaborAccountNumber;
+                DoubleTimeLaborAccountNumber.Text = userManagementDataOutputs.DoubleTimeLaborAccountNumber;
+                LaborBurdenAccountNumber.Text = userManagementDataOutputs.LaborBurdenAccountNumber;
+                //
+                Auth0Required.IsChecked = userManagementDataOutputs.CorridorIDRequired;
+                MustChangePassword.IsChecked = !userManagementDataOutputs.MustChangePassword;
+                CannotChangePassword.IsChecked = userManagementDataOutputs.CannotChangePassword;
+                AccountDisabled.IsChecked = userManagementDataOutputs.AccountDisabled;
+                Locator.IsChecked = userManagementDataOutputs.Locator;
+                SuspendLocator.IsChecked = userManagementDataOutputs.SuspendLocator;
+                CanSelectLocator.IsChecked = userManagementDataOutputs.CanSelectLocator;
+                CanSelectToVendorLot.IsChecked = userManagementDataOutputs.CanSelectToVendorLot;
+                ReceivingInspector.IsChecked = userManagementDataOutputs.ReceivingInspector;
+                TipOfDay.IsChecked = userManagementDataOutputs.TipOfDay;
+                LargeButtons.IsChecked = userManagementDataOutputs.LargeButtons;
+                DisablePersistence.IsChecked = userManagementDataOutputs.DisablePersistence;
+                DefaultIncludeFuelActivity.IsChecked = userManagementDataOutputs.DefaultIncludeFuelActivity;
+                OnlyIncludeFuelActivity.IsChecked = userManagementDataOutputs.OnlyIncludeFuelActivity;
+                DefaultIncludeServiceActivity.IsChecked = userManagementDataOutputs.DefaultIncludeServiceActivity;
+                OnlyIncludeServiceActivity.IsChecked = userManagementDataOutputs.OnlyIncludeServiceActivity;
+                DefaultIncludePartSaleActivity.IsChecked = userManagementDataOutputs.DefaultIncludePartSaleActivity;
+                OnlyIncludePartSaleActivity.IsChecked = userManagementDataOutputs.OnlyIncludePartSaleActivity;
+                DefaultIncludeCateringActivity.IsChecked = userManagementDataOutputs.DefaultIncludeCateringActivity;
+                OnlyIncludeCateringActivity.IsChecked = userManagementDataOutputs.OnlyIncludeCateringActivity;
+                DefaultIncludeHotelActivity.IsChecked = userManagementDataOutputs.DefaultIncludeHotelActivity;
+                OnlyIncludeHotelActivity.IsChecked = userManagementDataOutputs.OnlyIncludeHotelActivity;
+                DefaultIncludeTransportationActivity.IsChecked = userManagementDataOutputs.DefaultIncludeTransportationActivity;
+                OnlyIncludeTransportationActivity.IsChecked = userManagementDataOutputs.OnlyIncludeTransportationActivity;
+                LaunchLogbookResearch.IsChecked = userManagementDataOutputs.LaunchLogbookResearch;
+                CanEnterCompliance.IsChecked = userManagementDataOutputs.CanEnterCompliance;
+                IncludeAllDefaultLogbookSearchCriteria.IsChecked = userManagementDataOutputs.IncludeAllDefaultLogbookSearchCriteria;
+                PurchaseLimit.Text = userManagementDataOutputs.PurchaseLimit;
+                RegularCost.Text = userManagementDataOutputs.RegularCost;
+                OvertimeCost.Text = userManagementDataOutputs.OvertimeCost;
+                DoubleTimeCost.Text = userManagementDataOutputs.DoubleTimeCost;
+                RegularBurdenCost.Text = userManagementDataOutputs.RegularBurdenCost;
+                OvertimeBurdenCost.Text = userManagementDataOutputs.OvertimeBurdenCost;
+                DoubleTimeBurdenCost.Text = userManagementDataOutputs.DoubleTimeBurdenCost;
+
+
+
+            }
         }
     }
 

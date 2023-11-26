@@ -80,14 +80,6 @@ namespace API_TESTER_UI.Pages.UserManagement
                                 ActiveDirectoryName = activeDirectoryName.Text,
                                 UserPermissionsProfile = userPermissionProfile.Text,
                                 DefaultScreen = defaultScreen.Text,
-                                PurchaseLimit = Convert.ToDouble(PurchaseLimit),
-                                LaborCost = Convert.ToDouble(LaborCost),
-                                RegularCost = Convert.ToDouble(RegularCost),
-                                OvertimeCost = Convert.ToDouble(OvertimeCost),
-                                DoubleTimeCost = Convert.ToDouble(DoubleTimeCost),
-                                RegularBurdenCost = Convert.ToDouble(RegularBurdenCost),
-                                OvertimeBurdenCost = Convert.ToDouble(OvertimeBurdenCost),
-                                DoubleTimeBurdenCost = Convert.ToDouble(DoubleTimeBurdenCost),
                                 RegularLaborAccountNumber = RegularLaborAccountNumber.Text,
                                 OvertimeLaborAccountNumber = OvertimeLaborAccountNumber.Text,
                                 DoubleTimeLaborAccountNumber = DoubleTimeLaborAccountNumber.Text,
@@ -125,6 +117,23 @@ namespace API_TESTER_UI.Pages.UserManagement
                                 OnlyDisplayAssignedInWOQMgmt = (bool)OnlyDisplayAssignedInWOQMgmt.IsChecked,
                                 NewUsername = NewUsername.Text
                             };
+
+                            if(!string.IsNullOrEmpty(PurchaseLimit.Text))
+                                userManagementUpdateData.PurchaseLimit = Convert.ToDouble(PurchaseLimit);
+                            if(!string.IsNullOrEmpty(LaborCost.Text)) 
+                                userManagementUpdateData.LaborCost = Convert.ToDouble(LaborCost);
+                            if(!string.IsNullOrEmpty(RegularCost.Text)) 
+                                userManagementUpdateData.RegularCost = Convert.ToDouble(RegularCost);
+                            if(!string.IsNullOrEmpty(OvertimeCost.Text))
+                                userManagementUpdateData.OvertimeCost = Convert.ToDouble(OvertimeCost);
+                            if (!string.IsNullOrEmpty(DoubleTimeCost.Text))
+                                userManagementUpdateData.DoubleTimeCost = Convert.ToDouble(DoubleTimeCost);
+                            if(!string.IsNullOrEmpty(RegularBurdenCost.Text))
+                                userManagementUpdateData.RegularBurdenCost = Convert.ToDouble(RegularBurdenCost);
+                            if(!string.IsNullOrEmpty(OvertimeBurdenCost.Text))
+                                userManagementUpdateData.OvertimeBurdenCost = Convert.ToDouble(OvertimeBurdenCost);
+                            if(!string.IsNullOrEmpty(DoubleTimeBurdenCost.Text))
+                                userManagementUpdateData.DoubleTimeBurdenCost = Convert.ToDouble(DoubleTimeBurdenCost);
                         }
 
                         var response = userManagement.UpdateUser(userManagementUpdateData);
@@ -148,7 +157,7 @@ namespace API_TESTER_UI.Pages.UserManagement
             }
             catch (Exception exc)
             {
-                MessageBox.Show("Error occurred while getting the user Data.", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Error occurred while Updating the user Data.", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

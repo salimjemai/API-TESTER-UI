@@ -453,24 +453,24 @@
                                     NavigationUIVisibility="Hidden" />
                             <Frame x:Name="_UpdateUserInfoFrame"
                                     NavigationUIVisibility="Hidden" />
-                            <Frame x:Name="_ChangePermissionProfileFrame"
+                            <Frame x:Name="_CreatePermissionProfileFrame"
                                     NavigationUIVisibility="Hidden" />
                         </Grid>
                         <Button Grid.Column="0"
                     Grid.Row="0"
                     Content="Add User"
                     Padding="6"
-                    Margin="10,10,10,10" />
+                    Margin="10,10,10,10"  Click="AddUser_Click"/>
                         <Button Grid.Column="0"
                     Grid.Row="1"
                     Content="Change User Passowrd"
                     Padding="10"
-                    Margin="10,10,10,10" />
+                    Margin="10,10,10,10"  Click="ChangeUserPassword_Click"/>
                         <Button Grid.Column="0"
                     Grid.Row="2"
                     Content="Create Permission Profile"
                     Padding="10"
-                    Margin="10,10,10,10" />
+                    Margin="10,10,10,10" Click="CreateUserPermissionProfile_Click"/>
                         <Button Grid.Column="0"
                     Grid.Row="3"
                     Content="Display User Info"

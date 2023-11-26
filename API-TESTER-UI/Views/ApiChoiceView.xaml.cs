@@ -47,19 +47,46 @@ namespace API_TESTER_UI.Views
         {
             _GetUserInputFrame.Content = new GetUser();
             _UpdateUserInfoFrame.Content = null;
+            _AddUserFrame.Content = null;
+            _ChangeUserPasswordFrame.Content = null;
+            _CreatePermissionProfileFrame.Content = null;
         }
 
         private void UpdateUserInfoPage_Click(object sender, RoutedEventArgs e)
         {
             _UpdateUserInfoFrame.Content = new UpdateUser();
             _GetUserInputFrame.Content = null;
+            _ChangeUserPasswordFrame.Content = null;
+            _CreatePermissionProfileFrame.Content = null;
+            _AddUserFrame.Content = null;
         }
-        
 
-        //private void LogoutButton_Click(object sender, RoutedEventArgs e)
-        //{
+        private void AddUser_Click(object sender, RoutedEventArgs e)
+        {
+            _AddUserFrame.Content = new AddUser();
+            _UpdateUserInfoFrame.Content = null;
+            _GetUserInputFrame.Content = null;
+            _ChangeUserPasswordFrame.Content = null;
+            _CreatePermissionProfileFrame.Content = null;
+        }
 
-        //}
+        private void ChangeUserPassword_Click(object sender, RoutedEventArgs e)
+        {
+            _ChangeUserPasswordFrame.Content = new ChangeUserPassword();
+            _AddUserFrame.Content = null;
+            _UpdateUserInfoFrame.Content = null;
+            _GetUserInputFrame.Content = null;
+            _CreatePermissionProfileFrame.Content = null;
+        }
+
+        private void CreateUserPermissionProfile_Click(object sender, RoutedEventArgs e)
+        {
+            _CreatePermissionProfileFrame.Content = new CreatePermissionProfile();
+            _ChangeUserPasswordFrame.Content = null;
+            _AddUserFrame.Content = null;
+            _UpdateUserInfoFrame.Content = null;
+            _GetUserInputFrame.Content = null;
+        }
 
         private void GetAirportsButton_Click(object sender, RoutedEventArgs e)
         {
@@ -122,9 +149,7 @@ namespace API_TESTER_UI.Views
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
+
     }
 }
