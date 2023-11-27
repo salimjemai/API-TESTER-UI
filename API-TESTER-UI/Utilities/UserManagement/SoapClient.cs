@@ -1,6 +1,7 @@
 ﻿using API_TESTER_UI.Accounting;
 using API_TESTER_UI.Aircraftownership;
 using API_TESTER_UI.CompanyDatabase;
+using API_TESTER_UI.Database;
 using API_TESTER_UI.Session;
 using API_TESTER_UI.UserManagement;
 using System;
@@ -56,6 +57,43 @@ namespace API_TESTER_UI.Utilities.UserManagement
             };
 
             return binding;
+        }
+
+        public async static Task<string> LogOut()
+        {
+            string response = string.Empty;
+            LogoutResponse logoutResponse = null;
+            var token = string.Empty;
+            var cwsUrl = string.Empty;
+            try
+            {
+                // Open a connection to get the token info from the DB
+                string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
+                using (var selectSession = DatabaseHelper.SelectRecords(sqlQuery))
+                {
+                    while (selectSession.Read())
+                    {
+                        token = selectSession.GetString(0);
+                        cwsUrl = selectSession.GetString(1);
+                    }
+
+                    if (token != null && cwsUrl != null)
+                    {
+                        CorridorLogoutData corridorLogoutData = new CorridorLogoutData
+                        {
+                            SessionToken = token
+                        };
+                        var client = GetSessionSoapClient(cwsUrl);
+                        logoutResponse = await client.LogoutAsync(corridorLogoutData);
+                        response = logoutResponse.StatusMessage;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return response;
         }
     }
 }

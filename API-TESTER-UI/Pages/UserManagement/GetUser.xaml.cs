@@ -39,14 +39,10 @@ namespace API_TESTER_UI.Pages.UserManagement
             var cwsUrl = string.Empty;
             try
             {
-                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-                GetUserReq getUserApi = new GetUserReq();
-
                 // Open a connection to get the token info from the DB
                 string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
                 using (var selectSession = DatabaseHelper.SelectRecords(sqlQuery))
                 {
-
                     while (selectSession.Read())
                     {
                         token = selectSession.GetString(0);

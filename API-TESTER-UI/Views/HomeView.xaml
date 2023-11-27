@@ -674,7 +674,7 @@
                   HorizontalAlignment="Center">
         <!--Login button-->
         <Button x:Name="loginButton2"
-                Content="Login Temp"
+                Content="Login SU"
                 Width="120"
                 Height="40"
                 Margin="10"

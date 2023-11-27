@@ -3,6 +3,7 @@ using System.Xml;
 
 namespace API_TESTER_UI
 {
+    // Deprecated
     public class LoginToSession
     {
         public string Login(string alias, string loginId, string password, string WsdlUrl)

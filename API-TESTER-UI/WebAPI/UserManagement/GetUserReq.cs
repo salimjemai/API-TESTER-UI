@@ -11,6 +11,7 @@ using Caliburn.Micro;
 
 namespace API_TESTER_UI.WebAPI
 {
+    // Deprecated
     public class GetUserReq
     {
         //public string UserName { get; set; }    

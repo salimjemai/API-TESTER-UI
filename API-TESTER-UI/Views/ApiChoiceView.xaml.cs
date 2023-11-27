@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -20,6 +19,11 @@ using System.Data.SqlClient;
 using Newtonsoft.Json.Linq;
 using API_TESTER_UI.Views;
 using API_TESTER_UI;
+using API_TESTER_UI.Utilities.UserManagement;
+using System.Windows.Forms;
+using System.Web.UI.HtmlControls;
+using System.Windows;
+using WebBrowser = System.Windows.Controls.WebBrowser;
 
 namespace API_TESTER_UI.Views
 {
@@ -28,14 +32,17 @@ namespace API_TESTER_UI.Views
     /// </summary>
     public partial class ApiChoiceWindow : Window
     {
+        public System.Windows.Window apiChoiceWindow { get; set; }
+
         public ApiChoiceWindow()
         {
             InitializeComponent();
         }
 
-        public void closeMethod(object sender, RoutedEventArgs e)
+        protected override void OnClosed(EventArgs e)
         {
-            this.Close();
+            base.OnClosed(e);
+            System.Windows.Application.Current.Shutdown();
         }
 
         private void UserManagmentBtn_Click(object sender, RoutedEventArgs e)
@@ -114,15 +121,11 @@ namespace API_TESTER_UI.Views
 
         private void MenuItemExit_Click(object sender, RoutedEventArgs e)
         {
-            // logout, delete token record then exit
-            // Call the Logout session API
-            LogoutFromSession logout = new LogoutFromSession();
-
-            if (MessageBox.Show(this, "Do you wish to close this application?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question)
+            if (System.Windows.MessageBox.Show(this, "Do you wish to close this application?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question)
                  == MessageBoxResult.Yes)
             {
-                logout.LogOutFromSessionNoNotification();
-                Application.Current.Shutdown();
+                var logoutResponse = SoapClient.LogOut();
+                System.Windows.Application.Current.Shutdown();
             }
             
 
@@ -131,10 +134,7 @@ namespace API_TESTER_UI.Views
        
         private void MenuItemLogout_Click(object sender, RoutedEventArgs e)
         {
-
-            // call the logout function
-            LogoutFromSession logout = new LogoutFromSession();
-            logout.LogOutFromSession();
+            _ = SoapClient.LogOut();
 
             // close the current window
             this.Close();
@@ -149,7 +149,29 @@ namespace API_TESTER_UI.Views
 
         }
 
+        private void Cut_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
 
+        private void Copy_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Paste_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Help_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("Help.html");
+        }
+
+        private void Version_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.MessageBox.Show($"Version 1.0.1", "API Tester version", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }

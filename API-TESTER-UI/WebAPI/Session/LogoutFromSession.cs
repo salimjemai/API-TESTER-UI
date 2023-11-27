@@ -9,6 +9,7 @@ using API_TESTER_UI.Session;
 
 namespace API_TESTER_UI.WebAPI.Session
 {
+    // Deprecated
     public class LogoutFromSession
     {
         public string Logout(string token, string WsdlUrl)
@@ -123,5 +124,6 @@ namespace API_TESTER_UI.WebAPI.Session
                     "Logout", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
     }
 }

@@ -60,10 +60,6 @@ namespace API_TESTER_UI.Views
 
         private async void LoginButton_OnClick(object sender, RoutedEventArgs e)
         {
-            LoginToSession login = new LoginToSession();
-            //SqlConnection connection = new SqlConnection(connectionString);
-
-
             LoginResponse sessionToken = null;
             var dateNow = DateTime.Now;
             try
@@ -75,15 +71,6 @@ namespace API_TESTER_UI.Views
 
                 if (schemaAliasNameText != null && LoginID != null && LoginPasswordText != null && cwsUrlText != null)
                 {
-                    //private string aliasNameField;
-
-                    //private string loginIDField;
-
-                    //private string loginPasswordField;
-
-                    //private string sessionTokenField;
-
-                    //private string auth0TokenField;
                     CorridorLoginData corridorLoginData = new CorridorLoginData
                     {
                         AliasName = schemaAliasNameText.Text,
@@ -91,7 +78,7 @@ namespace API_TESTER_UI.Views
                         LoginPassword = LoginPasswordText.Password
                     };
                     var sessionClient = SoapClient.GetSessionSoapClient(cwsUrlText.Text);
-                    sessionToken = sessionClient.Login(corridorLoginData);//login.Login(schemaAliasNameText.Text, LoginID.Text, LoginPasswordText.Password,cwsUrlText.Text);
+                    sessionToken = await sessionClient.LoginAsync(corridorLoginData);//login.Login(schemaAliasNameText.Text, LoginID.Text, LoginPasswordText.Password,cwsUrlText.Text);
 
                     if (sessionToken.SessionToken != null)
                     {
@@ -123,47 +110,38 @@ namespace API_TESTER_UI.Views
             }
         }
 
-        private void loginButton2_Click(object sender, RoutedEventArgs e)
+        private async void loginButton2_Click(object sender, RoutedEventArgs e)
         {
-            LoginToSession login = new LoginToSession();
-            //SqlConnection connection = new SqlConnection(connectionString);
-
-
-            LoginResponse sessionToken = null;
             var dateNow = DateTime.Now;
             try
             {
-                //_SchemaAliasNameText = schemaAliasNameText.Text;
-                //_LoginID = LoginID.Text;
-                //_Password = LoginPasswordText.Password;
-                //_CwsUrl = cwsUrlText.Text;  
                 _SchemaAliasNameText = "QA_MAINLINE_ENT1_19c";
                 _LoginID = "cati";
                 _Password = "PgacdE";
                 _CwsUrl = "http://10.72.5.50/Mainline/CWS/";
 
-                    CorridorLoginData corridorLoginData = new CorridorLoginData
-                    {
-                        AliasName = _SchemaAliasNameText,
-                        LoginID = _LoginID,
-                        LoginPassword = _Password
-                    };
-                    var sessionClient = SoapClient.GetSessionSoapClient(_CwsUrl);
-                    sessionToken = sessionClient.Login(corridorLoginData);
+                CorridorLoginData corridorLoginData = new CorridorLoginData
+                {
+                    AliasName = _SchemaAliasNameText,
+                    LoginID = _LoginID,
+                    LoginPassword = _Password
+                };
+                var sessionClient = SoapClient.GetSessionSoapClient(_CwsUrl);
+                LoginResponse sessionToken = await sessionClient.LoginAsync(corridorLoginData);
 
-                    if (sessionToken.SessionToken != null)
-                    {
-                        _SessionToken = sessionToken.SessionToken;
-                        int IsTokenValid = 1;
+                if (sessionToken.SessionToken != null)
+                {
+                    _SessionToken = sessionToken.SessionToken;
+                    int IsTokenValid = 1;
 
-                        // Insert the session record into the DB
-                        DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
+                    // Insert the session record into the DB
+                    DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
 
-                        // hide main login window
-                        this.Hide();
+                    // hide main login window
+                    this.Hide();
 
-                        // Open the API Choice interface
-                        new ApiChoiceWindow().Show();
+                    // Open the API Choice interface
+                    new ApiChoiceWindow().Show();
                 }
 
             }
