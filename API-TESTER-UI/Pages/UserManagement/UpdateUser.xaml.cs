@@ -1,6 +1,5 @@
 ﻿using API_TESTER_UI.Database;
 using API_TESTER_UI.UserManagement;
-using API_TESTER_UI.WebAPI;
 using DevExpress.Mvvm.Native;
 using System;
 using System.Collections.Generic;

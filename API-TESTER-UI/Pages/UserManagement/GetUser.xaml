@@ -106,7 +106,7 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             TextWrapping="Wrap" />
-        <Label
+        <!--<Label
             Grid.Row="3"
             Grid.Column="9"
             Height="28"
@@ -125,7 +125,7 @@
             Margin="730,33,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            FontWeight="Bold" />
+            FontWeight="Bold" />-->
 
 
 

@@ -13,7 +13,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using API_TESTER_UI.Pages.UserManagement;
 using API_TESTER_UI.Pages.CompanyDatabase;
-using API_TESTER_UI.WebAPI.Session;
 using API_TESTER_UI.Database;
 using System.Data.SqlClient;
 using Newtonsoft.Json.Linq;

@@ -1,5 +1,4 @@
 ﻿using API_TESTER_UI.Database;
-using API_TESTER_UI.WebAPI.CompanyDababase;
 using API_TESTER_UI.Models.CompanyDataBase;
 using System;
 using System.Collections.Generic;
@@ -33,8 +32,6 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
             try
             {
                 XmlDocument airports;
-                GetAirportsReq getAirports = new GetAirportsReq();
-
                 // Open a connection to get the token info from the DB
                 string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
                 using (var selectSession = DatabaseHelper.SelectRecords(sqlQuery))
