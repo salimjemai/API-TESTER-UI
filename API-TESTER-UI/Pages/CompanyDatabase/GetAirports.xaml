@@ -53,9 +53,9 @@
         </StackPanel>
         <ListView
             x:Name="AirportsGrid"
-            Margin="5"
             Grid.Row="1"
             Grid.ColumnSpan="5"
+            Margin="5"
             Panel.ZIndex="1">
             <ListView.View>
                 <GridView>

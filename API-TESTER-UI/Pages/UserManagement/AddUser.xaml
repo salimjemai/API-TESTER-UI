@@ -568,7 +568,7 @@
             Grid.Column="7"
             Width="120"
             Height="28"
-            Margin="250,13,0,0"
+            Margin="250,13,0,10"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             TextWrapping="Wrap" />
@@ -975,22 +975,7 @@
             Margin="730,13,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top" />
-        <!--<cws:LaunchLogbookResearch>false</cws:LaunchLogbookResearch>-->
-        <Label
-            Grid.Row="32"
-            Grid.Column="8"
-            Margin="450,9,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="LaunchLogbookResearch"
-            FontWeight="Bold" />
-        <CheckBox
-            x:Name="LaunchLogbookResearch"
-            Grid.Row="32"
-            Grid.Column="7"
-            Margin="730,13,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top" />
+
 
         <!--  Third row  -->
         <!--<cws:CanEnterCompliance>false</cws:CanEnterCompliance>-->
@@ -1041,27 +1026,23 @@
             Margin="1120,8,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top" />
-
-        <!--  last column  -->
-        <!--<cws:NewUsername>?</cws:NewUsername>-->
+        <!--<cws:LaunchLogbookResearch>false</cws:LaunchLogbookResearch>-->
         <Label
-            Grid.Row="32"
-            Grid.Column="7"
-            Margin="30,13,0,0"
+            Grid.Row="10"
+            Grid.Column="9"
+            Margin="820,2,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Content="NewUsername"
+            Content="LaunchLogbookResearch"
             FontWeight="Bold" />
-        <TextBox
-            x:Name="NewUsername"
-            Grid.Row="32"
-            Grid.Column="7"
-            Width="120"
-            Height="28"
-            Margin="250,13,0,0"
+        <CheckBox
+            x:Name="LaunchLogbookResearch"
+            Grid.Row="10"
+            Grid.Column="9"
+            Margin="1120,8,0,0"
             HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            TextWrapping="Wrap" />
+            VerticalAlignment="Top" />
+
 
     </Grid>
 </Page>

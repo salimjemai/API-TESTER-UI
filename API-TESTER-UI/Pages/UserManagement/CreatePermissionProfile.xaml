@@ -76,9 +76,9 @@
             x:Name="userName"
             Grid.Row="3"
             Grid.Column="2"
-            Width="120"
+            Width="190"
             Height="28"
-            Margin="250,32,0,0"
+            Margin="180,32,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             TextWrapping="Wrap" />
@@ -95,9 +95,9 @@
             x:Name="CreatePermissionsProfileName"
             Grid.Row="4"
             Grid.Column="2"
-            Width="120"
+            Width="190"
             Height="28"
-            Margin="250,13,0,0"
+            Margin="180,13,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             TextWrapping="Wrap" />
@@ -109,16 +109,13 @@
             VerticalAlignment="Top"
             Content="SetUserPermissionsProfileToNew"
             FontWeight="Bold" />
-        <TextBox
+        <CheckBox
             x:Name="SetUserPermissionsProfileToNew"
             Grid.Row="5"
             Grid.Column="2"
-            Width="120"
-            Height="28"
-            Margin="250,13,0,0"
+            Margin="270,19,0,0"
             HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            TextWrapping="Wrap" />
+            VerticalAlignment="Top" />
 
     </Grid>
 </Page>

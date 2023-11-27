@@ -24,7 +24,5 @@ namespace API_TESTER_UI.Views
         {
             InitializeComponent();
         }
-
-
     }
 }
