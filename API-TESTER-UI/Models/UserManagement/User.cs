@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace API_TESTER_UI.Models.UserManagement
 {
-    internal class User
+    public class User
     {
 
     }

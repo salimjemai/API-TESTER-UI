@@ -10,9 +10,7 @@ namespace API_TESTER_UI.Models.UserManagement
     public class UserDeatils
     {
         
-        public string StatusMessage { get; set; }
-
-        
+        public string StatusMessage { get; set; }        
         
         public string ErrorMessages { get; set; }
 

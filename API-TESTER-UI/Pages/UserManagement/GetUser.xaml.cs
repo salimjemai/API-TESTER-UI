@@ -87,7 +87,7 @@ namespace API_TESTER_UI.Pages.UserManagement
 
         private void ClearForm_Click(object sender, RoutedEventArgs e)
         {
-            //UserDataGridView.ItemsSource = null;
+            ClearUserOutPut(new UserManagementDataOutput());
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -148,10 +148,60 @@ namespace API_TESTER_UI.Pages.UserManagement
                 RegularBurdenCost.Text = userManagementDataOutputs.RegularBurdenCost;
                 OvertimeBurdenCost.Text = userManagementDataOutputs.OvertimeBurdenCost;
                 DoubleTimeBurdenCost.Text = userManagementDataOutputs.DoubleTimeBurdenCost;
-
-
-
             }
+        }
+
+        private void ClearUserOutPut(UserManagementDataOutput userManagementDataOutputs)
+        {
+                userNameOut.Text = userManagementDataOutputs.Username;
+                fullName.Text = userManagementDataOutputs.Fullname;
+                description.Text = userManagementDataOutputs.Description;
+                department.Text = userManagementDataOutputs.Department;
+                userBadge.Text = userManagementDataOutputs.UserBadgeID;
+                email.Text = userManagementDataOutputs.Email;
+                auth0Email.Text = userManagementDataOutputs.Auth0Email;
+                activeDirectoryName.Text = userManagementDataOutputs.ActiveDirectoryName;
+                userPermissionProfile.Text = userManagementDataOutputs.UserPermissionsProfile;
+                defaultScreen.Text = userManagementDataOutputs.DefaultScreen;
+                RegularLaborAccountNumber.Text = userManagementDataOutputs.RegularLaborAccountNumber;
+                OvertimeLaborAccountNumber.Text = userManagementDataOutputs.OvertimeLaborAccountNumber;
+                DoubleTimeLaborAccountNumber.Text = userManagementDataOutputs.DoubleTimeLaborAccountNumber;
+                LaborBurdenAccountNumber.Text = userManagementDataOutputs.LaborBurdenAccountNumber;
+                //
+                Auth0Required.IsChecked = userManagementDataOutputs.Auth0Required;
+                MustChangePassword.IsChecked = !userManagementDataOutputs.MustChangePassword;
+                CannotChangePassword.IsChecked = userManagementDataOutputs.CannotChangePassword;
+                AccountDisabled.IsChecked = userManagementDataOutputs.AccountDisabled;
+                Locator.IsChecked = userManagementDataOutputs.Locator;
+                SuspendLocator.IsChecked = userManagementDataOutputs.SuspendLocator;
+                CanSelectLocator.IsChecked = userManagementDataOutputs.CanSelectLocator;
+                CanSelectToVendorLot.IsChecked = userManagementDataOutputs.CanSelectToVendorLot;
+                ReceivingInspector.IsChecked = userManagementDataOutputs.ReceivingInspector;
+                TipOfDay.IsChecked = userManagementDataOutputs.TipOfDay;
+                LargeButtons.IsChecked = userManagementDataOutputs.LargeButtons;
+                DisablePersistence.IsChecked = userManagementDataOutputs.DisablePersistence;
+                DefaultIncludeFuelActivity.IsChecked = userManagementDataOutputs.DefaultIncludeFuelActivity;
+                OnlyIncludeFuelActivity.IsChecked = userManagementDataOutputs.OnlyIncludeFuelActivity;
+                DefaultIncludeServiceActivity.IsChecked = userManagementDataOutputs.DefaultIncludeServiceActivity;
+                OnlyIncludeServiceActivity.IsChecked = userManagementDataOutputs.OnlyIncludeServiceActivity;
+                DefaultIncludePartSaleActivity.IsChecked = userManagementDataOutputs.DefaultIncludePartSaleActivity;
+                OnlyIncludePartSaleActivity.IsChecked = userManagementDataOutputs.OnlyIncludePartSaleActivity;
+                DefaultIncludeCateringActivity.IsChecked = userManagementDataOutputs.DefaultIncludeCateringActivity;
+                OnlyIncludeCateringActivity.IsChecked = userManagementDataOutputs.OnlyIncludeCateringActivity;
+                DefaultIncludeHotelActivity.IsChecked = userManagementDataOutputs.DefaultIncludeHotelActivity;
+                OnlyIncludeHotelActivity.IsChecked = userManagementDataOutputs.OnlyIncludeHotelActivity;
+                DefaultIncludeTransportationActivity.IsChecked = userManagementDataOutputs.DefaultIncludeTransportationActivity;
+                OnlyIncludeTransportationActivity.IsChecked = userManagementDataOutputs.OnlyIncludeTransportationActivity;
+                LaunchLogbookResearch.IsChecked = userManagementDataOutputs.LaunchLogbookResearch;
+                CanEnterCompliance.IsChecked = userManagementDataOutputs.CanEnterCompliance;
+                IncludeAllDefaultLogbookSearchCriteria.IsChecked = userManagementDataOutputs.IncludeAllDefaultLogbookSearchCriteria;
+                PurchaseLimit.Text = userManagementDataOutputs.PurchaseLimit;
+                RegularCost.Text = userManagementDataOutputs.RegularCost;
+                OvertimeCost.Text = userManagementDataOutputs.OvertimeCost;
+                DoubleTimeCost.Text = userManagementDataOutputs.DoubleTimeCost;
+                RegularBurdenCost.Text = userManagementDataOutputs.RegularBurdenCost;
+                OvertimeBurdenCost.Text = userManagementDataOutputs.OvertimeBurdenCost;
+                DoubleTimeBurdenCost.Text = userManagementDataOutputs.DoubleTimeBurdenCost;
         }
     }
 

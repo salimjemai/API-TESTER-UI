@@ -14,6 +14,9 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions x:Uid="MainData">
@@ -103,12 +106,30 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             TextWrapping="Wrap" />
-        <Rectangle
-            Grid.Row="4"
-            Grid.RowSpan="10"
-            Height="4"
-            HorizontalAlignment="Stretch"
-            Fill="Blue" />
+        <Label
+            Grid.Row="3"
+            Grid.Column="9"
+            Height="28"
+            Margin="450,28,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Username Selection"
+            FontWeight="Bold" />
+        <ComboBox
+            x:Name="UsernameSelection"
+            ItemsSource="{Binding usernames}"
+            Grid.Row="3"
+            Grid.Column="10"
+            Width="120"
+            Height="28"
+            Margin="730,33,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontWeight="Bold" />
+
+
+
+
         <!--<StackPanel
             Grid.Row="7"
             Grid.ColumnSpan="8"
