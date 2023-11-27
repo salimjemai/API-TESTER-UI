@@ -115,7 +115,7 @@ namespace API_TESTER_UI.Views
             var dateNow = DateTime.Now;
             try
             {
-                _SchemaAliasNameText = "QA_MAINLINE_ENT1_19c";
+                _SchemaAliasNameText = "QA_MAINLINE_NE_19c"; // "QA_MAINLINE_ENT1_19c";
                 _LoginID = "cati";
                 _Password = "PgacdE";
                 _CwsUrl = "http://10.72.5.50/Mainline/CWS/";
