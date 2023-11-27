@@ -29,7 +29,7 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
             var token = string.Empty;
             var cwsUrl = string.Empty;
 
-            List<Airports> air = new List<Airports>();
+            AirportData[] air = null;
             try
             {
                 XmlDocument airports;
@@ -55,13 +55,8 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
 
                         };
                         var response = client.GetAirports(airp);
-                        //AirportsList = getAirports.GetListOfAirports(airports);
-                        foreach(var airport in AirportsList)
-                        {
-                            air.Add(new Airports { Airport = airport});
-                        }
-
-                        AirportsGrid.ItemsSource = response.Airports.ToList();
+                        air = response.Airports;
+                        AirportsGrid.ItemsSource = air.ToList();
                     }
                     else
                     {
@@ -76,9 +71,8 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
         }
 
         private void ClosAirportsForm_Click(object sender, RoutedEventArgs e)
-        {
-            this.Content = null;
-            //this.AirportsGrid.ItemsSource = null;
+        {            
+           this.AirportsGrid.ItemsSource = null;
         }
     }
 
