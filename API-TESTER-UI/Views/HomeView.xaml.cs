@@ -1,4 +1,6 @@
 ﻿using API_TESTER_UI.Database;
+using API_TESTER_UI.Session;
+using API_TESTER_UI.Utilities.UserManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,7 +64,7 @@ namespace API_TESTER_UI.Views
             //SqlConnection connection = new SqlConnection(connectionString);
 
 
-            var sessionToken = string.Empty;
+            LoginResponse sessionToken = null;
             var dateNow = DateTime.Now;
             try
             {
@@ -73,12 +75,27 @@ namespace API_TESTER_UI.Views
 
                 if (schemaAliasNameText != null && LoginID != null && LoginPasswordText != null && cwsUrlText != null)
                 {
-                    sessionToken = login.Login(schemaAliasNameText.Text, LoginID.Text, LoginPasswordText.Password,
-                        cwsUrlText.Text);
+                    //private string aliasNameField;
 
-                    if (sessionToken != null)
+                    //private string loginIDField;
+
+                    //private string loginPasswordField;
+
+                    //private string sessionTokenField;
+
+                    //private string auth0TokenField;
+                    CorridorLoginData corridorLoginData = new CorridorLoginData
                     {
-                        _SessionToken = sessionToken;
+                        AliasName = schemaAliasNameText.Text,
+                        LoginID = LoginID.Text,
+                        LoginPassword = LoginPasswordText.Password
+                    };
+                    var sessionClient = SoapClient.GetSessionSoapClient(cwsUrlText.Text);
+                    sessionToken = sessionClient.Login(corridorLoginData);//login.Login(schemaAliasNameText.Text, LoginID.Text, LoginPasswordText.Password,cwsUrlText.Text);
+
+                    if (sessionToken.SessionToken != null)
+                    {
+                        _SessionToken = sessionToken.SessionToken;
                         int IsTokenValid = 1;
 
                         // Insert the session record into the DB
@@ -93,7 +110,7 @@ namespace API_TESTER_UI.Views
                     }
                     else
                     {
-                        MessageBox.Show($"Something wrong happened, try again another time!!!", 
+                        MessageBox.Show($"Something wrong happened, try again another time!!!",
                             "Login warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                     }
                 }
@@ -101,7 +118,7 @@ namespace API_TESTER_UI.Views
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"Error occurred while trying to login: {exception.Message}", 
+                MessageBox.Show($"Error occurred while trying to login: {exception.Message}",
                     "Login Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -112,7 +129,7 @@ namespace API_TESTER_UI.Views
             //SqlConnection connection = new SqlConnection(connectionString);
 
 
-            var sessionToken = string.Empty;
+            LoginResponse sessionToken = null;
             var dateNow = DateTime.Now;
             try
             {
@@ -125,13 +142,18 @@ namespace API_TESTER_UI.Views
                 _Password = "PgacdE";
                 _CwsUrl = "http://10.72.5.50/Mainline/CWS/";
 
-                if (schemaAliasNameText != null && LoginID != null && _Password != null && cwsUrlText != null)
-                {
-                    sessionToken = login.Login(_SchemaAliasNameText, _LoginID, _Password, _CwsUrl);
-
-                    if (sessionToken != null)
+                    CorridorLoginData corridorLoginData = new CorridorLoginData
                     {
-                        _SessionToken = sessionToken;
+                        AliasName = _SchemaAliasNameText,
+                        LoginID = _LoginID,
+                        LoginPassword = _Password
+                    };
+                    var sessionClient = SoapClient.GetSessionSoapClient(_CwsUrl);
+                    sessionToken = sessionClient.Login(corridorLoginData);
+
+                    if (sessionToken.SessionToken != null)
+                    {
+                        _SessionToken = sessionToken.SessionToken;
                         int IsTokenValid = 1;
 
                         // Insert the session record into the DB
@@ -142,11 +164,6 @@ namespace API_TESTER_UI.Views
 
                         // Open the API Choice interface
                         new ApiChoiceWindow().Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show($"Something wrong happened, try again another time!!!");
-                    }
                 }
 
             }

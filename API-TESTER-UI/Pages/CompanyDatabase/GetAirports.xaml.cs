@@ -3,12 +3,14 @@ using API_TESTER_UI.WebAPI.CompanyDababase;
 using API_TESTER_UI.Models.CompanyDataBase;
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml;
-using System.Data.SQLite;
+using API_TESTER_UI.Aircraftownership;
+using API_TESTER_UI.UserManagement;
+using API_TESTER_UI.CompanyDatabase;
+using System.Linq;
+using API_TESTER_UI.Utilities.UserManagement;
 
 namespace API_TESTER_UI.Pages.CompanyDatabase
 {
@@ -17,6 +19,7 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
     /// </summary>
     public partial class GetAircrafts : Page
     {
+        public CompanyDatabaseSoap companyDatabaseSoappSoap { get; set; }
         public List<string> AirportsList { get; set; }
 
         public GetAircrafts()
@@ -45,16 +48,20 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
 
                     if (token != null && cwsUrl != null)
                     {
-                        DataSet data = new DataSet();
-                        airports = getAirports.GetAirport(token, cwsUrl);
-                        AirportsList = getAirports.GetListOfAirports(airports);
+                        var client = SoapClient.GetCompanyDatabaseClient(cwsUrl);
+                        AirportsReferenceInput airp = new AirportsReferenceInput
+                        {
+                            SessionToken = token,
 
+                        };
+                        var response = client.GetAirports(airp);
+                        //AirportsList = getAirports.GetListOfAirports(airports);
                         foreach(var airport in AirportsList)
                         {
                             air.Add(new Airports { Airport = airport});
                         }
 
-                        AirportsGrid.ItemsSource = air;
+                        AirportsGrid.ItemsSource = response.Airports.ToList();
                     }
                     else
                     {

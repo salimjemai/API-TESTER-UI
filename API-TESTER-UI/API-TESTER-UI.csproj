@@ -218,7 +218,37 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+    <Compile Include="Connected Services\Accounting\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\Aircraftownership\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\CompanyDatabase\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\RitaWcf\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\UserManagement\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\Session\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WorkOrder\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -249,6 +279,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="References\Reference.cs" />
+    <Compile Include="Utilities\UserManagement\SoapClient.cs" />
     <Compile Include="ViewModels\ApiChoiceViewModel.cs" />
     <Compile Include="ViewModels\MainNavigationBarViewModel.cs" />
     <Compile Include="ViewModels\UserManagementNavigationBarViewModel.cs" />
@@ -261,11 +292,6 @@
     </Compile>
     <Compile Include="Views\UserManagementView.xaml.cs">
       <DependentUpon>UserManagementView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Web References\SessionWebReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
     </Compile>
     <Compile Include="WebAPI\Accounting\ClearWipReq.cs" />
     <Compile Include="WebAPI\Accounting\DisableAllAutoPostFacilitiesReq.cs" />
@@ -378,251 +404,354 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AbortWorkOrderStepResponse.datasource">
+    <None Include="Connected Services\Accounting\accounting.wsdl" />
+    <None Include="Connected Services\Accounting\API_TESTER_UI.Accounting.AutoPostResponseOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddCompanyResponse.datasource">
+    <None Include="Connected Services\Accounting\API_TESTER_UI.Accounting.ClearWipResponseOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddOrEditUserResponse.datasource">
+    <None Include="Connected Services\Aircraftownership\aircraftownership.wsdl" />
+    <None Include="Connected Services\Aircraftownership\API_TESTER_UI.Aircraftownership.AircraftDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkComplianceResponse.datasource">
+    <None Include="Connected Services\Aircraftownership\API_TESTER_UI.Aircraftownership.AircraftDataReferenceOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResolutionResponse.datasource">
+    <None Include="Connected Services\Aircraftownership\API_TESTER_UI.Aircraftownership.AircraftDiscrepancyDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResponse.datasource">
+    <None Include="Connected Services\Aircraftownership\API_TESTER_UI.Aircraftownership.FlightOpsDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddPartServiceRequestResponse.datasource">
+    <None Include="Connected Services\Aircraftownership\API_TESTER_UI.Aircraftownership.HourMeterDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddPurchaseOrderResponse.datasource">
+    <None Include="Connected Services\Aircraftownership\API_TESTER_UI.Aircraftownership.HourMeterDataReferenceOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse.datasource">
+    <None Include="Connected Services\Aircraftownership\API_TESTER_UI.Aircraftownership.TransactionDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddSalesOrderResponse.datasource">
+    <None Include="Connected Services\Aircraftownership\API_TESTER_UI.Aircraftownership.TransactionDataReferenceOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddSOFromSOQResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.AddressDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddSOQPartDetailResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.AddressReferenceOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.AirportsDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.CompanyDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddUserResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.CompanyReferenceOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWOPartAssemblyResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.CountriesDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderItemResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.CreditRatingsDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderLaborResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.CreditRestrictionsDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderPartResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.CustomerClassesDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.PhoneDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.PhoneReferenceOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.RegionsDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderServiceResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.StatesDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\API_TESTER_UI.CompanyDatabase.TimeZonesDataOutput.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkResponse.datasource">
+    <None Include="Connected Services\CompanyDatabase\customerdatabase.wsdl" />
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AbortWorkOrderStepResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddCompanyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWorkOrderStepResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddOrEditUserResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.AddWoSquawkPartAssemblyResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkComplianceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResolutionResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.BatchDeliverPartResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddPartServiceRequestResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddPurchaseOrderResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.ClockInResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddSalesOrderResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.ClockOutResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddSOFromSOQResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddSOQPartDetailResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddUserResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.DeliverPartResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWOPartAssemblyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.EditWOPartAssemblyResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderItemResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderLaborResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.EndUserWorkOrderBulkLaborResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderPartResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.EnterCycleCountResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.GetActiveCycleCountsResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.GetCompanyResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderServiceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.GetContractPriceResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.GetCycleCountPartsResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderSquawkResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.LotResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.PrintPartLabelsResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWorkOrderStepResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.ReceivePartResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.AddWoSquawkPartAssemblyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.SelectSOQPartDetailResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.BatchDeliverPartResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.SetApiOptionsResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.SigninToolResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.SignoutToolResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.ClockInResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.StartUserWorkOrderBulkLaborResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.ClockOutResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.StatusResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.UpdateUserResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.DeliverPartResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.EditWOPartAssemblyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.UpdateWorkOrderResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.EndUserWorkOrderBulkLaborResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.EnterCycleCountResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.GetActiveCycleCountsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\API_TESTER_UI.ServiceReference1.VendorQuoteResponse.datasource">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.GetCompanyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\IRitaWcf.xsd">
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.GetContractPriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.GetCycleCountPartsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.LotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.PrintPartLabelsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.ReceivePartResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.SelectSOQPartDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.SetApiOptionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.SigninToolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.SignoutToolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.StartUserWorkOrderBulkLaborResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.StatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.UpdateSOQPartDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.UpdateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.UpdateWorkOrderPartResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.UpdateWorkOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.UpdateWorkOrderStepResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\API_TESTER_UI.RitaWcf.VendorQuoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\RitaWcf\IRitaWcf.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\IRitaWcf1.xsd">
+    <None Include="Connected Services\RitaWcf\IRitaWcf1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\IRitaWcf2.xsd">
+    <None Include="Connected Services\RitaWcf\IRitaWcf2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\IRitaWcf3.xsd">
+    <None Include="Connected Services\RitaWcf\IRitaWcf3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\IRitaWcf4.xsd">
+    <None Include="Connected Services\RitaWcf\IRitaWcf4.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\RitaWcf.wsdl" />
+    <None Include="Connected Services\RitaWcf\RitaWcf.wsdl" />
+    <None Include="Connected Services\UserManagement\API_TESTER_UI.UserManagement.UserManagementDataOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\UserManagement\API_TESTER_UI.UserManagement.UserManagementReferenceOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\UserManagement\usermanagement.wsdl" />
+    <None Include="Connected Services\Session\API_TESTER_UI.Session.LoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Session\API_TESTER_UI.Session.LogoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Session\session.wsdl" />
+    <None Include="Connected Services\WorkOrder\API_TESTER_UI.WorkOrder.CorridorStatusData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WorkOrder\API_TESTER_UI.WorkOrder.WorkOrderLaborResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WorkOrder\API_TESTER_UI.WorkOrder.WorkOrderMiscChargeOutputData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WorkOrder\API_TESTER_UI.WorkOrder.WorkOrderPartOutputData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WorkOrder\API_TESTER_UI.WorkOrder.WorkOrderPartRemovedPartOutputData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WorkOrder\API_TESTER_UI.WorkOrder.WorkOrderReferenceOutputData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WorkOrder\API_TESTER_UI.WorkOrder.WorkOrderServiceOutputData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WorkOrder\API_TESTER_UI.WorkOrder.WorkOrderSquawkOutputData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WorkOrder\workorder.wsdl" />
     <None Include="Database\APITESTData.db" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\SessionWebReference\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\SessionWebReference\UserManagement.wsdl" />
-    <None Include="Web References\SessionWebReference\UserManagementDataOutput.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\SessionWebReference\UserManagementReferenceOutput.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -631,7 +760,6 @@
   <ItemGroup>
     <Folder Include="Pages\Accounting\" />
     <Folder Include="Pages\AircraftOwnership\" />
-    <Folder Include="Utilities\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Sources\mesh.jpg" />
@@ -645,32 +773,94 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferences Include="Web References\" />
+    <WCFMetadataStorage Include="Connected Services\Accounting\" />
+    <WCFMetadataStorage Include="Connected Services\Aircraftownership\" />
+    <WCFMetadataStorage Include="Connected Services\CompanyDatabase\" />
+    <WCFMetadataStorage Include="Connected Services\RitaWcf\" />
+    <WCFMetadataStorage Include="Connected Services\UserManagement\" />
+    <WCFMetadataStorage Include="Connected Services\Session\" />
+    <WCFMetadataStorage Include="Connected Services\WorkOrder\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://10.72.5.50/Mainline/CWS/UserManagement.asmx%3fwsdl">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\SessionWebReference\</RelPath>
-      <UpdateFromURL>http://10.72.5.50/Mainline/CWS/UserManagement.asmx%3fwsdl</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>API_TESTER_UI_WebReference_Session</CachedSettingsPropName>
-    </WebReferenceUrl>
+    <None Include="Connected Services\RitaWcf\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+    <None Include="Connected Services\RitaWcf\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\RitaWcf\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\Accounting\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+    <None Include="Connected Services\Accounting\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Accounting\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Aircraftownership\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Aircraftownership\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Aircraftownership\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Session\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Session\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Session\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CompanyDatabase\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CompanyDatabase\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CompanyDatabase\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WorkOrder\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WorkOrder\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WorkOrder\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\UserManagement\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\UserManagement\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\UserManagement\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

@@ -1,12 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml.Serialization;
 using API_TESTER_UI.Database;
 using API_TESTER_UI.Models.UserManagement;
-using API_TESTER_UI.SessionWebReference;
+using API_TESTER_UI.UserManagement;
+using API_TESTER_UI.Utilities.UserManagement;
 using API_TESTER_UI.WebAPI;
 using DevExpress.Mvvm.Native;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
@@ -18,6 +25,7 @@ namespace API_TESTER_UI.Pages.UserManagement
     /// </summary>
     public partial class GetUser : Page
     {
+        private string serviceEndpoint = ConfigurationManager.AppSettings["endpoint"];
         private static XmlSerializer m_xmlSerializer = new XmlSerializer(typeof(UserDeatils));
 
         public GetUser()
@@ -31,7 +39,7 @@ namespace API_TESTER_UI.Pages.UserManagement
             var cwsUrl = string.Empty;
             try
             {
-
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                 GetUserReq getUserApi = new GetUserReq();
 
                 // Open a connection to get the token info from the DB
@@ -49,22 +57,22 @@ namespace API_TESTER_UI.Pages.UserManagement
 
                     if (token != null && cwsUrl != null)
                     {
-                        // call web service 
-                        SessionWebReference.UserManagement userManagement = new SessionWebReference.UserManagement();
+                        // call web service
+                        // create client to use the interface
+                        var userClient = SoapClient.GetUserManagementClient(cwsUrl);      
+
                         UserManagementReferenceInput userManagementReference = new UserManagementReferenceInput
                         {
                             Username = userName.Text,
                             SessionToken = token
                         };
-                        var fak = userManagement.GetUser(userManagementReference);
-                        if (fak.StatusMessage.Equals("Failed"))
+                        var testClient = userClient.GetUser(userManagementReference);
+                        if (testClient.StatusMessage.Equals("Failed"))
                         {
-                            MessageBox.Show($"{fak.ErrorMessages.FirstOrDefault().ErrorText}", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
+                            MessageBox.Show($"{testClient.ErrorMessages.FirstOrDefault().ErrorText}", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
                             return;
                         }
-                        SetupUserOutPut(fak);
-
-                        //UserDataGridView.ItemsSource = userManagementDataOutputs;
+                        SetupUserOutPut(testClient);
                     }
 
                     else
@@ -79,6 +87,7 @@ namespace API_TESTER_UI.Pages.UserManagement
                 MessageBox.Show("Error occurred while getting the user Data.", "Get User info", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
 
         private void ClearForm_Click(object sender, RoutedEventArgs e)
         {
@@ -100,7 +109,7 @@ namespace API_TESTER_UI.Pages.UserManagement
                 department.Text = userManagementDataOutputs.Department;
                 userBadge.Text = userManagementDataOutputs.UserBadgeID;
                 email.Text = userManagementDataOutputs.Email;
-                auth0Email.Text = userManagementDataOutputs.CorridorIDEmail;
+                auth0Email.Text = userManagementDataOutputs.Auth0Email;
                 activeDirectoryName.Text = userManagementDataOutputs.ActiveDirectoryName;
                 userPermissionProfile.Text = userManagementDataOutputs.UserPermissionsProfile;
                 defaultScreen.Text = userManagementDataOutputs.DefaultScreen;
@@ -109,7 +118,7 @@ namespace API_TESTER_UI.Pages.UserManagement
                 DoubleTimeLaborAccountNumber.Text = userManagementDataOutputs.DoubleTimeLaborAccountNumber;
                 LaborBurdenAccountNumber.Text = userManagementDataOutputs.LaborBurdenAccountNumber;
                 //
-                Auth0Required.IsChecked = userManagementDataOutputs.CorridorIDRequired;
+                Auth0Required.IsChecked = userManagementDataOutputs.Auth0Required;
                 MustChangePassword.IsChecked = !userManagementDataOutputs.MustChangePassword;
                 CannotChangePassword.IsChecked = userManagementDataOutputs.CannotChangePassword;
                 AccountDisabled.IsChecked = userManagementDataOutputs.AccountDisabled;

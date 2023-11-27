@@ -4,6 +4,8 @@ using System;
 using System.Net;
 using System.Windows;
 using System.Xml;
+using API_TESTER_UI.Utilities.UserManagement;
+using API_TESTER_UI.Session;
 
 namespace API_TESTER_UI.WebAPI.Session
 {
@@ -61,10 +63,14 @@ namespace API_TESTER_UI.WebAPI.Session
                         token = selectSession.GetString(0);
                         cwsUrl = selectSession.GetString(1);
                     }
+                    CorridorLogoutData corridorLogoutData = new CorridorLogoutData 
+                    {
+                        SessionToken = token
+                    };
+                    var sessionClient = SoapClient.GetSessionSoapClient(cwsUrl);
+                    var logoutResponse = sessionClient.Logout(corridorLogoutData);
 
-                    var logoutResponse = Logout(token, cwsUrl);
-
-                    if (logoutResponse.Contains("Success"))
+                    if (logoutResponse.StatusMessage == "Success" )
                     {
                         DatabaseHelper.DeleteSession(token);
                     }

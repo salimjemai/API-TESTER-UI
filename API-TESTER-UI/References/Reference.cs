@@ -17,149 +17,149 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Request", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.WorkOrderQuoteRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.InspectReceiptAcceptRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.InspectReceiptReturnRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.InspectReceiptDisposeRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ClearHoldCodesRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.GetActiveCycleCountsRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.GetCycleCountPartsRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.PrintPartLabelsRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.LotRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddLotRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateLotRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.VendorQuoteRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RequestToAddVendorQuote))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RequestToUpdateVendorQuote))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWarehouseBinRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateDeliveryPickTicketRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.GetContractPriceRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddOrEditUserRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateUserRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddUserRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSOFromSOQRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddPurchaseOrderRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSalesOrderRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteHeaderRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateSalesOrderQuoteHeaderRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SelectSalesOrderQuoteHeaderRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSOQPartDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SelectSOQPartDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateSOQRequestedPartDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SelectSOQRequestedPartDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateSOQPartQuotedDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ClockInRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ClockOutRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeliverPartRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetAPIOptionsRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CompanyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddCompanyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.GetCompanyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.PartReceiptRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ReceivePartRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EnterCycleCountRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.WorkOrderRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWOPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.LinkWOPartAssemblySquawkAssociationsRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnLinkWOPartAssemblySquawkAssociationsRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderItemRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SignOffWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveSignOffWOSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SignOffWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveSignOffWOStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.InspectWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.InspectWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveInspectWOSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveInspectWOStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AbortWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.WorkOrderLaborData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderLaborRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.WorkOrderPartRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderPartRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.WorkOrderServiceRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderServiceRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.WorkOrderAssignmentData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddPartServiceRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SignoutToolRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.PartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWOPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWOSquawkPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EditWOPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.WorkOrderQuoteRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.InspectReceiptAcceptRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.InspectReceiptReturnRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.InspectReceiptDisposeRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ClearHoldCodesRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.GetActiveCycleCountsRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.GetCycleCountPartsRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.PrintPartLabelsRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.LotRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddLotRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateLotRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.VendorQuoteRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RequestToAddVendorQuote))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RequestToUpdateVendorQuote))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWarehouseBinRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateDeliveryPickTicketRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.GetContractPriceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddOrEditUserRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateUserRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddUserRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSOFromSOQRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddPurchaseOrderRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSalesOrderRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSalesOrderQuoteHeaderRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateSalesOrderQuoteHeaderRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SelectSalesOrderQuoteHeaderRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSOQPartDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateSOQPartDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SelectSOQPartDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateSOQRequestedPartDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SelectSOQRequestedPartDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateSOQPartQuotedDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ClockInRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ClockOutRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeliverPartRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetAPIOptionsRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CompanyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddCompanyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.GetCompanyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.PartReceiptRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ReceivePartRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EnterCycleCountRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.WorkOrderRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWOPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.LinkWOPartAssemblySquawkAssociationsRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnLinkWOPartAssemblySquawkAssociationsRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderItemRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SignOffWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveSignOffWOSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SignOffWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveSignOffWOStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.InspectWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.InspectWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveInspectWOSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveInspectWOStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AbortWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.WorkOrderLaborData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderLaborRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.WorkOrderPartRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderPartRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderPartRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.WorkOrderServiceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderServiceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.WorkOrderAssignmentData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddPartServiceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SignoutToolRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.PartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWOPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWOSquawkPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EditWOPartAssemblyRequest))]
     public partial class Request : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -189,19 +189,19 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="WorkOrderQuoteRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkRequest))]
-    public partial class WorkOrderQuoteRequest : API_TESTER_UI.ServiceReference1.Request {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkRequest))]
+    public partial class WorkOrderQuoteRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.WorkOrderQuotePath PathField;
+        private API_TESTER_UI.RitaWcf.WorkOrderQuotePath PathField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.WorkOrderQuotePath Path {
+        public API_TESTER_UI.RitaWcf.WorkOrderQuotePath Path {
             get {
                 return this.PathField;
             }
@@ -218,7 +218,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ApproveWorkOrderQuoteRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class ApproveWorkOrderQuoteRequest : API_TESTER_UI.ServiceReference1.WorkOrderQuoteRequest {
+    public partial class ApproveWorkOrderQuoteRequest : API_TESTER_UI.RitaWcf.WorkOrderQuoteRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> ApproveChildrenField;
@@ -273,7 +273,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RejectWorkOrderQuoteRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RejectWorkOrderQuoteRequest : API_TESTER_UI.ServiceReference1.WorkOrderQuoteRequest {
+    public partial class RejectWorkOrderQuoteRequest : API_TESTER_UI.RitaWcf.WorkOrderQuoteRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ContactNameField;
@@ -328,7 +328,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnapproveWorkOrderQuoteRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnapproveWorkOrderQuoteRequest : API_TESTER_UI.ServiceReference1.WorkOrderQuoteRequest {
+    public partial class UnapproveWorkOrderQuoteRequest : API_TESTER_UI.RitaWcf.WorkOrderQuoteRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ContactNameField;
@@ -383,7 +383,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnrejectWorkOrderQuoteRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnrejectWorkOrderQuoteRequest : API_TESTER_UI.ServiceReference1.WorkOrderQuoteRequest {
+    public partial class UnrejectWorkOrderQuoteRequest : API_TESTER_UI.RitaWcf.WorkOrderQuoteRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ContactNameField;
@@ -438,7 +438,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderQuoteItemRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderQuoteItemRequest : API_TESTER_UI.ServiceReference1.WorkOrderQuoteRequest {
+    public partial class AddWorkOrderQuoteItemRequest : API_TESTER_UI.RitaWcf.WorkOrderQuoteRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CommentsField;
@@ -525,7 +525,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderQuoteSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderQuoteSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderQuoteRequest {
+    public partial class AddWorkOrderQuoteSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderQuoteRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> AddAssociatedPartsandServicesField;
@@ -537,7 +537,7 @@ namespace API_TESTER_UI.References {
         private string AppendixField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.WorkOrderPath AssociatedSquawkPathField;
+        private API_TESTER_UI.RitaWcf.WorkOrderPath AssociatedSquawkPathField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AssociationReasonField;
@@ -585,7 +585,7 @@ namespace API_TESTER_UI.References {
         private System.Nullable<bool> ScheduledField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ZoneDescriptionField;
@@ -633,7 +633,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.WorkOrderPath AssociatedSquawkPath {
+        public API_TESTER_UI.RitaWcf.WorkOrderPath AssociatedSquawkPath {
             get {
                 return this.AssociatedSquawkPathField;
             }
@@ -841,7 +841,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -884,7 +884,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="InspectReceiptAcceptRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class InspectReceiptAcceptRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class InspectReceiptAcceptRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CommentsField;
@@ -955,7 +955,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="InspectReceiptReturnRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class InspectReceiptReturnRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class InspectReceiptReturnRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CommentsField;
@@ -1138,7 +1138,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="InspectReceiptDisposeRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class InspectReceiptDisposeRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class InspectReceiptDisposeRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CommentsField;
@@ -1209,7 +1209,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ClearHoldCodesRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class ClearHoldCodesRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class ClearHoldCodesRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ReceiptHoldCodeClearNotesField;
@@ -1218,7 +1218,7 @@ namespace API_TESTER_UI.References {
         private string ReceiptHoldCodeNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.ReceiptHoldCodes[] ReceiptHoldCodesField;
+        private API_TESTER_UI.RitaWcf.ReceiptHoldCodes[] ReceiptHoldCodesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ReceivedPartNumberField;
@@ -1250,7 +1250,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.ReceiptHoldCodes[] ReceiptHoldCodes {
+        public API_TESTER_UI.RitaWcf.ReceiptHoldCodes[] ReceiptHoldCodes {
             get {
                 return this.ReceiptHoldCodesField;
             }
@@ -1280,7 +1280,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="GetActiveCycleCountsRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class GetActiveCycleCountsRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class GetActiveCycleCountsRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool GetOnlyClosedCycleCountsField;
@@ -1303,7 +1303,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="GetCycleCountPartsRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class GetCycleCountPartsRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class GetCycleCountPartsRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CycleCountNumberField;
@@ -1342,7 +1342,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="PrintPartLabelsRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class PrintPartLabelsRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class PrintPartLabelsRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedLotNumberField;
@@ -1413,9 +1413,9 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="LotRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddLotRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateLotRequest))]
-    public partial class LotRequest : API_TESTER_UI.ServiceReference1.Request {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddLotRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateLotRequest))]
+    public partial class LotRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> AeaListField;
@@ -1526,7 +1526,7 @@ namespace API_TESTER_UI.References {
         private System.Nullable<double> SinceRepairHoursField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UserDefinedFieldsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UserDefinedFieldsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string VendorCodeField;
@@ -2009,7 +2009,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] UserDefinedFields {
+        public API_TESTER_UI.RitaWcf.Udf[] UserDefinedFields {
             get {
                 return this.UserDefinedFieldsField;
             }
@@ -2078,7 +2078,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddLotRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddLotRequest : API_TESTER_UI.ServiceReference1.LotRequest {
+    public partial class AddLotRequest : API_TESTER_UI.RitaWcf.LotRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool AssociateToPreviousLotField;
@@ -2117,7 +2117,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateLotRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateLotRequest : API_TESTER_UI.ServiceReference1.LotRequest {
+    public partial class UpdateLotRequest : API_TESTER_UI.RitaWcf.LotRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ChangeCostReasonField;
@@ -2220,9 +2220,9 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="VendorQuoteRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RequestToAddVendorQuote))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RequestToUpdateVendorQuote))]
-    public partial class VendorQuoteRequest : API_TESTER_UI.ServiceReference1.Request {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RequestToAddVendorQuote))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RequestToUpdateVendorQuote))]
+    public partial class VendorQuoteRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ExternalQuoteReferenceNumberField;
@@ -2501,14 +2501,14 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RequestToAddVendorQuote", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RequestToAddVendorQuote : API_TESTER_UI.ServiceReference1.VendorQuoteRequest {
+    public partial class RequestToAddVendorQuote : API_TESTER_UI.RitaWcf.VendorQuoteRequest {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RequestToUpdateVendorQuote", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RequestToUpdateVendorQuote : API_TESTER_UI.ServiceReference1.VendorQuoteRequest {
+    public partial class RequestToUpdateVendorQuote : API_TESTER_UI.RitaWcf.VendorQuoteRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int VendorQuoteNumberField;
@@ -2531,7 +2531,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWarehouseBinRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWarehouseBinRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddWarehouseBinRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string WarehouseBinField;
@@ -2586,7 +2586,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateDeliveryPickTicketRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateDeliveryPickTicketRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class UpdateDeliveryPickTicketRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ExpectedDeliveryNumberField;
@@ -2641,7 +2641,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="GetContractPriceRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class GetContractPriceRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class GetContractPriceRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CompanyCodeField;
@@ -2760,7 +2760,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddOrEditUserRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddOrEditUserRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddOrEditUserRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -2916,7 +2916,7 @@ namespace API_TESTER_UI.References {
         private bool TipOfDayField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string UserBadgeIDField;
@@ -3591,7 +3591,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -3647,7 +3647,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateUserRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateUserRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class UpdateUserRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -3803,7 +3803,7 @@ namespace API_TESTER_UI.References {
         private bool TipOfDayField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string UserBadgeIDField;
@@ -4478,7 +4478,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -4534,7 +4534,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddUserRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddUserRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddUserRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -4687,7 +4687,7 @@ namespace API_TESTER_UI.References {
         private bool TipOfDayField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string UserBadgeIDField;
@@ -5349,7 +5349,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -5405,7 +5405,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSOFromSOQRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSOFromSOQRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddSOFromSOQRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CommentsField;
@@ -5476,7 +5476,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddPurchaseOrderRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddPurchaseOrderRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddPurchaseOrderRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CloseOnImportField;
@@ -5755,7 +5755,7 @@ namespace API_TESTER_UI.References {
         private string PurchaseOrderVendorPhoneTitleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public bool CloseOnImport {
@@ -6954,7 +6954,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -6971,7 +6971,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSalesOrderRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSalesOrderRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddSalesOrderRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ARAccountNumberField;
@@ -7172,7 +7172,7 @@ namespace API_TESTER_UI.References {
         private string TaxTypeNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string ARAccountNumber {
@@ -8033,7 +8033,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -8050,7 +8050,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSalesOrderQuoteHeaderRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSalesOrderQuoteHeaderRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddSalesOrderQuoteHeaderRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool AOGField;
@@ -8825,7 +8825,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateSalesOrderQuoteHeaderRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateSalesOrderQuoteHeaderRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class UpdateSalesOrderQuoteHeaderRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool AOGField;
@@ -9616,7 +9616,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SelectSalesOrderQuoteHeaderRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SelectSalesOrderQuoteHeaderRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class SelectSalesOrderQuoteHeaderRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedSalesOrderQuoteNumberField;
@@ -9655,7 +9655,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CancelSalesOrderQuoteHeaderRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class CancelSalesOrderQuoteHeaderRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class CancelSalesOrderQuoteHeaderRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> CanCancelSOQWithPartsField;
@@ -9710,7 +9710,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSOQPartDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSOQPartDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddSOQPartDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CalculatePriceField;
@@ -10373,7 +10373,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateSOQPartDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateSOQPartDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class UpdateSOQPartDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CalculatePriceField;
@@ -10988,7 +10988,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SelectSOQPartDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SelectSOQPartDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class SelectSOQPartDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<long> CustomerQuoteNumberField;
@@ -11107,7 +11107,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSOQRequestedPartDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSOQRequestedPartDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddSOQRequestedPartDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CancelledField;
@@ -11322,7 +11322,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateSOQRequestedPartDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateSOQRequestedPartDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class UpdateSOQRequestedPartDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ExternalRefField;
@@ -11409,7 +11409,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SelectSOQRequestedPartDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SelectSOQRequestedPartDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class SelectSOQRequestedPartDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private long LineItemNumberField;
@@ -11448,7 +11448,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CancelSOQRequestedPartDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class CancelSOQRequestedPartDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class CancelSOQRequestedPartDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedSalesOrderQuoteNumberField;
@@ -11519,7 +11519,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSOQPartQuotedDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSOQPartQuotedDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddSOQPartQuotedDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CalculatePriceField;
@@ -12230,7 +12230,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateSOQPartQuotedDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateSOQPartQuotedDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class UpdateSOQPartQuotedDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CalculatePriceField;
@@ -12957,7 +12957,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SelectSOQPartQuotedDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SelectSOQPartQuotedDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class SelectSOQPartQuotedDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedCustomerQuoteNumberField;
@@ -13012,7 +13012,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CancelSOQPartQuotedDetailRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class CancelSOQPartQuotedDetailRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class CancelSOQPartQuotedDetailRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedSalesOrderQuoteNumberField;
@@ -13083,7 +13083,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class AddWorkOrderRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool AOGField;
@@ -13230,7 +13230,7 @@ namespace API_TESTER_UI.References {
         private System.Nullable<System.DateTime> StartedField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<long> WONumberField;
@@ -13878,7 +13878,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -13986,7 +13986,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ClockInRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class ClockInRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class ClockInRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<System.DateTime> ClockOutTimeField;
@@ -14041,7 +14041,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ClockOutRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class ClockOutRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class ClockOutRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<System.DateTime> ClockOutTimeField;
@@ -14096,7 +14096,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DeliverPartRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class DeliverPartRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class DeliverPartRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AcceptedByField;
@@ -14215,7 +14215,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetAPIOptionsRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetAPIOptionsRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class SetAPIOptionsRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool ModulePurchaseRequiredField;
@@ -14238,8 +14238,8 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CompanyRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddCompanyRequest))]
-    public partial class CompanyRequest : API_TESTER_UI.ServiceReference1.Request {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddCompanyRequest))]
+    public partial class CompanyRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string APAccountNumberField;
@@ -14449,7 +14449,7 @@ namespace API_TESTER_UI.References {
         private string TaxIdNumberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool UseDefaultCurrencyForVendorInvoicesField;
@@ -15376,7 +15376,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -15510,14 +15510,14 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddCompanyRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddCompanyRequest : API_TESTER_UI.ServiceReference1.CompanyRequest {
+    public partial class AddCompanyRequest : API_TESTER_UI.RitaWcf.CompanyRequest {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="GetCompanyRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class GetCompanyRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class GetCompanyRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string APAccountNumberField;
@@ -15727,7 +15727,7 @@ namespace API_TESTER_UI.References {
         private string TaxIdNumberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool UseDefaultCurrencyForVendorInvoicesField;
@@ -16654,7 +16654,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -16788,9 +16788,9 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="PartReceiptRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ReceivePartRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptRequest))]
-    public partial class PartReceiptRequest : API_TESTER_UI.ServiceReference1.Request {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ReceivePartRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptRequest))]
+    public partial class PartReceiptRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ARCFormTrackingIDField;
@@ -16859,10 +16859,10 @@ namespace API_TESTER_UI.References {
         private double QuantityReceivedField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.ReceiptHoldCodes[] ReceiptHoldCodesField;
+        private API_TESTER_UI.RitaWcf.ReceiptHoldCodes[] ReceiptHoldCodesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] ReceiptUserDefinedFieldsField;
+        private API_TESTER_UI.RitaWcf.Udf[] ReceiptUserDefinedFieldsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ReceivedByField;
@@ -16898,7 +16898,7 @@ namespace API_TESTER_UI.References {
         private string SourceCompanyCodeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string UnitOfMeasureField;
@@ -17202,7 +17202,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.ReceiptHoldCodes[] ReceiptHoldCodes {
+        public API_TESTER_UI.RitaWcf.ReceiptHoldCodes[] ReceiptHoldCodes {
             get {
                 return this.ReceiptHoldCodesField;
             }
@@ -17215,7 +17215,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] ReceiptUserDefinedFields {
+        public API_TESTER_UI.RitaWcf.Udf[] ReceiptUserDefinedFields {
             get {
                 return this.ReceiptUserDefinedFieldsField;
             }
@@ -17371,7 +17371,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -17453,7 +17453,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ReceivePartRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class ReceivePartRequest : API_TESTER_UI.ServiceReference1.PartReceiptRequest {
+    public partial class ReceivePartRequest : API_TESTER_UI.RitaWcf.PartReceiptRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ExpectedReceiptNumberField;
@@ -17556,7 +17556,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CreateUnexpectedReceiptRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class CreateUnexpectedReceiptRequest : API_TESTER_UI.ServiceReference1.PartReceiptRequest {
+    public partial class CreateUnexpectedReceiptRequest : API_TESTER_UI.RitaWcf.PartReceiptRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool InventoryReceiptField;
@@ -17611,13 +17611,13 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="EnterCycleCountRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class EnterCycleCountRequest : API_TESTER_UI.ServiceReference1.Request {
+    public partial class EnterCycleCountRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CycleCountNumberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.CycleCountPart[] CycleCountPartsField;
+        private API_TESTER_UI.RitaWcf.CycleCountPart[] CycleCountPartsField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string CycleCountNumber {
@@ -17633,7 +17633,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.CycleCountPart[] CycleCountParts {
+        public API_TESTER_UI.RitaWcf.CycleCountPart[] CycleCountParts {
             get {
                 return this.CycleCountPartsField;
             }
@@ -17650,99 +17650,99 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="WorkOrderRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWOPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.LinkWOPartAssemblySquawkAssociationsRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnLinkWOPartAssemblySquawkAssociationsRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderItemRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SignOffWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveSignOffWOSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SignOffWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveSignOffWOStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.InspectWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.InspectWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveInspectWOSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveInspectWOStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOSquawkRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AbortWorkOrderStepRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.WorkOrderLaborData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderLaborRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.WorkOrderPartRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderPartRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.WorkOrderServiceRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderServiceRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.WorkOrderAssignmentData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddPartServiceRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SignoutToolRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.PartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWOPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWOSquawkPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EditWOPartAssemblyRequest))]
-    public partial class WorkOrderRequest : API_TESTER_UI.ServiceReference1.Request {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWOPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.LinkWOPartAssemblySquawkAssociationsRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnLinkWOPartAssemblySquawkAssociationsRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderItemRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SignOffWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveSignOffWOSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SignOffWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveSignOffWOStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.InspectWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.InspectWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveInspectWOSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveInspectWOStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOSquawkRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AbortWorkOrderStepRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.WorkOrderLaborData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderLaborRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.WorkOrderPartRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderPartRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderPartRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.WorkOrderServiceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderServiceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.WorkOrderAssignmentData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddPartServiceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SignoutToolRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.PartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWOPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWOSquawkPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EditWOPartAssemblyRequest))]
+    public partial class WorkOrderRequest : API_TESTER_UI.RitaWcf.Request {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.WorkOrderPath PathField;
+        private API_TESTER_UI.RitaWcf.WorkOrderPath PathField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.WorkOrderPath Path {
+        public API_TESTER_UI.RitaWcf.WorkOrderPath Path {
             get {
                 return this.PathField;
             }
@@ -17759,43 +17759,43 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="PartsAndAssemblySignoff", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyRemovalPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
-    public partial class PartsAndAssemblySignoff : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyRemovalPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest))]
+    public partial class PartsAndAssemblySignoff : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> PartAssemblyMasterSequenceNumberField;
@@ -17818,260 +17818,260 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOPartAssemblyFtnTestPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOPartAssemblyFtnTestPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOPartAssemblyFtnTestPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOSquawkPartAssemblyFtnTestPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOSquawkPartAssemblyFtnTestPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOSquawkPartAssemblyFtnTestPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOPartAssemblyFtnTestInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOPartAssemblyFtnTestInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOPartAssemblyFtnTestInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOPartAssemblyRemovalPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOPartAssemblyRemovalPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOPartAssemblyRemovalPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOSquawkPartAssemblyRemovalPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOSquawkPartAssemblyRemovalPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOSquawkPartAssemblyRemovalPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOPartAssemblyInstallPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOPartAssemblyInstallPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOPartAssemblyInstallPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOSquawkPartAssemblyInstallPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOSquawkPartAssemblyInstallPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOSquawkPartAssemblyInstallPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOPartAssemblyInstallInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOPartAssemblyInstallInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOPartAssemblyInstallInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOSquawkPartAssemblyInstallInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOSquawkPartAssemblyInstallInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOSquawkPartAssemblyInstallInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOPartAssemblyLeakCheckPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOPartAssemblyLeakCheckPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOPartAssemblyLeakCheckPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOSquawkPartAssemblyLeakCheckPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOSquawkPartAssemblyLeakCheckPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOSquawkPartAssemblyLeakCheckPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOPartAssemblyLeakCheckInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOPartAssemblyLeakCheckInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOPartAssemblyLeakCheckInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOPartAssemblyOpsCheckPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOPartAssemblyOpsCheckPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOPartAssemblyOpsCheckPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOSquawkPartAssemblyOpsCheckPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOSquawkPartAssemblyOpsCheckPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOSquawkPartAssemblyOpsCheckPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOPartAssemblyOpsCheckInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOPartAssemblyOpsCheckInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOPartAssemblyOpsCheckInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOPartAssemblyFtnTestPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOPartAssemblyFtnTestPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOPartAssemblyFtnTestPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOSquawkPartAssemblyFtnTestPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOSquawkPartAssemblyFtnTestPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOSquawkPartAssemblyFtnTestPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOPartAssemblyFtnTestInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOPartAssemblyFtnTestInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOPartAssemblyFtnTestInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOPartAssemblyRemovalPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOPartAssemblyRemovalPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOPartAssemblyRemovalPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOSquawkPartAssemblyRemovalPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOSquawkPartAssemblyRemovalPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOSquawkPartAssemblyRemovalPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOPartAssemblyInstallPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOPartAssemblyInstallPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOPartAssemblyInstallPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOSquawkPartAssemblyInstallPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOSquawkPartAssemblyInstallPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOSquawkPartAssemblyInstallPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOPartAssemblyInstallInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOPartAssemblyInstallInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOPartAssemblyInstallInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOPartAssemblyLeakCheckPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOPartAssemblyLeakCheckPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOPartAssemblyLeakCheckPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOPartAssemblyLeakCheckInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOPartAssemblyLeakCheckInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOPartAssemblyLeakCheckInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOPartAssemblyOpsCheckPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOPartAssemblyOpsCheckPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOPartAssemblyOpsCheckPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOPartAssemblyOpsCheckInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOPartAssemblyOpsCheckInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOPartAssemblyOpsCheckInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest : API_TESTER_UI.ServiceReference1.PartsAndAssemblySignoff {
+    public partial class UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest : API_TESTER_UI.RitaWcf.PartsAndAssemblySignoff {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DeleteWOSquawkPartAssemblyRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWOPartAssemblyRequest))]
-    public partial class DeleteWOSquawkPartAssemblyRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWOPartAssemblyRequest))]
+    public partial class DeleteWOSquawkPartAssemblyRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> PartAssemblyMasterSequenceNumberField;
@@ -18094,15 +18094,15 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DeleteWOPartAssemblyRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class DeleteWOPartAssemblyRequest : API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyRequest {
+    public partial class DeleteWOPartAssemblyRequest : API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyRequest {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="LinkWOPartAssemblySquawkAssociationsRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnLinkWOPartAssemblySquawkAssociationsRequest))]
-    public partial class LinkWOPartAssemblySquawkAssociationsRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnLinkWOPartAssemblySquawkAssociationsRequest))]
+    public partial class LinkWOPartAssemblySquawkAssociationsRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> PartAssemblyMasterSequenceNumberField;
@@ -18141,14 +18141,14 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnLinkWOPartAssemblySquawkAssociationsRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnLinkWOPartAssemblySquawkAssociationsRequest : API_TESTER_UI.ServiceReference1.LinkWOPartAssemblySquawkAssociationsRequest {
+    public partial class UnLinkWOPartAssemblySquawkAssociationsRequest : API_TESTER_UI.RitaWcf.LinkWOPartAssemblySquawkAssociationsRequest {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderItemRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderItemRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class AddWorkOrderItemRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string DescriptionField;
@@ -18187,7 +18187,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class AddWorkOrderSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> AddAssociatedPartsandServicesField;
@@ -18196,7 +18196,7 @@ namespace API_TESTER_UI.References {
         private System.Nullable<bool> AddWorkPakField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.WorkOrderPath AssociatedSquawkPathField;
+        private API_TESTER_UI.RitaWcf.WorkOrderPath AssociatedSquawkPathField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AssociationReasonField;
@@ -18232,7 +18232,7 @@ namespace API_TESTER_UI.References {
         private string ResolutionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ZoneDescriptionField;
@@ -18267,7 +18267,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.WorkOrderPath AssociatedSquawkPath {
+        public API_TESTER_UI.RitaWcf.WorkOrderPath AssociatedSquawkPath {
             get {
                 return this.AssociatedSquawkPathField;
             }
@@ -18423,7 +18423,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -18466,7 +18466,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class UpdateWorkOrderSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> AddAssociatedPartsandServicesField;
@@ -18484,7 +18484,7 @@ namespace API_TESTER_UI.References {
         private string CannedSquawkNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] CdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] CdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> ChangePostingDefinitionField;
@@ -18514,7 +18514,7 @@ namespace API_TESTER_UI.References {
         private string TaskFindingsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ZoneDescriptionField;
@@ -18588,7 +18588,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Cdfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Cdfs {
             get {
                 return this.CdfsField;
             }
@@ -18718,7 +18718,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -18761,7 +18761,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SignOffWorkOrderSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SignOffWorkOrderSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class SignOffWorkOrderSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -18816,7 +18816,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RemoveSignOffWOSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RemoveSignOffWOSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class RemoveSignOffWOSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -18871,7 +18871,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SignOffWorkOrderStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SignOffWorkOrderStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class SignOffWorkOrderStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -18926,7 +18926,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RemoveSignOffWOStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RemoveSignOffWOStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class RemoveSignOffWOStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -18981,7 +18981,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="InspectWorkOrderSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class InspectWorkOrderSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class InspectWorkOrderSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19036,7 +19036,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="InspectWorkOrderStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class InspectWorkOrderStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class InspectWorkOrderStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19091,7 +19091,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RemoveInspectWOSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RemoveInspectWOSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class RemoveInspectWOSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19146,7 +19146,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RemoveInspectWOStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RemoveInspectWOStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class RemoveInspectWOStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19201,7 +19201,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DoubleInspectWorkOrderSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class DoubleInspectWorkOrderSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class DoubleInspectWorkOrderSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19256,7 +19256,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DoubleInspectWorkOrderStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class DoubleInspectWorkOrderStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class DoubleInspectWorkOrderStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19311,7 +19311,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RemoveDoubleInspectWOSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RemoveDoubleInspectWOSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class RemoveDoubleInspectWOSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19366,7 +19366,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RemoveDoubleInspectWOStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RemoveDoubleInspectWOStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class RemoveDoubleInspectWOStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19421,7 +19421,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="FunctionalTestWorkOrderSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class FunctionalTestWorkOrderSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class FunctionalTestWorkOrderSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19476,7 +19476,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="FunctionalTestWorkOrderStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class FunctionalTestWorkOrderStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class FunctionalTestWorkOrderStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19531,7 +19531,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RemoveFunctionalTestWOSquawkRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RemoveFunctionalTestWOSquawkRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class RemoveFunctionalTestWOSquawkRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19586,7 +19586,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RemoveFunctionalTestWOStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RemoveFunctionalTestWOStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class RemoveFunctionalTestWOStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -19641,7 +19641,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class AddWorkOrderStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AtaCodeField;
@@ -19659,7 +19659,7 @@ namespace API_TESTER_UI.References {
         private System.Nullable<long> StepNumberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ZoneDescriptionField;
@@ -19733,7 +19733,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -19776,7 +19776,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class UpdateWorkOrderStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AtaCodeField;
@@ -19791,7 +19791,7 @@ namespace API_TESTER_UI.References {
         private string DescriptionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ZoneDescriptionField;
@@ -19852,7 +19852,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -19895,7 +19895,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AbortWorkOrderStepRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AbortWorkOrderStepRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class AbortWorkOrderStepRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<System.DateTime> CompletedAtField;
@@ -19950,9 +19950,9 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="WorkOrderLaborData", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderLaborRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborRequest))]
-    public partial class WorkOrderLaborData : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderLaborRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborRequest))]
+    public partial class WorkOrderLaborData : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -20215,7 +20215,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderLaborRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderLaborRequest : API_TESTER_UI.ServiceReference1.WorkOrderLaborData {
+    public partial class AddWorkOrderLaborRequest : API_TESTER_UI.RitaWcf.WorkOrderLaborData {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> EndCurrentTimeCardField;
@@ -20270,7 +20270,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderLaborRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderLaborRequest : API_TESTER_UI.ServiceReference1.WorkOrderLaborData {
+    public partial class UpdateWorkOrderLaborRequest : API_TESTER_UI.RitaWcf.WorkOrderLaborData {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<long> KeyField;
@@ -20309,9 +20309,9 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="WorkOrderPartRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderPartRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartRequest))]
-    public partial class WorkOrderPartRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderPartRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderPartRequest))]
+    public partial class WorkOrderPartRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CoreSerialNumberField;
@@ -20606,14 +20606,14 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderPartRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderPartRequest : API_TESTER_UI.ServiceReference1.WorkOrderPartRequest {
+    public partial class AddWorkOrderPartRequest : API_TESTER_UI.RitaWcf.WorkOrderPartRequest {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderPartRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderPartRequest : API_TESTER_UI.ServiceReference1.WorkOrderPartRequest {
+    public partial class UpdateWorkOrderPartRequest : API_TESTER_UI.RitaWcf.WorkOrderPartRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private long PartDemandNumberField;
@@ -20636,9 +20636,9 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="WorkOrderServiceRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderServiceRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceRequest))]
-    public partial class WorkOrderServiceRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderServiceRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceRequest))]
+    public partial class WorkOrderServiceRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> ForceServiceApplicabilityField;
@@ -20757,14 +20757,14 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderServiceRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderServiceRequest : API_TESTER_UI.ServiceReference1.WorkOrderServiceRequest {
+    public partial class AddWorkOrderServiceRequest : API_TESTER_UI.RitaWcf.WorkOrderServiceRequest {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderServiceRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderServiceRequest : API_TESTER_UI.ServiceReference1.WorkOrderServiceRequest {
+    public partial class UpdateWorkOrderServiceRequest : API_TESTER_UI.RitaWcf.WorkOrderServiceRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private long ServiceNumberField;
@@ -20787,11 +20787,11 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="WorkOrderAssignmentData", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentRequest))]
-    public partial class WorkOrderAssignmentData : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentRequest))]
+    public partial class WorkOrderAssignmentData : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AssignedUserNameField;
@@ -20814,35 +20814,35 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderSquawkAssignmentRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderSquawkAssignmentRequest : API_TESTER_UI.ServiceReference1.WorkOrderAssignmentData {
+    public partial class AddWorkOrderSquawkAssignmentRequest : API_TESTER_UI.RitaWcf.WorkOrderAssignmentData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DeleteWorkOrderSquawkAssignmentRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class DeleteWorkOrderSquawkAssignmentRequest : API_TESTER_UI.ServiceReference1.WorkOrderAssignmentData {
+    public partial class DeleteWorkOrderSquawkAssignmentRequest : API_TESTER_UI.RitaWcf.WorkOrderAssignmentData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderStepAssignmentRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderStepAssignmentRequest : API_TESTER_UI.ServiceReference1.WorkOrderAssignmentData {
+    public partial class AddWorkOrderStepAssignmentRequest : API_TESTER_UI.RitaWcf.WorkOrderAssignmentData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DeleteWorkOrderStepAssignmentRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class DeleteWorkOrderStepAssignmentRequest : API_TESTER_UI.ServiceReference1.WorkOrderAssignmentData {
+    public partial class DeleteWorkOrderStepAssignmentRequest : API_TESTER_UI.RitaWcf.WorkOrderAssignmentData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="FillWorkOrderPartDemandFromInventoryRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class FillWorkOrderPartDemandFromInventoryRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class FillWorkOrderPartDemandFromInventoryRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -20961,7 +20961,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddPartServiceRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddPartServiceRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class AddPartServiceRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool AogField;
@@ -21012,7 +21012,7 @@ namespace API_TESTER_UI.References {
         private double ServiceQuantityRequestedField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Udf[] UdfsField;
+        private API_TESTER_UI.RitaWcf.Udf[] UdfsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private long WorkOrderPartNumberField;
@@ -21229,7 +21229,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Udf[] Udfs {
+        public API_TESTER_UI.RitaWcf.Udf[] Udfs {
             get {
                 return this.UdfsField;
             }
@@ -21272,7 +21272,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class UpdateWorkOrderRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TeamLeadField;
@@ -21295,7 +21295,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SignoutToolRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SignoutToolRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    public partial class SignoutToolRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -21350,11 +21350,11 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="PartAssemblyRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWOPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWOSquawkPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EditWOPartAssemblyRequest))]
-    public partial class PartAssemblyRequest : API_TESTER_UI.ServiceReference1.WorkOrderRequest {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWOPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWOSquawkPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EditWOPartAssemblyRequest))]
+    public partial class PartAssemblyRequest : API_TESTER_UI.RitaWcf.WorkOrderRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string PartAssemblyActivityField;
@@ -22193,22 +22193,22 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWOPartAssemblyRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWOPartAssemblyRequest : API_TESTER_UI.ServiceReference1.PartAssemblyRequest {
+    public partial class AddWOPartAssemblyRequest : API_TESTER_UI.RitaWcf.PartAssemblyRequest {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWOSquawkPartAssemblyRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWOSquawkPartAssemblyRequest : API_TESTER_UI.ServiceReference1.PartAssemblyRequest {
+    public partial class AddWOSquawkPartAssemblyRequest : API_TESTER_UI.RitaWcf.PartAssemblyRequest {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="EditWOSquawkPartAssemblyRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EditWOPartAssemblyRequest))]
-    public partial class EditWOSquawkPartAssemblyRequest : API_TESTER_UI.ServiceReference1.PartAssemblyRequest {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EditWOPartAssemblyRequest))]
+    public partial class EditWOSquawkPartAssemblyRequest : API_TESTER_UI.RitaWcf.PartAssemblyRequest {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> PartAssemblyMasterSequenceNumberField;
@@ -22231,7 +22231,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="EditWOPartAssemblyRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class EditWOPartAssemblyRequest : API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyRequest {
+    public partial class EditWOPartAssemblyRequest : API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyRequest {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -22783,84 +22783,84 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="StatusResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWOPartAssemblyResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EditWOPartAssemblyResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.GetActiveCycleCountsResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.GetCycleCountPartsResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.PrintPartLabelsResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.LotResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.VendorQuoteResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResolutionResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkComplianceResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.GetContractPriceResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddOrEditUserResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateUserResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddUserResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSOFromSOQResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddPurchaseOrderResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSalesOrderResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSOQPartDetailResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SelectSOQPartDetailResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderItemResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderStepResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AbortWorkOrderStepResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ClockInResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ClockOutResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderLaborResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderPartResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderServiceResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.StartUserWorkOrderBulkLaborResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EndUserWorkOrderBulkLaborResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddPartServiceRequestResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.BatchDeliverPartResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeliverPartResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.UpdateWorkOrderResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SetApiOptionsResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddCompanyResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.GetCompanyResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SignoutToolResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SigninToolRequest))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.SigninToolResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.ReceivePartResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EnterCycleCountResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.AddWoSquawkPartAssemblyResponse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWOPartAssemblyResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EditWOPartAssemblyResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.GetActiveCycleCountsResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.GetCycleCountPartsResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.PrintPartLabelsResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.LotResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.VendorQuoteResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResolutionResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkComplianceResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.GetContractPriceResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddOrEditUserResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateUserResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddUserResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSOFromSOQResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddPurchaseOrderResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSalesOrderResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSOQPartDetailResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateSOQPartDetailResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SelectSOQPartDetailResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderItemResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderSquawkResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderStepResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderStepResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AbortWorkOrderStepResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ClockInResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ClockOutResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderLaborResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderPartResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderPartResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderServiceResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.StartUserWorkOrderBulkLaborResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EndUserWorkOrderBulkLaborResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddPartServiceRequestResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.BatchDeliverPartResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeliverPartResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.UpdateWorkOrderResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SetApiOptionsResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddCompanyResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.GetCompanyResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SignoutToolResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SigninToolRequest))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.SigninToolResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.ReceivePartResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EnterCycleCountResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.AddWoSquawkPartAssemblyResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyResponse))]
     public partial class StatusResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.Error[] ErrorMessagesField;
+        private API_TESTER_UI.RitaWcf.Error[] ErrorMessagesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string StatusMessageField;
@@ -22876,7 +22876,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.Error[] ErrorMessages {
+        public API_TESTER_UI.RitaWcf.Error[] ErrorMessages {
             get {
                 return this.ErrorMessagesField;
             }
@@ -22915,7 +22915,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWOPartAssemblyResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWOPartAssemblyResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWOPartAssemblyResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> PartAssemblyMasterSequenceNumberField;
@@ -22938,48 +22938,48 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="EditWOPartAssemblyResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class EditWOPartAssemblyResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class EditWOPartAssemblyResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ApproveWorkOrderQuoteResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class ApproveWorkOrderQuoteResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class ApproveWorkOrderQuoteResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RejectWorkOrderQuoteResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class RejectWorkOrderQuoteResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class RejectWorkOrderQuoteResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnapproveWorkOrderQuoteResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnapproveWorkOrderQuoteResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class UnapproveWorkOrderQuoteResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UnrejectWorkOrderQuoteResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UnrejectWorkOrderQuoteResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class UnrejectWorkOrderQuoteResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="GetActiveCycleCountsResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class GetActiveCycleCountsResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class GetActiveCycleCountsResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.ActiveCycleCountOutput[] ActiveCycleCountsField;
+        private API_TESTER_UI.RitaWcf.ActiveCycleCountOutput[] ActiveCycleCountsField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.ActiveCycleCountOutput[] ActiveCycleCounts {
+        public API_TESTER_UI.RitaWcf.ActiveCycleCountOutput[] ActiveCycleCounts {
             get {
                 return this.ActiveCycleCountsField;
             }
@@ -22996,13 +22996,13 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="GetCycleCountPartsResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class GetCycleCountPartsResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class GetCycleCountPartsResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CycleCountNumberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.CycleCountPartOutput[] CycleCountPartsField;
+        private API_TESTER_UI.RitaWcf.CycleCountPartOutput[] CycleCountPartsField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string CycleCountNumber {
@@ -23018,7 +23018,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.CycleCountPartOutput[] CycleCountParts {
+        public API_TESTER_UI.RitaWcf.CycleCountPartOutput[] CycleCountParts {
             get {
                 return this.CycleCountPartsField;
             }
@@ -23035,7 +23035,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="PrintPartLabelsResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class PrintPartLabelsResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class PrintPartLabelsResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedLotNumberField;
@@ -23138,7 +23138,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="LotResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class LotResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class LotResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedLotNumberField;
@@ -23241,7 +23241,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="VendorQuoteResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class VendorQuoteResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class VendorQuoteResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string VendorQuoteFormattedNumberField;
@@ -23280,7 +23280,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddOrUpdateCannedSquawkResolutionResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddOrUpdateCannedSquawkResolutionResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddOrUpdateCannedSquawkResolutionResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CannedSquawkNameField;
@@ -23335,7 +23335,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddOrUpdateCannedSquawkComplianceResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddOrUpdateCannedSquawkComplianceResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddOrUpdateCannedSquawkComplianceResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CannedSquawkNameField;
@@ -23358,7 +23358,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddOrUpdateCannedSquawkResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddOrUpdateCannedSquawkResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddOrUpdateCannedSquawkResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CannedSquawkNameField;
@@ -23381,7 +23381,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="GetContractPriceResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class GetContractPriceResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class GetContractPriceResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CurrencyField;
@@ -23420,7 +23420,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddOrEditUserResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddOrEditUserResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddOrEditUserResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string UserNameField;
@@ -23443,7 +23443,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateUserResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateUserResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class UpdateUserResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string UserNameField;
@@ -23466,7 +23466,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddUserResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddUserResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddUserResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string UserNameField;
@@ -23489,7 +23489,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSOFromSOQResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSOFromSOQResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddSOFromSOQResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedSalesOrderNumberField;
@@ -23560,7 +23560,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddPurchaseOrderResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddPurchaseOrderResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddPurchaseOrderResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedNumberField;
@@ -23583,7 +23583,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSalesOrderResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSalesOrderResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddSalesOrderResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedNumberField;
@@ -23606,7 +23606,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSalesOrderQuoteResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSalesOrderQuoteResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddSalesOrderQuoteResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool AOGField;
@@ -24621,7 +24621,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CancelSalesOrderQuoteHeaderResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class CancelSalesOrderQuoteHeaderResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class CancelSalesOrderQuoteHeaderResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CanCancelSOQWithPartsField;
@@ -24724,7 +24724,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSOQPartDetailResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSOQPartDetailResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddSOQPartDetailResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> CalculatePriceField;
@@ -25675,7 +25675,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateSOQPartDetailResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateSOQPartDetailResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class UpdateSOQPartDetailResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> CalculatePriceField;
@@ -26626,7 +26626,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SelectSOQPartDetailResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SelectSOQPartDetailResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class SelectSOQPartDetailResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> CalculatePriceField;
@@ -27593,7 +27593,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSOQRequestedPartDetailResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSOQRequestedPartDetailResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddSOQRequestedPartDetailResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CancelledField;
@@ -28000,7 +28000,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CancelSOQRequestedPartDetailResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class CancelSOQRequestedPartDetailResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class CancelSOQRequestedPartDetailResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CancelledField;
@@ -28103,7 +28103,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddSOQPartQuotedDetailResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddSOQPartQuotedDetailResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddSOQPartQuotedDetailResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private long CustomerQuoteNumberField;
@@ -28318,7 +28318,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SelectSOQPartQuotedDetailResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SelectSOQPartQuotedDetailResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class SelectSOQPartQuotedDetailResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CalculatePriceField;
@@ -29045,7 +29045,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CancelSOQPartQuotedDetailResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class CancelSOQPartQuotedDetailResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class CancelSOQPartQuotedDetailResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool CancelledField;
@@ -29148,7 +29148,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedNumberField;
@@ -29171,7 +29171,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderItemResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderItemResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderItemResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedNumberField;
@@ -29194,7 +29194,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderSquawkResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderSquawkResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderSquawkResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int WorkOrderSquawkKeyField;
@@ -29217,7 +29217,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderQuoteItemResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderQuoteItemResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderQuoteItemResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int WorkOrderQuoteItemKeyField;
@@ -29240,7 +29240,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderQuoteSquawkResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderQuoteSquawkResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderQuoteSquawkResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int WorkOrderQuoteSquawkKeyField;
@@ -29279,14 +29279,14 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderSquawkResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderSquawkResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class UpdateWorkOrderSquawkResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderStepResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderStepResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderStepResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedNumberField;
@@ -29325,49 +29325,49 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderStepResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderStepResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class UpdateWorkOrderStepResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AbortWorkOrderStepResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AbortWorkOrderStepResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AbortWorkOrderStepResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ClockInResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class ClockInResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class ClockInResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ClockOutResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class ClockOutResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class ClockOutResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderLaborResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderLaborResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderLaborResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderLaborResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderLaborResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class UpdateWorkOrderLaborResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderPartResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderPartResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderPartResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string WorkOrderFormattedNumberField;
@@ -29406,91 +29406,91 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderPartResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderPartResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class UpdateWorkOrderPartResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderServiceResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderServiceResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderServiceResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderServiceResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderServiceResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class UpdateWorkOrderServiceResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderSquawkAssignmentResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderSquawkAssignmentResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderSquawkAssignmentResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DeleteWorkOrderSquawkAssignmentResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class DeleteWorkOrderSquawkAssignmentResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class DeleteWorkOrderSquawkAssignmentResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWorkOrderStepAssignmentResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWorkOrderStepAssignmentResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWorkOrderStepAssignmentResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DeleteWorkOrderStepAssignmentResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class DeleteWorkOrderStepAssignmentResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class DeleteWorkOrderStepAssignmentResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="StartUserWorkOrderBulkLaborResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class StartUserWorkOrderBulkLaborResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class StartUserWorkOrderBulkLaborResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="EndUserWorkOrderBulkLaborResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class EndUserWorkOrderBulkLaborResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class EndUserWorkOrderBulkLaborResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="FillWorkOrderPartDemandFromInventoryResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class FillWorkOrderPartDemandFromInventoryResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class FillWorkOrderPartDemandFromInventoryResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddPartServiceRequestResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddPartServiceRequestResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddPartServiceRequestResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="BatchDeliverPartResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class BatchDeliverPartResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class BatchDeliverPartResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DeliverPartResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class DeliverPartResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class DeliverPartResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ExpectedDeliveryNumberField;
@@ -29529,13 +29529,13 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="UpdateWorkOrderResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class UpdateWorkOrderResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class UpdateWorkOrderResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.WorkOrderPath PathField;
+        private API_TESTER_UI.RitaWcf.WorkOrderPath PathField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.WorkOrderPath Path {
+        public API_TESTER_UI.RitaWcf.WorkOrderPath Path {
             get {
                 return this.PathField;
             }
@@ -29552,21 +29552,21 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SetApiOptionsResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SetApiOptionsResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class SetApiOptionsResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddCompanyResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddCompanyResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddCompanyResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="GetCompanyResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class GetCompanyResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class GetCompanyResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<decimal> AccountsReceivableBalanceField;
@@ -29605,14 +29605,14 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SignoutToolResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SignoutToolResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class SignoutToolResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SigninToolRequest", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SigninToolRequest : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class SigninToolRequest : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -29667,7 +29667,7 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SigninToolResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class SigninToolResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class SigninToolResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string AccessCodeField;
@@ -29706,8 +29706,8 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ReceivePartResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptResponse))]
-    public partial class ReceivePartResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptResponse))]
+    public partial class ReceivePartResponse : API_TESTER_UI.RitaWcf.StatusResponse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string FormattedLotNumberField;
@@ -29746,35 +29746,35 @@ namespace API_TESTER_UI.References {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CreateUnexpectedReceiptResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class CreateUnexpectedReceiptResponse : API_TESTER_UI.ServiceReference1.ReceivePartResponse {
+    public partial class CreateUnexpectedReceiptResponse : API_TESTER_UI.RitaWcf.ReceivePartResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="EnterCycleCountResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class EnterCycleCountResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class EnterCycleCountResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DeleteWOSquawkPartAssemblyResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class DeleteWOSquawkPartAssemblyResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class DeleteWOSquawkPartAssemblyResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AddWoSquawkPartAssemblyResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class AddWoSquawkPartAssemblyResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class AddWoSquawkPartAssemblyResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="EditWOSquawkPartAssemblyResponse", Namespace="http://schemas.datacontract.org/2004/07/CorridorNet.Common.Api")]
     [System.SerializableAttribute()]
-    public partial class EditWOSquawkPartAssemblyResponse : API_TESTER_UI.ServiceReference1.StatusResponse {
+    public partial class EditWOSquawkPartAssemblyResponse : API_TESTER_UI.RitaWcf.StatusResponse {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -31308,7 +31308,7 @@ namespace API_TESTER_UI.References {
         private string AccessCodeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private API_TESTER_UI.ServiceReference1.WorkOrderPath[] PathsField;
+        private API_TESTER_UI.RitaWcf.WorkOrderPath[] PathsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string PerformedByField;
@@ -31340,7 +31340,7 @@ namespace API_TESTER_UI.References {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public API_TESTER_UI.ServiceReference1.WorkOrderPath[] Paths {
+        public API_TESTER_UI.RitaWcf.WorkOrderPath[] Paths {
             get {
                 return this.PathsField;
             }
@@ -31527,410 +31527,410 @@ namespace API_TESTER_UI.References {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IRitaWcf")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="RitaWcf.IRitaWcf")]
     public interface IRitaWcf {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWoSquawkPartAssembly", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWoSquawkPartAssemblyResponse")]
-        API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyResponse UpdateWoSquawkPartAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyRequest request);
+        API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyResponse UpdateWoSquawkPartAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWoSquawkPartAssembly", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWoSquawkPartAssemblyResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyResponse> UpdateWoSquawkPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyResponse> UpdateWoSquawkPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWoPartAssembly", ReplyAction="http://tempuri.org/IRitaWcf/AddWoPartAssemblyResponse")]
-        API_TESTER_UI.ServiceReference1.AddWOPartAssemblyResponse AddWoPartAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWOPartAssemblyRequest request);
+        API_TESTER_UI.RitaWcf.AddWOPartAssemblyResponse AddWoPartAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWOPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWoPartAssembly", ReplyAction="http://tempuri.org/IRitaWcf/AddWoPartAssemblyResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWOPartAssemblyResponse> AddWoPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWOPartAssemblyRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWOPartAssemblyResponse> AddWoPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWOPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWoPartAssembly", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWoPartAssemblyResponse")]
-        API_TESTER_UI.ServiceReference1.EditWOPartAssemblyResponse UpdateWoPartAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EditWOPartAssemblyRequest request);
+        API_TESTER_UI.RitaWcf.EditWOPartAssemblyResponse UpdateWoPartAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.EditWOPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWoPartAssembly", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWoPartAssemblyResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.EditWOPartAssemblyResponse> UpdateWoPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EditWOPartAssemblyRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.EditWOPartAssemblyResponse> UpdateWoPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.EditWOPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTest", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTestResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTest", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTest", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTestResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTest", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTestInspect", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTestInspectResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTestInspect", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAFunctionalTestInspectResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTestInspect", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTestInspectResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTestInspect", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAFunctionalTestInspectResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandARemoval", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandARemovalResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandARemoval(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyRemovalPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoPandARemoval(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyRemovalPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandARemoval", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandARemovalResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyRemovalPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyRemovalPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSqauwkPandARemoval", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSqauwkPandARemovalResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoSqauwkPandARemoval(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyRemovalPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoSqauwkPandARemoval(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyRemovalPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSqauwkPandARemoval", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSqauwkPandARemovalResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSqauwkPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyRemovalPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSqauwkPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyRemovalPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAInstall", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAInstallResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAInstall(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAInstall(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAInstall", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAInstallResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstall", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstallResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandAInstall(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandAInstall(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstall", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstallResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAInstallInspected", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAInstallInspectedResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAInstallInspected", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAInstallInspectedResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstallInspected", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstallInspectedResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstallInspected", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAInstallInspectedResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandALeakCheck", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandALeakCheckResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandALeakCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoPandALeakCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandALeakCheck", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandALeakCheckResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheck", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheckResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandALeakCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandALeakCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheck", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheckResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandALeakCheckInspection", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandALeakCheckInspectionResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandALeakCheckInspection(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoPandALeakCheckInspection(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandALeakCheckInspection", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandALeakCheckInspectionResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandALeakCheckInspectionAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandALeakCheckInspectionAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheckInspectResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandALeakCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandALeakCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandALeakCheckInspectResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandALeakCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandALeakCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheck", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheckResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheck", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheckResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSqauwkPandAOpsCheck", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSqauwkPandAOpsCheckResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoSqauwkPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoSqauwkPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSqauwkPandAOpsCheck", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSqauwkPandAOpsCheckResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSqauwkPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSqauwkPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheckInspectResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/SetWoPandAOpsCheckInspectResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAOpsCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAOpsCheckInspectResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetWoSquawkPandAOpsCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/SetWoSquawkPandAOpsCheckInspectResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ApproveWorkOrderQuote", ReplyAction="http://tempuri.org/IRitaWcf/ApproveWorkOrderQuoteResponse")]
-        API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteResponse ApproveWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteRequest request);
+        API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteResponse ApproveWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ApproveWorkOrderQuote", ReplyAction="http://tempuri.org/IRitaWcf/ApproveWorkOrderQuoteResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteResponse> ApproveWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteResponse> ApproveWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RejectWorkOrderQuote", ReplyAction="http://tempuri.org/IRitaWcf/RejectWorkOrderQuoteResponse")]
-        API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteResponse RejectWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteRequest request);
+        API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteResponse RejectWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RejectWorkOrderQuote", ReplyAction="http://tempuri.org/IRitaWcf/RejectWorkOrderQuoteResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteResponse> RejectWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteResponse> RejectWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnapproveWorkOrderQuote", ReplyAction="http://tempuri.org/IRitaWcf/UnapproveWorkOrderQuoteResponse")]
-        API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteResponse UnapproveWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteRequest request);
+        API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteResponse UnapproveWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnapproveWorkOrderQuote", ReplyAction="http://tempuri.org/IRitaWcf/UnapproveWorkOrderQuoteResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteResponse> UnapproveWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteResponse> UnapproveWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnrejectWorkOrderQuote", ReplyAction="http://tempuri.org/IRitaWcf/UnrejectWorkOrderQuoteResponse")]
-        API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteResponse UnrejectWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteRequest request);
+        API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteResponse UnrejectWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnrejectWorkOrderQuote", ReplyAction="http://tempuri.org/IRitaWcf/UnrejectWorkOrderQuoteResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteResponse> UnrejectWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteResponse> UnrejectWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTest", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTestResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTest", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTest", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTestResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTest", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTestInspect", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTestInspectResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTestInspect", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAFunctionalTestInspectResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTestInspect", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTestInspectResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTestInspect", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAFunctionalTestInspectResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandARemoval", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandARemovalResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandARemoval(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyRemovalPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandARemoval(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyRemovalPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandARemoval", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandARemovalResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyRemovalPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyRemovalPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandARemoval", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandARemovalResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSqauwkPandARemoval(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyRemovalPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSqauwkPandARemoval(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyRemovalPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandARemoval", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandARemovalResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSqauwkPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyRemovalPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSqauwkPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyRemovalPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAInstall", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAInstallResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAInstall(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAInstall(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAInstall", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAInstallResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstall", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstallResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandAInstall(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandAInstall(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstall", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstallResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAInstallInspected", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAInstallInspectedResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAInstallInspected", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAInstallInspectedResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstallInspected", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstallInspectedResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstallInspected", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAInstallInspectedResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheck", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheckResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandALeakCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandALeakCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheck", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheckResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheck", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheckResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandALeakCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandALeakCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheck", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheckResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheckInspection", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheckInspectionResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandALeakCheckInspection(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandALeakCheckInspection(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheckInspection", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandALeakCheckInspectionResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandALeakCheckInspectionAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandALeakCheckInspectionAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheckInspectResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandALeakCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandALeakCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandALeakCheckInspectResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandALeakCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandALeakCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheck", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheckResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheck", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheckResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandAOpsCheck", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandAOpsCheckResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSqauwkPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSqauwkPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandAOpsCheck", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSqauwkPandAOpsCheckResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSqauwkPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSqauwkPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheckInspectResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoPandAOpsCheckInspectResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAOpsCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAOpsCheckInspectResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAOpsCheckInspect", ReplyAction="http://tempuri.org/IRitaWcf/UnSetWoSquawkPandAOpsCheckInspectResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DeleteWoPartsAssembly", ReplyAction="http://tempuri.org/IRitaWcf/DeleteWoPartsAssemblyResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse DeleteWoPartsAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWOPartAssemblyRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse DeleteWoPartsAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWOPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DeleteWoPartsAssembly", ReplyAction="http://tempuri.org/IRitaWcf/DeleteWoPartsAssemblyResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> DeleteWoPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWOPartAssemblyRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> DeleteWoPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWOPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/LinkPartsAssembly", ReplyAction="http://tempuri.org/IRitaWcf/LinkPartsAssemblyResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse LinkPartsAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.LinkWOPartAssemblySquawkAssociationsRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse LinkPartsAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.LinkWOPartAssemblySquawkAssociationsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/LinkPartsAssembly", ReplyAction="http://tempuri.org/IRitaWcf/LinkPartsAssemblyResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> LinkPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.LinkWOPartAssemblySquawkAssociationsRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> LinkPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.LinkWOPartAssemblySquawkAssociationsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnLinkPartsAssembly", ReplyAction="http://tempuri.org/IRitaWcf/UnLinkPartsAssemblyResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UnLinkPartsAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnLinkWOPartAssemblySquawkAssociationsRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UnLinkPartsAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnLinkWOPartAssemblySquawkAssociationsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UnLinkPartsAssembly", ReplyAction="http://tempuri.org/IRitaWcf/UnLinkPartsAssemblyResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnLinkPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnLinkWOPartAssemblySquawkAssociationsRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnLinkPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnLinkWOPartAssemblySquawkAssociationsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AcceptInspectedPart", ReplyAction="http://tempuri.org/IRitaWcf/AcceptInspectedPartResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse AcceptInspectedPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptAcceptRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse AcceptInspectedPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptAcceptRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AcceptInspectedPart", ReplyAction="http://tempuri.org/IRitaWcf/AcceptInspectedPartResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> AcceptInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptAcceptRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> AcceptInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptAcceptRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ReturnInspectedPart", ReplyAction="http://tempuri.org/IRitaWcf/ReturnInspectedPartResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse ReturnInspectedPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptReturnRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse ReturnInspectedPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptReturnRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ReturnInspectedPart", ReplyAction="http://tempuri.org/IRitaWcf/ReturnInspectedPartResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> ReturnInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptReturnRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> ReturnInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptReturnRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DisposeInspectedPart", ReplyAction="http://tempuri.org/IRitaWcf/DisposeInspectedPartResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse DisposeInspectedPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptDisposeRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse DisposeInspectedPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptDisposeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DisposeInspectedPart", ReplyAction="http://tempuri.org/IRitaWcf/DisposeInspectedPartResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> DisposeInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptDisposeRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> DisposeInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptDisposeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ReceiptHoldCodes", ReplyAction="http://tempuri.org/IRitaWcf/ReceiptHoldCodesResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse ReceiptHoldCodes(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClearHoldCodesRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse ReceiptHoldCodes(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClearHoldCodesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ReceiptHoldCodes", ReplyAction="http://tempuri.org/IRitaWcf/ReceiptHoldCodesResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> ReceiptHoldCodesAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClearHoldCodesRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> ReceiptHoldCodesAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClearHoldCodesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/GetActiveCycleCounts", ReplyAction="http://tempuri.org/IRitaWcf/GetActiveCycleCountsResponse")]
-        API_TESTER_UI.ServiceReference1.GetActiveCycleCountsResponse GetActiveCycleCounts(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetActiveCycleCountsRequest request);
+        API_TESTER_UI.RitaWcf.GetActiveCycleCountsResponse GetActiveCycleCounts(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetActiveCycleCountsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/GetActiveCycleCounts", ReplyAction="http://tempuri.org/IRitaWcf/GetActiveCycleCountsResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.GetActiveCycleCountsResponse> GetActiveCycleCountsAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetActiveCycleCountsRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.GetActiveCycleCountsResponse> GetActiveCycleCountsAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetActiveCycleCountsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/GetCycleCountParts", ReplyAction="http://tempuri.org/IRitaWcf/GetCycleCountPartsResponse")]
-        API_TESTER_UI.ServiceReference1.GetCycleCountPartsResponse GetCycleCountParts(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetCycleCountPartsRequest request);
+        API_TESTER_UI.RitaWcf.GetCycleCountPartsResponse GetCycleCountParts(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetCycleCountPartsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/GetCycleCountParts", ReplyAction="http://tempuri.org/IRitaWcf/GetCycleCountPartsResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.GetCycleCountPartsResponse> GetCycleCountPartsAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetCycleCountPartsRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.GetCycleCountPartsResponse> GetCycleCountPartsAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetCycleCountPartsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/PrintPartLabels", ReplyAction="http://tempuri.org/IRitaWcf/PrintPartLabelsResponse")]
-        API_TESTER_UI.ServiceReference1.PrintPartLabelsResponse PrintPartLabels(System.Guid sessionId, API_TESTER_UI.ServiceReference1.PrintPartLabelsRequest request);
+        API_TESTER_UI.RitaWcf.PrintPartLabelsResponse PrintPartLabels(System.Guid sessionId, API_TESTER_UI.RitaWcf.PrintPartLabelsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/PrintPartLabels", ReplyAction="http://tempuri.org/IRitaWcf/PrintPartLabelsResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.PrintPartLabelsResponse> PrintPartLabelsAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.PrintPartLabelsRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.PrintPartLabelsResponse> PrintPartLabelsAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.PrintPartLabelsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddLot", ReplyAction="http://tempuri.org/IRitaWcf/AddLotResponse")]
-        API_TESTER_UI.ServiceReference1.LotResponse AddLot(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddLotRequest request);
+        API_TESTER_UI.RitaWcf.LotResponse AddLot(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddLotRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddLot", ReplyAction="http://tempuri.org/IRitaWcf/AddLotResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.LotResponse> AddLotAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddLotRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.LotResponse> AddLotAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddLotRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateLot", ReplyAction="http://tempuri.org/IRitaWcf/UpdateLotResponse")]
-        API_TESTER_UI.ServiceReference1.LotResponse UpdateLot(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateLotRequest request);
+        API_TESTER_UI.RitaWcf.LotResponse UpdateLot(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateLotRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateLot", ReplyAction="http://tempuri.org/IRitaWcf/UpdateLotResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.LotResponse> UpdateLotAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateLotRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.LotResponse> UpdateLotAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateLotRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddVendorQuote", ReplyAction="http://tempuri.org/IRitaWcf/AddVendorQuoteResponse")]
-        API_TESTER_UI.ServiceReference1.VendorQuoteResponse AddVendorQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RequestToAddVendorQuote request);
+        API_TESTER_UI.RitaWcf.VendorQuoteResponse AddVendorQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.RequestToAddVendorQuote request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddVendorQuote", ReplyAction="http://tempuri.org/IRitaWcf/AddVendorQuoteResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.VendorQuoteResponse> AddVendorQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RequestToAddVendorQuote request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.VendorQuoteResponse> AddVendorQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RequestToAddVendorQuote request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateVendorQuote", ReplyAction="http://tempuri.org/IRitaWcf/UpdateVendorQuoteResponse")]
-        API_TESTER_UI.ServiceReference1.VendorQuoteResponse UpdateVendorQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RequestToUpdateVendorQuote request);
+        API_TESTER_UI.RitaWcf.VendorQuoteResponse UpdateVendorQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.RequestToUpdateVendorQuote request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateVendorQuote", ReplyAction="http://tempuri.org/IRitaWcf/UpdateVendorQuoteResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.VendorQuoteResponse> UpdateVendorQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RequestToUpdateVendorQuote request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.VendorQuoteResponse> UpdateVendorQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RequestToUpdateVendorQuote request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWarehouseBin", ReplyAction="http://tempuri.org/IRitaWcf/AddWarehouseBinResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse AddWarehouseBin(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWarehouseBinRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse AddWarehouseBin(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWarehouseBinRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWarehouseBin", ReplyAction="http://tempuri.org/IRitaWcf/AddWarehouseBinResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> AddWarehouseBinAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWarehouseBinRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> AddWarehouseBinAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWarehouseBinRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateDeliveryPickTicket", ReplyAction="http://tempuri.org/IRitaWcf/UpdateDeliveryPickTicketResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse UpdateDeliveryPickTicket(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateDeliveryPickTicketRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse UpdateDeliveryPickTicket(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateDeliveryPickTicketRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateDeliveryPickTicket", ReplyAction="http://tempuri.org/IRitaWcf/UpdateDeliveryPickTicketResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UpdateDeliveryPickTicketAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateDeliveryPickTicketRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UpdateDeliveryPickTicketAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateDeliveryPickTicketRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkResolution", ReplyAction="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkResolutionResponse")]
-        API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResolutionResponse AddOrUpdateCannedSquawkResolution(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResolutionRequest request);
+        API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResolutionResponse AddOrUpdateCannedSquawkResolution(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResolutionRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkResolution", ReplyAction="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkResolutionResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResolutionResponse> AddOrUpdateCannedSquawkResolutionAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResolutionRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResolutionResponse> AddOrUpdateCannedSquawkResolutionAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResolutionRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkCompliance", ReplyAction="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkComplianceResponse")]
-        API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkComplianceResponse AddOrUpdateCannedSquawkCompliance(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkComplianceRequest request);
+        API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkComplianceResponse AddOrUpdateCannedSquawkCompliance(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkComplianceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkCompliance", ReplyAction="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkComplianceResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkComplianceResponse> AddOrUpdateCannedSquawkComplianceAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkComplianceRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkComplianceResponse> AddOrUpdateCannedSquawkComplianceAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkComplianceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawk", ReplyAction="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResponse AddOrUpdateCannedSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkRequest request);
+        API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResponse AddOrUpdateCannedSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawk", ReplyAction="http://tempuri.org/IRitaWcf/AddOrUpdateCannedSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResponse> AddOrUpdateCannedSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResponse> AddOrUpdateCannedSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/GetContractPrice", ReplyAction="http://tempuri.org/IRitaWcf/GetContractPriceResponse")]
-        API_TESTER_UI.ServiceReference1.GetContractPriceResponse GetContractPrice(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetContractPriceRequest request);
+        API_TESTER_UI.RitaWcf.GetContractPriceResponse GetContractPrice(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetContractPriceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/GetContractPrice", ReplyAction="http://tempuri.org/IRitaWcf/GetContractPriceResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.GetContractPriceResponse> GetContractPriceAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetContractPriceRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.GetContractPriceResponse> GetContractPriceAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetContractPriceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddOrUpdateUser", ReplyAction="http://tempuri.org/IRitaWcf/AddOrUpdateUserResponse")]
-        API_TESTER_UI.ServiceReference1.AddOrEditUserResponse AddOrUpdateUser(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrEditUserRequest request);
+        API_TESTER_UI.RitaWcf.AddOrEditUserResponse AddOrUpdateUser(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrEditUserRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddOrUpdateUser", ReplyAction="http://tempuri.org/IRitaWcf/AddOrUpdateUserResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddOrEditUserResponse> AddOrUpdateUserAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrEditUserRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddOrEditUserResponse> AddOrUpdateUserAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrEditUserRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateUser", ReplyAction="http://tempuri.org/IRitaWcf/UpdateUserResponse")]
-        API_TESTER_UI.ServiceReference1.UpdateUserResponse UpdateUser(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateUserRequest request);
+        API_TESTER_UI.RitaWcf.UpdateUserResponse UpdateUser(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateUserRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateUser", ReplyAction="http://tempuri.org/IRitaWcf/UpdateUserResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateUserResponse> UpdateUserAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateUserRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateUserResponse> UpdateUserAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateUserRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddUser", ReplyAction="http://tempuri.org/IRitaWcf/AddUserResponse")]
-        API_TESTER_UI.ServiceReference1.AddUserResponse AddUser(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddUserRequest request);
+        API_TESTER_UI.RitaWcf.AddUserResponse AddUser(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddUserRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddUser", ReplyAction="http://tempuri.org/IRitaWcf/AddUserResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddUserResponse> AddUserAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddUserRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddUserResponse> AddUserAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddUserRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSOFromSOQRequest", ReplyAction="http://tempuri.org/IRitaWcf/AddSOFromSOQRequestResponse")]
-        API_TESTER_UI.ServiceReference1.AddSOFromSOQResponse AddSOFromSOQRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOFromSOQRequest request);
+        API_TESTER_UI.RitaWcf.AddSOFromSOQResponse AddSOFromSOQRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOFromSOQRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSOFromSOQRequest", ReplyAction="http://tempuri.org/IRitaWcf/AddSOFromSOQRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOFromSOQResponse> AddSOFromSOQRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOFromSOQRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOFromSOQResponse> AddSOFromSOQRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOFromSOQRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/CheckPermissions", ReplyAction="http://tempuri.org/IRitaWcf/CheckPermissionsResponse")]
         bool CheckPermissions(System.Guid sessionId, int ePermissions);
@@ -32017,439 +32017,439 @@ namespace API_TESTER_UI.References {
         System.Threading.Tasks.Task<string> CheckWarningsAsync(System.Guid sessionId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddPurchaseOrder", ReplyAction="http://tempuri.org/IRitaWcf/AddPurchaseOrderResponse")]
-        API_TESTER_UI.ServiceReference1.AddPurchaseOrderResponse AddPurchaseOrder(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddPurchaseOrderRequest request);
+        API_TESTER_UI.RitaWcf.AddPurchaseOrderResponse AddPurchaseOrder(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddPurchaseOrderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddPurchaseOrder", ReplyAction="http://tempuri.org/IRitaWcf/AddPurchaseOrderResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddPurchaseOrderResponse> AddPurchaseOrderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddPurchaseOrderRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddPurchaseOrderResponse> AddPurchaseOrderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddPurchaseOrderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSalesOrder", ReplyAction="http://tempuri.org/IRitaWcf/AddSalesOrderResponse")]
-        API_TESTER_UI.ServiceReference1.AddSalesOrderResponse AddSalesOrder(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSalesOrderRequest request);
+        API_TESTER_UI.RitaWcf.AddSalesOrderResponse AddSalesOrder(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSalesOrderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSalesOrder", ReplyAction="http://tempuri.org/IRitaWcf/AddSalesOrderResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSalesOrderResponse> AddSalesOrderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSalesOrderRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSalesOrderResponse> AddSalesOrderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSalesOrderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSalesOrderQuoteHeader", ReplyAction="http://tempuri.org/IRitaWcf/AddSalesOrderQuoteHeaderResponse")]
-        API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse AddSalesOrderQuoteHeader(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteHeaderRequest request);
+        API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse AddSalesOrderQuoteHeader(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSalesOrderQuoteHeaderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSalesOrderQuoteHeader", ReplyAction="http://tempuri.org/IRitaWcf/AddSalesOrderQuoteHeaderResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse> AddSalesOrderQuoteHeaderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteHeaderRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse> AddSalesOrderQuoteHeaderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSalesOrderQuoteHeaderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateSalesOrderQuoteHeader", ReplyAction="http://tempuri.org/IRitaWcf/UpdateSalesOrderQuoteHeaderResponse")]
-        API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse UpdateSalesOrderQuoteHeader(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSalesOrderQuoteHeaderRequest request);
+        API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse UpdateSalesOrderQuoteHeader(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSalesOrderQuoteHeaderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateSalesOrderQuoteHeader", ReplyAction="http://tempuri.org/IRitaWcf/UpdateSalesOrderQuoteHeaderResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse> UpdateSalesOrderQuoteHeaderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSalesOrderQuoteHeaderRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse> UpdateSalesOrderQuoteHeaderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSalesOrderQuoteHeaderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SelectSalesOrderQuoteHeaderRequest", ReplyAction="http://tempuri.org/IRitaWcf/SelectSalesOrderQuoteHeaderRequestResponse")]
-        API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse SelectSalesOrderQuoteHeaderRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSalesOrderQuoteHeaderRequest request);
+        API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse SelectSalesOrderQuoteHeaderRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSalesOrderQuoteHeaderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SelectSalesOrderQuoteHeaderRequest", ReplyAction="http://tempuri.org/IRitaWcf/SelectSalesOrderQuoteHeaderRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse> SelectSalesOrderQuoteHeaderRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSalesOrderQuoteHeaderRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse> SelectSalesOrderQuoteHeaderRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSalesOrderQuoteHeaderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/CancelSalesOrderQuoteHeaderRequest", ReplyAction="http://tempuri.org/IRitaWcf/CancelSalesOrderQuoteHeaderRequestResponse")]
-        API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderResponse CancelSalesOrderQuoteHeaderRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderRequest request);
+        API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderResponse CancelSalesOrderQuoteHeaderRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/CancelSalesOrderQuoteHeaderRequest", ReplyAction="http://tempuri.org/IRitaWcf/CancelSalesOrderQuoteHeaderRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderResponse> CancelSalesOrderQuoteHeaderRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderResponse> CancelSalesOrderQuoteHeaderRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSOQPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/AddSOQPartDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.AddSOQPartDetailResponse AddSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQPartDetailRequest request);
+        API_TESTER_UI.RitaWcf.AddSOQPartDetailResponse AddSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSOQPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/AddSOQPartDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQPartDetailResponse> AddSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQPartDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQPartDetailResponse> AddSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateSOQPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/UpdateSOQPartDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailResponse UpdateSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailRequest request);
+        API_TESTER_UI.RitaWcf.UpdateSOQPartDetailResponse UpdateSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateSOQPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/UpdateSOQPartDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailResponse> UpdateSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateSOQPartDetailResponse> UpdateSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SelectSOQPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/SelectSOQPartDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.SelectSOQPartDetailResponse SelectSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQPartDetailRequest request);
+        API_TESTER_UI.RitaWcf.SelectSOQPartDetailResponse SelectSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SelectSOQPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/SelectSOQPartDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.SelectSOQPartDetailResponse> SelectSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQPartDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.SelectSOQPartDetailResponse> SelectSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSOQRequestedPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/AddSOQRequestedPartDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse AddSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailRequest request);
+        API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse AddSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSOQRequestedPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/AddSOQRequestedPartDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse> AddSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse> AddSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateSOQRequestedPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/UpdateSOQRequestedPartDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse UpdateSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQRequestedPartDetailRequest request);
+        API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse UpdateSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQRequestedPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateSOQRequestedPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/UpdateSOQRequestedPartDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse> UpdateSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQRequestedPartDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse> UpdateSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQRequestedPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SelectSOQRequestedPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/SelectSOQRequestedPartDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse SelectSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQRequestedPartDetailRequest request);
+        API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse SelectSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQRequestedPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SelectSOQRequestedPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/SelectSOQRequestedPartDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse> SelectSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQRequestedPartDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse> SelectSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQRequestedPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/CancelSOQRequestedPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/CancelSOQRequestedPartDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailResponse CancelSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailRequest request);
+        API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailResponse CancelSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/CancelSOQRequestedPartDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/CancelSOQRequestedPartDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailResponse> CancelSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailResponse> CancelSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSOQPartQuotedDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/AddSOQPartQuotedDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailResponse AddSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailRequest request);
+        API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailResponse AddSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddSOQPartQuotedDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/AddSOQPartQuotedDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailResponse> AddSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailResponse> AddSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateSOQPartQuotedDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/UpdateSOQPartQuotedDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailResponse UpdateSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQPartQuotedDetailRequest request);
+        API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailResponse UpdateSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQPartQuotedDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateSOQPartQuotedDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/UpdateSOQPartQuotedDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailResponse> UpdateSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQPartQuotedDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailResponse> UpdateSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQPartQuotedDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SelectSOQPartQuotedDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/SelectSOQPartQuotedDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailResponse SelectSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailRequest request);
+        API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailResponse SelectSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SelectSOQPartQuotedDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/SelectSOQPartQuotedDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailResponse> SelectSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailResponse> SelectSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/CancelSOQPartQuotedDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/CancelSOQPartQuotedDetailRequestResponse")]
-        API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailResponse CancelSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailRequest request);
+        API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailResponse CancelSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/CancelSOQPartQuotedDetailRequest", ReplyAction="http://tempuri.org/IRitaWcf/CancelSOQPartQuotedDetailRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailResponse> CancelSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailResponse> CancelSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrder", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderResponse AddWorkOrder(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderResponse AddWorkOrder(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrder", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderResponse> AddWorkOrderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderResponse> AddWorkOrderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderItem", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderItemResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderItemResponse AddWorkOrderItem(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderItemRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderItemResponse AddWorkOrderItem(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderItemRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderItem", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderItemResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderItemResponse> AddWorkOrderItemAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderItemRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderItemResponse> AddWorkOrderItemAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderItemRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkResponse AddWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderSquawkResponse AddWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkResponse> AddWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderSquawkResponse> AddWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteItem", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteItemResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemResponse AddWorkOrderQuoteItem(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemResponse AddWorkOrderQuoteItem(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteItem", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteItemResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemResponse> AddWorkOrderQuoteItemAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemResponse> AddWorkOrderQuoteItemAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteSquawk", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkResponse AddWorkOrderQuoteSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkResponse AddWorkOrderQuoteSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteSquawk", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderQuoteSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkResponse> AddWorkOrderQuoteSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkResponse> AddWorkOrderQuoteSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkResponse UpdateWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkRequest request);
+        API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkResponse UpdateWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkResponse> UpdateWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkResponse> UpdateWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SignOffWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/SignOffWorkOrderSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SignOffWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignOffWorkOrderSquawkRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SignOffWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignOffWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SignOffWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/SignOffWorkOrderSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SignOffWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignOffWorkOrderSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SignOffWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignOffWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveSignOffSquawk", ReplyAction="http://tempuri.org/IRitaWcf/RemoveSignOffSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse RemoveSignOffSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveSignOffWOSquawkRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse RemoveSignOffSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveSignOffWOSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveSignOffSquawk", ReplyAction="http://tempuri.org/IRitaWcf/RemoveSignOffSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveSignOffSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveSignOffWOSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveSignOffSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveSignOffWOSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SignOffWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/SignOffWorkOrderStepResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse SignOffWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignOffWorkOrderStepRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse SignOffWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignOffWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SignOffWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/SignOffWorkOrderStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SignOffWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignOffWorkOrderStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SignOffWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignOffWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveSignOffStep", ReplyAction="http://tempuri.org/IRitaWcf/RemoveSignOffStepResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse RemoveSignOffStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveSignOffWOStepRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse RemoveSignOffStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveSignOffWOStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveSignOffStep", ReplyAction="http://tempuri.org/IRitaWcf/RemoveSignOffStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveSignOffStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveSignOffWOStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveSignOffStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveSignOffWOStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/InspectWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/InspectWorkOrderSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse InspectWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectWorkOrderSquawkRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse InspectWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/InspectWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/InspectWorkOrderSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> InspectWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectWorkOrderSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> InspectWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/InspectWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/InspectWorkOrderStepResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse InspectWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectWorkOrderStepRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse InspectWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/InspectWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/InspectWorkOrderStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> InspectWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectWorkOrderStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> InspectWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveInspectSquawk", ReplyAction="http://tempuri.org/IRitaWcf/RemoveInspectSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse RemoveInspectSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveInspectWOSquawkRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse RemoveInspectSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveInspectWOSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveInspectSquawk", ReplyAction="http://tempuri.org/IRitaWcf/RemoveInspectSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveInspectSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveInspectWOSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveInspectSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveInspectWOSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveInspectStep", ReplyAction="http://tempuri.org/IRitaWcf/RemoveInspectStepResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse RemoveInspectStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveInspectWOStepRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse RemoveInspectStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveInspectWOStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveInspectStep", ReplyAction="http://tempuri.org/IRitaWcf/RemoveInspectStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveInspectStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveInspectWOStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveInspectStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveInspectWOStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse DoubleInspectWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderSquawkRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse DoubleInspectWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> DoubleInspectWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> DoubleInspectWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderStepResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse DoubleInspectWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderStepRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse DoubleInspectWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/DoubleInspectWorkOrderStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> DoubleInspectWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> DoubleInspectWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveDoubleInspectSquawk", ReplyAction="http://tempuri.org/IRitaWcf/RemoveDoubleInspectSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse RemoveDoubleInspectSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOSquawkRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse RemoveDoubleInspectSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveDoubleInspectSquawk", ReplyAction="http://tempuri.org/IRitaWcf/RemoveDoubleInspectSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveDoubleInspectSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveDoubleInspectSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveDoubleInspectStep", ReplyAction="http://tempuri.org/IRitaWcf/RemoveDoubleInspectStepResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse RemoveDoubleInspectStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOStepRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse RemoveDoubleInspectStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveDoubleInspectStep", ReplyAction="http://tempuri.org/IRitaWcf/RemoveDoubleInspectStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveDoubleInspectStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveDoubleInspectStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse FunctionalTestWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderSquawkRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse FunctionalTestWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderSquawk", ReplyAction="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> FunctionalTestWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> FunctionalTestWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderStepResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse FunctionalTestWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderStepRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse FunctionalTestWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/FunctionalTestWorkOrderStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> FunctionalTestWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> FunctionalTestWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveFunctionalTestSquawk", ReplyAction="http://tempuri.org/IRitaWcf/RemoveFunctionalTestSquawkResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse RemoveFunctionalTestSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOSquawkRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse RemoveFunctionalTestSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveFunctionalTestSquawk", ReplyAction="http://tempuri.org/IRitaWcf/RemoveFunctionalTestSquawkResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveFunctionalTestSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOSquawkRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveFunctionalTestSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOSquawkRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveFunctionalTestStep", ReplyAction="http://tempuri.org/IRitaWcf/RemoveFunctionalTestStepResponse")]
-        API_TESTER_UI.ServiceReference1.StatusResponse RemoveFunctionalTestStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOStepRequest request);
+        API_TESTER_UI.RitaWcf.StatusResponse RemoveFunctionalTestStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/RemoveFunctionalTestStep", ReplyAction="http://tempuri.org/IRitaWcf/RemoveFunctionalTestStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveFunctionalTestStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveFunctionalTestStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderStepResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderStepResponse AddWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderStepRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderStepResponse AddWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderStepResponse> AddWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderStepResponse> AddWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderStepResponse")]
-        API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepResponse UpdateWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepRequest request);
+        API_TESTER_UI.RitaWcf.UpdateWorkOrderStepResponse UpdateWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepResponse> UpdateWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderStepResponse> UpdateWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AbortWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/AbortWorkOrderStepResponse")]
-        API_TESTER_UI.ServiceReference1.AbortWorkOrderStepResponse AbortWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AbortWorkOrderStepRequest request);
+        API_TESTER_UI.RitaWcf.AbortWorkOrderStepResponse AbortWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.AbortWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AbortWorkOrderStep", ReplyAction="http://tempuri.org/IRitaWcf/AbortWorkOrderStepResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AbortWorkOrderStepResponse> AbortWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AbortWorkOrderStepRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AbortWorkOrderStepResponse> AbortWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AbortWorkOrderStepRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ClockIn", ReplyAction="http://tempuri.org/IRitaWcf/ClockInResponse")]
-        API_TESTER_UI.ServiceReference1.ClockInResponse ClockIn(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClockInRequest request);
+        API_TESTER_UI.RitaWcf.ClockInResponse ClockIn(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClockInRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ClockIn", ReplyAction="http://tempuri.org/IRitaWcf/ClockInResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.ClockInResponse> ClockInAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClockInRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.ClockInResponse> ClockInAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClockInRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ClockOut", ReplyAction="http://tempuri.org/IRitaWcf/ClockOutResponse")]
-        API_TESTER_UI.ServiceReference1.ClockOutResponse ClockOut(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClockOutRequest request);
+        API_TESTER_UI.RitaWcf.ClockOutResponse ClockOut(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClockOutRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ClockOut", ReplyAction="http://tempuri.org/IRitaWcf/ClockOutResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.ClockOutResponse> ClockOutAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClockOutRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.ClockOutResponse> ClockOutAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClockOutRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderLabor", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderLaborResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderLaborResponse AddWorkOrderLabor(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderLaborRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderLaborResponse AddWorkOrderLabor(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderLaborRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderLabor", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderLaborResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderLaborResponse> AddWorkOrderLaborAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderLaborRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderLaborResponse> AddWorkOrderLaborAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderLaborRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderLabor", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderLaborResponse")]
-        API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborResponse UpdateWorkOrderLabor(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborRequest request);
+        API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborResponse UpdateWorkOrderLabor(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderLabor", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderLaborResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborResponse> UpdateWorkOrderLaborAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborResponse> UpdateWorkOrderLaborAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderPart", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderPartResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderPartResponse AddWorkOrderPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderPartRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderPartResponse AddWorkOrderPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderPartRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderPart", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderPartResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderPartResponse> AddWorkOrderPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderPartRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderPartResponse> AddWorkOrderPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderPartRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderPart", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderPartResponse")]
-        API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartResponse UpdateWorkOrderPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartRequest request);
+        API_TESTER_UI.RitaWcf.UpdateWorkOrderPartResponse UpdateWorkOrderPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderPartRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderPart", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderPartResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartResponse> UpdateWorkOrderPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderPartResponse> UpdateWorkOrderPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderPartRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderService", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderServiceResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderServiceResponse AddWorkOrderService(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderServiceRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderServiceResponse AddWorkOrderService(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderService", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderServiceResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderServiceResponse> AddWorkOrderServiceAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderServiceRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderServiceResponse> AddWorkOrderServiceAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderService", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderServiceResponse")]
-        API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceResponse UpdateWorkOrderService(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceRequest request);
+        API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceResponse UpdateWorkOrderService(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrderService", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderServiceResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceResponse> UpdateWorkOrderServiceAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceResponse> UpdateWorkOrderServiceAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderSquawkAssignment", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderSquawkAssignmentResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentResponse AddWorkOrderSquawkAssignment(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentResponse AddWorkOrderSquawkAssignment(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderSquawkAssignment", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderSquawkAssignmentResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentResponse> AddWorkOrderSquawkAssignmentAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentResponse> AddWorkOrderSquawkAssignmentAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DeleteWorkOrderSquawkAssignment", ReplyAction="http://tempuri.org/IRitaWcf/DeleteWorkOrderSquawkAssignmentResponse")]
-        API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentResponse DeleteWorkOrderSquawkAssignment(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentRequest request);
+        API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentResponse DeleteWorkOrderSquawkAssignment(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DeleteWorkOrderSquawkAssignment", ReplyAction="http://tempuri.org/IRitaWcf/DeleteWorkOrderSquawkAssignmentResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentResponse> DeleteWorkOrderSquawkAssignmentAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentResponse> DeleteWorkOrderSquawkAssignmentAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderStepAssignment", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderStepAssignmentResponse")]
-        API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentResponse AddWorkOrderStepAssignment(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentRequest request);
+        API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentResponse AddWorkOrderStepAssignment(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWorkOrderStepAssignment", ReplyAction="http://tempuri.org/IRitaWcf/AddWorkOrderStepAssignmentResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentResponse> AddWorkOrderStepAssignmentAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentResponse> AddWorkOrderStepAssignmentAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DeleteWorkOrderStepAssignment", ReplyAction="http://tempuri.org/IRitaWcf/DeleteWorkOrderStepAssignmentResponse")]
-        API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentResponse DeleteWorkOrderStepAssignment(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentRequest request);
+        API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentResponse DeleteWorkOrderStepAssignment(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DeleteWorkOrderStepAssignment", ReplyAction="http://tempuri.org/IRitaWcf/DeleteWorkOrderStepAssignmentResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentResponse> DeleteWorkOrderStepAssignmentAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentResponse> DeleteWorkOrderStepAssignmentAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/StartWorkOrderBulkLabor", ReplyAction="http://tempuri.org/IRitaWcf/StartWorkOrderBulkLaborResponse")]
-        API_TESTER_UI.ServiceReference1.StartUserWorkOrderBulkLaborResponse StartWorkOrderBulkLabor(System.Guid sessionId, API_TESTER_UI.ServiceReference1.StartUserWorkOrderBulkLaborRequest request);
+        API_TESTER_UI.RitaWcf.StartUserWorkOrderBulkLaborResponse StartWorkOrderBulkLabor(System.Guid sessionId, API_TESTER_UI.RitaWcf.StartUserWorkOrderBulkLaborRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/StartWorkOrderBulkLabor", ReplyAction="http://tempuri.org/IRitaWcf/StartWorkOrderBulkLaborResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StartUserWorkOrderBulkLaborResponse> StartWorkOrderBulkLaborAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.StartUserWorkOrderBulkLaborRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StartUserWorkOrderBulkLaborResponse> StartWorkOrderBulkLaborAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.StartUserWorkOrderBulkLaborRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/EndWorkOrderBulkLabor", ReplyAction="http://tempuri.org/IRitaWcf/EndWorkOrderBulkLaborResponse")]
-        API_TESTER_UI.ServiceReference1.EndUserWorkOrderBulkLaborResponse EndWorkOrderBulkLabor(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EndUserWorkOrderBulkLaborRequest request);
+        API_TESTER_UI.RitaWcf.EndUserWorkOrderBulkLaborResponse EndWorkOrderBulkLabor(System.Guid sessionId, API_TESTER_UI.RitaWcf.EndUserWorkOrderBulkLaborRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/EndWorkOrderBulkLabor", ReplyAction="http://tempuri.org/IRitaWcf/EndWorkOrderBulkLaborResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.EndUserWorkOrderBulkLaborResponse> EndWorkOrderBulkLaborAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EndUserWorkOrderBulkLaborRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.EndUserWorkOrderBulkLaborResponse> EndWorkOrderBulkLaborAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.EndUserWorkOrderBulkLaborRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/FillWorkOrderPartDemandFromInventory", ReplyAction="http://tempuri.org/IRitaWcf/FillWorkOrderPartDemandFromInventoryResponse")]
-        API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryResponse FillWorkOrderPartDemandFromInventory(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryRequest request);
+        API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryResponse FillWorkOrderPartDemandFromInventory(System.Guid sessionId, API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/FillWorkOrderPartDemandFromInventory", ReplyAction="http://tempuri.org/IRitaWcf/FillWorkOrderPartDemandFromInventoryResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryResponse> FillWorkOrderPartDemandFromInventoryAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryResponse> FillWorkOrderPartDemandFromInventoryAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/CreatePartRequest", ReplyAction="http://tempuri.org/IRitaWcf/CreatePartRequestResponse")]
-        API_TESTER_UI.ServiceReference1.AddPartServiceRequestResponse CreatePartRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddPartServiceRequest request);
+        API_TESTER_UI.RitaWcf.AddPartServiceRequestResponse CreatePartRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddPartServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/CreatePartRequest", ReplyAction="http://tempuri.org/IRitaWcf/CreatePartRequestResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddPartServiceRequestResponse> CreatePartRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddPartServiceRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddPartServiceRequestResponse> CreatePartRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddPartServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/BatchDeliverPart", ReplyAction="http://tempuri.org/IRitaWcf/BatchDeliverPartResponse")]
-        API_TESTER_UI.ServiceReference1.BatchDeliverPartResponse BatchDeliverPart(System.Guid seesionId, API_TESTER_UI.ServiceReference1.BatchDeliverPartRequest request);
+        API_TESTER_UI.RitaWcf.BatchDeliverPartResponse BatchDeliverPart(System.Guid seesionId, API_TESTER_UI.RitaWcf.BatchDeliverPartRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/BatchDeliverPart", ReplyAction="http://tempuri.org/IRitaWcf/BatchDeliverPartResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.BatchDeliverPartResponse> BatchDeliverPartAsync(System.Guid seesionId, API_TESTER_UI.ServiceReference1.BatchDeliverPartRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.BatchDeliverPartResponse> BatchDeliverPartAsync(System.Guid seesionId, API_TESTER_UI.RitaWcf.BatchDeliverPartRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DeliverPart", ReplyAction="http://tempuri.org/IRitaWcf/DeliverPartResponse")]
-        API_TESTER_UI.ServiceReference1.DeliverPartResponse DeliverPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeliverPartRequest request);
+        API_TESTER_UI.RitaWcf.DeliverPartResponse DeliverPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeliverPartRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DeliverPart", ReplyAction="http://tempuri.org/IRitaWcf/DeliverPartResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.DeliverPartResponse> DeliverPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeliverPartRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.DeliverPartResponse> DeliverPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeliverPartRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrder", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderResponse")]
-        API_TESTER_UI.ServiceReference1.UpdateWorkOrderResponse UpdateWorkOrder(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderRequest request);
+        API_TESTER_UI.RitaWcf.UpdateWorkOrderResponse UpdateWorkOrder(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/UpdateWorkOrder", ReplyAction="http://tempuri.org/IRitaWcf/UpdateWorkOrderResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderResponse> UpdateWorkOrderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderResponse> UpdateWorkOrderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetPurchasedRequirements", ReplyAction="http://tempuri.org/IRitaWcf/SetPurchasedRequirementsResponse")]
-        API_TESTER_UI.ServiceReference1.SetApiOptionsResponse SetPurchasedRequirements(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetAPIOptionsRequest request);
+        API_TESTER_UI.RitaWcf.SetApiOptionsResponse SetPurchasedRequirements(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetAPIOptionsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SetPurchasedRequirements", ReplyAction="http://tempuri.org/IRitaWcf/SetPurchasedRequirementsResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.SetApiOptionsResponse> SetPurchasedRequirementsAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetAPIOptionsRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.SetApiOptionsResponse> SetPurchasedRequirementsAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetAPIOptionsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddCompany", ReplyAction="http://tempuri.org/IRitaWcf/AddCompanyResponse")]
-        API_TESTER_UI.ServiceReference1.AddCompanyResponse AddCompany(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddCompanyRequest request);
+        API_TESTER_UI.RitaWcf.AddCompanyResponse AddCompany(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddCompanyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddCompany", ReplyAction="http://tempuri.org/IRitaWcf/AddCompanyResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddCompanyResponse> AddCompanyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddCompanyRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddCompanyResponse> AddCompanyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddCompanyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/GetCompany", ReplyAction="http://tempuri.org/IRitaWcf/GetCompanyResponse")]
-        API_TESTER_UI.ServiceReference1.GetCompanyResponse GetCompany(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetCompanyRequest request);
+        API_TESTER_UI.RitaWcf.GetCompanyResponse GetCompany(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetCompanyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/GetCompany", ReplyAction="http://tempuri.org/IRitaWcf/GetCompanyResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.GetCompanyResponse> GetCompanyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetCompanyRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.GetCompanyResponse> GetCompanyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetCompanyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SignoutTool", ReplyAction="http://tempuri.org/IRitaWcf/SignoutToolResponse")]
-        API_TESTER_UI.ServiceReference1.SignoutToolResponse SignoutTool(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignoutToolRequest request);
+        API_TESTER_UI.RitaWcf.SignoutToolResponse SignoutTool(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignoutToolRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SignoutTool", ReplyAction="http://tempuri.org/IRitaWcf/SignoutToolResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.SignoutToolResponse> SignoutToolAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignoutToolRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.SignoutToolResponse> SignoutToolAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignoutToolRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SigninTool", ReplyAction="http://tempuri.org/IRitaWcf/SigninToolResponse")]
-        API_TESTER_UI.ServiceReference1.SigninToolResponse SigninTool(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SigninToolRequest request);
+        API_TESTER_UI.RitaWcf.SigninToolResponse SigninTool(System.Guid sessionId, API_TESTER_UI.RitaWcf.SigninToolRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/SigninTool", ReplyAction="http://tempuri.org/IRitaWcf/SigninToolResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.SigninToolResponse> SigninToolAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SigninToolRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.SigninToolResponse> SigninToolAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SigninToolRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ReceivePart", ReplyAction="http://tempuri.org/IRitaWcf/ReceivePartResponse")]
-        API_TESTER_UI.ServiceReference1.ReceivePartResponse ReceivePart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ReceivePartRequest request);
+        API_TESTER_UI.RitaWcf.ReceivePartResponse ReceivePart(System.Guid sessionId, API_TESTER_UI.RitaWcf.ReceivePartRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ReceivePart", ReplyAction="http://tempuri.org/IRitaWcf/ReceivePartResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.ReceivePartResponse> ReceivePartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ReceivePartRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.ReceivePartResponse> ReceivePartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.ReceivePartRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ReceiveUnexpected", ReplyAction="http://tempuri.org/IRitaWcf/ReceiveUnexpectedResponse")]
-        API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptResponse ReceiveUnexpected(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptRequest request);
+        API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptResponse ReceiveUnexpected(System.Guid sessionId, API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/ReceiveUnexpected", ReplyAction="http://tempuri.org/IRitaWcf/ReceiveUnexpectedResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptResponse> ReceiveUnexpectedAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptResponse> ReceiveUnexpectedAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/EnterCycleCount", ReplyAction="http://tempuri.org/IRitaWcf/EnterCycleCountResponse")]
-        API_TESTER_UI.ServiceReference1.EnterCycleCountResponse EnterCycleCount(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EnterCycleCountRequest request);
+        API_TESTER_UI.RitaWcf.EnterCycleCountResponse EnterCycleCount(System.Guid sessionId, API_TESTER_UI.RitaWcf.EnterCycleCountRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/EnterCycleCount", ReplyAction="http://tempuri.org/IRitaWcf/EnterCycleCountResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.EnterCycleCountResponse> EnterCycleCountAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EnterCycleCountRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.EnterCycleCountResponse> EnterCycleCountAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.EnterCycleCountRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DeletePartAssembly", ReplyAction="http://tempuri.org/IRitaWcf/DeletePartAssemblyResponse")]
-        API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyResponse DeletePartAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyRequest request);
+        API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyResponse DeletePartAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/DeletePartAssembly", ReplyAction="http://tempuri.org/IRitaWcf/DeletePartAssemblyResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyResponse> DeletePartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyResponse> DeletePartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWoSquawkPartAssembly", ReplyAction="http://tempuri.org/IRitaWcf/AddWoSquawkPartAssemblyResponse")]
-        API_TESTER_UI.ServiceReference1.AddWoSquawkPartAssemblyResponse AddWoSquawkPartAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWOSquawkPartAssemblyRequest request);
+        API_TESTER_UI.RitaWcf.AddWoSquawkPartAssemblyResponse AddWoSquawkPartAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWOSquawkPartAssemblyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRitaWcf/AddWoSquawkPartAssembly", ReplyAction="http://tempuri.org/IRitaWcf/AddWoSquawkPartAssemblyResponse")]
-        System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWoSquawkPartAssemblyResponse> AddWoSquawkPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWOSquawkPartAssemblyRequest request);
+        System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWoSquawkPartAssemblyResponse> AddWoSquawkPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWOSquawkPartAssemblyRequest request);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IRitaWcfChannel : API_TESTER_UI.ServiceReference1.IRitaWcf, System.ServiceModel.IClientChannel {
+    public interface IRitaWcfChannel : API_TESTER_UI.RitaWcf.IRitaWcf, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class RitaWcfClient : System.ServiceModel.ClientBase<API_TESTER_UI.ServiceReference1.IRitaWcf>, API_TESTER_UI.ServiceReference1.IRitaWcf {
+    public partial class RitaWcfClient : System.ServiceModel.ClientBase<API_TESTER_UI.RitaWcf.IRitaWcf>, API_TESTER_UI.RitaWcf.IRitaWcf {
         
         public RitaWcfClient() {
         }
@@ -32470,539 +32470,539 @@ namespace API_TESTER_UI.References {
                 base(binding, remoteAddress) {
         }
         
-        public API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyResponse UpdateWoSquawkPartAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyRequest request) {
+        public API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyResponse UpdateWoSquawkPartAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyRequest request) {
             return base.Channel.UpdateWoSquawkPartAssembly(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyResponse> UpdateWoSquawkPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EditWOSquawkPartAssemblyRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyResponse> UpdateWoSquawkPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.EditWOSquawkPartAssemblyRequest request) {
             return base.Channel.UpdateWoSquawkPartAssemblyAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWOPartAssemblyResponse AddWoPartAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWOPartAssemblyRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWOPartAssemblyResponse AddWoPartAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWOPartAssemblyRequest request) {
             return base.Channel.AddWoPartAssembly(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWOPartAssemblyResponse> AddWoPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWOPartAssemblyRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWOPartAssemblyResponse> AddWoPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWOPartAssemblyRequest request) {
             return base.Channel.AddWoPartAssemblyAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.EditWOPartAssemblyResponse UpdateWoPartAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EditWOPartAssemblyRequest request) {
+        public API_TESTER_UI.RitaWcf.EditWOPartAssemblyResponse UpdateWoPartAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.EditWOPartAssemblyRequest request) {
             return base.Channel.UpdateWoPartAssembly(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.EditWOPartAssemblyResponse> UpdateWoPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EditWOPartAssemblyRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.EditWOPartAssemblyResponse> UpdateWoPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.EditWOPartAssemblyRequest request) {
             return base.Channel.UpdateWoPartAssemblyAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestPerformedRequest request) {
             return base.Channel.SetWoPandAFunctionalTest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestPerformedRequest request) {
             return base.Channel.SetWoPandAFunctionalTestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestPerformedRequest request) {
             return base.Channel.SetWoSquawkPandAFunctionalTest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestPerformedRequest request) {
             return base.Channel.SetWoSquawkPandAFunctionalTestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestInspectPerformedRequest request) {
             return base.Channel.SetWoPandAFunctionalTestInspect(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyFtnTestInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyFtnTestInspectPerformedRequest request) {
             return base.Channel.SetWoPandAFunctionalTestInspectAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request) {
             return base.Channel.SetWoSquawkPandAFunctionalTestInspect(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request) {
             return base.Channel.SetWoSquawkPandAFunctionalTestInspectAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandARemoval(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyRemovalPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoPandARemoval(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyRemovalPerformedRequest request) {
             return base.Channel.SetWoPandARemoval(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyRemovalPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyRemovalPerformedRequest request) {
             return base.Channel.SetWoPandARemovalAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoSqauwkPandARemoval(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyRemovalPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoSqauwkPandARemoval(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyRemovalPerformedRequest request) {
             return base.Channel.SetWoSqauwkPandARemoval(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSqauwkPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyRemovalPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSqauwkPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyRemovalPerformedRequest request) {
             return base.Channel.SetWoSqauwkPandARemovalAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAInstall(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAInstall(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallPerformedRequest request) {
             return base.Channel.SetWoPandAInstall(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallPerformedRequest request) {
             return base.Channel.SetWoPandAInstallAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandAInstall(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandAInstall(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallPerformedRequest request) {
             return base.Channel.SetWoSquawkPandAInstall(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallPerformedRequest request) {
             return base.Channel.SetWoSquawkPandAInstallAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallInspectPerformedRequest request) {
             return base.Channel.SetWoPandAInstallInspected(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyInstallInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyInstallInspectPerformedRequest request) {
             return base.Channel.SetWoPandAInstallInspectedAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallInspectPerformedRequest request) {
             return base.Channel.SetWoSquawkPandAInstallInspected(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyInstallInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyInstallInspectPerformedRequest request) {
             return base.Channel.SetWoSquawkPandAInstallInspectedAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandALeakCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoPandALeakCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckPerformedRequest request) {
             return base.Channel.SetWoPandALeakCheck(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckPerformedRequest request) {
             return base.Channel.SetWoPandALeakCheckAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandALeakCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandALeakCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckPerformedRequest request) {
             return base.Channel.SetWoSquawkPandALeakCheck(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckPerformedRequest request) {
             return base.Channel.SetWoSquawkPandALeakCheckAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandALeakCheckInspection(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoPandALeakCheckInspection(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckInspectPerformedRequest request) {
             return base.Channel.SetWoPandALeakCheckInspection(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandALeakCheckInspectionAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyLeakCheckInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandALeakCheckInspectionAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyLeakCheckInspectPerformedRequest request) {
             return base.Channel.SetWoPandALeakCheckInspectionAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandALeakCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandALeakCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request) {
             return base.Channel.SetWoSquawkPandALeakCheckInspect(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandALeakCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandALeakCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request) {
             return base.Channel.SetWoSquawkPandALeakCheckInspectAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckPerformedRequest request) {
             return base.Channel.SetWoPandAOpsCheck(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckPerformedRequest request) {
             return base.Channel.SetWoPandAOpsCheckAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoSqauwkPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoSqauwkPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckPerformedRequest request) {
             return base.Channel.SetWoSqauwkPandAOpsCheck(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSqauwkPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSqauwkPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckPerformedRequest request) {
             return base.Channel.SetWoSqauwkPandAOpsCheckAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckInspectPerformedRequest request) {
             return base.Channel.SetWoPandAOpsCheckInspect(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOPartAssemblyOpsCheckInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOPartAssemblyOpsCheckInspectPerformedRequest request) {
             return base.Channel.SetWoPandAOpsCheckInspectAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SetWoSquawkPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SetWoSquawkPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request) {
             return base.Channel.SetWoSquawkPandAOpsCheckInspect(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SetWoSquawkPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SetWoSquawkPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request) {
             return base.Channel.SetWoSquawkPandAOpsCheckInspectAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteResponse ApproveWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteRequest request) {
+        public API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteResponse ApproveWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteRequest request) {
             return base.Channel.ApproveWorkOrderQuote(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteResponse> ApproveWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ApproveWorkOrderQuoteRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteResponse> ApproveWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.ApproveWorkOrderQuoteRequest request) {
             return base.Channel.ApproveWorkOrderQuoteAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteResponse RejectWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteRequest request) {
+        public API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteResponse RejectWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteRequest request) {
             return base.Channel.RejectWorkOrderQuote(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteResponse> RejectWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RejectWorkOrderQuoteRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteResponse> RejectWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RejectWorkOrderQuoteRequest request) {
             return base.Channel.RejectWorkOrderQuoteAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteResponse UnapproveWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteRequest request) {
+        public API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteResponse UnapproveWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteRequest request) {
             return base.Channel.UnapproveWorkOrderQuote(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteResponse> UnapproveWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnapproveWorkOrderQuoteRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteResponse> UnapproveWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnapproveWorkOrderQuoteRequest request) {
             return base.Channel.UnapproveWorkOrderQuoteAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteResponse UnrejectWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteRequest request) {
+        public API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteResponse UnrejectWorkOrderQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteRequest request) {
             return base.Channel.UnrejectWorkOrderQuote(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteResponse> UnrejectWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnrejectWorkOrderQuoteRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteResponse> UnrejectWorkOrderQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnrejectWorkOrderQuoteRequest request) {
             return base.Channel.UnrejectWorkOrderQuoteAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestPerformedRequest request) {
             return base.Channel.UnSetWoPandAFunctionalTest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestPerformedRequest request) {
             return base.Channel.UnSetWoPandAFunctionalTestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandAFunctionalTest(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandAFunctionalTest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandAFunctionalTestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandAFunctionalTestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestInspectPerformedRequest request) {
             return base.Channel.UnSetWoPandAFunctionalTestInspect(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyFtnTestInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyFtnTestInspectPerformedRequest request) {
             return base.Channel.UnSetWoPandAFunctionalTestInspectAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandAFunctionalTestInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandAFunctionalTestInspect(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandAFunctionalTestInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyFtnTestInspectPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandAFunctionalTestInspectAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandARemoval(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyRemovalPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandARemoval(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyRemovalPerformedRequest request) {
             return base.Channel.UnSetWoPandARemoval(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyRemovalPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyRemovalPerformedRequest request) {
             return base.Channel.UnSetWoPandARemovalAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSqauwkPandARemoval(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyRemovalPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSqauwkPandARemoval(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyRemovalPerformedRequest request) {
             return base.Channel.UnSetWoSqauwkPandARemoval(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSqauwkPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyRemovalPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSqauwkPandARemovalAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyRemovalPerformedRequest request) {
             return base.Channel.UnSetWoSqauwkPandARemovalAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAInstall(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAInstall(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallPerformedRequest request) {
             return base.Channel.UnSetWoPandAInstall(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallPerformedRequest request) {
             return base.Channel.UnSetWoPandAInstallAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandAInstall(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandAInstall(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandAInstall(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandAInstallAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandAInstallAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallInspectPerformedRequest request) {
             return base.Channel.UnSetWoPandAInstallInspected(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyInstallInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyInstallInspectPerformedRequest request) {
             return base.Channel.UnSetWoPandAInstallInspectedAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandAInstallInspected(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandAInstallInspected(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandAInstallInspectedAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyInstallInspectPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandAInstallInspectedAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandALeakCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandALeakCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckPerformedRequest request) {
             return base.Channel.UnSetWoPandALeakCheck(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckPerformedRequest request) {
             return base.Channel.UnSetWoPandALeakCheckAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandALeakCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandALeakCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandALeakCheck(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandALeakCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandALeakCheckAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandALeakCheckInspection(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandALeakCheckInspection(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest request) {
             return base.Channel.UnSetWoPandALeakCheckInspection(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandALeakCheckInspectionAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandALeakCheckInspectionAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyLeakCheckInspectPerformedRequest request) {
             return base.Channel.UnSetWoPandALeakCheckInspectionAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandALeakCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandALeakCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandALeakCheckInspect(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandALeakCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandALeakCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyLeakCheckInspectPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandALeakCheckInspectAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckPerformedRequest request) {
             return base.Channel.UnSetWoPandAOpsCheck(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckPerformedRequest request) {
             return base.Channel.UnSetWoPandAOpsCheckAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSqauwkPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSqauwkPandAOpsCheck(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest request) {
             return base.Channel.UnSetWoSqauwkPandAOpsCheck(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSqauwkPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSqauwkPandAOpsCheckAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckPerformedRequest request) {
             return base.Channel.UnSetWoSqauwkPandAOpsCheckAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest request) {
             return base.Channel.UnSetWoPandAOpsCheckInspect(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOPartAssemblyOpsCheckInspectPerformedRequest request) {
             return base.Channel.UnSetWoPandAOpsCheckInspectAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnSetWoSquawkPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnSetWoSquawkPandAOpsCheckInspect(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandAOpsCheckInspect(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnSetWoSquawkPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnSetWoSquawkPandAOpsCheckInspectAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnSetWOSquawkPartAssemblyOpsCheckInspectPerformedRequest request) {
             return base.Channel.UnSetWoSquawkPandAOpsCheckInspectAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse DeleteWoPartsAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWOPartAssemblyRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse DeleteWoPartsAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWOPartAssemblyRequest request) {
             return base.Channel.DeleteWoPartsAssembly(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> DeleteWoPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWOPartAssemblyRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> DeleteWoPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWOPartAssemblyRequest request) {
             return base.Channel.DeleteWoPartsAssemblyAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse LinkPartsAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.LinkWOPartAssemblySquawkAssociationsRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse LinkPartsAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.LinkWOPartAssemblySquawkAssociationsRequest request) {
             return base.Channel.LinkPartsAssembly(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> LinkPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.LinkWOPartAssemblySquawkAssociationsRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> LinkPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.LinkWOPartAssemblySquawkAssociationsRequest request) {
             return base.Channel.LinkPartsAssemblyAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UnLinkPartsAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnLinkWOPartAssemblySquawkAssociationsRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UnLinkPartsAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnLinkWOPartAssemblySquawkAssociationsRequest request) {
             return base.Channel.UnLinkPartsAssembly(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UnLinkPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UnLinkWOPartAssemblySquawkAssociationsRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UnLinkPartsAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UnLinkWOPartAssemblySquawkAssociationsRequest request) {
             return base.Channel.UnLinkPartsAssemblyAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse AcceptInspectedPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptAcceptRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse AcceptInspectedPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptAcceptRequest request) {
             return base.Channel.AcceptInspectedPart(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> AcceptInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptAcceptRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> AcceptInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptAcceptRequest request) {
             return base.Channel.AcceptInspectedPartAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse ReturnInspectedPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptReturnRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse ReturnInspectedPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptReturnRequest request) {
             return base.Channel.ReturnInspectedPart(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> ReturnInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptReturnRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> ReturnInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptReturnRequest request) {
             return base.Channel.ReturnInspectedPartAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse DisposeInspectedPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptDisposeRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse DisposeInspectedPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptDisposeRequest request) {
             return base.Channel.DisposeInspectedPart(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> DisposeInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectReceiptDisposeRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> DisposeInspectedPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectReceiptDisposeRequest request) {
             return base.Channel.DisposeInspectedPartAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse ReceiptHoldCodes(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClearHoldCodesRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse ReceiptHoldCodes(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClearHoldCodesRequest request) {
             return base.Channel.ReceiptHoldCodes(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> ReceiptHoldCodesAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClearHoldCodesRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> ReceiptHoldCodesAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClearHoldCodesRequest request) {
             return base.Channel.ReceiptHoldCodesAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.GetActiveCycleCountsResponse GetActiveCycleCounts(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetActiveCycleCountsRequest request) {
+        public API_TESTER_UI.RitaWcf.GetActiveCycleCountsResponse GetActiveCycleCounts(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetActiveCycleCountsRequest request) {
             return base.Channel.GetActiveCycleCounts(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.GetActiveCycleCountsResponse> GetActiveCycleCountsAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetActiveCycleCountsRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.GetActiveCycleCountsResponse> GetActiveCycleCountsAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetActiveCycleCountsRequest request) {
             return base.Channel.GetActiveCycleCountsAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.GetCycleCountPartsResponse GetCycleCountParts(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetCycleCountPartsRequest request) {
+        public API_TESTER_UI.RitaWcf.GetCycleCountPartsResponse GetCycleCountParts(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetCycleCountPartsRequest request) {
             return base.Channel.GetCycleCountParts(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.GetCycleCountPartsResponse> GetCycleCountPartsAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetCycleCountPartsRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.GetCycleCountPartsResponse> GetCycleCountPartsAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetCycleCountPartsRequest request) {
             return base.Channel.GetCycleCountPartsAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.PrintPartLabelsResponse PrintPartLabels(System.Guid sessionId, API_TESTER_UI.ServiceReference1.PrintPartLabelsRequest request) {
+        public API_TESTER_UI.RitaWcf.PrintPartLabelsResponse PrintPartLabels(System.Guid sessionId, API_TESTER_UI.RitaWcf.PrintPartLabelsRequest request) {
             return base.Channel.PrintPartLabels(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.PrintPartLabelsResponse> PrintPartLabelsAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.PrintPartLabelsRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.PrintPartLabelsResponse> PrintPartLabelsAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.PrintPartLabelsRequest request) {
             return base.Channel.PrintPartLabelsAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.LotResponse AddLot(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddLotRequest request) {
+        public API_TESTER_UI.RitaWcf.LotResponse AddLot(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddLotRequest request) {
             return base.Channel.AddLot(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.LotResponse> AddLotAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddLotRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.LotResponse> AddLotAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddLotRequest request) {
             return base.Channel.AddLotAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.LotResponse UpdateLot(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateLotRequest request) {
+        public API_TESTER_UI.RitaWcf.LotResponse UpdateLot(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateLotRequest request) {
             return base.Channel.UpdateLot(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.LotResponse> UpdateLotAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateLotRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.LotResponse> UpdateLotAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateLotRequest request) {
             return base.Channel.UpdateLotAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.VendorQuoteResponse AddVendorQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RequestToAddVendorQuote request) {
+        public API_TESTER_UI.RitaWcf.VendorQuoteResponse AddVendorQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.RequestToAddVendorQuote request) {
             return base.Channel.AddVendorQuote(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.VendorQuoteResponse> AddVendorQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RequestToAddVendorQuote request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.VendorQuoteResponse> AddVendorQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RequestToAddVendorQuote request) {
             return base.Channel.AddVendorQuoteAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.VendorQuoteResponse UpdateVendorQuote(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RequestToUpdateVendorQuote request) {
+        public API_TESTER_UI.RitaWcf.VendorQuoteResponse UpdateVendorQuote(System.Guid sessionId, API_TESTER_UI.RitaWcf.RequestToUpdateVendorQuote request) {
             return base.Channel.UpdateVendorQuote(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.VendorQuoteResponse> UpdateVendorQuoteAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RequestToUpdateVendorQuote request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.VendorQuoteResponse> UpdateVendorQuoteAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RequestToUpdateVendorQuote request) {
             return base.Channel.UpdateVendorQuoteAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse AddWarehouseBin(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWarehouseBinRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse AddWarehouseBin(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWarehouseBinRequest request) {
             return base.Channel.AddWarehouseBin(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> AddWarehouseBinAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWarehouseBinRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> AddWarehouseBinAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWarehouseBinRequest request) {
             return base.Channel.AddWarehouseBinAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse UpdateDeliveryPickTicket(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateDeliveryPickTicketRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse UpdateDeliveryPickTicket(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateDeliveryPickTicketRequest request) {
             return base.Channel.UpdateDeliveryPickTicket(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> UpdateDeliveryPickTicketAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateDeliveryPickTicketRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> UpdateDeliveryPickTicketAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateDeliveryPickTicketRequest request) {
             return base.Channel.UpdateDeliveryPickTicketAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResolutionResponse AddOrUpdateCannedSquawkResolution(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResolutionRequest request) {
+        public API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResolutionResponse AddOrUpdateCannedSquawkResolution(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResolutionRequest request) {
             return base.Channel.AddOrUpdateCannedSquawkResolution(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResolutionResponse> AddOrUpdateCannedSquawkResolutionAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResolutionRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResolutionResponse> AddOrUpdateCannedSquawkResolutionAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResolutionRequest request) {
             return base.Channel.AddOrUpdateCannedSquawkResolutionAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkComplianceResponse AddOrUpdateCannedSquawkCompliance(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkComplianceRequest request) {
+        public API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkComplianceResponse AddOrUpdateCannedSquawkCompliance(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkComplianceRequest request) {
             return base.Channel.AddOrUpdateCannedSquawkCompliance(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkComplianceResponse> AddOrUpdateCannedSquawkComplianceAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkComplianceRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkComplianceResponse> AddOrUpdateCannedSquawkComplianceAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkComplianceRequest request) {
             return base.Channel.AddOrUpdateCannedSquawkComplianceAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResponse AddOrUpdateCannedSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResponse AddOrUpdateCannedSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkRequest request) {
             return base.Channel.AddOrUpdateCannedSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkResponse> AddOrUpdateCannedSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrUpdateCannedSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkResponse> AddOrUpdateCannedSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrUpdateCannedSquawkRequest request) {
             return base.Channel.AddOrUpdateCannedSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.GetContractPriceResponse GetContractPrice(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetContractPriceRequest request) {
+        public API_TESTER_UI.RitaWcf.GetContractPriceResponse GetContractPrice(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetContractPriceRequest request) {
             return base.Channel.GetContractPrice(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.GetContractPriceResponse> GetContractPriceAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetContractPriceRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.GetContractPriceResponse> GetContractPriceAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetContractPriceRequest request) {
             return base.Channel.GetContractPriceAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddOrEditUserResponse AddOrUpdateUser(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrEditUserRequest request) {
+        public API_TESTER_UI.RitaWcf.AddOrEditUserResponse AddOrUpdateUser(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrEditUserRequest request) {
             return base.Channel.AddOrUpdateUser(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddOrEditUserResponse> AddOrUpdateUserAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddOrEditUserRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddOrEditUserResponse> AddOrUpdateUserAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddOrEditUserRequest request) {
             return base.Channel.AddOrUpdateUserAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.UpdateUserResponse UpdateUser(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateUserRequest request) {
+        public API_TESTER_UI.RitaWcf.UpdateUserResponse UpdateUser(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateUserRequest request) {
             return base.Channel.UpdateUser(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateUserResponse> UpdateUserAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateUserRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateUserResponse> UpdateUserAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateUserRequest request) {
             return base.Channel.UpdateUserAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddUserResponse AddUser(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddUserRequest request) {
+        public API_TESTER_UI.RitaWcf.AddUserResponse AddUser(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddUserRequest request) {
             return base.Channel.AddUser(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddUserResponse> AddUserAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddUserRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddUserResponse> AddUserAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddUserRequest request) {
             return base.Channel.AddUserAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSOFromSOQResponse AddSOFromSOQRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOFromSOQRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSOFromSOQResponse AddSOFromSOQRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOFromSOQRequest request) {
             return base.Channel.AddSOFromSOQRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOFromSOQResponse> AddSOFromSOQRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOFromSOQRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOFromSOQResponse> AddSOFromSOQRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOFromSOQRequest request) {
             return base.Channel.AddSOFromSOQRequestAsync(sessionId, request);
         }
         
@@ -33118,571 +33118,571 @@ namespace API_TESTER_UI.References {
             return base.Channel.CheckWarningsAsync(sessionId);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddPurchaseOrderResponse AddPurchaseOrder(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddPurchaseOrderRequest request) {
+        public API_TESTER_UI.RitaWcf.AddPurchaseOrderResponse AddPurchaseOrder(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddPurchaseOrderRequest request) {
             return base.Channel.AddPurchaseOrder(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddPurchaseOrderResponse> AddPurchaseOrderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddPurchaseOrderRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddPurchaseOrderResponse> AddPurchaseOrderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddPurchaseOrderRequest request) {
             return base.Channel.AddPurchaseOrderAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSalesOrderResponse AddSalesOrder(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSalesOrderRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSalesOrderResponse AddSalesOrder(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSalesOrderRequest request) {
             return base.Channel.AddSalesOrder(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSalesOrderResponse> AddSalesOrderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSalesOrderRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSalesOrderResponse> AddSalesOrderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSalesOrderRequest request) {
             return base.Channel.AddSalesOrderAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse AddSalesOrderQuoteHeader(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteHeaderRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse AddSalesOrderQuoteHeader(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSalesOrderQuoteHeaderRequest request) {
             return base.Channel.AddSalesOrderQuoteHeader(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse> AddSalesOrderQuoteHeaderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteHeaderRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse> AddSalesOrderQuoteHeaderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSalesOrderQuoteHeaderRequest request) {
             return base.Channel.AddSalesOrderQuoteHeaderAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse UpdateSalesOrderQuoteHeader(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSalesOrderQuoteHeaderRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse UpdateSalesOrderQuoteHeader(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSalesOrderQuoteHeaderRequest request) {
             return base.Channel.UpdateSalesOrderQuoteHeader(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse> UpdateSalesOrderQuoteHeaderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSalesOrderQuoteHeaderRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse> UpdateSalesOrderQuoteHeaderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSalesOrderQuoteHeaderRequest request) {
             return base.Channel.UpdateSalesOrderQuoteHeaderAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse SelectSalesOrderQuoteHeaderRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSalesOrderQuoteHeaderRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse SelectSalesOrderQuoteHeaderRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSalesOrderQuoteHeaderRequest request) {
             return base.Channel.SelectSalesOrderQuoteHeaderRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSalesOrderQuoteResponse> SelectSalesOrderQuoteHeaderRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSalesOrderQuoteHeaderRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSalesOrderQuoteResponse> SelectSalesOrderQuoteHeaderRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSalesOrderQuoteHeaderRequest request) {
             return base.Channel.SelectSalesOrderQuoteHeaderRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderResponse CancelSalesOrderQuoteHeaderRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderRequest request) {
+        public API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderResponse CancelSalesOrderQuoteHeaderRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderRequest request) {
             return base.Channel.CancelSalesOrderQuoteHeaderRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderResponse> CancelSalesOrderQuoteHeaderRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSalesOrderQuoteHeaderRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderResponse> CancelSalesOrderQuoteHeaderRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSalesOrderQuoteHeaderRequest request) {
             return base.Channel.CancelSalesOrderQuoteHeaderRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSOQPartDetailResponse AddSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQPartDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSOQPartDetailResponse AddSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQPartDetailRequest request) {
             return base.Channel.AddSOQPartDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQPartDetailResponse> AddSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQPartDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQPartDetailResponse> AddSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQPartDetailRequest request) {
             return base.Channel.AddSOQPartDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailResponse UpdateSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.UpdateSOQPartDetailResponse UpdateSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQPartDetailRequest request) {
             return base.Channel.UpdateSOQPartDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailResponse> UpdateSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQPartDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateSOQPartDetailResponse> UpdateSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQPartDetailRequest request) {
             return base.Channel.UpdateSOQPartDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.SelectSOQPartDetailResponse SelectSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQPartDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.SelectSOQPartDetailResponse SelectSOQPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQPartDetailRequest request) {
             return base.Channel.SelectSOQPartDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.SelectSOQPartDetailResponse> SelectSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQPartDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.SelectSOQPartDetailResponse> SelectSOQPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQPartDetailRequest request) {
             return base.Channel.SelectSOQPartDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse AddSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse AddSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailRequest request) {
             return base.Channel.AddSOQRequestedPartDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse> AddSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse> AddSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailRequest request) {
             return base.Channel.AddSOQRequestedPartDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse UpdateSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQRequestedPartDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse UpdateSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQRequestedPartDetailRequest request) {
             return base.Channel.UpdateSOQRequestedPartDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse> UpdateSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQRequestedPartDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse> UpdateSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQRequestedPartDetailRequest request) {
             return base.Channel.UpdateSOQRequestedPartDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse SelectSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQRequestedPartDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse SelectSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQRequestedPartDetailRequest request) {
             return base.Channel.SelectSOQRequestedPartDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQRequestedPartDetailResponse> SelectSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQRequestedPartDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQRequestedPartDetailResponse> SelectSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQRequestedPartDetailRequest request) {
             return base.Channel.SelectSOQRequestedPartDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailResponse CancelSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailResponse CancelSOQRequestedPartDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailRequest request) {
             return base.Channel.CancelSOQRequestedPartDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailResponse> CancelSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSOQRequestedPartDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailResponse> CancelSOQRequestedPartDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSOQRequestedPartDetailRequest request) {
             return base.Channel.CancelSOQRequestedPartDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailResponse AddSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailResponse AddSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailRequest request) {
             return base.Channel.AddSOQPartQuotedDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailResponse> AddSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailResponse> AddSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailRequest request) {
             return base.Channel.AddSOQPartQuotedDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailResponse UpdateSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQPartQuotedDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailResponse UpdateSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQPartQuotedDetailRequest request) {
             return base.Channel.UpdateSOQPartQuotedDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddSOQPartQuotedDetailResponse> UpdateSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateSOQPartQuotedDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddSOQPartQuotedDetailResponse> UpdateSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateSOQPartQuotedDetailRequest request) {
             return base.Channel.UpdateSOQPartQuotedDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailResponse SelectSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailResponse SelectSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailRequest request) {
             return base.Channel.SelectSOQPartQuotedDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailResponse> SelectSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SelectSOQPartQuotedDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailResponse> SelectSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SelectSOQPartQuotedDetailRequest request) {
             return base.Channel.SelectSOQPartQuotedDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailResponse CancelSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailRequest request) {
+        public API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailResponse CancelSOQPartQuotedDetailRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailRequest request) {
             return base.Channel.CancelSOQPartQuotedDetailRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailResponse> CancelSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CancelSOQPartQuotedDetailRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailResponse> CancelSOQPartQuotedDetailRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.CancelSOQPartQuotedDetailRequest request) {
             return base.Channel.CancelSOQPartQuotedDetailRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderResponse AddWorkOrder(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderResponse AddWorkOrder(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderRequest request) {
             return base.Channel.AddWorkOrder(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderResponse> AddWorkOrderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderResponse> AddWorkOrderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderRequest request) {
             return base.Channel.AddWorkOrderAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderItemResponse AddWorkOrderItem(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderItemRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderItemResponse AddWorkOrderItem(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderItemRequest request) {
             return base.Channel.AddWorkOrderItem(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderItemResponse> AddWorkOrderItemAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderItemRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderItemResponse> AddWorkOrderItemAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderItemRequest request) {
             return base.Channel.AddWorkOrderItemAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkResponse AddWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderSquawkResponse AddWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderSquawkRequest request) {
             return base.Channel.AddWorkOrderSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkResponse> AddWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderSquawkResponse> AddWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderSquawkRequest request) {
             return base.Channel.AddWorkOrderSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemResponse AddWorkOrderQuoteItem(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemResponse AddWorkOrderQuoteItem(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemRequest request) {
             return base.Channel.AddWorkOrderQuoteItem(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemResponse> AddWorkOrderQuoteItemAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteItemRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemResponse> AddWorkOrderQuoteItemAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderQuoteItemRequest request) {
             return base.Channel.AddWorkOrderQuoteItemAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkResponse AddWorkOrderQuoteSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkResponse AddWorkOrderQuoteSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkRequest request) {
             return base.Channel.AddWorkOrderQuoteSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkResponse> AddWorkOrderQuoteSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderQuoteSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkResponse> AddWorkOrderQuoteSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderQuoteSquawkRequest request) {
             return base.Channel.AddWorkOrderQuoteSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkResponse UpdateWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkResponse UpdateWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkRequest request) {
             return base.Channel.UpdateWorkOrderSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkResponse> UpdateWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkResponse> UpdateWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderSquawkRequest request) {
             return base.Channel.UpdateWorkOrderSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SignOffWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignOffWorkOrderSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SignOffWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignOffWorkOrderSquawkRequest request) {
             return base.Channel.SignOffWorkOrderSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SignOffWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignOffWorkOrderSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SignOffWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignOffWorkOrderSquawkRequest request) {
             return base.Channel.SignOffWorkOrderSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse RemoveSignOffSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveSignOffWOSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse RemoveSignOffSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveSignOffWOSquawkRequest request) {
             return base.Channel.RemoveSignOffSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveSignOffSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveSignOffWOSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveSignOffSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveSignOffWOSquawkRequest request) {
             return base.Channel.RemoveSignOffSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse SignOffWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignOffWorkOrderStepRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse SignOffWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignOffWorkOrderStepRequest request) {
             return base.Channel.SignOffWorkOrderStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> SignOffWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignOffWorkOrderStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> SignOffWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignOffWorkOrderStepRequest request) {
             return base.Channel.SignOffWorkOrderStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse RemoveSignOffStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveSignOffWOStepRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse RemoveSignOffStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveSignOffWOStepRequest request) {
             return base.Channel.RemoveSignOffStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveSignOffStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveSignOffWOStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveSignOffStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveSignOffWOStepRequest request) {
             return base.Channel.RemoveSignOffStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse InspectWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectWorkOrderSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse InspectWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectWorkOrderSquawkRequest request) {
             return base.Channel.InspectWorkOrderSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> InspectWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectWorkOrderSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> InspectWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectWorkOrderSquawkRequest request) {
             return base.Channel.InspectWorkOrderSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse InspectWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectWorkOrderStepRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse InspectWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectWorkOrderStepRequest request) {
             return base.Channel.InspectWorkOrderStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> InspectWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.InspectWorkOrderStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> InspectWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.InspectWorkOrderStepRequest request) {
             return base.Channel.InspectWorkOrderStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse RemoveInspectSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveInspectWOSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse RemoveInspectSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveInspectWOSquawkRequest request) {
             return base.Channel.RemoveInspectSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveInspectSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveInspectWOSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveInspectSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveInspectWOSquawkRequest request) {
             return base.Channel.RemoveInspectSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse RemoveInspectStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveInspectWOStepRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse RemoveInspectStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveInspectWOStepRequest request) {
             return base.Channel.RemoveInspectStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveInspectStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveInspectWOStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveInspectStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveInspectWOStepRequest request) {
             return base.Channel.RemoveInspectStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse DoubleInspectWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse DoubleInspectWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderSquawkRequest request) {
             return base.Channel.DoubleInspectWorkOrderSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> DoubleInspectWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> DoubleInspectWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderSquawkRequest request) {
             return base.Channel.DoubleInspectWorkOrderSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse DoubleInspectWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderStepRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse DoubleInspectWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderStepRequest request) {
             return base.Channel.DoubleInspectWorkOrderStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> DoubleInspectWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DoubleInspectWorkOrderStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> DoubleInspectWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DoubleInspectWorkOrderStepRequest request) {
             return base.Channel.DoubleInspectWorkOrderStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse RemoveDoubleInspectSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse RemoveDoubleInspectSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOSquawkRequest request) {
             return base.Channel.RemoveDoubleInspectSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveDoubleInspectSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveDoubleInspectSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOSquawkRequest request) {
             return base.Channel.RemoveDoubleInspectSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse RemoveDoubleInspectStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOStepRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse RemoveDoubleInspectStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOStepRequest request) {
             return base.Channel.RemoveDoubleInspectStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveDoubleInspectStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveDoubleInspectWOStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveDoubleInspectStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveDoubleInspectWOStepRequest request) {
             return base.Channel.RemoveDoubleInspectStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse FunctionalTestWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse FunctionalTestWorkOrderSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderSquawkRequest request) {
             return base.Channel.FunctionalTestWorkOrderSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> FunctionalTestWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> FunctionalTestWorkOrderSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderSquawkRequest request) {
             return base.Channel.FunctionalTestWorkOrderSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse FunctionalTestWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderStepRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse FunctionalTestWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderStepRequest request) {
             return base.Channel.FunctionalTestWorkOrderStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> FunctionalTestWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FunctionalTestWorkOrderStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> FunctionalTestWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.FunctionalTestWorkOrderStepRequest request) {
             return base.Channel.FunctionalTestWorkOrderStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse RemoveFunctionalTestSquawk(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOSquawkRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse RemoveFunctionalTestSquawk(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOSquawkRequest request) {
             return base.Channel.RemoveFunctionalTestSquawk(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveFunctionalTestSquawkAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOSquawkRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveFunctionalTestSquawkAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOSquawkRequest request) {
             return base.Channel.RemoveFunctionalTestSquawkAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StatusResponse RemoveFunctionalTestStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOStepRequest request) {
+        public API_TESTER_UI.RitaWcf.StatusResponse RemoveFunctionalTestStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOStepRequest request) {
             return base.Channel.RemoveFunctionalTestStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StatusResponse> RemoveFunctionalTestStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.RemoveFunctionalTestWOStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StatusResponse> RemoveFunctionalTestStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.RemoveFunctionalTestWOStepRequest request) {
             return base.Channel.RemoveFunctionalTestStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderStepResponse AddWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderStepRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderStepResponse AddWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderStepRequest request) {
             return base.Channel.AddWorkOrderStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderStepResponse> AddWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderStepResponse> AddWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderStepRequest request) {
             return base.Channel.AddWorkOrderStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepResponse UpdateWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepRequest request) {
+        public API_TESTER_UI.RitaWcf.UpdateWorkOrderStepResponse UpdateWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderStepRequest request) {
             return base.Channel.UpdateWorkOrderStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepResponse> UpdateWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderStepResponse> UpdateWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderStepRequest request) {
             return base.Channel.UpdateWorkOrderStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AbortWorkOrderStepResponse AbortWorkOrderStep(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AbortWorkOrderStepRequest request) {
+        public API_TESTER_UI.RitaWcf.AbortWorkOrderStepResponse AbortWorkOrderStep(System.Guid sessionId, API_TESTER_UI.RitaWcf.AbortWorkOrderStepRequest request) {
             return base.Channel.AbortWorkOrderStep(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AbortWorkOrderStepResponse> AbortWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AbortWorkOrderStepRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AbortWorkOrderStepResponse> AbortWorkOrderStepAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AbortWorkOrderStepRequest request) {
             return base.Channel.AbortWorkOrderStepAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.ClockInResponse ClockIn(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClockInRequest request) {
+        public API_TESTER_UI.RitaWcf.ClockInResponse ClockIn(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClockInRequest request) {
             return base.Channel.ClockIn(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.ClockInResponse> ClockInAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClockInRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.ClockInResponse> ClockInAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClockInRequest request) {
             return base.Channel.ClockInAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.ClockOutResponse ClockOut(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClockOutRequest request) {
+        public API_TESTER_UI.RitaWcf.ClockOutResponse ClockOut(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClockOutRequest request) {
             return base.Channel.ClockOut(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.ClockOutResponse> ClockOutAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ClockOutRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.ClockOutResponse> ClockOutAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.ClockOutRequest request) {
             return base.Channel.ClockOutAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderLaborResponse AddWorkOrderLabor(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderLaborRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderLaborResponse AddWorkOrderLabor(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderLaborRequest request) {
             return base.Channel.AddWorkOrderLabor(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderLaborResponse> AddWorkOrderLaborAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderLaborRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderLaborResponse> AddWorkOrderLaborAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderLaborRequest request) {
             return base.Channel.AddWorkOrderLaborAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborResponse UpdateWorkOrderLabor(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborRequest request) {
+        public API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborResponse UpdateWorkOrderLabor(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborRequest request) {
             return base.Channel.UpdateWorkOrderLabor(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborResponse> UpdateWorkOrderLaborAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderLaborRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborResponse> UpdateWorkOrderLaborAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderLaborRequest request) {
             return base.Channel.UpdateWorkOrderLaborAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderPartResponse AddWorkOrderPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderPartRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderPartResponse AddWorkOrderPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderPartRequest request) {
             return base.Channel.AddWorkOrderPart(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderPartResponse> AddWorkOrderPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderPartRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderPartResponse> AddWorkOrderPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderPartRequest request) {
             return base.Channel.AddWorkOrderPartAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartResponse UpdateWorkOrderPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartRequest request) {
+        public API_TESTER_UI.RitaWcf.UpdateWorkOrderPartResponse UpdateWorkOrderPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderPartRequest request) {
             return base.Channel.UpdateWorkOrderPart(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartResponse> UpdateWorkOrderPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderPartRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderPartResponse> UpdateWorkOrderPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderPartRequest request) {
             return base.Channel.UpdateWorkOrderPartAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderServiceResponse AddWorkOrderService(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderServiceRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderServiceResponse AddWorkOrderService(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderServiceRequest request) {
             return base.Channel.AddWorkOrderService(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderServiceResponse> AddWorkOrderServiceAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderServiceRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderServiceResponse> AddWorkOrderServiceAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderServiceRequest request) {
             return base.Channel.AddWorkOrderServiceAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceResponse UpdateWorkOrderService(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceRequest request) {
+        public API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceResponse UpdateWorkOrderService(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceRequest request) {
             return base.Channel.UpdateWorkOrderService(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceResponse> UpdateWorkOrderServiceAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderServiceRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceResponse> UpdateWorkOrderServiceAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderServiceRequest request) {
             return base.Channel.UpdateWorkOrderServiceAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentResponse AddWorkOrderSquawkAssignment(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentResponse AddWorkOrderSquawkAssignment(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentRequest request) {
             return base.Channel.AddWorkOrderSquawkAssignment(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentResponse> AddWorkOrderSquawkAssignmentAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderSquawkAssignmentRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentResponse> AddWorkOrderSquawkAssignmentAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderSquawkAssignmentRequest request) {
             return base.Channel.AddWorkOrderSquawkAssignmentAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentResponse DeleteWorkOrderSquawkAssignment(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentRequest request) {
+        public API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentResponse DeleteWorkOrderSquawkAssignment(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentRequest request) {
             return base.Channel.DeleteWorkOrderSquawkAssignment(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentResponse> DeleteWorkOrderSquawkAssignmentAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWorkOrderSquawkAssignmentRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentResponse> DeleteWorkOrderSquawkAssignmentAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWorkOrderSquawkAssignmentRequest request) {
             return base.Channel.DeleteWorkOrderSquawkAssignmentAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentResponse AddWorkOrderStepAssignment(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentResponse AddWorkOrderStepAssignment(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentRequest request) {
             return base.Channel.AddWorkOrderStepAssignment(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentResponse> AddWorkOrderStepAssignmentAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWorkOrderStepAssignmentRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentResponse> AddWorkOrderStepAssignmentAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWorkOrderStepAssignmentRequest request) {
             return base.Channel.AddWorkOrderStepAssignmentAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentResponse DeleteWorkOrderStepAssignment(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentRequest request) {
+        public API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentResponse DeleteWorkOrderStepAssignment(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentRequest request) {
             return base.Channel.DeleteWorkOrderStepAssignment(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentResponse> DeleteWorkOrderStepAssignmentAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWorkOrderStepAssignmentRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentResponse> DeleteWorkOrderStepAssignmentAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWorkOrderStepAssignmentRequest request) {
             return base.Channel.DeleteWorkOrderStepAssignmentAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.StartUserWorkOrderBulkLaborResponse StartWorkOrderBulkLabor(System.Guid sessionId, API_TESTER_UI.ServiceReference1.StartUserWorkOrderBulkLaborRequest request) {
+        public API_TESTER_UI.RitaWcf.StartUserWorkOrderBulkLaborResponse StartWorkOrderBulkLabor(System.Guid sessionId, API_TESTER_UI.RitaWcf.StartUserWorkOrderBulkLaborRequest request) {
             return base.Channel.StartWorkOrderBulkLabor(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.StartUserWorkOrderBulkLaborResponse> StartWorkOrderBulkLaborAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.StartUserWorkOrderBulkLaborRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.StartUserWorkOrderBulkLaborResponse> StartWorkOrderBulkLaborAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.StartUserWorkOrderBulkLaborRequest request) {
             return base.Channel.StartWorkOrderBulkLaborAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.EndUserWorkOrderBulkLaborResponse EndWorkOrderBulkLabor(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EndUserWorkOrderBulkLaborRequest request) {
+        public API_TESTER_UI.RitaWcf.EndUserWorkOrderBulkLaborResponse EndWorkOrderBulkLabor(System.Guid sessionId, API_TESTER_UI.RitaWcf.EndUserWorkOrderBulkLaborRequest request) {
             return base.Channel.EndWorkOrderBulkLabor(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.EndUserWorkOrderBulkLaborResponse> EndWorkOrderBulkLaborAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EndUserWorkOrderBulkLaborRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.EndUserWorkOrderBulkLaborResponse> EndWorkOrderBulkLaborAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.EndUserWorkOrderBulkLaborRequest request) {
             return base.Channel.EndWorkOrderBulkLaborAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryResponse FillWorkOrderPartDemandFromInventory(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryRequest request) {
+        public API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryResponse FillWorkOrderPartDemandFromInventory(System.Guid sessionId, API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryRequest request) {
             return base.Channel.FillWorkOrderPartDemandFromInventory(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryResponse> FillWorkOrderPartDemandFromInventoryAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.FillWorkOrderPartDemandFromInventoryRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryResponse> FillWorkOrderPartDemandFromInventoryAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.FillWorkOrderPartDemandFromInventoryRequest request) {
             return base.Channel.FillWorkOrderPartDemandFromInventoryAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddPartServiceRequestResponse CreatePartRequest(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddPartServiceRequest request) {
+        public API_TESTER_UI.RitaWcf.AddPartServiceRequestResponse CreatePartRequest(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddPartServiceRequest request) {
             return base.Channel.CreatePartRequest(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddPartServiceRequestResponse> CreatePartRequestAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddPartServiceRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddPartServiceRequestResponse> CreatePartRequestAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddPartServiceRequest request) {
             return base.Channel.CreatePartRequestAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.BatchDeliverPartResponse BatchDeliverPart(System.Guid seesionId, API_TESTER_UI.ServiceReference1.BatchDeliverPartRequest request) {
+        public API_TESTER_UI.RitaWcf.BatchDeliverPartResponse BatchDeliverPart(System.Guid seesionId, API_TESTER_UI.RitaWcf.BatchDeliverPartRequest request) {
             return base.Channel.BatchDeliverPart(seesionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.BatchDeliverPartResponse> BatchDeliverPartAsync(System.Guid seesionId, API_TESTER_UI.ServiceReference1.BatchDeliverPartRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.BatchDeliverPartResponse> BatchDeliverPartAsync(System.Guid seesionId, API_TESTER_UI.RitaWcf.BatchDeliverPartRequest request) {
             return base.Channel.BatchDeliverPartAsync(seesionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.DeliverPartResponse DeliverPart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeliverPartRequest request) {
+        public API_TESTER_UI.RitaWcf.DeliverPartResponse DeliverPart(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeliverPartRequest request) {
             return base.Channel.DeliverPart(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.DeliverPartResponse> DeliverPartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeliverPartRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.DeliverPartResponse> DeliverPartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeliverPartRequest request) {
             return base.Channel.DeliverPartAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.UpdateWorkOrderResponse UpdateWorkOrder(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderRequest request) {
+        public API_TESTER_UI.RitaWcf.UpdateWorkOrderResponse UpdateWorkOrder(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderRequest request) {
             return base.Channel.UpdateWorkOrder(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.UpdateWorkOrderResponse> UpdateWorkOrderAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.UpdateWorkOrderRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.UpdateWorkOrderResponse> UpdateWorkOrderAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.UpdateWorkOrderRequest request) {
             return base.Channel.UpdateWorkOrderAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.SetApiOptionsResponse SetPurchasedRequirements(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetAPIOptionsRequest request) {
+        public API_TESTER_UI.RitaWcf.SetApiOptionsResponse SetPurchasedRequirements(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetAPIOptionsRequest request) {
             return base.Channel.SetPurchasedRequirements(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.SetApiOptionsResponse> SetPurchasedRequirementsAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SetAPIOptionsRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.SetApiOptionsResponse> SetPurchasedRequirementsAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SetAPIOptionsRequest request) {
             return base.Channel.SetPurchasedRequirementsAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddCompanyResponse AddCompany(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddCompanyRequest request) {
+        public API_TESTER_UI.RitaWcf.AddCompanyResponse AddCompany(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddCompanyRequest request) {
             return base.Channel.AddCompany(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddCompanyResponse> AddCompanyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddCompanyRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddCompanyResponse> AddCompanyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddCompanyRequest request) {
             return base.Channel.AddCompanyAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.GetCompanyResponse GetCompany(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetCompanyRequest request) {
+        public API_TESTER_UI.RitaWcf.GetCompanyResponse GetCompany(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetCompanyRequest request) {
             return base.Channel.GetCompany(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.GetCompanyResponse> GetCompanyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.GetCompanyRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.GetCompanyResponse> GetCompanyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.GetCompanyRequest request) {
             return base.Channel.GetCompanyAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.SignoutToolResponse SignoutTool(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignoutToolRequest request) {
+        public API_TESTER_UI.RitaWcf.SignoutToolResponse SignoutTool(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignoutToolRequest request) {
             return base.Channel.SignoutTool(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.SignoutToolResponse> SignoutToolAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SignoutToolRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.SignoutToolResponse> SignoutToolAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SignoutToolRequest request) {
             return base.Channel.SignoutToolAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.SigninToolResponse SigninTool(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SigninToolRequest request) {
+        public API_TESTER_UI.RitaWcf.SigninToolResponse SigninTool(System.Guid sessionId, API_TESTER_UI.RitaWcf.SigninToolRequest request) {
             return base.Channel.SigninTool(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.SigninToolResponse> SigninToolAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.SigninToolRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.SigninToolResponse> SigninToolAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.SigninToolRequest request) {
             return base.Channel.SigninToolAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.ReceivePartResponse ReceivePart(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ReceivePartRequest request) {
+        public API_TESTER_UI.RitaWcf.ReceivePartResponse ReceivePart(System.Guid sessionId, API_TESTER_UI.RitaWcf.ReceivePartRequest request) {
             return base.Channel.ReceivePart(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.ReceivePartResponse> ReceivePartAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.ReceivePartRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.ReceivePartResponse> ReceivePartAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.ReceivePartRequest request) {
             return base.Channel.ReceivePartAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptResponse ReceiveUnexpected(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptRequest request) {
+        public API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptResponse ReceiveUnexpected(System.Guid sessionId, API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptRequest request) {
             return base.Channel.ReceiveUnexpected(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptResponse> ReceiveUnexpectedAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.CreateUnexpectedReceiptRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptResponse> ReceiveUnexpectedAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.CreateUnexpectedReceiptRequest request) {
             return base.Channel.ReceiveUnexpectedAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.EnterCycleCountResponse EnterCycleCount(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EnterCycleCountRequest request) {
+        public API_TESTER_UI.RitaWcf.EnterCycleCountResponse EnterCycleCount(System.Guid sessionId, API_TESTER_UI.RitaWcf.EnterCycleCountRequest request) {
             return base.Channel.EnterCycleCount(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.EnterCycleCountResponse> EnterCycleCountAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.EnterCycleCountRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.EnterCycleCountResponse> EnterCycleCountAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.EnterCycleCountRequest request) {
             return base.Channel.EnterCycleCountAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyResponse DeletePartAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyRequest request) {
+        public API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyResponse DeletePartAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyRequest request) {
             return base.Channel.DeletePartAssembly(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyResponse> DeletePartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.DeleteWOSquawkPartAssemblyRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyResponse> DeletePartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.DeleteWOSquawkPartAssemblyRequest request) {
             return base.Channel.DeletePartAssemblyAsync(sessionId, request);
         }
         
-        public API_TESTER_UI.ServiceReference1.AddWoSquawkPartAssemblyResponse AddWoSquawkPartAssembly(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWOSquawkPartAssemblyRequest request) {
+        public API_TESTER_UI.RitaWcf.AddWoSquawkPartAssemblyResponse AddWoSquawkPartAssembly(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWOSquawkPartAssemblyRequest request) {
             return base.Channel.AddWoSquawkPartAssembly(sessionId, request);
         }
         
-        public System.Threading.Tasks.Task<API_TESTER_UI.ServiceReference1.AddWoSquawkPartAssemblyResponse> AddWoSquawkPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.ServiceReference1.AddWOSquawkPartAssemblyRequest request) {
+        public System.Threading.Tasks.Task<API_TESTER_UI.RitaWcf.AddWoSquawkPartAssemblyResponse> AddWoSquawkPartAssemblyAsync(System.Guid sessionId, API_TESTER_UI.RitaWcf.AddWOSquawkPartAssemblyRequest request) {
             return base.Channel.AddWoSquawkPartAssemblyAsync(sessionId, request);
         }
     }

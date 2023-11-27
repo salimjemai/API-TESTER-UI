@@ -1,5 +1,5 @@
 ﻿using API_TESTER_UI.Database;
-using API_TESTER_UI.SessionWebReference;
+using API_TESTER_UI.UserManagement;
 using API_TESTER_UI.WebAPI;
 using DevExpress.Mvvm.Native;
 using System;
@@ -26,6 +26,7 @@ namespace API_TESTER_UI.Pages.UserManagement
     /// </summary>
     public partial class UpdateUser : Page
     {
+        public UserManagementSoapClient UserManagementSoap { get; set; }
         public UpdateUser()
         {
             InitializeComponent();
@@ -56,7 +57,6 @@ namespace API_TESTER_UI.Pages.UserManagement
                     if (token != null && cwsUrl != null)
                     {
                         // call web service 
-                        SessionWebReference.UserManagement userManagement = new SessionWebReference.UserManagement();
                         UserManagementReferenceInput userManagementReference = new UserManagementReferenceInput
                         {
                             Username = userName.Text,
@@ -74,7 +74,7 @@ namespace API_TESTER_UI.Pages.UserManagement
                                 Department = department.Text,
                                 UserBadgeID = userBadge.Text,
                                 Email = email.Text,
-                                CorridorIDEmail = auth0Email.Text,
+                                Auth0Email = auth0Email.Text,
                                 Password = password.Text,
                                 AccessCode = accessCode.Text,
                                 ActiveDirectoryName = activeDirectoryName.Text,
@@ -86,7 +86,7 @@ namespace API_TESTER_UI.Pages.UserManagement
                                 LaborBurdenAccountNumber = LaborBurdenAccountNumber.Text,
 
                                 //
-                                CorridorIDRequired = (bool)Auth0Required.IsChecked,
+                                Auth0Required = (bool)Auth0Required.IsChecked,
                                 MustChangePassword = (bool)MustChangePassword.IsChecked,
                                 MustChangeAccessCode = (bool)MustChangeAccessCode.IsChecked,
                                 CannotChangePassword = (bool)CannotChangePassword.IsChecked,
@@ -136,7 +136,7 @@ namespace API_TESTER_UI.Pages.UserManagement
                                 userManagementUpdateData.DoubleTimeBurdenCost = Convert.ToDouble(DoubleTimeBurdenCost);
                         }
 
-                        var response = userManagement.UpdateUser(userManagementUpdateData);
+                        var response = UserManagementSoap.UpdateUser(userManagementUpdateData);
                         if (response.StatusMessage.Equals("Failed"))
                         {
                             var error = response.ErrorMessages.Count();

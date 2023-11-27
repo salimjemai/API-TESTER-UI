@@ -1,5 +1,6 @@
 ﻿using API_TESTER_UI.Database;
-using API_TESTER_UI.SessionWebReference;
+using API_TESTER_UI.UserManagement;
+using API_TESTER_UI.Utilities.UserManagement;
 using API_TESTER_UI.WebAPI;
 using System;
 using System.Collections.Generic;
@@ -21,8 +22,9 @@ namespace API_TESTER_UI.Pages.UserManagement
     /// <summary>
     /// Interaction logic for ChangeUserPassword.xaml
     /// </summary>
-    public partial class ChangeUserPassword : Page
+    public partial class ChangeUserPassword
     {
+        public UserManagementSoap UserManagementSoap { get; set; }
         public ChangeUserPassword()
         {
             InitializeComponent();
@@ -50,13 +52,8 @@ namespace API_TESTER_UI.Pages.UserManagement
 
                     if (token != null && cwsUrl != null)
                     {
-                        // call web service 
-                        SessionWebReference.UserManagement userManagement = new SessionWebReference.UserManagement();
-                        UserManagementReferenceInput userManagementReference = new UserManagementReferenceInput
-                        {
-                            Username = userName.Text,
-                            SessionToken = token
-                        };
+                        // create client 
+                        var client = SoapClient.GetUserManagementClient(cwsUrl);
                         UserManagementChangePasswordInput userManagementChange = new UserManagementChangePasswordInput
                         {
                             Username = userName.Text,
@@ -64,7 +61,8 @@ namespace API_TESTER_UI.Pages.UserManagement
                             Password = Password.Password.ToString(),
                             NewPassword = newPassword.Password.ToString(),
                         };
-                        var fak = userManagement.ChangeUserPassword(userManagementChange);
+
+                        var fak = client.ChangeUserPassword(userManagementChange);
                         if (fak.StatusMessage.Equals("Failed"))
                         {
                             MessageBox.Show($"{fak.ErrorMessages.FirstOrDefault().ErrorText}", "Update User Password", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -99,5 +97,7 @@ namespace API_TESTER_UI.Pages.UserManagement
             Password.Password = string.Empty;
             newPassword.Password = string.Empty;
         }
+
     }
+
 }

@@ -43,6 +43,37 @@ namespace API_TESTER_UI
             return Req;
         }
 
+        public static HttpWebRequest CreateSOAPWebRequest(string WsdlUrl, string userChoice)
+        {
+            HttpWebRequest Req = null;
+
+            try
+            {
+
+                //Making Web Request    
+                Req = (HttpWebRequest)WebRequest.Create(@WsdlUrl);
+
+                //SOAPAction    
+                Req.Headers.Add(@"SOAPAction:" + "http://corridor.aero/cws/" + userChoice);
+
+                //Content_type    
+                Req.ContentType = "text/xml;charset=\"utf-8\"";
+                Req.Accept = "text/xml";
+
+                //HTTP method    
+                Req.Method = "POST";
+
+
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show($"{MessageBoxImage.Error} An error occurred while processed the API reques .. " + exception.Message);
+            }
+
+            //return HttpWebRequest    
+            return Req;
+        }
+
         // This function will be used to process all other API calls if the Login succeeds
         public XmlDocument processApiRequest(XmlDocument SOAPReqBody, HttpWebRequest request)
         {

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://corridor.aero/cws/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://corridor.aero/cws/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://corridor.aero/cws/">
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginData" type="tns:CorridorLoginData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CorridorLoginData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AliasName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SessionToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Auth0Token" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult" type="tns:LoginResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LoginResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="SessionToken" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CorridorStatusData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessages" type="tns:ArrayOfErrorMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfErrorMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ErrorMessage" nillable="true" type="tns:ErrorMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ErrorMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Logout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="logoutData" type="tns:CorridorLogoutData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CorridorLogoutData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SessionToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Auth0Token" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogoutResult" type="tns:LogoutResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LogoutResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData" />
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SessionSoap">
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to create a reusable API session</wsdl:documentation>
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to log out of session</wsdl:documentation>
+      <wsdl:input message="tns:LogoutSoapIn" />
+      <wsdl:output message="tns:LogoutSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SessionSoap" type="tns:SessionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://corridor.aero/cws/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://corridor.aero/cws/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SessionSoap12" type="tns:SessionSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://corridor.aero/cws/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap12:operation soapAction="http://corridor.aero/cws/Logout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Session">
+    <wsdl:port name="SessionSoap" binding="tns:SessionSoap">
+      <soap:address location="http://10.72.5.50/Mainline-Debug/CWS/session.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SessionSoap12" binding="tns:SessionSoap12">
+      <soap12:address location="http://10.72.5.50/Mainline-Debug/CWS/session.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://corridor.aero/cws/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://corridor.aero/cws/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://corridor.aero/cws/">
+      <s:element name="AddOrUpdateAircraft">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:AircraftUpdateData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AircraftUpdateData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:AircraftData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="NewRegistrationNumber" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="AircraftData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AircraftDescription" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AircraftManufacturerCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AircraftModel" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SerialNumberPrefix" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="SerialNumberCore" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" name="SerialNumberSuffix" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OperatingCondition" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HomeAirportCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PurchasedFromCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnedByCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BaseOfOperationTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BaseOfOperationText" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LeasedByCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ManagedByCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OperatedByCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Warranty" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WarrantyTerms" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ComplianceProviderName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="0001-01-01T00:00:00" name="ManufacturedDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" default="0001-01-01T00:00:00" name="PurchasedOnDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="CurrentHours" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="CurrentCyclesLandings" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="ProjectedHours" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="ProjectedCyclesLandings" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" name="SourceOfInformation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="CurrentHourMeterReading" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserDefinedFields" type="tns:ArrayOfUserDefinedField" />
+              <s:element minOccurs="0" maxOccurs="1" default="true" name="TrackAircraftCompliance" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CorridorLoginData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AliasName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SessionToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Auth0Token" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUserDefinedField">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UserDefinedField" nillable="true" type="tns:UserDefinedField" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UserDefinedField">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Label" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddOrUpdateAircraftResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOrUpdateAircraftResult" type="tns:AircraftDataReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AircraftDataReferenceOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CorridorStatusData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessages" type="tns:ArrayOfErrorMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfErrorMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ErrorMessage" nillable="true" type="tns:ErrorMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ErrorMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAircraftData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:AircraftDataReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AircraftDataReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetAircraftDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAircraftDataResult" type="tns:AircraftDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AircraftDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AircraftDescription" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AircraftManufacturerCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AircraftModel" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AircraftType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SerialNumberPrefix" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SerialNumberCore" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SerialNumberSuffix" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OperatingCondition" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HomeAirportCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PurchasedFromCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnedByCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BaseOfOperationTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BaseOfOperationText" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LeasedByCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ManagedByCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OpteratedByCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Warranty" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WarrantyTerms" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ComplianceProviderName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ManufacturedDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PurchasedOnDate" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="TrackAircraftCompliance" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="CurrentHours" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CurrentCyclesLandings" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProjectedHours" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProjectedCyclesLandings" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SourceOfInformation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CurrentHourMeterReading" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HourMeterReadingAtInstall" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HourMeterInstalledDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserDefinedFields" type="tns:ArrayOfUserDefinedField" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="CreateAircraft">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:AircraftData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAircraftResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateAircraftResult" type="tns:AircraftDataReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAircraft">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:AircraftUpdateData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAircraftResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateAircraftResult" type="tns:AircraftDataReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectHourMeter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:HourMeterDataReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HourMeterDataReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SelectHourMeterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectHourMeterResult" type="tns:HourMeterDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HourMeterDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CurrentHourMeterReading" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="HourMeterInstalledDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="HourMeterReadingAtInstall" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ChangeHourMeter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:HourMeterData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HourMeterData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="NewHourMeterReading" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="0001-01-01T00:00:00" name="NewHourMeterInstalledDate" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ChangeHourMeterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangeHourMeterResult" type="tns:HourMeterDataReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HourMeterDataReferenceOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SelectTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:TransactionDataReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TransactionDataReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TransactionNumber" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SelectTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectTransactionResult" type="tns:TransactionDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TransactionDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TranactionDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NewOwnerCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PreviousOwnerCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="AddTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:TransactionData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TransactionData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="0001-01-01T00:00:00" name="TranactionDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="NewOwnerCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="TransferOwnershipOfAircraft" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="AddTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddTransactionResult" type="tns:TransactionDataReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TransactionDataReferenceOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="UpdateTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:TransactionUpdateData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TransactionUpdateData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TransactionNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="0001-01-01T00:00:00" name="TranactionDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="NewOwnerCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PreviousOwnerCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="UpdateTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateTransactionResult" type="tns:TransactionDataReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:TransactionDataReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteTransactionResult" type="tns:TransactionDataReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrUpdateAircraftDiscrepancy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:UpdateAircraftDiscrepancyDataInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UpdateAircraftDiscrepancyDataInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:AircraftDiscrepancyDataInput">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" default="-9999" name="SequenceNumber" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="AircraftDiscrepancyDataInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ReportedBy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="0001-01-01T00:00:00" name="ReportedOn" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ATACode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CannedSquawkName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkPakName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Discrepancy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Resolution" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="AddOrUpdateAircraftDiscrepancyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOrUpdateAircraftDiscrepancyResult" type="tns:AircraftDiscrepancyDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AircraftDiscrepancyDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="SequenceNumber" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="ReportedBy" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ReportedOn" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ATACode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CannedSquawkName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkPakName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Discrepancy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Resolution" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="CreateAircraftDiscrepancy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:AddAircraftDiscrepancyDataInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AddAircraftDiscrepancyDataInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:AircraftDiscrepancyDataInput" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="CreateAircraftDiscrepancyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateAircraftDiscrepancyResult" type="tns:AircraftDiscrepancyDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAircraftDiscrepancy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:UpdateAircraftDiscrepancyDataInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAircraftDiscrepancyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateAircraftDiscrepancyResult" type="tns:AircraftDiscrepancyDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FlightOpsUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="flightOpsDataInput" type="tns:FlightOpsDataInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FlightOpsDataInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="UsageHours" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-9999" name="UsageLandings" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="TotalHours" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-9999" name="TotalLandings" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="NextDueMandatoryOnly" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="FlightOpsUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FlightOpsUpdateResult" type="tns:FlightOpsDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FlightOpsDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="TotalHours" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TotalLandings" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextDueHours" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextDueHoursDescription" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextDueHoursRequirementLevel" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextDueLandings" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextDueLandingsDescription" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextDueLandingsRequirementLevel" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="0001-01-01T00:00:00" name="NextDueDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextDueDateDescription" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="NextDueDateRequirementLevel" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddOrUpdateAircraftSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateAircraft" />
+  </wsdl:message>
+  <wsdl:message name="AddOrUpdateAircraftSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateAircraftResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAircraftData" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAircraftDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAircraftSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAircraft" />
+  </wsdl:message>
+  <wsdl:message name="CreateAircraftSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAircraftResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAircraftSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAircraft" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAircraftSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAircraftResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectHourMeterSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectHourMeter" />
+  </wsdl:message>
+  <wsdl:message name="SelectHourMeterSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectHourMeterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeHourMeterSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeHourMeter" />
+  </wsdl:message>
+  <wsdl:message name="ChangeHourMeterSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeHourMeterResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectTransaction" />
+  </wsdl:message>
+  <wsdl:message name="SelectTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTransaction" />
+  </wsdl:message>
+  <wsdl:message name="AddTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTransaction" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteTransaction" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrUpdateAircraftDiscrepancySoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateAircraftDiscrepancy" />
+  </wsdl:message>
+  <wsdl:message name="AddOrUpdateAircraftDiscrepancySoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateAircraftDiscrepancyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAircraftDiscrepancySoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAircraftDiscrepancy" />
+  </wsdl:message>
+  <wsdl:message name="CreateAircraftDiscrepancySoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAircraftDiscrepancyResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAircraftDiscrepancySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAircraftDiscrepancy" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAircraftDiscrepancySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAircraftDiscrepancyResponse" />
+  </wsdl:message>
+  <wsdl:message name="FlightOpsUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:FlightOpsUpdate" />
+  </wsdl:message>
+  <wsdl:message name="FlightOpsUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:FlightOpsUpdateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AircraftOwnershipSoap">
+    <wsdl:operation name="AddOrUpdateAircraft">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add or update aircraft data</wsdl:documentation>
+      <wsdl:input message="tns:AddOrUpdateAircraftSoapIn" />
+      <wsdl:output message="tns:AddOrUpdateAircraftSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to get aircraft data</wsdl:documentation>
+      <wsdl:input message="tns:GetAircraftDataSoapIn" />
+      <wsdl:output message="tns:GetAircraftDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAircraft">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add an aircraft</wsdl:documentation>
+      <wsdl:input message="tns:CreateAircraftSoapIn" />
+      <wsdl:output message="tns:CreateAircraftSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraft">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to update an aircraft</wsdl:documentation>
+      <wsdl:input message="tns:UpdateAircraftSoapIn" />
+      <wsdl:output message="tns:UpdateAircraftSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectHourMeter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to select an hour meter</wsdl:documentation>
+      <wsdl:input message="tns:SelectHourMeterSoapIn" />
+      <wsdl:output message="tns:SelectHourMeterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeHourMeter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to change an hour meter</wsdl:documentation>
+      <wsdl:input message="tns:ChangeHourMeterSoapIn" />
+      <wsdl:output message="tns:ChangeHourMeterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to select a transaction</wsdl:documentation>
+      <wsdl:input message="tns:SelectTransactionSoapIn" />
+      <wsdl:output message="tns:SelectTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add a transaction</wsdl:documentation>
+      <wsdl:input message="tns:AddTransactionSoapIn" />
+      <wsdl:output message="tns:AddTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to update a transaction</wsdl:documentation>
+      <wsdl:input message="tns:UpdateTransactionSoapIn" />
+      <wsdl:output message="tns:UpdateTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to update a transaction</wsdl:documentation>
+      <wsdl:input message="tns:DeleteTransactionSoapIn" />
+      <wsdl:output message="tns:DeleteTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateAircraftDiscrepancy">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add or update aircraft discrepancy data</wsdl:documentation>
+      <wsdl:input message="tns:AddOrUpdateAircraftDiscrepancySoapIn" />
+      <wsdl:output message="tns:AddOrUpdateAircraftDiscrepancySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAircraftDiscrepancy">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to create aircraft discrepancy data</wsdl:documentation>
+      <wsdl:input message="tns:CreateAircraftDiscrepancySoapIn" />
+      <wsdl:output message="tns:CreateAircraftDiscrepancySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraftDiscrepancy">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to update aircraft discrepancy data</wsdl:documentation>
+      <wsdl:input message="tns:UpdateAircraftDiscrepancySoapIn" />
+      <wsdl:output message="tns:UpdateAircraftDiscrepancySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FlightOpsUpdate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service for Flight Ops Data update</wsdl:documentation>
+      <wsdl:input message="tns:FlightOpsUpdateSoapIn" />
+      <wsdl:output message="tns:FlightOpsUpdateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AircraftOwnershipSoap" type="tns:AircraftOwnershipSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddOrUpdateAircraft">
+      <soap:operation soapAction="http://corridor.aero/cws/AddOrUpdateAircraft" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftData">
+      <soap:operation soapAction="http://corridor.aero/cws/GetAircraftData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAircraft">
+      <soap:operation soapAction="http://corridor.aero/cws/CreateAircraft" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraft">
+      <soap:operation soapAction="http://corridor.aero/cws/UpdateAircraft" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectHourMeter">
+      <soap:operation soapAction="http://corridor.aero/cws/SelectHourMeter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeHourMeter">
+      <soap:operation soapAction="http://corridor.aero/cws/ChangeHourMeter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTransaction">
+      <soap:operation soapAction="http://corridor.aero/cws/SelectTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTransaction">
+      <soap:operation soapAction="http://corridor.aero/cws/AddTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransaction">
+      <soap:operation soapAction="http://corridor.aero/cws/UpdateTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTransaction">
+      <soap:operation soapAction="http://corridor.aero/cws/DeleteTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateAircraftDiscrepancy">
+      <soap:operation soapAction="http://corridor.aero/cws/AddOrUpdateAircraftDiscrepancy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAircraftDiscrepancy">
+      <soap:operation soapAction="http://corridor.aero/cws/CreateAircraftDiscrepancy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraftDiscrepancy">
+      <soap:operation soapAction="http://corridor.aero/cws/UpdateAircraftDiscrepancy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FlightOpsUpdate">
+      <soap:operation soapAction="http://corridor.aero/cws/FlightOpsUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AircraftOwnershipSoap12" type="tns:AircraftOwnershipSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddOrUpdateAircraft">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddOrUpdateAircraft" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftData">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetAircraftData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAircraft">
+      <soap12:operation soapAction="http://corridor.aero/cws/CreateAircraft" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraft">
+      <soap12:operation soapAction="http://corridor.aero/cws/UpdateAircraft" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectHourMeter">
+      <soap12:operation soapAction="http://corridor.aero/cws/SelectHourMeter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeHourMeter">
+      <soap12:operation soapAction="http://corridor.aero/cws/ChangeHourMeter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTransaction">
+      <soap12:operation soapAction="http://corridor.aero/cws/SelectTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTransaction">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransaction">
+      <soap12:operation soapAction="http://corridor.aero/cws/UpdateTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTransaction">
+      <soap12:operation soapAction="http://corridor.aero/cws/DeleteTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateAircraftDiscrepancy">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddOrUpdateAircraftDiscrepancy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAircraftDiscrepancy">
+      <soap12:operation soapAction="http://corridor.aero/cws/CreateAircraftDiscrepancy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraftDiscrepancy">
+      <soap12:operation soapAction="http://corridor.aero/cws/UpdateAircraftDiscrepancy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FlightOpsUpdate">
+      <soap12:operation soapAction="http://corridor.aero/cws/FlightOpsUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AircraftOwnership">
+    <wsdl:port name="AircraftOwnershipSoap" binding="tns:AircraftOwnershipSoap">
+      <soap:address location="http://10.72.5.50/Mainline-Debug/CWS/aircraftownership.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AircraftOwnershipSoap12" binding="tns:AircraftOwnershipSoap12">
+      <soap12:address location="http://10.72.5.50/Mainline-Debug/CWS/aircraftownership.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

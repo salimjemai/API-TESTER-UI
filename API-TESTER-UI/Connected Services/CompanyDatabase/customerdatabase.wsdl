@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://corridor.aero/cws/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://corridor.aero/cws/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://corridor.aero/cws/">
+      <s:element name="AddCompanyData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyData" type="tns:CompanyAddData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CompanyAddData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CompanyData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CompanyData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AccountingId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultCurrency" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ExchangeRateExpiration" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="CreditLimit" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="AccountsReceivableBalance" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-9999" name="DefaultExchangeSaleMethod" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="DefaultLandedCostPercentage" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" default="-99999.99999" name="ExchangeRateForCompany" type="s:double" />
+              <s:element minOccurs="0" maxOccurs="1" name="PaymentTerms" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyPaymentTermName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TaxIdNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TaxExemptCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Notes" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserDefinedFields" type="tns:ArrayOfUserDefinedField" />
+              <s:element minOccurs="0" maxOccurs="1" name="RepairStationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FAANumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BusinessLine" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Region" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreditRating" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreditRestriction" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyClass" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FEINSSN" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LawsOf" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BankName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BankAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Other" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BankTelephone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BankContact" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreditNotes" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WebSite" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WebSiteUserName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WebSitePassword" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FTPSite" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FTPSiteUserName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FTPSitePassword" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ARAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="APAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkOrderPaymentType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SalesOrderPaymentType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FolioPaymentType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FuelTaxExemptionReason" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FuelTaxExemptionCertificateNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkOrderPostingProfile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SalesOrderPostingProfile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FolioPostingProfile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreditCardProcessorSettings" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProgressBillingAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VOCLiabilityAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VOCReceivableAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InvoicePaymentType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyDefaultFuelLot" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultBillingAddressTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultShippingAddressTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultAddressTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultPhoneTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultFaxTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DateEstablished" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsCustomer" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsVendor" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="UseDefaultCurrencyToBill" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="UseDefaultCurrencyForVendorInvoices" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="SetExchangeRateUntil" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsShippingHold" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsTaxExempt" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsRepairStation" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsCreditCardCompany" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsAircraftManufacturer" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsEngineManufacturer" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsAPUManufacturer" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsOtherManufacturer" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsManufacturer" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsIndividual" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsSoleProprietorship" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsPartnership" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsCorporation" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsCreditCheckPerformed" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsCustomerExemptFromFuelTaxes" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CorridorLoginData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AliasName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SessionToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Auth0Token" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUserDefinedField">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UserDefinedField" nillable="true" type="tns:UserDefinedField" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UserDefinedField">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Label" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddCompanyDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddCompanyDataResult" type="tns:CompanyReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CompanyReferenceOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CorridorStatusData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessages" type="tns:ArrayOfErrorMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfErrorMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ErrorMessage" nillable="true" type="tns:ErrorMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ErrorMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateCompanyData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyData" type="tns:CompanyData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCompanyDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateCompanyDataResult" type="tns:CompanyReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrUpdateCompanyData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyData" type="tns:CompanyAddData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrUpdateCompanyDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOrUpdateCompanyDataResult" type="tns:CompanyReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyReference" type="tns:CompanyReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CompanyReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetCompanyDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompanyDataResult" type="tns:CompanyDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CompanyDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsCustomer" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsVendor" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="PaymentTerms" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultCurrency" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyPaymentTermName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TaxIdNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TaxExemptCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsShippingHold" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="Notes" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsTaxExempt" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="UserDefinedFields" type="tns:ArrayOfUserDefinedField" />
+              <s:element minOccurs="0" maxOccurs="1" name="RepairStationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FAANumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BusinessLine" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Region" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyClass" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FEINSSN" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LawsOf" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Other" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BankTelephone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BankContact" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WebSite" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WebSiteUserName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WebSitePassword" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FTPSite" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FTPSiteUserName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FTPSitePassword" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkOrderPaymentType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SalesOrderPaymentType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FolioPaymentType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FuelTaxExemptionReason" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkOrderPostingProfile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SalesOrderPostingProfile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FolioPostingProfile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreditCardProcessorSettings" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProgressBillingAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VOCLiabilityAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VOCReceivableAccountNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InvoicePaymentType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultBillingAddressTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultShippingAddressTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultAddressTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultPhoneTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultFaxTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DateEstablished" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsRepairStation" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsCreditCardCompany" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsAircraftManufacturer" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsEngineManufacturer" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsAPUManufacturer" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsOtherManufacturer" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsManufacturer" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsIndividual" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsSoleProprietorship" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsPartnership" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsCorporation" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsCreditCheckPerformed" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsCustomerExemptFromFuelTaxes" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsInactive" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="InactivateCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:CompanyReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InactivateCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InactivateCompanyResult" type="tns:CompanyReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReactivateCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:CompanyReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReactivateCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReactivateCompanyResult" type="tns:CompanyReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddPhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="phoneData" type="tns:PhoneData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PhoneData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContactName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AddressTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Extension" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OtherCodes" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TimeZone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsEurope" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsSouthAmerica" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsHome" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsNormal" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsExclude" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsAfrica" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsAsia" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsAustrialia" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsNorthAmerica" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsDefaultPhone" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsDefaultFax" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="AddPhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddPhoneResult" type="tns:PhoneReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PhoneReferenceOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="UpdatePhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="phoneData" type="tns:PhoneData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdatePhoneResult" type="tns:PhoneReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrUpdatePhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="phoneData" type="tns:PhoneData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrUpdatePhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOrUpdatePhoneResult" type="tns:PhoneReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="phoneReference" type="tns:PhoneReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PhoneReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContactName" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetPhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPhoneResult" type="tns:PhoneDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PhoneDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContactName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AddressTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TimeZone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Extension" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OtherCodes" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsEurope" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsNorthAmerica" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsSouthAmerica" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsAsia" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsAfrica" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsAustrialia" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsHome" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsNormal" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsExclude" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsDefaultPhone" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsDefaultFax" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="DeletePhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="phoneReference" type="tns:PhoneReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeletePhoneResult" type="tns:PhoneDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addressData" type="tns:AddressData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AddressData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContactName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AddressLines" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="StateAbbreviation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Province" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CountryAbbreviation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AirportCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AirportName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TimeZone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultTaxCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultPhoneTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultFaxTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsDefaultBillingAddress" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsDefaultShippingAddress" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="IsDefaultAddress" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="AddAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddAddressResult" type="tns:AddressReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AddressReferenceOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="UpdateAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addressData" type="tns:AddressData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateAddressResult" type="tns:AddressReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrUpdateAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addressData" type="tns:AddressData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrUpdateAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOrUpdateAddressResult" type="tns:AddressReferenceOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addressReference" type="tns:AddressReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AddressReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContactName" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAddressResult" type="tns:AddressDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AddressDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContactName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AddressLines" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="StateAbbreviation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Province" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CountryAbbreviation" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AirportCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AirportName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TimeZone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultTaxCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultPhoneTitle" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultFaxTitle" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsDefaultBillingAddress" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsDefaultShippingAddress" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsDefaultAddress" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="DeleteAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addressReference" type="tns:AddressReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteAddressResult" type="tns:AddressDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="statesReference" type="tns:StatesReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="StatesReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetStatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStatesResult" type="tns:StatesDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="StatesDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="States" type="tns:ArrayOfStateData" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfStateData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StateData" nillable="true" type="tns:StateData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StateData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StateCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StateName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCountries">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="countriesReference" type="tns:CountriesReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CountriesReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetCountriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCountriesResult" type="tns:CountriesDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CountriesDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Countries" type="tns:ArrayOfCountryData" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfCountryData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CountryData" nillable="true" type="tns:CountryData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CountryData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryTelephoneMask" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryTelephoneAccessCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryPostalCodeMask" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAirports">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="airportsReference" type="tns:AirportsReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AirportsReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetAirportsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAirportsResult" type="tns:AirportsDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AirportsDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Airports" type="tns:ArrayOfAirportData" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfAirportData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AirportData" nillable="true" type="tns:AirportData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AirportData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AirportCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AirportName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AirportComments" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTimeZones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="timeZonesReference" type="tns:TimeZonesReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TimeZonesReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetTimeZonesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTimeZonesResult" type="tns:TimeZonesDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TimeZonesDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="TimeZones" type="tns:ArrayOfTimeZoneData" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfTimeZoneData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TimeZoneData" nillable="true" type="tns:TimeZoneData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TimeZoneData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TimeZoneName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRegions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regionsReference" type="tns:RegionsReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RegionsReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetRegionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRegionsResult" type="tns:RegionsDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RegionsDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Regions" type="tns:ArrayOfRegionData" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfRegionData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RegionData" nillable="true" type="tns:RegionData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RegionData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Notes" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCreditRatings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="creditRatingsReference" type="tns:CreditRatingsReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CreditRatingsReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetCreditRatingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreditRatingsResult" type="tns:CreditRatingsDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CreditRatingsDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CreditRatings" type="tns:ArrayOfCreditRatingData" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfCreditRatingData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CreditRatingData" nillable="true" type="tns:CreditRatingData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CreditRatingData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCreditRestrictions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="creditRestrictionsReference" type="tns:CreditRestrictionsReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CreditRestrictionsReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetCreditRestrictionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreditRestrictionsResult" type="tns:CreditRestrictionsDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CreditRestrictionsDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CreditRestrictions" type="tns:ArrayOfCreditRestrictionData" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfCreditRestrictionData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CreditRestrictionData" nillable="true" type="tns:CreditRestrictionData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CreditRestrictionData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCustomerClasses">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="customerClassesReference" type="tns:CustomerClassesReferenceInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CustomerClassesReferenceInput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetCustomerClassesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerClassesResult" type="tns:CustomerClassesDataOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CustomerClassesDataOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CustomerClasses" type="tns:ArrayOfCustomerClassData" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfCustomerClassData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CustomerClassData" nillable="true" type="tns:CustomerClassData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CustomerClassData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerClass" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddCompanyDataSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCompanyData" />
+  </wsdl:message>
+  <wsdl:message name="AddCompanyDataSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCompanyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCompanyDataSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCompanyData" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCompanyDataSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCompanyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrUpdateCompanyDataSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateCompanyData" />
+  </wsdl:message>
+  <wsdl:message name="AddOrUpdateCompanyDataSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateCompanyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompanyData" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompanyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="InactivateCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:InactivateCompany" />
+  </wsdl:message>
+  <wsdl:message name="InactivateCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:InactivateCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReactivateCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:ReactivateCompany" />
+  </wsdl:message>
+  <wsdl:message name="ReactivateCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:ReactivateCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddPhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:AddPhone" />
+  </wsdl:message>
+  <wsdl:message name="AddPhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:AddPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePhone" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrUpdatePhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrUpdatePhone" />
+  </wsdl:message>
+  <wsdl:message name="AddOrUpdatePhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrUpdatePhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPhone" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePhone" />
+  </wsdl:message>
+  <wsdl:message name="DeletePhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAddress" />
+  </wsdl:message>
+  <wsdl:message name="AddAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAddress" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrUpdateAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateAddress" />
+  </wsdl:message>
+  <wsdl:message name="AddOrUpdateAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAddress" />
+  </wsdl:message>
+  <wsdl:message name="GetAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAddress" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStatesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStates" />
+  </wsdl:message>
+  <wsdl:message name="GetStatesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCountriesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCountries" />
+  </wsdl:message>
+  <wsdl:message name="GetCountriesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAirportsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAirports" />
+  </wsdl:message>
+  <wsdl:message name="GetAirportsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAirportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZonesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTimeZones" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZonesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTimeZonesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRegionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRegions" />
+  </wsdl:message>
+  <wsdl:message name="GetRegionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRegionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditRatingsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreditRatings" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditRatingsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreditRatingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditRestrictionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreditRestrictions" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditRestrictionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreditRestrictionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerClassesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerClasses" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerClassesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerClassesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CompanyDatabaseSoap">
+    <wsdl:operation name="AddCompanyData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add company data</wsdl:documentation>
+      <wsdl:input message="tns:AddCompanyDataSoapIn" />
+      <wsdl:output message="tns:AddCompanyDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCompanyData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to update company data</wsdl:documentation>
+      <wsdl:input message="tns:UpdateCompanyDataSoapIn" />
+      <wsdl:output message="tns:UpdateCompanyDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateCompanyData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add or update company data</wsdl:documentation>
+      <wsdl:input message="tns:AddOrUpdateCompanyDataSoapIn" />
+      <wsdl:output message="tns:AddOrUpdateCompanyDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch company data</wsdl:documentation>
+      <wsdl:input message="tns:GetCompanyDataSoapIn" />
+      <wsdl:output message="tns:GetCompanyDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InactivateCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to inactivate company data</wsdl:documentation>
+      <wsdl:input message="tns:InactivateCompanySoapIn" />
+      <wsdl:output message="tns:InactivateCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReactivateCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to reactivate company data</wsdl:documentation>
+      <wsdl:input message="tns:ReactivateCompanySoapIn" />
+      <wsdl:output message="tns:ReactivateCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPhone">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add phone data</wsdl:documentation>
+      <wsdl:input message="tns:AddPhoneSoapIn" />
+      <wsdl:output message="tns:AddPhoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhone">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to update phone data</wsdl:documentation>
+      <wsdl:input message="tns:UpdatePhoneSoapIn" />
+      <wsdl:output message="tns:UpdatePhoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdatePhone">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add or update phone data</wsdl:documentation>
+      <wsdl:input message="tns:AddOrUpdatePhoneSoapIn" />
+      <wsdl:output message="tns:AddOrUpdatePhoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhone">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch phone data</wsdl:documentation>
+      <wsdl:input message="tns:GetPhoneSoapIn" />
+      <wsdl:output message="tns:GetPhoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhone">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to delete phone data</wsdl:documentation>
+      <wsdl:input message="tns:DeletePhoneSoapIn" />
+      <wsdl:output message="tns:DeletePhoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add address data</wsdl:documentation>
+      <wsdl:input message="tns:AddAddressSoapIn" />
+      <wsdl:output message="tns:AddAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to update address data</wsdl:documentation>
+      <wsdl:input message="tns:UpdateAddressSoapIn" />
+      <wsdl:output message="tns:UpdateAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to add or update address data</wsdl:documentation>
+      <wsdl:input message="tns:AddOrUpdateAddressSoapIn" />
+      <wsdl:output message="tns:AddOrUpdateAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch Address data</wsdl:documentation>
+      <wsdl:input message="tns:GetAddressSoapIn" />
+      <wsdl:output message="tns:GetAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to delete Address data</wsdl:documentation>
+      <wsdl:input message="tns:DeleteAddressSoapIn" />
+      <wsdl:output message="tns:DeleteAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStates">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch States data</wsdl:documentation>
+      <wsdl:input message="tns:GetStatesSoapIn" />
+      <wsdl:output message="tns:GetStatesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch Countries data</wsdl:documentation>
+      <wsdl:input message="tns:GetCountriesSoapIn" />
+      <wsdl:output message="tns:GetCountriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAirports">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch Airports data</wsdl:documentation>
+      <wsdl:input message="tns:GetAirportsSoapIn" />
+      <wsdl:output message="tns:GetAirportsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZones">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch time zones data</wsdl:documentation>
+      <wsdl:input message="tns:GetTimeZonesSoapIn" />
+      <wsdl:output message="tns:GetTimeZonesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch Regions data</wsdl:documentation>
+      <wsdl:input message="tns:GetRegionsSoapIn" />
+      <wsdl:output message="tns:GetRegionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditRatings">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch credit ratings data</wsdl:documentation>
+      <wsdl:input message="tns:GetCreditRatingsSoapIn" />
+      <wsdl:output message="tns:GetCreditRatingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditRestrictions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch credit restrictions data</wsdl:documentation>
+      <wsdl:input message="tns:GetCreditRestrictionsSoapIn" />
+      <wsdl:output message="tns:GetCreditRestrictionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerClasses">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to fetch customer classes data</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomerClassesSoapIn" />
+      <wsdl:output message="tns:GetCustomerClassesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CompanyDatabaseSoap" type="tns:CompanyDatabaseSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddCompanyData">
+      <soap:operation soapAction="http://corridor.aero/cws/AddCompanyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCompanyData">
+      <soap:operation soapAction="http://corridor.aero/cws/UpdateCompanyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateCompanyData">
+      <soap:operation soapAction="http://corridor.aero/cws/AddOrUpdateCompanyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyData">
+      <soap:operation soapAction="http://corridor.aero/cws/GetCompanyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InactivateCompany">
+      <soap:operation soapAction="http://corridor.aero/cws/InactivateCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReactivateCompany">
+      <soap:operation soapAction="http://corridor.aero/cws/ReactivateCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPhone">
+      <soap:operation soapAction="http://corridor.aero/cws/AddPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhone">
+      <soap:operation soapAction="http://corridor.aero/cws/UpdatePhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdatePhone">
+      <soap:operation soapAction="http://corridor.aero/cws/AddOrUpdatePhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhone">
+      <soap:operation soapAction="http://corridor.aero/cws/GetPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhone">
+      <soap:operation soapAction="http://corridor.aero/cws/DeletePhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAddress">
+      <soap:operation soapAction="http://corridor.aero/cws/AddAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddress">
+      <soap:operation soapAction="http://corridor.aero/cws/UpdateAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateAddress">
+      <soap:operation soapAction="http://corridor.aero/cws/AddOrUpdateAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddress">
+      <soap:operation soapAction="http://corridor.aero/cws/GetAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAddress">
+      <soap:operation soapAction="http://corridor.aero/cws/DeleteAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStates">
+      <soap:operation soapAction="http://corridor.aero/cws/GetStates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <soap:operation soapAction="http://corridor.aero/cws/GetCountries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAirports">
+      <soap:operation soapAction="http://corridor.aero/cws/GetAirports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZones">
+      <soap:operation soapAction="http://corridor.aero/cws/GetTimeZones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <soap:operation soapAction="http://corridor.aero/cws/GetRegions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditRatings">
+      <soap:operation soapAction="http://corridor.aero/cws/GetCreditRatings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditRestrictions">
+      <soap:operation soapAction="http://corridor.aero/cws/GetCreditRestrictions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerClasses">
+      <soap:operation soapAction="http://corridor.aero/cws/GetCustomerClasses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CompanyDatabaseSoap12" type="tns:CompanyDatabaseSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddCompanyData">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddCompanyData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCompanyData">
+      <soap12:operation soapAction="http://corridor.aero/cws/UpdateCompanyData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateCompanyData">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddOrUpdateCompanyData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyData">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetCompanyData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InactivateCompany">
+      <soap12:operation soapAction="http://corridor.aero/cws/InactivateCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReactivateCompany">
+      <soap12:operation soapAction="http://corridor.aero/cws/ReactivateCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPhone">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddPhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhone">
+      <soap12:operation soapAction="http://corridor.aero/cws/UpdatePhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdatePhone">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddOrUpdatePhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhone">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetPhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhone">
+      <soap12:operation soapAction="http://corridor.aero/cws/DeletePhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAddress">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddress">
+      <soap12:operation soapAction="http://corridor.aero/cws/UpdateAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateAddress">
+      <soap12:operation soapAction="http://corridor.aero/cws/AddOrUpdateAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddress">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAddress">
+      <soap12:operation soapAction="http://corridor.aero/cws/DeleteAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStates">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetStates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetCountries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAirports">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetAirports" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZones">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetTimeZones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetRegions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditRatings">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetCreditRatings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditRestrictions">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetCreditRestrictions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerClasses">
+      <soap12:operation soapAction="http://corridor.aero/cws/GetCustomerClasses" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CompanyDatabase">
+    <wsdl:port name="CompanyDatabaseSoap" binding="tns:CompanyDatabaseSoap">
+      <soap:address location="http://10.72.5.50/Mainline-Debug/CWS/customerdatabase.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CompanyDatabaseSoap12" binding="tns:CompanyDatabaseSoap12">
+      <soap12:address location="http://10.72.5.50/Mainline-Debug/CWS/customerdatabase.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://corridor.aero/cws/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://corridor.aero/cws/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://corridor.aero/cws/">
+      <s:element name="ProcessAutopostFacilityRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:ProcessAutoPostFacilityData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProcessAutoPostFacilityData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="EnterpriseFacilityCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="PostNowAll" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="PostNowAR" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="PostNowAP" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="PostNowGL" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="PostNowWIP" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" default="false" name="PostNowCustVend" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CorridorLoginData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AliasName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SessionToken" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Auth0Token" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProcessAutopostFacilityRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessAutopostFacilityRequestResult" type="tns:AutoPostResponseOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AutoPostResponseOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CorridorStatusData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessages" type="tns:ArrayOfErrorMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfErrorMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ErrorMessage" nillable="true" type="tns:ErrorMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ErrorMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCode" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EnableAutopostFacilityRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:AutoPostFacilityData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AutoPostFacilityData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="EnterpriseFacilityCode" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="EnableAutopostFacilityRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnableAutopostFacilityRequestResult" type="tns:AutoPostResponseOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisableAutopostFacilityRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:AutoPostFacilityData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisableAutopostFacilityRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisableAutopostFacilityRequestResult" type="tns:AutoPostResponseOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnableAllAutopostFacilitiesRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:AutoPostData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AutoPostData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="EnableAllAutopostFacilitiesRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnableAllAutopostFacilitiesRequestResult" type="tns:AutoPostResponseOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisableAllAutopostFacilitiesRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:AutoPostData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisableAllAutopostFacilitiesRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisableAllAutopostFacilitiesRequestResult" type="tns:AutoPostResponseOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearWipRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:ClearWipData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClearWipData">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorLoginData" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ClearWipRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearWipRequestResult" type="tns:ClearWipResponseOutput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClearWipResponseOutput">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CorridorStatusData" />
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ProcessAutopostFacilityRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessAutopostFacilityRequest" />
+  </wsdl:message>
+  <wsdl:message name="ProcessAutopostFacilityRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessAutopostFacilityRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnableAutopostFacilityRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:EnableAutopostFacilityRequest" />
+  </wsdl:message>
+  <wsdl:message name="EnableAutopostFacilityRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:EnableAutopostFacilityRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisableAutopostFacilityRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:DisableAutopostFacilityRequest" />
+  </wsdl:message>
+  <wsdl:message name="DisableAutopostFacilityRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:DisableAutopostFacilityRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnableAllAutopostFacilitiesRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:EnableAllAutopostFacilitiesRequest" />
+  </wsdl:message>
+  <wsdl:message name="EnableAllAutopostFacilitiesRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:EnableAllAutopostFacilitiesRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisableAllAutopostFacilitiesRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:DisableAllAutopostFacilitiesRequest" />
+  </wsdl:message>
+  <wsdl:message name="DisableAllAutopostFacilitiesRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:DisableAllAutopostFacilitiesRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearWipRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearWipRequest" />
+  </wsdl:message>
+  <wsdl:message name="ClearWipRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearWipRequestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AccountingSoap">
+    <wsdl:operation name="ProcessAutopostFacilityRequest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to initiate running of AutoPost for a specific facility only. For a given facility posting of one or more account classes is supported through additional parameters for each account class. The default, i.e. not specifying for any account class, will post for all.</wsdl:documentation>
+      <wsdl:input message="tns:ProcessAutopostFacilityRequestSoapIn" />
+      <wsdl:output message="tns:ProcessAutopostFacilityRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnableAutopostFacilityRequest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to enable a specific facility for AutoPost.</wsdl:documentation>
+      <wsdl:input message="tns:EnableAutopostFacilityRequestSoapIn" />
+      <wsdl:output message="tns:EnableAutopostFacilityRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisableAutopostFacilityRequest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to disable a specific facility for AutoPost.</wsdl:documentation>
+      <wsdl:input message="tns:DisableAutopostFacilityRequestSoapIn" />
+      <wsdl:output message="tns:DisableAutopostFacilityRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnableAllAutopostFacilitiesRequest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to enable all facilities of an enterprise setup for AutoPost.</wsdl:documentation>
+      <wsdl:input message="tns:EnableAllAutopostFacilitiesRequestSoapIn" />
+      <wsdl:output message="tns:EnableAllAutopostFacilitiesRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisableAllAutopostFacilitiesRequest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to disable all facilities of an enterprise setup for AutoPost.</wsdl:documentation>
+      <wsdl:input message="tns:DisableAllAutopostFacilitiesRequestSoapIn" />
+      <wsdl:output message="tns:DisableAllAutopostFacilitiesRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearWipRequest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service operation to Clear all Accouting WIP transactions.</wsdl:documentation>
+      <wsdl:input message="tns:ClearWipRequestSoapIn" />
+      <wsdl:output message="tns:ClearWipRequestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AccountingSoap" type="tns:AccountingSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcessAutopostFacilityRequest">
+      <soap:operation soapAction="http://corridor.aero/cws/ProcessAutopostFacilityRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnableAutopostFacilityRequest">
+      <soap:operation soapAction="http://corridor.aero/cws/EnableAutopostFacilityRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisableAutopostFacilityRequest">
+      <soap:operation soapAction="http://corridor.aero/cws/DisableAutopostFacilityRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnableAllAutopostFacilitiesRequest">
+      <soap:operation soapAction="http://corridor.aero/cws/EnableAllAutopostFacilitiesRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisableAllAutopostFacilitiesRequest">
+      <soap:operation soapAction="http://corridor.aero/cws/DisableAllAutopostFacilitiesRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearWipRequest">
+      <soap:operation soapAction="http://corridor.aero/cws/ClearWipRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AccountingSoap12" type="tns:AccountingSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcessAutopostFacilityRequest">
+      <soap12:operation soapAction="http://corridor.aero/cws/ProcessAutopostFacilityRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnableAutopostFacilityRequest">
+      <soap12:operation soapAction="http://corridor.aero/cws/EnableAutopostFacilityRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisableAutopostFacilityRequest">
+      <soap12:operation soapAction="http://corridor.aero/cws/DisableAutopostFacilityRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnableAllAutopostFacilitiesRequest">
+      <soap12:operation soapAction="http://corridor.aero/cws/EnableAllAutopostFacilitiesRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisableAllAutopostFacilitiesRequest">
+      <soap12:operation soapAction="http://corridor.aero/cws/DisableAllAutopostFacilitiesRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearWipRequest">
+      <soap12:operation soapAction="http://corridor.aero/cws/ClearWipRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Accounting">
+    <wsdl:port name="AccountingSoap" binding="tns:AccountingSoap">
+      <soap:address location="http://10.72.5.50/Mainline-Debug/CWS/accounting.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AccountingSoap12" binding="tns:AccountingSoap12">
+      <soap12:address location="http://10.72.5.50/Mainline-Debug/CWS/accounting.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
