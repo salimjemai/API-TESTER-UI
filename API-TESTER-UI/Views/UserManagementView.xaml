@@ -24,41 +24,6 @@
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <!--<DockPanel>
-            <Menu DockPanel.Dock="Top">
-                <MenuItem Header="_File">
-                    <MenuItem Header="_Open" />
-                    <MenuItem Header="_Close" />
-                    <MenuItem Header="_Save" />
-                </MenuItem>
-            </Menu>
-        </DockPanel>-->
-        <!--<StackPanel Orientation="Vertical"
-                  HorizontalAlignment="Stretch"
-                  Grid.RowSpan="5">
-
-        <Button Content="Add User"
-                Background="BlanchedAlmond"
-                BorderBrush="DimGray"
-                HorizontalContentAlignment="Center"
-                BorderThickness="1" />
-        <Button Content="Get User Info"
-                Background="BlanchedAlmond"
-                BorderBrush="DimGray"
-                HorizontalContentAlignment="Center"
-                BorderThickness="1" />
-        <Button Content="Update User Info"
-                Background="BlanchedAlmond"
-                BorderBrush="DimGray"
-                HorizontalContentAlignment="Center"
-                BorderThickness="1" />
-        <Button Content="Change User Password"
-                Background="BlanchedAlmond"
-                BorderBrush="DimGray"
-                HorizontalContentAlignment="Center"
-                BorderThickness="1" />
-      </StackPanel>-->
-
 
     </Grid>
 </UserControl>

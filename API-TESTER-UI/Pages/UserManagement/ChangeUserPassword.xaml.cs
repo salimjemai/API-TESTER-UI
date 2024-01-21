@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using API_TESTER_UI.Utilities;
 
 namespace API_TESTER_UI.Pages.UserManagement
 {
@@ -29,7 +30,7 @@ namespace API_TESTER_UI.Pages.UserManagement
             InitializeComponent();
         }
 
-        private void SubmitUpdateUserPassword_Click(object sender, RoutedEventArgs e)
+        private async void SubmitUpdateUserPassword_Click(object sender, RoutedEventArgs e)
         {
             var token = string.Empty;
             var cwsUrl = string.Empty;
@@ -47,7 +48,7 @@ namespace API_TESTER_UI.Pages.UserManagement
                         cwsUrl = selectSession.GetString(1);
                     }
 
-                    var isUserNameEmpty = userName.Text.Length > 0 ? false : true;
+                    var isUserNameEmpty = userName.Text.Length <= 0;
 
                     if (token != null && cwsUrl != null)
                     {
@@ -61,11 +62,10 @@ namespace API_TESTER_UI.Pages.UserManagement
                             NewPassword = newPassword.Password.ToString(),
                         };
 
-                        var fak = client.ChangeUserPassword(userManagementChange);
+                        var fak = await client.ChangeUserPasswordAsync(userManagementChange);
                         if (fak.StatusMessage.Equals("Failed"))
                         {
-                            MessageBox.Show($"{fak.ErrorMessages.FirstOrDefault().ErrorText}", "Update User Password", MessageBoxButton.OK, MessageBoxImage.Error);
-                            return;
+                            MessageBox.Show($"{fak.ErrorMessages.FirstOrDefault()?.ErrorText}", "Update User Password", MessageBoxButton.OK, MessageBoxImage.Error);
                         }
                         else
                         { 
@@ -73,7 +73,6 @@ namespace API_TESTER_UI.Pages.UserManagement
                             userName.Text = null;
                             Password.Password = null;
                             newPassword.Password = null;
-                            return;
                         }
                     }
 
@@ -86,7 +85,8 @@ namespace API_TESTER_UI.Pages.UserManagement
             }
             catch (Exception exc)
             {
-                MessageBox.Show("Error occurred while Updating user password.", "Update User Password", MessageBoxButton.OK, MessageBoxImage.Error);
+                Log.Exception("An error occurred while changing the user Password",exc);
+                MessageBox.Show("Error occurred while Updating user password. Check the logs for more details.", "Update User Password", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

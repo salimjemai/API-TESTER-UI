@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using API_TESTER_UI.Database;
 using API_TESTER_UI.UserManagement;
+using API_TESTER_UI.Utilities;
 using API_TESTER_UI.Utilities.UserManagement;
 
 namespace API_TESTER_UI.Pages.UserManagement
@@ -18,7 +19,7 @@ namespace API_TESTER_UI.Pages.UserManagement
             InitializeComponent();
         }
 
-        private void SubmitCreatePermissionsProfile_Click(object sender, RoutedEventArgs e)
+        private async void SubmitCreatePermissionsProfile_Click(object sender, RoutedEventArgs e)
         {
             var token = string.Empty;
             var cwsUrl = string.Empty;
@@ -51,7 +52,7 @@ namespace API_TESTER_UI.Pages.UserManagement
                             userManagementChange.SetUserPermissionsProfileToNew =
                                 Convert.ToBoolean(SetUserPermissionsProfileToNew.IsChecked);
 
-                        var permissionsProfile = client.CreatePermissionsProfile(userManagementChange);
+                        var permissionsProfile = await client.CreatePermissionsProfileAsync(userManagementChange);
                         if (permissionsProfile.StatusMessage.Equals("Failed"))
                         {
                             MessageBox.Show($"{permissionsProfile?.ErrorMessages?.FirstOrDefault()?.ErrorText}",
@@ -62,7 +63,7 @@ namespace API_TESTER_UI.Pages.UserManagement
                         MessageBox.Show($"Successfully created {permissionsProfile?.Username} Permission Profile.",
                             "Create User Permission Profile", MessageBoxButton.OK, MessageBoxImage.Information);
                         userName.Text = string.Empty;
-                        CreatePermissionsProfileName.Text = null;
+                        CreatePermissionsProfileName.Text = string.Empty;
                         SetUserPermissionsProfileToNew.IsChecked = false;
                         return;
                     }
@@ -73,7 +74,8 @@ namespace API_TESTER_UI.Pages.UserManagement
             }
             catch (Exception exc)
             {
-                MessageBox.Show("Error occurred while Updating user password.", "Update User Password",
+                Log.Exception("Error occurred while Updating user Permission.", exc);
+                MessageBox.Show("Error occurred while Updating user Permission.", "Update User Permission",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }

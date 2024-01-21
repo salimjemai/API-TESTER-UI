@@ -104,7 +104,7 @@
                 Margin="10"
                 Click="LoginButton_OnClick" />
         <!-- Clear Button block -->
-        <Button Style="{DynamicResource ButtonStyle2}"
+        <Button 
                 x:Name="clearButton"
                 Content="Clear"
                 Width="98"

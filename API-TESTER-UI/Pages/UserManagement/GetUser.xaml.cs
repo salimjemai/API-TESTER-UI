@@ -7,6 +7,7 @@ using System.Xml.Serialization;
 using API_TESTER_UI.Database;
 using API_TESTER_UI.Models.UserManagement;
 using API_TESTER_UI.UserManagement;
+using API_TESTER_UI.Utilities;
 using API_TESTER_UI.Utilities.UserManagement;
 
 namespace API_TESTER_UI.Pages.UserManagement
@@ -24,7 +25,7 @@ namespace API_TESTER_UI.Pages.UserManagement
             InitializeComponent();
         }
 
-        private void SubmitGetUser_Click(object sender, RoutedEventArgs e)
+        private async void SubmitGetUser_Click(object sender, RoutedEventArgs e)
         {
             var token = string.Empty;
             var cwsUrl = string.Empty;
@@ -53,10 +54,10 @@ namespace API_TESTER_UI.Pages.UserManagement
                             Username = userNameIn?.Text,
                             SessionToken = token
                         };
-                        var testClient = userClient.GetUser(userManagementReference);
+                        var testClient = await userClient.GetUserAsync(userManagementReference);
                         if (testClient.StatusMessage.Equals("Failed"))
                         {
-                            MessageBox.Show($"{testClient.ErrorMessages.FirstOrDefault().ErrorText}", "Get User info",
+                            MessageBox.Show($"{testClient.ErrorMessages.FirstOrDefault()?.ErrorText}", "Get User info",
                                 MessageBoxButton.OK, MessageBoxImage.Error);
                             return;
                         }
@@ -73,6 +74,7 @@ namespace API_TESTER_UI.Pages.UserManagement
             }
             catch (Exception exc)
             {
+                Log.Exception("Error occurred while getting the user Data.", exc);
                 MessageBox.Show("Error occurred while getting the user Data.", "Get User info", MessageBoxButton.OK,
                     MessageBoxImage.Error);
             }

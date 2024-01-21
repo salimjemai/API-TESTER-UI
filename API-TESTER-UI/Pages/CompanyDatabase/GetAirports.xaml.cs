@@ -8,6 +8,7 @@ using API_TESTER_UI.CompanyDatabase;
 using System.Linq;
 using API_TESTER_UI.Utilities;
 using API_TESTER_UI.Utilities.UserManagement;
+using Newtonsoft.Json.Linq;
 
 namespace API_TESTER_UI.Pages.CompanyDatabase
 {
@@ -21,7 +22,11 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
         public GetAircrafts()
         {
             InitializeComponent();
+            GetAirportData();
+        }
 
+        private async void GetAirportData()
+        {
             var token = string.Empty;
             var cwsUrl = string.Empty;
 
@@ -47,10 +52,10 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
                         {
                             SessionToken = token
                         };
-                        var response = client.GetAirports(airportsRequest);
-                        var air = response.Airports;
+                        var response = await client.GetAirportsAsync(airportsRequest);
+                        var air = response?.Airports;
 
-                        Log.Debug($"Airport data ** Airports count: {air.Length}");
+                        Log.Debug($"Airport data ** Airports count: {air?.Length}");
                         AirportsGrid.ItemsSource = air.ToList();
                     }
                     else
@@ -62,7 +67,7 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
             catch (Exception exc)
             {
                 Log.Error(exc.Message);
-                MessageBox.Show($"Error occurred while getting the airports info. exception detail: {exc}", "Airports details", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error occurred while getting the airports info. exception detail: {exc.Message}", "Airports details", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

@@ -81,15 +81,6 @@ namespace API_TESTER_UI.Views
 
         private void ClearButton_Click(object sender, RoutedEventArgs e)
         {
-            // This clear button should clear any displayed data OR filled up fields to be updated
-            //this.Content = null;
-            //_GetAircraftsFrame.Content = null;
-            //_UserManagementFrame.Content = null;
-            //_GetUserInfoFrame.Content = null;
-            //_AddUserFrame.Content = null;
-            //_ChangeUserPasswordFrame.Content = null;
-            //_UpdateUserInfoFrame.Content= null;
-            //_ChangePermissionProfileFrame.Content = null;
 
         }
 
@@ -121,7 +112,7 @@ namespace API_TESTER_UI.Views
                 this.Hide();
 
                 // bring the user back to the main window
-                new HomeView().Show();
+                //new HomeView().Show();
             }
         }
 

@@ -193,14 +193,13 @@ namespace API_TESTER_UI.Views
             var dateNow = DateTime.Now;
             try
             {
-                _SchemaAliasNameText = "QA_MAINLINE_NE_19c";
-                _LoginID = "cati";
-                _Password = "PgacdE";
-                _CwsUrl = "http://10.72.5.50/Mainline/CWS/";
-                if (!string.IsNullOrEmpty(_SchemaAliasNameText) &&
-                    ! string.IsNullOrEmpty(_LoginID) &&
-                    ! string.IsNullOrEmpty(_CwsUrl) &&
-                    ! string.IsNullOrEmpty(_Password))
+                var credsPresent = !string.IsNullOrEmpty(_SchemaAliasNameText) &&
+                                   !string.IsNullOrEmpty(_LoginID) &&
+                                   !string.IsNullOrEmpty(_CwsUrl) &&
+                                   !string.IsNullOrEmpty(_Password);
+
+                bool debugMode = true;
+                if (credsPresent)
                 {
                     var loginData = new CorridorLoginData
                     {
@@ -214,10 +213,10 @@ namespace API_TESTER_UI.Views
                     if (sessionToken.SessionToken != null)
                     {
                         _SessionToken = sessionToken.SessionToken;
-                        var IsTokenValid = 1;
+                        const int isTokenValid = 1;
 
                         // Insert the session record into the DB
-                        DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl,
+                        DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, isTokenValid, _LoginID, _CwsUrl,
                             _SchemaAliasNameText);
 
                         // hide main login window
@@ -227,6 +226,13 @@ namespace API_TESTER_UI.Views
                         new ApiChoiceWindow().Show();
                     }
                 }
+                
+                if (true)
+                {
+                    MessageBox.Show($"Super User functionality is not activated at the moment. Api testing is not available.", "API Tester", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+                    new ApiChoiceWindow().Show();
+                }
+
                 else
                 {
                     MessageBox.Show($"Super User functionality is not activated at the moment.", "API Tester", MessageBoxButton.OK, MessageBoxImage.Asterisk);
