@@ -19,7 +19,7 @@
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions x:Uid="MainData">
+        <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -97,7 +97,7 @@
             Content="Username"
             FontWeight="Bold" />
         <TextBox
-            x:Name="userName"
+            x:Name="userNameIn"
             Grid.Row="3"
             Grid.Column="8"
             Width="120"

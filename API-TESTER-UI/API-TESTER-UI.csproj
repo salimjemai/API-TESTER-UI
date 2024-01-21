@@ -150,6 +150,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="References\Reference.cs" />
+    <Compile Include="Utilities\Log.cs" />
     <Compile Include="Utilities\UserManagement\SoapClient.cs" />
     <Compile Include="ViewModels\ApiChoiceViewModel.cs" />
     <Compile Include="ViewModels\MainNavigationBarViewModel.cs" />
@@ -712,7 +713,7 @@
       <Version>1.0.7</Version>
     </PackageReference>
     <PackageReference Include="log4net">
-      <Version>2.0.15</Version>
+      <Version>2.0.14</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNet.Mvc">
       <Version>5.3.0</Version>

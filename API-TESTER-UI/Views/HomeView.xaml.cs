@@ -1,34 +1,29 @@
-﻿using API_TESTER_UI.Database;
-using API_TESTER_UI.Session;
-using API_TESTER_UI.Utilities.UserManagement;
-using System;
+﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using Auth0.OidcClient;
-using System.Collections.Generic;
-using System.Configuration;
-using IdentityModel.OidcClient.Browser;
-using IdentityModel.OidcClient;
-using System.Text;
+using API_TESTER_UI.Database;
+using API_TESTER_UI.Session;
+using API_TESTER_UI.Utilities.UserManagement;
 
 namespace API_TESTER_UI.Views
 {
     /// <summary>
-    /// Interaction logic for HomeView.xaml
+    ///     Interaction logic for HomeView.xaml
     /// </summary>
     public partial class HomeView : Window
     {
         public string PlaceholderText { get; set; }
-        public string _SchemaAliasNameText { get; set; }
-        public string _LoginID { get; set; }
-        public string _Password { get; set; }
-        public string _CwsUrl { get; set; }
-        public string _SessionToken { get; set; }
-        private Auth0Client client;
+        private string _SchemaAliasNameText { get; set; }
+        private string _LoginID { get; set; }
+        private string _Password { get; set; }
+        private string _CwsUrl { get; set; }
 
-        public object NavigationService { get; private set; }
+        private string _SessionToken { get; set; }
+        //private Auth0Client client;
 
-        readonly string[] _connectionNames = new string[]
+        public object NavigationService { get; }
+
+        private readonly string[] _connectionNames =
         {
             "Username-Password-Authentication",
             "google-oauth2",
@@ -42,14 +37,14 @@ namespace API_TESTER_UI.Views
         {
             InitializeComponent();
         }
+
         private void CancelButton_OnClick(object sender, RoutedEventArgs e)
         {
             // Confirm the user decision
-            if (MessageBox.Show(this, "Do you wish to close this application?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question)
+            if (MessageBox.Show(this, "Do you wish to close this application?", "Confirm", MessageBoxButton.YesNo,
+                    MessageBoxImage.Question)
                 == MessageBoxResult.Yes)
-            {
                 Application.Current.Shutdown();
-            }
         }
 
         private void ClearButton_OnClick(object sender, RoutedEventArgs e)
@@ -139,6 +134,8 @@ namespace API_TESTER_UI.Views
         //    resultTextBox.Text = "";
         //    connectionNameComboBox.ItemsSource = _connectionNames;
         //}
+
+
         // ******************************************************************************************
         private async void LoginButton_OnClick(object sender, RoutedEventArgs e)
         {
@@ -152,37 +149,36 @@ namespace API_TESTER_UI.Views
 
                 if (schemaAliasNameText != null && LoginID != null && LoginPasswordText != null && cwsUrlText != null)
                 {
-                    CorridorLoginData corridorLoginData = new CorridorLoginData
+                    var loginData = new CorridorLoginData
                     {
                         AliasName = schemaAliasNameText.Text,
                         LoginID = LoginID.Text,
                         LoginPassword = LoginPasswordText.Password
                     };
                     var sessionClient = SoapClient.GetSessionSoapClient(cwsUrlText.Text);
-                    LoginResponse sessionToken = await sessionClient.LoginAsync(corridorLoginData);
+                    var sessionToken = await sessionClient.LoginAsync(loginData);
 
                     if (sessionToken.SessionToken != null)
                     {
                         _SessionToken = sessionToken.SessionToken;
-                        int IsTokenValid = 1;
+                        var IsTokenValid = 1;
 
                         // Insert the session record into the DB
-                        DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
+                        DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl,
+                            _SchemaAliasNameText);
 
                         // hide main login window
-                        this.Hide();
+                        Hide();
 
                         // Open the API Choice interface
                         new ApiChoiceWindow().Show();
-
                     }
                     else
                     {
-                        MessageBox.Show($"Something wrong happened, try again another time!!!",
+                        MessageBox.Show("Something wrong happened, try again another time!!!",
                             "Login warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                     }
                 }
-
             }
             catch (Exception exception)
             {
@@ -191,40 +187,40 @@ namespace API_TESTER_UI.Views
             }
         }
 
-        private async void loginButton2_Click(object sender, RoutedEventArgs e)
+        private async void LoginButton2_Click(object sender, RoutedEventArgs e)
         {
             var dateNow = DateTime.Now;
             try
             {
-                _SchemaAliasNameText = "QA_MAINLINE_NE_19c"; // "QA_MAINLINE_ENT1_19c";
+                _SchemaAliasNameText = "QA_MAINLINE_NE_19c";
                 _LoginID = "cati";
                 _Password = "PgacdE";
                 _CwsUrl = "http://10.72.5.50/Mainline/CWS/";
 
-                CorridorLoginData corridorLoginData = new CorridorLoginData
+                var loginData = new CorridorLoginData
                 {
                     AliasName = _SchemaAliasNameText,
                     LoginID = _LoginID,
                     LoginPassword = _Password
                 };
                 var sessionClient = SoapClient.GetSessionSoapClient(_CwsUrl);
-                LoginResponse sessionToken = await sessionClient.LoginAsync(corridorLoginData);
+                var sessionToken = await sessionClient.LoginAsync(loginData);
 
                 if (sessionToken.SessionToken != null)
                 {
                     _SessionToken = sessionToken.SessionToken;
-                    int IsTokenValid = 1;
+                    var IsTokenValid = 1;
 
                     // Insert the session record into the DB
-                    DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl, _SchemaAliasNameText);
+                    DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl,
+                        _SchemaAliasNameText);
 
                     // hide main login window
-                    this.Hide();
+                    Hide();
 
                     // Open the API Choice interface
                     new ApiChoiceWindow().Show();
                 }
-
             }
             catch (Exception exception)
             {
@@ -232,11 +228,12 @@ namespace API_TESTER_UI.Views
             }
         }
     }
+
     public class PasswordBoxMonitor : DependencyObject
     {
         public static bool GetIsMonitoring(DependencyObject obj)
         {
-            return (bool)obj.GetValue(IsMonitoringProperty);
+            return (bool) obj.GetValue(IsMonitoringProperty);
         }
 
         public static void SetIsMonitoring(DependencyObject obj, bool value)
@@ -245,11 +242,12 @@ namespace API_TESTER_UI.Views
         }
 
         public static readonly DependencyProperty IsMonitoringProperty =
-            DependencyProperty.RegisterAttached("IsMonitoring", typeof(bool), typeof(PasswordBoxMonitor), new UIPropertyMetadata(false, OnIsMonitoringChanged));
+            DependencyProperty.RegisterAttached("IsMonitoring", typeof(bool), typeof(PasswordBoxMonitor),
+                new UIPropertyMetadata(false, OnIsMonitoringChanged));
 
         public static int GetPasswordLength(DependencyObject obj)
         {
-            return (int)obj.GetValue(PasswordLengthProperty);
+            return (int) obj.GetValue(PasswordLengthProperty);
         }
 
         public static void SetPasswordLength(DependencyObject obj, int value)
@@ -258,32 +256,23 @@ namespace API_TESTER_UI.Views
         }
 
         public static readonly DependencyProperty PasswordLengthProperty =
-            DependencyProperty.RegisterAttached("PasswordLength", typeof(int), typeof(PasswordBoxMonitor), new UIPropertyMetadata(0));
+            DependencyProperty.RegisterAttached("PasswordLength", typeof(int), typeof(PasswordBoxMonitor),
+                new UIPropertyMetadata(0));
 
         private static void OnIsMonitoringChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             var pb = d as PasswordBox;
-            if (pb == null)
-            {
-                return;
-            }
-            if ((bool)e.NewValue)
-            {
+            if (pb == null) return;
+            if ((bool) e.NewValue)
                 pb.PasswordChanged += PasswordChanged;
-            }
             else
-            {
                 pb.PasswordChanged -= PasswordChanged;
-            }
         }
 
-        static void PasswordChanged(object sender, RoutedEventArgs e)
+        private static void PasswordChanged(object sender, RoutedEventArgs e)
         {
             var pb = sender as PasswordBox;
-            if (pb == null)
-            {
-                return;
-            }
+            if (pb == null) return;
             SetPasswordLength(pb, pb.Password.Length);
         }
     }

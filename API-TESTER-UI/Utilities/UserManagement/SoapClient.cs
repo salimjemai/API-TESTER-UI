@@ -11,6 +11,7 @@ using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace API_TESTER_UI.Utilities.UserManagement
 {
@@ -59,16 +60,15 @@ namespace API_TESTER_UI.Utilities.UserManagement
             return binding;
         }
 
-        public async static Task<string> LogOut()
+        public static async Task<string> LogOut()
         {
-            string response = string.Empty;
-            LogoutResponse logoutResponse = null;
+            var response = string.Empty;
             var token = string.Empty;
             var cwsUrl = string.Empty;
             try
             {
                 // Open a connection to get the token info from the DB
-                string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
+                const string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
                 using (var selectSession = DatabaseHelper.SelectRecords(sqlQuery))
                 {
                     while (selectSession.Read())
@@ -79,19 +79,19 @@ namespace API_TESTER_UI.Utilities.UserManagement
 
                     if (token != null && cwsUrl != null)
                     {
-                        CorridorLogoutData corridorLogoutData = new CorridorLogoutData
+                        var logoutData = new CorridorLogoutData
                         {
                             SessionToken = token
                         };
                         var client = GetSessionSoapClient(cwsUrl);
-                        logoutResponse = await client.LogoutAsync(corridorLogoutData);
+                        var logoutResponse = await client.LogoutAsync(logoutData);
                         response = logoutResponse.StatusMessage;
                     }
                 }
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show("Error occurred while logging out.", "Log out", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             return response;
         }

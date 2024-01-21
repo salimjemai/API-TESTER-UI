@@ -1,28 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using API_TESTER_UI.Pages.UserManagement;
 using API_TESTER_UI.Pages.CompanyDatabase;
-using API_TESTER_UI.Database;
-using System.Data.SqlClient;
-using Newtonsoft.Json.Linq;
-using API_TESTER_UI.Views;
-using API_TESTER_UI;
 using API_TESTER_UI.Utilities.UserManagement;
-using System.Windows.Forms;
-using System.Web.UI.HtmlControls;
 using System.Windows;
-using WebBrowser = System.Windows.Controls.WebBrowser;
 
 namespace API_TESTER_UI.Views
 {

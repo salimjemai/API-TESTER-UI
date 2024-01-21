@@ -1,14 +1,12 @@
 ﻿using API_TESTER_UI.Database;
-using API_TESTER_UI.Models.CompanyDataBase;
 using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml;
-using API_TESTER_UI.Aircraftownership;
-using API_TESTER_UI.UserManagement;
 using API_TESTER_UI.CompanyDatabase;
 using System.Linq;
+using API_TESTER_UI.Utilities;
 using API_TESTER_UI.Utilities.UserManagement;
 
 namespace API_TESTER_UI.Pages.CompanyDatabase
@@ -18,7 +16,6 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
     /// </summary>
     public partial class GetAircrafts : Page
     {
-        public CompanyDatabaseSoap companyDatabaseSoappSoap { get; set; }
         public List<string> AirportsList { get; set; }
 
         public GetAircrafts()
@@ -28,9 +25,9 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
             var token = string.Empty;
             var cwsUrl = string.Empty;
 
-            AirportData[] air = null;
             try
             {
+                Log.Debug($"Getting Airports info ... ");
                 XmlDocument airports;
                 // Open a connection to get the token info from the DB
                 string sqlQuery = "select SessionToken, CwsUrl from Sessions order by DateCreated desc limit 1";
@@ -46,13 +43,14 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
                     if (token != null && cwsUrl != null)
                     {
                         var client = SoapClient.GetCompanyDatabaseClient(cwsUrl);
-                        AirportsReferenceInput airp = new AirportsReferenceInput
+                        var airportsRequest = new AirportsReferenceInput
                         {
-                            SessionToken = token,
-
+                            SessionToken = token
                         };
-                        var response = client.GetAirports(airp);
-                        air = response.Airports;
+                        var response = client.GetAirports(airportsRequest);
+                        var air = response.Airports;
+
+                        Log.Debug($"Airport data ** Airports count: {air.Length}");
                         AirportsGrid.ItemsSource = air.ToList();
                     }
                     else
@@ -63,6 +61,7 @@ namespace API_TESTER_UI.Pages.CompanyDatabase
             }
             catch (Exception exc)
             {
+                Log.Error(exc.Message);
                 MessageBox.Show($"Error occurred while getting the airports info. exception detail: {exc}", "Airports details", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
