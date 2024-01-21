@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using API_TESTER_UI.Database;
 using API_TESTER_UI.Session;
+using API_TESTER_UI.Utilities;
 using API_TESTER_UI.Utilities.UserManagement;
 
 namespace API_TESTER_UI.Views
@@ -192,33 +193,48 @@ namespace API_TESTER_UI.Views
             var dateNow = DateTime.Now;
             try
             {
-                var loginData = new CorridorLoginData
+                _SchemaAliasNameText = "QA_MAINLINE_NE_19c";
+                _LoginID = "cati";
+                _Password = "PgacdE";
+                _CwsUrl = "http://10.72.5.50/Mainline/CWS/";
+                if (!string.IsNullOrEmpty(_SchemaAliasNameText) &&
+                    ! string.IsNullOrEmpty(_LoginID) &&
+                    ! string.IsNullOrEmpty(_CwsUrl) &&
+                    ! string.IsNullOrEmpty(_Password))
                 {
-                    AliasName = _SchemaAliasNameText,
-                    LoginID = _LoginID,
-                    LoginPassword = _Password
-                };
-                var sessionClient = SoapClient.GetSessionSoapClient(_CwsUrl);
-                var sessionToken = await sessionClient.LoginAsync(loginData);
+                    var loginData = new CorridorLoginData
+                    {
+                        AliasName = _SchemaAliasNameText,
+                        LoginID = _LoginID,
+                        LoginPassword = _Password
+                    };
+                    var sessionClient = SoapClient.GetSessionSoapClient(_CwsUrl);
+                    var sessionToken = await sessionClient.LoginAsync(loginData);
 
-                if (sessionToken.SessionToken != null)
+                    if (sessionToken.SessionToken != null)
+                    {
+                        _SessionToken = sessionToken.SessionToken;
+                        var IsTokenValid = 1;
+
+                        // Insert the session record into the DB
+                        DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl,
+                            _SchemaAliasNameText);
+
+                        // hide main login window
+                        Hide();
+
+                        // Open the API Choice interface
+                        new ApiChoiceWindow().Show();
+                    }
+                }
+                else
                 {
-                    _SessionToken = sessionToken.SessionToken;
-                    var IsTokenValid = 1;
-
-                    // Insert the session record into the DB
-                    DatabaseHelper.WriteDataIntoSession(_SessionToken, dateNow, IsTokenValid, _LoginID, _CwsUrl,
-                        _SchemaAliasNameText);
-
-                    // hide main login window
-                    Hide();
-
-                    // Open the API Choice interface
-                    new ApiChoiceWindow().Show();
+                    MessageBox.Show($"Super User functionality is not activated at the moment.", "API Tester", MessageBoxButton.OK, MessageBoxImage.Asterisk);
                 }
             }
             catch (Exception exception)
             {
+                Log.Exception("An error occurred while attempting to login using the Super user login. ",exception);
                 MessageBox.Show($"{MessageBoxImage.Error} Error occurred while trying to login: {exception.Message}");
             }
         }

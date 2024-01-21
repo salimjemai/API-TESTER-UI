@@ -100,11 +100,10 @@ namespace API_TESTER_UI.Views
 
         private void MenuItemExit_Click(object sender, RoutedEventArgs e)
         {
-            if (System.Windows.MessageBox.Show(this, "Do you wish to close this application?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question)
-                 == MessageBoxResult.Yes)
+            if (MessageBox.Show(this, "Do you wish to close this application?", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 var logoutResponse = SoapClient.LogOut();
-                System.Windows.Application.Current.Shutdown();
+                Application.Current.Shutdown();
             }
             
 
@@ -113,14 +112,17 @@ namespace API_TESTER_UI.Views
        
         private void MenuItemLogout_Click(object sender, RoutedEventArgs e)
         {
-            _ = SoapClient.LogOut();
+            if (MessageBox.Show(this, "Are you sure ?", "Confirm", MessageBoxButton.YesNo,
+                    MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                _ = SoapClient.LogOut();
 
-            // close the current window
-            this.Close();
+                // close the current window
+                this.Hide();
 
-            // bring the user back to the main window
-            new HomeView().Show();
-            
+                // bring the user back to the main window
+                new HomeView().Show();
+            }
         }
 
         private void ClearWIPButton_Click(object sender, RoutedEventArgs e)
